@@ -129,6 +129,21 @@ codeunit 31022921 "Withholding Tax-Post"
           EXIT(VATAmount);
     end;
 
+// [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterReverseAmount', '', true, true)]
+// local procedure ReverseAmountSalesWithholding(Var SalesLine :Record "Sales Line")
+// begin
+//   With SalesLine Do begin
+//     "Withholding Tax Amount" := -"Withholding Tax Amount";
+//     end;
+  
+// end;
+// [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterReverseAmount', '', true, true)]
+// local procedure ReverseAmountPurchWithholding(Var PurchLine:Record "Purchase Line")
+// begin
+//   With PurchLine do begin
+//     "Withholding Tax Amount" := -"Withholding Tax Amount";
+//   end;
+// end;
 }
 
 
