@@ -1,0 +1,25 @@
+{
+  "id": "1c20f3e5-93b9-4a4b-872d-0952a89f83b0",
+  "name": "Account Schedule APP",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "12.0.0.0",
+  "application": "12.0.0.0",
+  "features": [
+    "TranslationFile"
+  ],
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}

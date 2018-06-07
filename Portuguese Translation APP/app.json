@@ -1,0 +1,25 @@
+{
+  "id": "2f9675e9-d254-4b60-a615-d43e0a3baa41",
+  "name": "Softstore Translation App",
+  "publisher": "Softstore SA",
+  "brief": "Microsoft Business Central Translation App for Portuguese Language - Softstore SA: All Rights Reserved",
+  "description": "This App allows you to change your Microsoft Business Central language to Portuguese (PT-pt)",
+  "version": "1.0.0.0",
+  "privacyStatement": "http://EnderecoParaPrivacyStatement",
+  "EULA": "http://EnderecoParaEULA",
+  "help": "http://EnderecoParaHelp",
+  "url": "",
+  "logo":"logoSS.jpg",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "features": [
+    "TranslationFile"
+  ],
+  "platform": "12.0.0.0",
+  "application": "12.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Account Schedule APP">
+    <body>
+      <group id="body">
+        <trans-unit id="TableExtension 2113165311 - Field 1559628746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Type 2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:ColumnLayoutExt - Field:Amount Type 2</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2113165311 - Field 921932129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Type 3</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:ColumnLayoutExt - Field:Amount Type 3</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 1577010943 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column Value</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Column Value</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 2630141873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive Only</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Positive Only</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 387552079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive Only 2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Positive Only 2</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 521919925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reverse Sign</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Reverse Sign</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 3063652307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reverse Sign 2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Reverse Sign 2</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 2430487460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Totaling 2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Totaling 2</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1878461069 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Type</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
