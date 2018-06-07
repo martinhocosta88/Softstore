@@ -237,8 +237,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 2330225698 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 2330225698 - Field 3779125792 - Property 3830149458">
         <source>Witholding Tax Amount</source>
@@ -257,8 +256,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 3478966790 - Field 1681155855 - Property 3830149458">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3478966790 - Field 3269480311 - Property 3830149458">
         <source>Witholding Tax %</source>
@@ -267,8 +265,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 3478966790 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3478966790 - Field 3779125792 - Property 3830149458">
         <source>Witholding Tax Amount</source>
@@ -287,8 +284,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 3358398446 - Field 1681155855 - Property 3830149458">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3358398446 - Field 3269480311 - Property 3830149458">
         <source>Witholding Tax %</source>
@@ -297,8 +293,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 3358398446 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3358398446 - Field 3779125792 - Property 3830149458">
         <source>Witholding Tax Amount</source>
@@ -317,18 +312,15 @@
       </trans-unit>
       <trans-unit id="TableExtension 159501828 - Field 1681155855 - Property 3830149458">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 159501828 - Field 3269480311 - Property 3830149458">
         <source>Witholding Tax %</source>
-        <target>
-        </target>
+        <target>% Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 159501828 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 159501828 - Field 3779125792 - Property 3830149458">
         <source>Witholding Tax Amount</source>
@@ -347,13 +339,11 @@
       </trans-unit>
       <trans-unit id="TableExtension 3704746314 - Field 1681155855 - Property 3830149458">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3704746314 - Field 3269480311 - Property 3830149458">
         <source>Witholding Tax %</source>
-        <target>
-        </target>
+        <target>% Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3704746314 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
@@ -377,33 +367,27 @@
       </trans-unit>
       <trans-unit id="TableExtension 2204447775 - Field 3345768077 - Property 2879900210">
         <source>Income Type</source>
-        <target>
-        </target>
+        <target>Tipo Rendimento</target>
       </trans-unit>
       <trans-unit id="TableExtension 3300055767 - Field 2881461825 - Property 2879900210">
         <source>Subject to Withholding Tax</source>
-        <target>
-        </target>
+        <target>Sujeito a Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 3300055767 - Field 3345768077 - Property 2879900210">
         <source>Income Type</source>
-        <target>
-        </target>
+        <target>Tipo Rendimento</target>
       </trans-unit>
       <trans-unit id="TableExtension 1846452001 - Field 1681155855 - Property 3830149458">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 1846452001 - Field 3269480311 - Property 3830149458">
         <source>Witholding Tax %</source>
-        <target>
-        </target>
+        <target>% Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 1846452001 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 1846452001 - Field 3779125792 - Property 3830149458">
         <source>Witholding Tax Amount</source>
@@ -437,18 +421,15 @@
       </trans-unit>
       <trans-unit id="TableExtension 124687280 - Field 1681155855 - Property 3830149458">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 124687280 - Field 3269480311 - Property 3830149458">
         <source>Witholding Tax %</source>
-        <target>
-        </target>
+        <target>% Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 124687280 - Field 1964782891 - Property 3830149458">
         <source>Witholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 124687280 - Field 3779125792 - Property 3830149458">
         <source>Witholding Tax Amount</source>
@@ -482,8 +463,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 2502354840 - Field 1681155855 - Property 2879900210">
         <source>Withholding Tax Code</source>
-        <target>
-        </target>
+        <target>Código de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 2502354840 - Field 2197588228 - Property 2879900210">
         <source>Withholding Tax Autom. Entry</source>
@@ -497,13 +477,11 @@
       </trans-unit>
       <trans-unit id="TableExtension 2502354840 - Field 1964782891 - Property 2879900210">
         <source>Withholding Tax Account</source>
-        <target>
-        </target>
+        <target>Conta de Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 2502354840 - Field 3269480311 - Property 2879900210">
         <source>Withholding Tax %</source>
-        <target>
-        </target>
+        <target>% Retenção na Fonte</target>
       </trans-unit>
       <trans-unit id="TableExtension 2502354840 - Field 3779125792 - Property 2879900210">
         <source>Withholding Tax Amount</source>
