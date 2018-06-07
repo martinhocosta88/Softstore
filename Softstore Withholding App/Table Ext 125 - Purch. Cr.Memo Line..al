@@ -10,22 +10,22 @@ tableextension 50118 "Purch. Cr.Memo Line Ext" extends "Purch. Cr. Memo Line"
         }
         field(31022971; "Withholding Tax %"; Decimal)
         {
-            caption='Witholding Tax %';
+            caption='Withholding Tax %';
             DataClassification = ToBeClassified;
         }
         field(31022972; "Withholding Tax Account"; Code[20])
         {
-            caption='Witholding Tax Account';
+            caption='Withholding Tax Account';
             DataClassification = ToBeClassified;
         }
         field(31022973; "Withholding Tax Amount"; Decimal)
         {
-            caption='Witholding Tax Amount';
+            caption='Withholding Tax Amount';
             DataClassification = ToBeClassified;
         }
         field(31022974; "Orig. Withholding Tax Amount"; Decimal)
         {
-            caption='Orig. Witholding Tax Amount';
+            caption='Orig. Withholding Tax Amount';
             DataClassification = ToBeClassified;
         }
         field(31022975; "Max. Correction Amount"; Decimal)

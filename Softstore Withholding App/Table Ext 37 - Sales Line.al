@@ -19,19 +19,19 @@ tableextension 50110 "Sales Line Ext" extends "Sales Line"
         }
         field(31022971; "Withholding Tax %"; Decimal)
         {
-            caption='Witholding Tax %';
+            caption='Withholding Tax %';
 
             DataClassification = ToBeClassified;
         }
         field(31022972; "Withholding Tax Account"; Code[20])
         {
-            caption='Witholding Tax Account';
+            caption='Withholding Tax Account';
             
             DataClassification = ToBeClassified;
         }
         field(31022973; "Withholding Tax Amount"; Decimal)
         {
-            caption='Witholding Tax Amount';
+            caption='Withholding Tax Amount';
 
             DataClassification = ToBeClassified;
             trigger OnValidate()
@@ -47,7 +47,7 @@ tableextension 50110 "Sales Line Ext" extends "Sales Line"
         }
         field(31022974; "Orig. Withholding Tax Amount"; Decimal)
         {
-            caption='Orig. Witholding Tax Amount';
+            caption='Orig. Withholding Tax Amount';
 
             DataClassification = ToBeClassified;
         }
@@ -81,9 +81,9 @@ tableextension 50110 "Sales Line Ext" extends "Sales Line"
         END;
     end;
     var
-        Text31022899:Label'Customer %1 is not defined for withholding tax.';
+        Text31022899:Label'Customer %1 is not defined for Withholding Tax.';
         Text31022900:Label'Withholding tax amount can only in between %1 and %2.';
-        Text31022901:Label'Withholding tax amount cannot be null. Please calculate withholding tax amount.';
+        Text31022901:Label'Withholding tax amount cannot be null. Please calculate Withholding Tax Amount.';
         Customer: Record Customer;
         WithholdingTaxCodes: Record "Withholding Tax Codes";
         Currency:Record Currency;

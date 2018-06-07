@@ -15,7 +15,7 @@ table 31022975 "Withholding Tax Codes"
         }
         field(3;"Tax %";Decimal)
         {
-            Caption = 'Retention %';
+            Caption = 'Withholding %';
         }
         field(4;"Account No.";Code[20])
         {

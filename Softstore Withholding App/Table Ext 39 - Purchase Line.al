@@ -20,17 +20,17 @@ tableextension 50111 "Purchase Line Ext" extends "Purchase Line"
         }
         field(31022971; "Withholding Tax %"; Decimal)
         {
-            caption='Witholding Tax %';
+            caption='Withholding Tax %';
             DataClassification = ToBeClassified;
         }
         field(31022972; "Withholding Tax Account"; Code[20])
         {
-            caption='Witholding Tax Account';
+            caption='Withholding Tax Account';
             DataClassification = ToBeClassified;
         }
         field(31022973; "Withholding Tax Amount"; Decimal)
         {
-            caption='Witholding Tax Amount';
+            caption='Withholding Tax Amount';
             DataClassification = ToBeClassified;
             trigger OnValidate()
             var
@@ -45,7 +45,7 @@ tableextension 50111 "Purchase Line Ext" extends "Purchase Line"
         }
         field(31022974; "Orig. Withholding Tax Amount"; Decimal)
         {
-            caption='Orig. Witholding Tax Amount';
+            caption='Orig. Withholding Tax Amount';
             DataClassification = ToBeClassified;
         }
         field(31022975; "Max. Correction Amount"; Decimal)
@@ -78,7 +78,7 @@ tableextension 50111 "Purchase Line Ext" extends "Purchase Line"
     var
         Text31022893:Label'Vendor %1 is not defined for withholding tax.';
         Text31022894:Label'Withholding tax amount can only in between %1 and %2.';
-        Text31022895:Label'Withholding tax amount cannot be null. Please calculate withholding tax amount.';
+        Text31022895:Label'Withholding tax amount cannot be null. Please calculate Withholding Tax Amount.';
         vendor:Record Vendor;
         WithholdingTaxCodes: Record "Withholding Tax Codes";
         Currency:Record Currency;
