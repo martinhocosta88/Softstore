@@ -1,0 +1,23 @@
+{
+  "id": "ce11f157-1294-4510-aef0-28eab94dbfc5",
+  "name": "Softstore Withholding App",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "12.0.0.0",
+  "application": "12.0.0.0",
+  "features": "TranslationFile",
+  "idRange": {
+    "from": 50100,
+    "to": 31023999
+  }
+}
