@@ -8,8 +8,7 @@
             "server": "http://SoftstoreBC",
             "serverInstance": "NAV",
             "authentication": "UserPassword",
-            //"startupObjectId": 22,
-            //"startupObjectType": "Page"
+
         }
     ]
 }
