@@ -8,7 +8,7 @@ tableextension 50101 AccScheduleLineExt extends "Acc. Schedule Line"
             //OptionCaption =  "1st Value","2nd Value","3rd Value";
             caption = 'Column Value';
             OptionMembers = "1st Value","2nd Value","3rd Value";
-            OptionCaptionML = ENU = '1st Value,2nd Value,3rd Value', PTG = '1º Valor,2º Valor,3º Valor';
+            OptionCaption = '1st Value,2nd Value,3rd Value';
             DataClassification = CustomerContent;
         }
         field(31022891; "Positive Only"; boolean)
@@ -40,7 +40,7 @@ tableextension 50101 AccScheduleLineExt extends "Acc. Schedule Line"
         {
             caption = 'Type';
             OptionMembers =  "","Debit","Credit","Assets","Liabilities";
-            OptionCaptionML = ENU = ' ,Debit,Credit,Assets,Liabilities', PTG = ' ,Debito,Crédito,Ativo,Passivo';
+            OptionCaption = ' ,Debit,Credit,Assets,Liabilities';
             DataClassification = CustomerContent;
         }
     }

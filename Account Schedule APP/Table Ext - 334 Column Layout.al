@@ -9,29 +9,16 @@ tableextension 50100 ColumnLayoutExt extends "Column Layout"
     {
         field(31022890;"Amount Type 2"; Option)
         {
-            //OptionCaption = ENU = 'Net Amount','Debit Amount','Credit Amount',,,,,,'Debit Balance','Credit Balance';
             OptionMembers = "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-
-
             Editable = true;
             DataClassification = CustomerContent;
         }
         field(31022891;"Amount Type 3"; Option)
         {
-            //OptionCaption = ENU = "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
             OptionMembers = "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
             Editable = true;
             DataClassification = CustomerContent;
         }
-        // modify("Amount Type")
-        // {
-        //     OptionMembers = "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-        // }
-
     }
-    
     var
-        myInt: Integer;
-
-
 }
