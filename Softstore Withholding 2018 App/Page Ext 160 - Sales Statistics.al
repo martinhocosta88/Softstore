@@ -8,12 +8,16 @@ pageextension 50119 "Sales Statistics Ext" extends "Sales Statistics"
             {
                 
                 Caption = 'Withholding Tax Amount';
-                
+                Editable = false;
+                ToolTip ='Specifies the Withholding Tax Amount';
             }
             field("Total Withholding Tax Amount";TotalAmount2-TotalSalesLine."Withholding Tax Amount")
             {
                 Caption = 'Total Withholding Tax Amount';
+                Editable = false;
+                ToolTip = 'Specifies the Withholding Tax Amount Total';
             }
+            
 
         }
     }

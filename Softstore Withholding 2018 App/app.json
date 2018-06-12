@@ -1,6 +1,6 @@
 {
   "id": "46825aa8-19c5-4977-a3ce-0c5241e18911",
-  "name": "teste2018",
+  "name": "Softstore Withholding 2018 App",
   "publisher": "Default publisher",
   "brief": "",
   "description": "",
@@ -16,6 +16,7 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
+  "features": "TranslationFile",
   "idRange": {
     "from": 50100,
     "to": 50200

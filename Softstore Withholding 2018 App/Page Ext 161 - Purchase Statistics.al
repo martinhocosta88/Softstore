@@ -7,10 +7,14 @@ pageextension 50120 "Purchase Statistics Ext" extends "Purchase Statistics"
             field("Withholding Tax Amount";TotalPurchLine."Withholding Tax Amount")
             {
                 Caption = 'Withholding Tax Amount';
+                Editable = false;
+                ToolTip ='Specifies the Withholding Tax Amount';
             }
             field("Total Withholding Tax Amount";TotalAmount2-TotalPurchLine."Withholding Tax Amount")
             {
                 Caption = 'Total Withholding Tax Amount';
+                Editable = false;
+                ToolTip = 'Specifies the Withholding Tax Amount Total';
             }
         }
     }
