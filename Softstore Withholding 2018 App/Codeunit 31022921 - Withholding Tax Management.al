@@ -75,18 +75,18 @@ codeunit 50130 "Withholding Tax Management"
           TaxGenJnlLine.Description := GenJnlLine.Description;
           TaxGenJnlLine.VALIDATE("System-Created Entry", TRUE);
           GLAccounts.GET(WithholdingTaxCodes."Account No.");
-          // IF (GLAccounts."Transfer Account Type" <> GLAccounts."Transfer Account Type"::Vendor) OR (GLAccounts."Transfer Account Type" <> GLAccounts."Transfer Account Type"::Customer) THEN BEGIN
-          //   TaxGenJnlLine.VALIDATE("Account Type",GenJnlLine."Account Type"::"G/L Account");
-          //   TaxGenJnlLine.VALIDATE("Account No.",WithholdingTaxCodes."Account No.");
-          //   TaxGenJnlLine."Source No." := GenJnlLine."Account No.";
-          // END ELSE BEGIN
-          //   IF GenJnlLine."Account Type" = GenJnlLine."Account Type"::Vendor THEN
-          //     TaxGenJnlLine.VALIDATE("Account Type", GenJnlLine."Account Type"::Vendor)
-          //   ELSE
-          //     IF GenJnlLine."Account Type" = GenJnlLine."Account Type"::Customer THEN
-          //      TaxGenJnlLine.VALIDATE("Account Type", GenJnlLine."Account Type"::Customer);
-          //   TaxGenJnlLine.VALIDATE("Account No.", GLAccounts."Transfer Account No.");
-          // END;
+          IF (GLAccounts."Transfer Account Type" <> GLAccounts."Transfer Account Type"::Vendor) OR (GLAccounts."Transfer Account Type" <> GLAccounts."Transfer Account Type"::Customer) THEN BEGIN
+            TaxGenJnlLine.VALIDATE("Account Type",GenJnlLine."Account Type"::"G/L Account");
+            TaxGenJnlLine.VALIDATE("Account No.",WithholdingTaxCodes."Account No.");
+            TaxGenJnlLine."Source No." := GenJnlLine."Account No.";
+          END ELSE BEGIN
+            IF GenJnlLine."Account Type" = GenJnlLine."Account Type"::Vendor THEN
+              TaxGenJnlLine.VALIDATE("Account Type", GenJnlLine."Account Type"::Vendor)
+            ELSE
+              IF GenJnlLine."Account Type" = GenJnlLine."Account Type"::Customer THEN
+               TaxGenJnlLine.VALIDATE("Account Type", GenJnlLine."Account Type"::Customer);
+            TaxGenJnlLine.VALIDATE("Account No.", GLAccounts."Transfer Account No.");
+          END;
           IF GenJnlLine."Currency Code" = '' THEN
             Currency.InitRoundingPrecision
           ELSE BEGIN
