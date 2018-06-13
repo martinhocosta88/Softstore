@@ -1,17 +1,14 @@
-codeunit 50130 "Withholding Tax-Post"
+codeunit 50130 "Withholding Tax Management"
 {
 
     trigger OnRun();
     begin
     end;
-
     var
         GLAccounts : Record "G/L Account";
         Currency : Record Currency;
         PurchaseHeader : Record "Purchase Header";
         DimMgt : Codeunit DimensionManagement;
-
-
     procedure PostWithholdingTax(GenJnlLine : Record 81;var TaxGenJnlLine : Record 81) : Boolean;
     var
         GenLedgSetup : Record 98;
@@ -131,7 +128,7 @@ codeunit 50130 "Withholding Tax-Post"
     end;
 
 [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterReverseAmount', '', true, true)]
-local procedure ReverseAmountSalesWithholding(Var SalesLine :Record "Sales Line")
+local procedure ReverseWithholdingAmountSales(Var SalesLine :Record "Sales Line")
 begin
 
   With SalesLine Do begin
@@ -139,14 +136,72 @@ begin
     end;
   
 end;
+
 [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterReverseAmount', '', true, true)]
-local procedure ReverseAmountPurchWithholding(Var PurchLine:Record "Purchase Line")
+local procedure ReverseWithholdingAmountPurch(Var PurchLine:Record "Purchase Line")
 begin
   With PurchLine do begin
     "Withholding Tax Amount" := -"Withholding Tax Amount";
   end;
 end;
+[EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterIncrAmount', '', true, true)]
+local procedure IncrWithholdingSalesAmount(SalesLine:Record "Sales Line"; VAR TotalSalesLine:Record "Sales Line");
+begin
+  With SalesLine Do BEgin
+    Increment(TotalSalesLine."Withholding Tax Amount","Withholding Tax Amount");
+  END;
+end;
+[EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterIncrAmount', '', true, true)]
+local procedure IncrWithholdingPurchAmount(PurchLine : Record "Purchase Line";VAR TotalPurchLine : Record "Purchase Line");
+begin
+  With PurchLine Do Begin
+      Increment(TotalPurchLine."Withholding Tax Amount","Withholding Tax Amount");
+  end;
+End;
+local procedure Increment(VAR Number : Decimal;Number2 : Decimal);
+begin
+  Number := Number + Number2;
+end;
 
+[EventSubscriber(ObjectType::Codeunit, 80, 'OnBeforePostCustomerEntry', '', true, true)]
+local procedure PostCustomerWithholdingEntry(VAR GenJnlLine : Record "Gen. Journal Line";SalesHeader : Record "Sales Header";VAR TotalSalesLine : Record "Sales Line";VAR TotalSalesLineLCY : Record "Sales Line");
+begin
+  With GenJnlLine do begin
+    Amount += TotalSalesLine."Withholding Tax Amount";
+    "Source Currency Amount" += TotalSalesLine."Withholding Tax Amount";
+    "Amount (LCY)" += TotalSalesLineLCY."Withholding Tax Amount";
+    "Sales/Purch. (LCY)" += TotalSalesLineLCY."Withholding Tax Amount";
+  end;
+end;
+
+[EventSubscriber(ObjectType::Codeunit, 90, 'OnBeforePostVendorEntry', '', true, true)]
+local procedure PostVendorWithholdingEntry(VAR GenJnlLine : Record "Gen. Journal Line";VAR PurchHeader : Record "Purchase Header";VAR TotalPurchLine : Record "Purchase Line";VAR TotalPurchLineLCY : Record "Purchase Line");
+begin
+  With GenJnlLine do begin
+    Amount +=  TotalPurchLine."Withholding Tax Amount";
+    "Source Currency Amount" += TotalPurchLine."Withholding Tax Amount";
+    "Amount (LCY)" += TotalPurchLineLCY."Withholding Tax Amount";
+    "Sales/Purch. (LCY)" += TotalPurchLineLCY."Withholding Tax Amount";
+  end;  
+end;
+
+[EventSubscriber(ObjectType::Codeunit, 80, 'OnBeforePostBalancingEntry', '', true, true)]
+local procedure PostWithholdingBalancingSalesEntry(VAR GenJnlLine : Record "Gen. Journal Line";SalesHeader : Record "Sales Header";VAR TotalSalesLine : Record "Sales Line";VAR TotalSalesLineLCY : Record "Sales Line");
+begin
+  with GenJnlLine do begin
+    Amount -= TotalSalesLine."Withholding Tax Amount";
+    "Amount (LCY)" -= TotalSalesLineLCY."Withholding Tax Amount";
+  end
+end;
+
+[EventSubscriber(ObjectType::Codeunit, 90, 'OnBeforePostBalancingEntry', '', true, true)]
+local procedure PostWithholdingBalancingPurchEntry(VAR GenJnlLine : Record "Gen. Journal Line";VAR PurchHeader : Record "Purchase Header";VAR TotalPurchLine : Record "Purchase Line";VAR TotalPurchLineLCY : Record "Purchase Line");
+begin
+  With GenJnlLine do begin
+   Amount -= TotalPurchLine."Withholding Tax Amount";
+  "Amount (LCY)" -= TotalPurchLineLCY."Withholding Tax Amount";
+  end;
+end;
 }
 
 

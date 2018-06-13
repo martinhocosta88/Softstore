@@ -1,4 +1,4 @@
-page 50103 "Taxonomy Codes List"
+page 31023088 "Taxonomy Codes List"
 {
     PageType = List;
     SourceTable = "Taxonomy Codes";
