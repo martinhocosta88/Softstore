@@ -116,7 +116,6 @@ codeunit 50130 "Withholding Tax Management"
         VATAmount : Decimal;
         BaseAmount : Decimal;
     begin
-
         VATEntry.SETFILTER("Document Type",FORMAT(GenJnlLine."Document Type"));
         VATEntry.SETRANGE("Document No.",GenJnlLine."Document No.");
         IF VATEntry.FINDSET THEN REPEAT
@@ -134,7 +133,6 @@ begin
   With SalesLine Do begin
     "Withholding Tax Amount" := -"Withholding Tax Amount";
     end;
-  
 end;
 
 [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterReverseAmount', '', true, true)]
