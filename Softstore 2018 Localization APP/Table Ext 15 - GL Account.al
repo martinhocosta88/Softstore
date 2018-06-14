@@ -6,7 +6,7 @@ tableextension 50101 "G/L Account Extension" extends "G/L Account"
         field(50100; "Taxonomy Code"; Integer)
         {
             Caption = 'Taxonomy Code';
-            TableRelation = "Taxonomy Codes"."Taxomy Code";
+            TableRelation = "Taxonomy Codes"."Taxonomy Code";
             DataClassification = CustomerContent;
             BlankZero = true;
             trigger OnValidate()
@@ -15,7 +15,5 @@ tableextension 50101 "G/L Account Extension" extends "G/L Account"
             end;
         }
     }
-     
-    var
-        
+            
 }
