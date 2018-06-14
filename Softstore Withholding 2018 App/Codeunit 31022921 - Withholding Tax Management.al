@@ -10,7 +10,7 @@ codeunit 50130 "Withholding Tax Management"
         PurchaseHeader : Record "Purchase Header";
         DimMgt : Codeunit DimensionManagement;
     [EventSubscriber(ObjectType::Codeunit, 12, 'OnBeforeGLFinishPosting', '', true, true)]
-    local procedure CallPostWithholdingTax(Var GenJnlLine: Record 81;Balancing: Boolean);
+    local procedure CheckPostWithholdingTax(Var GenJnlLine: Record 81;Balancing: Boolean);
     var
     TaxGenJnlLine:Record 81;
     GenJnlPostLine:Codeunit 12;
