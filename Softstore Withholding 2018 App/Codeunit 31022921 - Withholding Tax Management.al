@@ -9,6 +9,15 @@ codeunit 50130 "Withholding Tax Management"
         Currency : Record Currency;
         PurchaseHeader : Record "Purchase Header";
         DimMgt : Codeunit DimensionManagement;
+    [EventSubscriber(ObjectType::Codeunit, 12, 'OnBeforeGLFinishPosting', '', true, true)]
+    local procedure CallPostWithholdingTax(Var GenJnlLine: Record 81;Balancing: Boolean);
+    var
+    TaxGenJnlLine:Record 81;
+    GenJnlPostLine:Codeunit 12;
+    begin
+      IF PostWithholdingTax(GenJnlLine,TaxGenJnlLine) THEN
+        GenJnlPostLine.PostGenJnlLine(TaxGenJnlLine,Balancing);       
+    end;
     procedure PostWithholdingTax(GenJnlLine : Record 81;var TaxGenJnlLine : Record 81) : Boolean;
     var
         GenLedgSetup : Record 98;
@@ -200,6 +209,7 @@ begin
   "Amount (LCY)" -= TotalPurchLineLCY."Withholding Tax Amount";
   end;
 end;
+
 }
 
 
