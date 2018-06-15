@@ -82,10 +82,10 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             Text31022890:label 'Deleting %1 will cause %2 to be deleted. Do you want to continue?';
             begin
                 IF ("Country/Region Code" = '') AND (IBAN <> '') THEN BEGIN
-                IF CONFIRM(Text31022890,FALSE,FIELDCAPTION("Country/Region Code"),FIELDCAPTION(IBAN)) THEN
-                    CLEAR(IBAN)
-                ELSE
-                    ERROR('');
+                    IF CONFIRM(Text31022890,FALSE,FIELDCAPTION("Country/Region Code"),FIELDCAPTION(IBAN)) THEN
+                        CLEAR(IBAN)
+                    ELSE
+                        ERROR('');
                 EXIT;
                 END;
 
@@ -100,7 +100,7 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             end;
         }
     }
-    local procedure PrePadString(InString : Text[250];MaxLen : Integer) : Text[250];
+    procedure PrePadString(InString : Text[250];MaxLen : Integer) : Text[250];
     begin
         EXIT(PADSTR('', MaxLen - STRLEN(InString),'0') + InString);
     end;
@@ -115,7 +115,7 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             IBAN := CheckIBANCountryCode("CCC No.","Country/Region Code");
         END;
     end;
-    local procedure CheckCCC(NIB : Text[21]);
+    procedure CheckCCC(NIB : Text[21]);
     var
         NIB2:Text[19];
         Chk:Integer;
@@ -168,7 +168,7 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
         END;
     end;
 
-    local procedure CheckIBANCountryCode(NIB : Text[21];CountryCode : Text[2]) Send : Code[34];
+    procedure CheckIBANCountryCode(NIB : Text[21];CountryCode : Text[2]) Send : Code[34];
     var
         Total:BigInteger;
         Letter1:Code[2];
