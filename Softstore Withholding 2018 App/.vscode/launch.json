@@ -8,7 +8,7 @@
             "server": "http://localhost",
             "serverInstance": "DynamicsNAV110CU06",
             "authentication": "Windows",
-            "schemaUpdateMode":"Recreate",
+            "schemaUpdateMode":"Synchronize",
             "port": 7249
 
         }
