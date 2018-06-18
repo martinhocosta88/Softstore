@@ -3,7 +3,7 @@
   "name": "Softstore 2018 Localization APP",
   "publisher": "Softstore SA",
   "brief": "",
-  "description": "Taxonomies, CCC, Customer CCC",
+  "description": "Taxonomies, CCC, Customer CCC, Check Chart/Acc,",
   "version": "1.0.0.0",
   "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
@@ -16,7 +16,9 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
-  "features": "TranslationFile",
+  "features": [
+  "TranslationFile"
+],
   "idRange": {
     "from": 50100,
     "to": 31023999
