@@ -4,11 +4,7 @@ page 31022935 "Cash-Flow Plan"
     SourceTable = "Cash-Flow Plan";
     CardPageID = "Cash-Flow Code Card";
     Caption='Cash-Flow Plan';
-    var
-    NoEmphasize:Boolean;
-    NameEmphasize:Boolean;
-    NameIndent:Integer;
-
+    UsageCategory=Lists;
     layout
     {
         area(content)
@@ -55,22 +51,41 @@ page 31022935 "Cash-Flow Plan"
     {
         area(processing)
         {
-            action(Indent Cash-Flow Plan)
-            Image=IndentChartOfAccounts;
-            Promoted=Yes;
-            PromotedCategory=Process;
+            action("Indent Cash-Flow Plan")
             {
+                Caption = 'Indent Cash-Flow Plan';
+                Image=IndentChartOfAccounts;
+                Promoted=true;
+                PromotedCategory=Process;
                 trigger OnAction();
+                
+                var
+                GLAccMgmt:Codeunit "G/L Account Management";
                 begin
                     GLAccMgmt.CashFlowIndent;
                 end;
             }
+            action("Cash-Flow Report")
+            {
+                Caption = 'Cash-Flow Report';
+                RunObject=report "Cash-Flow Report";
+                Image=Report;
+                trigger OnAction()
+                begin
+                    
+                end;
+            }
         }
     }
+    var
+        NoEmphasize:Boolean;
+        NameEmphasize:Boolean;
+        NameIndent:Integer;
     trigger OnAfterGetRecord()
     begin
         NoEmphasize := Type <> Type::Posting;
         NameIndent := Indentation;
         NameEmphasize := Type <> Type::Posting;
     end;
+
 }
