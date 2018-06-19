@@ -31,12 +31,12 @@ pageextension 50100 "Chart of Accounts Extension" extends "Chart of Accounts"
                 ApplicationArea=All;
                 trigger OnAction()
                 var
-                    GLAcc:Record "G/L Account";
+                    GLAccMgmt:Codeunit "G/L Account Management";
                     GLSetup:Record "General Ledger Setup";
                 begin
                     GLSetup.GET;
                     GLSetup.TESTFIELD("Check Chart of Accounts");
-                    GLAcc.CheckChartAcc;
+                    GLAccMgmt.CheckChartAcc;
                 end;
             }
         }
