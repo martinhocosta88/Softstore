@@ -16,6 +16,5 @@ pageextension 50109 "General Ledger Setup Ext" extends "General Ledger Setup"
         // Add changes to page actions here
     }
     
-    var
-        myInt: Integer;
+
 }
