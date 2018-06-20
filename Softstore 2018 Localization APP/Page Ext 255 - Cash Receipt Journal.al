@@ -1,4 +1,4 @@
-pageextension 50113 "cash Receipt Journal Ext" extends "Cash Receipt Journal"
+pageextension 50113 "Cash Receipt Journal Ext" extends "Cash Receipt Journal"
 {
     layout
     {
