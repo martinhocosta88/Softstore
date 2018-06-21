@@ -1,4 +1,4 @@
-tableextension 50109 "Purchase Header Ext" extends "Purchase Header"
+tableextension 50111 "Sales Header Ext" extends "Sales Header"
 {
     fields
     {
@@ -6,7 +6,7 @@ tableextension 50109 "Purchase Header Ext" extends "Purchase Header"
         {
             trigger OnAfterValidate()
             var
-                PaymentMethod: Record "Payment Method";
+                PaymentMethod:Record "Payment Method";
             begin
                 PaymentMethod.Init;
                 IF "Payment Method Code" <> '' THEN
@@ -24,7 +24,7 @@ tableextension 50109 "Purchase Header Ext" extends "Purchase Header"
             Caption = 'Cash-flow code';
             trigger OnValidate()
             var
-                Text31022890:Label 'ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.';
+                Text31022890: Label 'ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.';
                 PaymentMethod: Record "Payment Method";
                 GLACC: Record "G/L Account";
                 BankAcc: Record "Bank Account";
@@ -37,7 +37,7 @@ tableextension 50109 "Purchase Header Ext" extends "Purchase Header"
                     CASE PaymentMethod."Bal. Account Type" OF
                         "Bal. Account Type"::"G/L Account":
                             IF NOT (GLAcc.GET(PaymentMethod."Bal. Account No.")) OR
-                                NOT (GLAcc."Cash-flow code assoc.")
+                               NOT (GLAcc."Cash-flow code assoc.")
                             THEN BEGIN
                                 Rec."Cash-flow code" := '';
                                 MESSAGE(Text31022890);
@@ -45,8 +45,8 @@ tableextension 50109 "Purchase Header Ext" extends "Purchase Header"
                                 Rec.TESTFIELD("Cash-flow code");
                         "Bal. Account Type"::"Bank Account":
                             IF NOT BankAcc.GET(PaymentMethod."Bal. Account No.") OR
-                                NOT (BankConfig.GET(BankAcc."Bank Acc. Posting Group")) OR
-                                NOT (GLAcc.GET(BankConfig."G/L Bank Account No."))
+                               NOT (BankConfig.GET(BankAcc."Bank Acc. Posting Group")) OR
+                               NOT (GLAcc.GET(BankConfig."G/L Bank Account No."))
                             THEN
                                 Rec."Cash-flow code" := ''
                             ELSE
@@ -62,4 +62,6 @@ tableextension 50109 "Purchase Header Ext" extends "Purchase Header"
         }
     }
 
+    var
+        myInt: Integer;
 }

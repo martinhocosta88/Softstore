@@ -21,13 +21,13 @@ codeunit 31022951 EventHandler
     IF GLAcc.GET(InvoicePostBuffer."G/L Account") THEN
         GenJnlLine."Acc: cash-flow code":=Glacc."Cash-flow code";    
     end;
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Exchange Acc. G/L Journal Line", 'OnAfterOnRun', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, 366, 'OnAfterOnRun', '', true, true)]
     local procedure MyExchangeAccounts(VAR GenJournalLine : Record "Gen. Journal Line";GenJournalLine2 : Record "Gen. Journal Line")
     begin
         GenJournalLine."Acc: cash-flow code" := GenJournalLine2."Bal: cash-flow code";
         GenJournalLine."Bal: cash-flow code" := GenJournalLine2."Acc: cash-flow code";        
     end;
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Gen. Jnl.-Post Line", 'OnAfterInitGLEntry', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, 12, 'OnAfterInitGLEntry', '', true, true)]
     local procedure InitGLEntry(VAR GLEntry : Record "G/L Entry";GenJnlLine : Record "Gen. Journal Line";GLAccNo : Code[20])
     var
         Text31022890:Label 'The account no. %1 needs a cash-flow code';
@@ -46,10 +46,15 @@ codeunit 31022951 EventHandler
         END;
         END;
     end;
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterSetApplyToDocNo', '', true, true)]
-    local procedure SetApplytoDocNo(PurchaseHeader : Record "Purchase Header";VAR GenJnlLine : Record "Gen. Journal Line")
+    [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterSetApplyToDocNo', '', true, true)]
+    local procedure SetApplytoDocNoPurch(PurchaseHeader : Record "Purchase Header";VAR GenJnlLine : Record "Gen. Journal Line")
     begin
         GenJnlLine."Bal: cash-flow code" := PurchaseHeader."Cash-flow code";
+    end;
+    [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterSetApplyToDocNo', '', true, true)]
+    local procedure SetApplytoDocNoSales(SalesHeader : Record "Sales Header";VAR GenJnlLine : Record "Gen. Journal Line")
+    begin
+        GenJnlLine."Bal: cash-flow code" := SalesHeader."Cash-flow code";
     end;
 
 }
