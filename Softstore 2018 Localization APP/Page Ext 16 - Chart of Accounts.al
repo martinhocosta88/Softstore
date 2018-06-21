@@ -9,30 +9,31 @@ pageextension 50100 "Chart of Accounts Extension" extends "Chart of Accounts"
                 ToolTip = 'Specifies the adjustment account for the comercial posting accounts.';
                 Visible = false;
             }
-           field("Taxonomy Code"; "Taxonomy Code")
-           {
-               ToolTip ='Specifies the Taxonomy Code';
-               ApplicationArea = Basic,Suite;
-           }
+            field("Taxonomy Code"; "Taxonomy Code")
+            {
+                ToolTip = 'Specifies the Taxonomy Code';
+                ApplicationArea = Basic, Suite;
+            }
         }
 
     }
-    actions{
+    actions
+    {
         addlast("F&unctions")
         {
             action(CheckChart)
             {
-                Image=IndentChartOfAccounts;
-                Caption='Check Chart of Accounts';
-                Promoted=true;
-                PromotedCategory=Process;
-                PromotedIsBig=True;
-                PromotedOnly=true;
-                ApplicationArea=All;
+                Image = IndentChartOfAccounts;
+                Caption = 'Check Chart of Accounts';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = True;
+                PromotedOnly = true;
+                ApplicationArea = All;
                 trigger OnAction()
                 var
-                    GLAccMgmt:Codeunit "G/L Account Management";
-                    GLSetup:Record "General Ledger Setup";
+                    GLAccMgmt: Codeunit "G/L Account Management";
+                    GLSetup: Record "General Ledger Setup";
                 begin
                     GLSetup.GET;
                     GLSetup.TESTFIELD("Check Chart of Accounts");

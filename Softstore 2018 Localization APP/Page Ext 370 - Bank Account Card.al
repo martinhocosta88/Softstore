@@ -4,30 +4,30 @@ pageextension 50108 "Bank Account Card Ext" extends "Bank Account Card"
     {
         addfirst(Transfer)
         {
-        field("CCC Bank No.";"CCC Bank No.")
+            field("CCC Bank No."; "CCC Bank No.")
             {
-                ApplicationArea = Basic,Suite;
-                ToolTip= 'Specifies the bank number.';
+                ApplicationArea = Basic, Suite;
+                ToolTip = 'Specifies the bank number.';
             }
-        field("CCC Bank Branch No.";"CCC Bank Branch No.")
+            field("CCC Bank Branch No."; "CCC Bank Branch No.")
             {
-                ApplicationArea = Basic,Suite;
-                ToolTip= 'Specifies the bank branch number.';
+                ApplicationArea = Basic, Suite;
+                ToolTip = 'Specifies the bank branch number.';
             }
-        field("CCC Control Digits";"CCC Control Digits")
+            field("CCC Control Digits"; "CCC Control Digits")
             {
-                ApplicationArea = Basic,Suite;
-                ToolTip= 'Specifies the control digits for the bank account number';
+                ApplicationArea = Basic, Suite;
+                ToolTip = 'Specifies the control digits for the bank account number';
             }
-        field("CCC Bank Account No.";"CCC Bank Account No.")
+            field("CCC Bank Account No."; "CCC Bank Account No.")
             {
-                ApplicationArea = Basic,Suite;
-                ToolTip= 'Specifies the bank account number';
+                ApplicationArea = Basic, Suite;
+                ToolTip = 'Specifies the bank account number';
             }
-        field("CCC No.";"CCC No.")
+            field("CCC No."; "CCC No.")
             {
-                ApplicationArea = Basic,Suite;
-                ToolTip= 'Specifies the complete bank number.';
+                ApplicationArea = Basic, Suite;
+                ToolTip = 'Specifies the complete bank number.';
             }
         }
     }
@@ -36,7 +36,7 @@ pageextension 50108 "Bank Account Card Ext" extends "Bank Account Card"
     {
         // Add changes to page actions here
     }
-    
+
     var
-        myInt : Integer;
+        myInt: Integer;
 }

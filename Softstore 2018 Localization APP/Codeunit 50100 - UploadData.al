@@ -4,7 +4,7 @@ codeunit 50100 UploadData
     trigger OnInstallAppPerCompany()
     begin
         NavApp.LoadPackageData(31022979);
-        
+
     end;
 
 }

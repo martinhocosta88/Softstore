@@ -4,10 +4,10 @@ pageextension 50104 "General Ledger Entries" extends "General Ledger Entries"
     {
         addlast(Control1)
         {
-           field("Taxonomy Code"; "Taxonomy Code")
-           {
-               ToolTip ='Specifies the Taxonomy Code.';
-           }
+            field("Taxonomy Code"; "Taxonomy Code")
+            {
+                ToolTip = 'Specifies the Taxonomy Code.';
+            }
         }
         addbefore("Gen. Posting Type")
         {
@@ -19,7 +19,7 @@ pageextension 50104 "General Ledger Entries" extends "General Ledger Entries"
         addafter("Bal. Account No.")
         {
             field("Bal: cash-flow code"; "Bal: cash-flow code")
-            {               
+            {
                 ToolTip = 'Specifies the balance account cash-flow code.';
             }
         }

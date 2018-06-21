@@ -3,8 +3,8 @@ page 31022935 "Cash-Flow Plan"
     PageType = List;
     SourceTable = "Cash-Flow Plan";
     CardPageID = "Cash-Flow Code Card";
-    Caption='Cash-Flow Plan';
-    UsageCategory=Lists;
+    Caption = 'Cash-Flow Plan';
+    UsageCategory = Lists;
     layout
     {
         area(content)
@@ -13,37 +13,37 @@ page 31022935 "Cash-Flow Plan"
             {
                 field("No."; "No.")
                 {
-                    ToolTip='Specifies the account number.';
-                    Style=Strong;
-                    StyleExpr=NoEmphasize; 
+                    ToolTip = 'Specifies the account number.';
+                    Style = Strong;
+                    StyleExpr = NoEmphasize;
                 }
                 field(Description; Description)
                 {
-                    ToolTip='Specifies the description.';
-                    Style=Strong;
-                    StyleExpr=NameEmphasize;
+                    ToolTip = 'Specifies the description.';
+                    Style = Strong;
+                    StyleExpr = NameEmphasize;
                 }
-                field("Type";"Type")
+                field("Type"; "Type")
                 {
-                    ToolTip='Specifies account type.';
+                    ToolTip = 'Specifies account type.';
                 }
                 field("Totaling"; "Totaling")
                 {
-                    ToolTip='Specifies the totaling amount.';
+                    ToolTip = 'Specifies the totaling amount.';
                 }
                 field(Indentation; Indentation)
                 {
-                    ToolTip='Specifies the indentation level.';
+                    ToolTip = 'Specifies the indentation level.';
                 }
                 field("Net Change"; "Net Change")
                 {
-                    ToolTip='Specifies the net change.';
+                    ToolTip = 'Specifies the net change.';
                 }
             }
         }
         area(factboxes)
         {
-            
+
         }
     }
 
@@ -54,13 +54,13 @@ page 31022935 "Cash-Flow Plan"
             action("Indent Cash-Flow Plan")
             {
                 Caption = 'Indent Cash-Flow Plan';
-                Image=IndentChartOfAccounts;
-                Promoted=true;
-                PromotedCategory=Process;
+                Image = IndentChartOfAccounts;
+                Promoted = true;
+                PromotedCategory = Process;
                 trigger OnAction();
-                
+
                 var
-                GLAccMgmt:Codeunit "G/L Account Management";
+                    GLAccMgmt: Codeunit "G/L Account Management";
                 begin
                     GLAccMgmt.CashFlowIndent;
                 end;
@@ -68,19 +68,20 @@ page 31022935 "Cash-Flow Plan"
             action("Cash-Flow Report")
             {
                 Caption = 'Cash-Flow Report';
-                RunObject=report "Cash-Flow Report";
-                Image=Report;
+                RunObject = report "Cash-Flow Report";
+                Image = Report;
                 trigger OnAction()
                 begin
-                    
+
                 end;
             }
         }
     }
     var
-        NoEmphasize:Boolean;
-        NameEmphasize:Boolean;
-        NameIndent:Integer;
+        NoEmphasize: Boolean;
+        NameEmphasize: Boolean;
+        NameIndent: Integer;
+
     trigger OnAfterGetRecord()
     begin
         NoEmphasize := Type <> Type::Posting;

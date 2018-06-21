@@ -6,7 +6,7 @@ table 31022979 "Taxonomy Codes"
     DataPerCompany = False;
     fields
     {
-        field(1;"Taxonomy Code"; Integer)
+        field(1; "Taxonomy Code"; Integer)
         {
             caption = 'Taxonomy Code';
             DataClassification = CustomerContent;
@@ -22,7 +22,7 @@ table 31022979 "Taxonomy Codes"
             DataClassification = CustomerContent;
         }
     }
-    
+
     keys
     {
         key(PK; "Taxonomy Code")
@@ -30,26 +30,26 @@ table 31022979 "Taxonomy Codes"
             Clustered = true;
         }
     }
-    
-    
+
+
     trigger OnInsert()
     begin
-        
+
     end;
-    
+
     trigger OnModify()
     begin
-        
+
     end;
-    
+
     trigger OnDelete()
     begin
-        
+
     end;
-    
+
     trigger OnRename()
     begin
-        
+
     end;
-    
+
 }

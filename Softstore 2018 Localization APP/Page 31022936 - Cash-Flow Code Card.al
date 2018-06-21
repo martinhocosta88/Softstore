@@ -1,27 +1,27 @@
 page 31022936 "Cash-Flow Code Card"
 {
     PageType = Card;
-    Caption='Cash-Flow Code Card';
+    Caption = 'Cash-Flow Code Card';
     SourceTable = "Cash-Flow Plan";
-    DataCaptionFields="No.","Description";
-    UsageCategory=Lists;
+    DataCaptionFields = "No.", "Description";
+    UsageCategory = Lists;
     layout
     {
         area(content)
         {
             group(General)
             {
-                field("No.";"No.")
+                field("No."; "No.")
                 {
-                    
+
                 }
                 field("Description"; "Description")
                 {
 
                 }
-                field("Type";"Type")
+                field("Type"; "Type")
                 {
-                    
+
                 }
                 field(Totaling; Totaling)
                 {
@@ -34,7 +34,7 @@ page 31022936 "Cash-Flow Code Card"
             }
         }
     }
-    
+
     actions
     {
         area(processing)
@@ -43,12 +43,12 @@ page 31022936 "Cash-Flow Code Card"
             {
                 trigger OnAction()
                 begin
-                    
+
                 end;
             }
         }
     }
-    
+
     var
         myInt: Integer;
 }
