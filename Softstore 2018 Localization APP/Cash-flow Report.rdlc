@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -10,102 +10,6 @@
       <rd:DataSourceID>019960e4-9b46-4a2c-88ae-a75e2b36dc6d</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="COMPANYNAME">
-          <DataField>COMPANYNAME</DataField>
-        </Field>
-        <Field Name="USERID">
-          <DataField>USERID</DataField>
-        </Field>
-        <Field Name="ReportFilter">
-          <DataField>ReportFilter</DataField>
-        </Field>
-        <Field Name="No">
-          <DataField>No</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Strong">
-          <DataField>Strong</DataField>
-        </Field>
-        <Field Name="SecondColumnCaption">
-          <DataField>SecondColumnCaption</DataField>
-        </Field>
-        <Field Name="FirstColumnCaption">
-          <DataField>FirstColumnCaption</DataField>
-        </Field>
-        <Field Name="SecondValue">
-          <DataField>SecondValue</DataField>
-        </Field>
-        <Field Name="SecondValueFormat">
-          <DataField>SecondValueFormat</DataField>
-        </Field>
-        <Field Name="FirstValue">
-          <DataField>FirstValue</DataField>
-        </Field>
-        <Field Name="FirstValueFormat">
-          <DataField>FirstValueFormat</DataField>
-        </Field>
-        <Field Name="TotPeriod">
-          <DataField>TotPeriod</DataField>
-        </Field>
-        <Field Name="TotPeriodFormat">
-          <DataField>TotPeriodFormat</DataField>
-        </Field>
-        <Field Name="TotPeriod2">
-          <DataField>TotPeriod2</DataField>
-        </Field>
-        <Field Name="TotPeriod2Format">
-          <DataField>TotPeriod2Format</DataField>
-        </Field>
-        <Field Name="TotBefPeriod">
-          <DataField>TotBefPeriod</DataField>
-        </Field>
-        <Field Name="TotBefPeriodFormat">
-          <DataField>TotBefPeriodFormat</DataField>
-        </Field>
-        <Field Name="TotBefPeriod2">
-          <DataField>TotBefPeriod2</DataField>
-        </Field>
-        <Field Name="TotBefPeriod2Format">
-          <DataField>TotBefPeriod2Format</DataField>
-        </Field>
-        <Field Name="TotFinal">
-          <DataField>TotFinal</DataField>
-        </Field>
-        <Field Name="TotFinalFormat">
-          <DataField>TotFinalFormat</DataField>
-        </Field>
-        <Field Name="TotFinal2">
-          <DataField>TotFinal2</DataField>
-        </Field>
-        <Field Name="TotFinal2Format">
-          <DataField>TotFinal2Format</DataField>
-        </Field>
-        <Field Name="NetChangeText">
-          <DataField>NetChangeText</DataField>
-        </Field>
-        <Field Name="OpeningText">
-          <DataField>OpeningText</DataField>
-        </Field>
-        <Field Name="EndingText">
-          <DataField>EndingText</DataField>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
-        <rd:TableName>Result</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -1033,14 +937,14 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="TitleReport_Caption">
+    <ReportParameter Name="TitleReport_caption">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>TitleReport_Caption</Value>
+          <Value>TitleReport_caption</Value>
         </Values>
       </DefaultValue>
-      <Prompt>TitleReport_Caption</Prompt>
+      <Prompt>TitleReport_caption</Prompt>
     </ReportParameter>
     <ReportParameter Name="Page_Caption">
       <DataType>String</DataType>
@@ -1109,4 +1013,95 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="ReportFilter">
+          <DataField>ReportFilter</DataField>
+        </Field>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Strong">
+          <DataField>Strong</DataField>
+        </Field>
+        <Field Name="SecondColumnCaption">
+          <DataField>SecondColumnCaption</DataField>
+        </Field>
+        <Field Name="FirstColumnCaption">
+          <DataField>FirstColumnCaption</DataField>
+        </Field>
+        <Field Name="SecondValue">
+          <DataField>SecondValue</DataField>
+        </Field>
+        <Field Name="SecondValueFormat">
+          <DataField>SecondValueFormat</DataField>
+        </Field>
+        <Field Name="FirstValue">
+          <DataField>FirstValue</DataField>
+        </Field>
+        <Field Name="FirstValueFormat">
+          <DataField>FirstValueFormat</DataField>
+        </Field>
+        <Field Name="TotPeriod">
+          <DataField>TotPeriod</DataField>
+        </Field>
+        <Field Name="TotPeriodFormat">
+          <DataField>TotPeriodFormat</DataField>
+        </Field>
+        <Field Name="TotPeriod2">
+          <DataField>TotPeriod2</DataField>
+        </Field>
+        <Field Name="TotPeriod2Format">
+          <DataField>TotPeriod2Format</DataField>
+        </Field>
+        <Field Name="TotBefPeriod">
+          <DataField>TotBefPeriod</DataField>
+        </Field>
+        <Field Name="TotBefPeriodFormat">
+          <DataField>TotBefPeriodFormat</DataField>
+        </Field>
+        <Field Name="TotBefPeriod2">
+          <DataField>TotBefPeriod2</DataField>
+        </Field>
+        <Field Name="TotBefPeriod2Format">
+          <DataField>TotBefPeriod2Format</DataField>
+        </Field>
+        <Field Name="TotFinal">
+          <DataField>TotFinal</DataField>
+        </Field>
+        <Field Name="TotFinalFormat">
+          <DataField>TotFinalFormat</DataField>
+        </Field>
+        <Field Name="TotFinal2">
+          <DataField>TotFinal2</DataField>
+        </Field>
+        <Field Name="TotFinal2Format">
+          <DataField>TotFinal2Format</DataField>
+        </Field>
+        <Field Name="NetChangeText">
+          <DataField>NetChangeText</DataField>
+        </Field>
+        <Field Name="OpeningText">
+          <DataField>OpeningText</DataField>
+        </Field>
+        <Field Name="EndingText">
+          <DataField>EndingText</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

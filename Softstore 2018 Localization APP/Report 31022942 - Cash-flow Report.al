@@ -1,11 +1,9 @@
 report 31022942 "Cash-flow Report"
 {
-
-
     DefaultLayout = RDLC;
-    RDLCLayout = '.Layouts/Cash-flow Report.rdlc';
+    RDLCLayout = './Cash-flow Report.rdlc';
     Caption = 'Cash-flow Report';
-
+    UsageCategory = ReportsAndAnalysis;
     dataset
     {
         dataitem(DataItem1170000000;"Cash-Flow Plan")
@@ -20,13 +18,13 @@ report 31022942 "Cash-flow Report"
             column(ReportFilter;ReportFilterTxt)
             {
             }
-            column(No;"Cash-Flow Plan"."No.")
+            column(No;"No.")
             {
             }
             column(Description;PADSTR('',Indentation * 2)+Description)
             {
             }
-            column(Strong;("Cash-Flow Plan".Type=1))
+            column(Strong;(Type=1))
             {
             }
             column(SecondColumnCaption;FORMAT(StartingDate2) + ' ' + ToText + ' ' + FORMAT(EndingDate2))
@@ -75,7 +73,7 @@ report 31022942 "Cash-flow Report"
                 CashFlow2.GET("No.");
                 CashFlow2.CALCFIELDS("Net Change");
                 NetChange2 := CashFlow2."Net Change";
-                IF "Cash-Flow Plan".Type = "Cash-Flow Plan".Type::Posting THEN BEGIN
+                IF Type = Type::Posting THEN BEGIN
                   TotPeriod += "Net Change";
                   TotPeriod2 += NetChange2;
                 END;
@@ -88,7 +86,6 @@ report 31022942 "Cash-flow Report"
             end;
         }
     }
-
     requestpage
     {
 
@@ -98,20 +95,16 @@ report 31022942 "Cash-flow Report"
             {
                 field(StartingDate;StartingDate)
                 {
-                    CaptionML = ENU='Starting Date',
-                                PTG='Data Inicial';
+                    Caption ='Starting Date';
                 }
                 field(PeriodFormula;PeriodFormula)
                 {
-                    CaptionML = ENU='Period Formula',
-                                PTG='Fórmula Período';
+                    Caption='Period Formula';
                 }
                 field(ComparingMethod;ComparingMethod)
                 {
-                    CaptionML = ENU='Comparing Method',
-                                PTG='Metodo Comparativo';
-                    OptionCaptionML = ENU='Homologous Period,Previous Period',
-                                      PTG='Período Homólogo,Período Anterior';
+                    Caption='Comparing Method';
+                    OptionCaption='Homologous Period,Previous Period';
                 }
             }
         }
@@ -120,22 +113,18 @@ report 31022942 "Cash-flow Report"
         {
         }
     }
-
     labels
     {
-        label(TitleReport_Caption;ENU='Cash-Flow Report',
-                                  PTG='Demonstração de Fluxos de Caixa')
-        label(Page_Caption;ENU='Page',
-                           PTG='Página')
-        label(No_Caption;ENU='No.',
-                         PTG='Nº')
-        label(Description_Caption;ENU='Description',
-                                  PTG='Descrição')
-    }
+        TitleReport_caption = 'Cash-Flow Report';
+        Page_Caption ='Page';
+        No_Caption ='No.';
+        Description_Caption ='Description';
 
+        
+    }
     trigger OnInitReport();
     var
-        AccountingPeriod : Record "50";
+        AccountingPeriod : Record "Accounting Period";
     begin
         AccountingPeriod.RESET;
         AccountingPeriod.SETRANGE("New Fiscal Year",TRUE);
@@ -172,21 +161,21 @@ report 31022942 "Cash-flow Report"
         PeriodFormula : DateFormula;
         EndingDate : Date;
         ComparingMethod : Option "Homologous Period","Previous Period";
-        ToText : TextConst ENU='to',PTG='a';
+        ToText : label 'to';
         StartingDate2 : Date;
         EndingDate2 : Date;
         PeriodFormula2 : DateFormula;
         NetChange2 : Decimal;
         ReportFilterTxt : Text;
-        FilterText : TextConst ENU='Report Period: %1 to %2',PTG='Período do Mapa: %1 a %2';
-        ErrorDates1 : TextConst ENU='Ending Date should be greater or equal to Starting Date',PTG='Data Final deve ser igual ou superior à Data Inicial';
+        FilterText : label 'Report Period: %1 to %2';
+        ErrorDates1 : label 'Ending Date should be greater or equal to Starting Date';
         TotPeriod : Decimal;
         TotPeriod2 : Decimal;
         TotBefPeriod : Decimal;
         TotBefPeriod2 : Decimal;
-        NetChangeText : TextConst ENU='Period Net Change:',PTG='Saldo Período:';
-        OpeningText : TextConst ENU='Balance at period begining:',PTG='Saldo inicial do período:';
-        EndingText : TextConst ENU='Balance at the period ending:',PTG='Saldo na data final do período:';
+        NetChangeText : label 'Period Net Change:';
+        OpeningText : label 'Balance at period begining:';
+        EndingText : label 'Balance at the period ending:';
 
     procedure CalcOpeningValues();
     begin

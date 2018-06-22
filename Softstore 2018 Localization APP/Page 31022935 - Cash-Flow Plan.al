@@ -68,7 +68,7 @@ page 31022935 "Cash-Flow Plan"
             action("Cash-Flow Report")
             {
                 Caption = 'Cash-Flow Report';
-                RunObject = report "Cash-Flow Report";
+                //RunObject = report "Cash-Flow Report";
                 Image = Report;
                 trigger OnAction()
                 begin

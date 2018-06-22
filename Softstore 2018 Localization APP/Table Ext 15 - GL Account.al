@@ -29,7 +29,7 @@ tableextension 50101 "G/L Account Extension" extends "G/L Account"
             trigger OnValidate()
             begin
                 IF "Cash-flow code assoc." THEN
-                    TESTFIELD("Cash-flow code");
+                    rec.TESTFIELD("Cash-flow code");
 
                 IF "Cash-flow code" <> '' THEN
                     "Cash-flow code assoc." := TRUE;
