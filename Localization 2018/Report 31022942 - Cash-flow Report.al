@@ -1,9 +1,10 @@
 report 31022942 "Cash-Flow Report"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './Cash-Flow Report.rdlc';
+    RDLCLayout = './Cash-Flow Report Layout.rdl';
     Caption = 'Cash-Flow Report';
     UsageCategory = ReportsAndAnalysis;
+    ApplicationArea =Basic, Suite;
     dataset
     {
         dataitem(DataItem1170000000;"Cash-Flow Plan")

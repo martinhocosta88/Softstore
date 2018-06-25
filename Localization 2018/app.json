@@ -3,7 +3,7 @@
   "name": "Localization 2018",
   "publisher": "Default publisher",
   "brief": "",
-  "description": "",
+  "description": "CCC,Taxonomies,Cash-flow",
   "version": "1.0.0.0",
   "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
@@ -16,6 +16,7 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
+  "features": "TranslationFile",
   "idRange": {
     "from": 50100,
     "to": 31023999

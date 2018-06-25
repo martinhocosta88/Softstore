@@ -4,6 +4,7 @@ page 31023088 "Taxonomy Codes List"
     SourceTable = "Taxonomy Codes";
     UsageCategory = Lists;
     Caption = 'Taxonomy Codes List';
+    ApplicationArea = Basic,Suite;
     layout
     {
         area(content)

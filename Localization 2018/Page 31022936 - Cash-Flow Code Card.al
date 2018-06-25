@@ -4,7 +4,6 @@ page 31022936 "Cash-Flow Code Card"
     Caption = 'Cash-Flow Code Card';
     SourceTable = "Cash-Flow Plan";
     DataCaptionFields = "No.", "Description";
-    UsageCategory = Lists;
     layout
     {
         area(content)

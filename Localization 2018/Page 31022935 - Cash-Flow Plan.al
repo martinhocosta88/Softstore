@@ -5,6 +5,7 @@ page 31022935 "Cash-Flow Plan"
     CardPageID = "Cash-Flow Code Card";
     Caption = 'Cash-Flow Plan';
     UsageCategory = Lists;
+    ApplicationArea=Basic, Suite;
     layout
     {
         area(content)
