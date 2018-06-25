@@ -1,24 +1,21 @@
 {
-  "id": "f2356f2f-0ba5-43f7-9ad6-e178a32bff99",
-  "name": "Softstore 2018 Localization APP",
-  "publisher": "Softstore SA",
+  "id": "32e0cf6a-b61a-43c7-9e4a-8701c0c98a1d",
+  "name": "Localization 2018",
+  "publisher": "Default publisher",
   "brief": "",
-  "description": "Taxonomies, CCC, Check Chart/Acc,",
-  "compatibilityId": "1.0.0.0",
+  "description": "",
   "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
   "url": "",
-  "logo": "./logoSS.jpg",
+  "logo": "",
   "capabilities": [],
   "dependencies": [],
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
-  "features": [
-  "TranslationFile"
-],
   "idRange": {
     "from": 50100,
     "to": 31023999

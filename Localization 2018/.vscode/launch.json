@@ -9,8 +9,7 @@
             "serverInstance": "DynamicsNAV110CU06",
             "authentication": "Windows",
             "port": 7249,
-            "schemaUpdateMode":"Recreate"
-
+            "schemaUpdateMode": "Recreate"
         }
     ]
 }
