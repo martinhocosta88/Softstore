@@ -9,7 +9,7 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
             DataClassification = ToBeClassified;
             trigger OnValidate();
             begin
-                "CCC Bank Account No." := CompanyInfo.PrePadString("CCC Bank Account No.", MAXSTRLEN("CCC Bank Account No."));
+                "CCC Bank Account No." := CCCMgmt.PrePadString("CCC Bank Account No.", MAXSTRLEN("CCC Bank Account No."));
                 BuildCCC;
             end;
         }
@@ -20,7 +20,7 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
             DataClassification = ToBeClassified;
             trigger OnValidate();
             begin
-                "CCC Bank Branch No." := CompanyInfo.PrePadString("CCC Bank Branch No.", MAXSTRLEN("CCC Bank Branch No."));
+                "CCC Bank Branch No." := CCCMgmt.PrePadString("CCC Bank Branch No.", MAXSTRLEN("CCC Bank Branch No."));
                 BuildCCC;
             end;
         }
@@ -31,7 +31,7 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
             DataClassification = ToBeClassified;
             trigger OnValidate();
             begin
-                "CCC Bank No." := CompanyInfo.PrePadString("CCC Bank No.", MAXSTRLEN("CCC Bank No."));
+                "CCC Bank No." := CCCMgmt.PrePadString("CCC Bank No.", MAXSTRLEN("CCC Bank No."));
                 BuildCCC;
             end;
         }
@@ -42,7 +42,7 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
             DataClassification = ToBeClassified;
             trigger OnValidate();
             begin
-                "CCC Control Digits" := CompanyInfo.PrePadString("CCC Control Digits", MAXSTRLEN("CCC Control Digits"));
+                "CCC Control Digits" := CCCMgmt.PrePadString("CCC Control Digits", MAXSTRLEN("CCC Control Digits"));
                 BuildCCC;
             end;
         }
@@ -58,9 +58,9 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
                 "CCC Bank Branch No." := COPYSTR("CCC No.", 5, 4);
                 "CCC Bank Account No." := COPYSTR("CCC No.", 9, 11);
                 "CCC Control Digits" := COPYSTR("CCC No.", 20, 2);
-                "CCC No." := CompanyInfo.PrePadString("CCC No.", MAXSTRLEN("CCC No."));
-                CompanyInfo.CheckCCC("CCC No.");
-                IBAN := CompanyInfo.CheckIBANCountryCode("CCC No.", "Country/Region Code");
+                "CCC No." := CCCMgmt.PrePadString("CCC No.", MAXSTRLEN("CCC No."));
+                CCCMgmt.CheckCCC("CCC No.");
+                IBAN := CCCMgmt.CheckIBANCountryCode("CCC No.", "Country/Region Code");
             end;
         }
         modify("Bank Account No.")
@@ -76,7 +76,7 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
             var
                 Text31022892: label 'Deleting %1 will cause %2 to be deleted. Do you want to continue?';
             begin
-                IF ("Country/Region Code" = '') AND (IBAN <> '') THEN BEGIN
+                IF("Country/Region Code" = '') AND(IBAN <> '') THEN BEGIN
                     IF CONFIRM(Text31022892, FALSE, FIELDCAPTION("Country/Region Code"), FIELDCAPTION(IBAN)) THEN
                         CLEAR(IBAN)
                     ELSE
@@ -106,12 +106,13 @@ tableextension 50106 "Bank Account Ext" extends "Bank Account"
         IF "CCC No." <> '' THEN
             rec.TESTFIELD("Bank Account No.", '');
 
-        IF ("CCC Bank No." <> '') AND ("CCC Bank Branch No." <> '') AND ("CCC Bank Account No." <> '') AND ("CCC Control Digits" <> '') THEN BEGIN
-            CompanyInfo.CheckCCC("CCC No.");
-            IBAN := CompanyInfo.CheckIBANCountryCode("CCC No.", "Country/Region Code");
+        IF("CCC Bank No." <> '') AND("CCC Bank Branch No." <> '') AND("CCC Bank Account No." <> '') AND("CCC Control Digits" <> '') THEN BEGIN
+            CCCMgmt.CheckCCC("CCC No.");
+            IBAN := CCCMgmt.CheckIBANCountryCode("CCC No.", "Country/Region Code");
         END;
     end;
 
     var
         CompanyInfo: Record "Company Information";
+        CCCMgmt: Codeunit "CCC Management";
 }

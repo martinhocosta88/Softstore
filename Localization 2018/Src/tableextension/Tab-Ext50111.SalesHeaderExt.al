@@ -61,7 +61,4 @@ tableextension 50111 "Sales Header Ext" extends "Sales Header"
             end;
         }
     }
-
-    var
-        myInt: Integer;
 }
