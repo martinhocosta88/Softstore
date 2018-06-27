@@ -166,7 +166,7 @@ codeunit 31022953 "CCC Management"
         EXIT(PADSTR('', MaxLen - STRLEN(InString), '0') + InString);
     end;
 
-    procedure BuildCCC(var "CCC No.": Text[21];var IBAN: Code[50]; "CCC Bank No.": Text[4]; "CCC Bank Branch No.": text[6]; "CCC Bank Account No.": Text[4]; "CCC Control Digits": text[4]; "Country/Region Code": Code[10]);
+    procedure BuildCCC(var "CCC No.": Text[21];var IBAN: Code[50]; "CCC Bank No.": Text[4]; "CCC Bank Branch No.": text[4]; "CCC Bank Account No.": Text[11]; "CCC Control Digits": text[2]; "Country/Region Code": Code[10]);
     var
         CompanyInfo: Record "Company Information";
     begin
