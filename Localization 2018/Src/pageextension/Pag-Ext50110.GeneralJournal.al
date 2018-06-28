@@ -1,12 +1,13 @@
-pageextension 50113 "Cash Receipt Journal Ext" extends "Cash Receipt Journal"
+pageextension 50110 "General Journal" extends "General Journal"
 {
+    //Cash-Flow
     layout
     {
         addafter("Bal. Account No.")
         {
             field("Bal: cash-flow code"; "Bal: cash-flow code")
             {
-                ApplicationArea=ALL;
+                ApplicationArea=All;
                 ToolTip = 'Specifies the balance account cash-flow code.';
             }
         }

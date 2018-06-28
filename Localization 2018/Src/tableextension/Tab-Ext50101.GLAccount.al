@@ -1,5 +1,7 @@
-tableextension 50101 "G/L Account Extension" extends "G/L Account"
+tableextension 50101 "G/L Account" extends "G/L Account"
 {
+    //Taxonomies
+    //Cash-Flow
     fields
     {
 

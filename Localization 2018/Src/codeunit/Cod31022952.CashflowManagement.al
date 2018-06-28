@@ -1,5 +1,6 @@
 codeunit 31022952 "Cash-flow Management"
 {
+    //Cash-Flow
     trigger OnRun()
     begin
 

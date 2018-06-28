@@ -1,5 +1,7 @@
 pageextension 50104 "General Ledger Entries" extends "General Ledger Entries"
 {
+    //Cash-Flow
+    //Taxonomies
     layout
     {
         addlast(Control1)

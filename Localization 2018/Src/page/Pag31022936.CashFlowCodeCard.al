@@ -1,5 +1,6 @@
 page 31022936 "Cash-Flow Code Card"
 {
+    //Cash-Flow
     PageType = Card;
     Caption = 'Cash-Flow Code Card';
     SourceTable = "Cash-Flow Plan";

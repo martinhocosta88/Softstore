@@ -1,5 +1,6 @@
-tableextension 50108 "Gen. Journal Line Ext" extends "Gen. Journal Line"
+tableextension 50108 "Gen. Journal Line" extends "Gen. Journal Line"
 {
+    //Cash-Flow
     fields
     {
         modify("Account Type")

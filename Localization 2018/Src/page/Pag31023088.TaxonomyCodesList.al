@@ -1,5 +1,6 @@
 page 31023088 "Taxonomy Codes List"
 {
+    //Taxonomies
     PageType = List;
     SourceTable = "Taxonomy Codes";
     UsageCategory = Lists;

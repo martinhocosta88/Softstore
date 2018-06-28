@@ -1,5 +1,6 @@
-pageextension 50110 "General Journal Ext" extends "General Journal"
+pageextension 50114 "Payment Journal" extends "Payment Journal"
 {
+    //Cash-Flow
     layout
     {
         addafter("Bal. Account No.")

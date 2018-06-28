@@ -1,5 +1,6 @@
-tableextension 50110 "Payment Method Ext" extends "Payment Method"
+tableextension 50110 "Payment Method" extends "Payment Method"
 {
+    //Cash-Flow
     fields
     {
         modify("Bal. Account No.")

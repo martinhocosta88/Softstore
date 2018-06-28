@@ -1,5 +1,6 @@
-pageextension 50109 "General Ledger Setup Ext" extends "General Ledger Setup"
+pageextension 50109 "General Ledger Setup" extends "General Ledger Setup"
 {
+    //Check Chart of Accounts
     layout
     {
         addlast(General)

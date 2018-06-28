@@ -363,6 +363,16 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1149439756 - Control 1172175465 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Currency Decimal Unit Text</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1149439756 - Control 3512434395 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Curr. Dec. Unit Decimal Places</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
+        </trans-unit>
         <trans-unit id="Report 142330284 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-Flow Report</source>
           <note from="Developer" annotates="general" priority="2" />
@@ -438,6 +448,36 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
         </trans-unit>
+        <trans-unit id="Report 196752165 - Control 2663384385 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account that the printed checks will be drawn from.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 196752165 - Control 1514267703 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Last Check No. field on the bank account card.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 196752165 - Control 1563725732 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if only one check is printed per vendor for each document number.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 196752165 - Control 2992590101 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if checks are printed again if you canceled the printing due to a problem.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 196752165 - Control 4054877177 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to print the checks on blank paper before you print them on check forms.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 196752165 - Control 1059736969 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you use check forms with preprinted stubs.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
         <trans-unit id="Table 3922458431 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-Flow Plan</source>
           <note from="Developer" annotates="general" priority="2" />
@@ -503,47 +543,47 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2783274032 - Field 1476723134 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1490448424 - Field 1476723134 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2783274032 - Field 279493071 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1490448424 - Field 279493071 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Income Stmt. Bal. Acc.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2783274032 - Field 712889997 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1490448424 - Field 712889997 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow code</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2783274032 - Field 2936790044 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1490448424 - Field 2936790044 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow code assoc.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2783274032 - Field 3045415570 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1490448424 - Field 3045415570 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow - credit</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2783274032 - Field 4062068159 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1490448424 - Field 4062068159 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow - debit</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3225922987 - Field 885549068 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 71500435 - Field 885549068 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Acc: cash-flow code</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3225922987 - Field 885098114 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 71500435 - Field 885098114 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bal: cash-flow code</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3225922987 - Field 1476723134 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 71500435 - Field 1476723134 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
@@ -673,6 +713,21 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3001833895 - Field 1172175465 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Decimal Unit Text</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3001833895 - Field 3512434395 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Curr. Dec. Unit Decimal Places</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3001833895 - Field 947395910 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Text</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2502354840 - Field 885549068 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Acc: cash-flow code</source>
           <note from="Developer" annotates="general" priority="2" />
@@ -712,6 +767,16 @@
           <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Label</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1579637954 - Field 1172175465 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Decimal Unit Text</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1579637954 - Field 3512434395 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Curr. Dec. Unit Decimal Places</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
         </trans-unit>
       </group>
     </body>

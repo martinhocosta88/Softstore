@@ -1,5 +1,6 @@
-pageextension 50115 "Payment Methods Ext" extends "Payment Methods"
+pageextension 50115 "Payment Methods" extends "Payment Methods"
 {
+    //Cash-FLow
     layout
     {
         addafter("Bal. Account No.")

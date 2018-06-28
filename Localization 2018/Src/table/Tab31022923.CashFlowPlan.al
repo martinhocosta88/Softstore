@@ -1,5 +1,6 @@
 table 31022923 "Cash-Flow Plan"
 {
+    //Cash-Flow
     DataClassification = ToBeClassified;
     Caption = 'Cash-Flow Plan';
     LookupPageId = "Cash-Flow Plan";

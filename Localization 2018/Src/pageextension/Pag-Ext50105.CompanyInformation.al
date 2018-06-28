@@ -1,5 +1,6 @@
-pageextension 50105 "Company Information Ext" extends "Company Information"
+pageextension 50105 "Company Information" extends "Company Information"
 {
+    //IBAN
     layout
     {
         addafter("Bank Account No.")

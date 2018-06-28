@@ -1,5 +1,6 @@
 page 31022935 "Cash-Flow Plan"
 {
+    //Cash-Flow
     PageType = List;
     SourceTable = "Cash-Flow Plan";
     CardPageID = "Cash-Flow Code Card";

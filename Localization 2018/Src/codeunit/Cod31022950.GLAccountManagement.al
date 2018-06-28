@@ -1,5 +1,7 @@
 codeunit 31022950 "G/L Account Management"
 {
+    //Check Chart of Accounts
+    //Cash-Flow
     trigger OnRun()
     begin
     end;
@@ -110,7 +112,4 @@ codeunit 31022950 "G/L Account Management"
         END;
         Window.CLOSE;
     end;
-
-    var
-        myInt: Integer;
 }

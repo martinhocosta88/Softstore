@@ -1,5 +1,6 @@
-pageextension 50106 "Customer Bank Account Card Ext" extends "Customer Bank Account Card"
+pageextension 50108 "Bank Account Card" extends "Bank Account Card"
 {
+    //IBAN
     layout
     {
         addfirst(Transfer)
@@ -31,4 +32,7 @@ pageextension 50106 "Customer Bank Account Card Ext" extends "Customer Bank Acco
             }
         }
     }
+
+    var
+        myInt: Integer;
 }

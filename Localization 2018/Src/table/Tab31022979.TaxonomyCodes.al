@@ -1,6 +1,7 @@
 
 table 31022979 "Taxonomy Codes"
 {
+    //Taxonomies
     DataClassification = ToBeClassified;
     Caption = 'Taxonomy Codes';
     DataPerCompany = False;

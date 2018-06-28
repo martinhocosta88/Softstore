@@ -1,5 +1,6 @@
-pageextension 50116 "Sales Invoice Ext" extends "Sales Invoice"
+pageextension 50117 "Purchase Invoice" extends "Purchase Invoice"
 {
+    //Cash-Flow
     layout
     {
         addlast("Invoice Details")

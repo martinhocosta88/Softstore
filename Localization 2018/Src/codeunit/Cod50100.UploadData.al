@@ -1,5 +1,6 @@
 codeunit 50100 "UploadData"
 {
+    //Taxonomies
     Subtype = Install;
     trigger OnInstallAppPerCompany()
     begin

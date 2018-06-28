@@ -1,5 +1,6 @@
-pageextension 50107 "Vendor Bank Account Card Ext" extends "Vendor Bank Account Card"
+pageextension 50106 "Customer Bank Account Card" extends "Customer Bank Account Card"
 {
+    //IBAN
     layout
     {
         addfirst(Transfer)

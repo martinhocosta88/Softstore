@@ -1,5 +1,7 @@
-tableextension 50102 "G/L Entry Extension" extends "G/L Entry"
+tableextension 50102 "G/L Entry" extends "G/L Entry"
 {
+    //Cash-Flow
+    //Taxonomies
     fields
     {
         field(31022900; "Acc: cash-flow code"; Code[10])

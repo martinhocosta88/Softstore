@@ -1,5 +1,7 @@
-pageextension 50100 "Chart of Accounts Extension" extends "Chart of Accounts"
+pageextension 50100 "Chart of Accounts" extends "Chart of Accounts"
 {
+    //Check Chart of Accounts
+    //Taxonomies
     layout
     {
         addlast(Control1)

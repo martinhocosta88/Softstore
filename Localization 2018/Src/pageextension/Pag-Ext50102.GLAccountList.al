@@ -1,5 +1,7 @@
-pageextension 50102 "G/L Account List Extension" extends "G/L Account List"
+pageextension 50102 "G/L Account List" extends "G/L Account List"
 {
+    //Taxonomies
+    //Cash-FLow
     layout
     {
         addlast(Control1)

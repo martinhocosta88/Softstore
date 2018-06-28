@@ -1,5 +1,6 @@
-pageextension 50114 "Payment Journal Ext" extends "Payment Journal"
+pageextension 50112 "Puchase Journal" extends "Purchase Journal"
 {
+    //Cash-Flow
     layout
     {
         addafter("Bal. Account No.")
@@ -19,4 +20,6 @@ pageextension 50114 "Payment Journal Ext" extends "Payment Journal"
             }
         }
     }
+
+
 }

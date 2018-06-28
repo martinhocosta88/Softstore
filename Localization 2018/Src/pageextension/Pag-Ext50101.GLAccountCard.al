@@ -1,5 +1,7 @@
-pageextension 50101 "G/L Account Card Extension" extends "G/L Account Card"
+pageextension 50101 "G/L Account Card" extends "G/L Account Card"
 {
+    //Cash-Flow
+    //Taxonomies
     layout
     {
         addlast(General)

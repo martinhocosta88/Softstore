@@ -1,18 +1,18 @@
-tableextension 50103 "Company Information Ext" extends "Company Information"
+tableextension 50105 "Vendor Bank Account" extends "Vendor Bank Account"
 {
+    //IBAN
     fields
     {
+
         field(31022898; "CCC Bank Account No."; Text[11])
         {
             Caption = 'CCC Bank Account No.';
             Numeric = true;
             DataClassification = ToBeClassified;
             trigger OnValidate();
-            var
-                CCCMgmt: Codeunit "CCC Management";
             begin
-                "CCC Bank Account No." := CCCMgmt.PrePadString("CCC Bank Account No.", MAXSTRLEN("CCC Bank Account No."));
-                CCCMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
+                "CCC Bank Account No." := IBANMgmt.PrePadString("CCC Bank Account No.", MAXSTRLEN("CCC Bank Account No."));
+                IBANMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
             end;
         }
         field(31022899; "CCC Bank Branch No."; Text[4])
@@ -21,11 +21,9 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             Numeric = true;
             DataClassification = ToBeClassified;
             trigger OnValidate();
-            var
-                CCCMgmt: Codeunit "CCC Management";
             begin
-                "CCC Bank Branch No." := CCCMgmt.PrePadString("CCC Bank Branch No.", MAXSTRLEN("CCC Bank Branch No."));
-                CCCMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
+                "CCC Bank Branch No." := IBANMgmt.PrePadString("CCC Bank Branch No.", MAXSTRLEN("CCC Bank Branch No."));
+                IBANMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
             end;
         }
         field(31022900; "CCC Bank No."; Text[4])
@@ -34,11 +32,9 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             Numeric = true;
             DataClassification = ToBeClassified;
             trigger OnValidate();
-            var
-                CCCMgmt: Codeunit "CCC Management";
             begin
-                "CCC Bank No." := CCCMgmt.PrePadString("CCC Bank No.", MAXSTRLEN("CCC Bank No."));
-                CCCMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
+                "CCC Bank No." := IBANMgmt.PrePadString("CCC Bank No.", MAXSTRLEN("CCC Bank No."));
+                IBANMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
             end;
         }
         field(31022901; "CCC Control Digits"; Text[2])
@@ -47,11 +43,9 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             Numeric = true;
             DataClassification = ToBeClassified;
             trigger OnValidate();
-            var
-                CCCMgmt: Codeunit "CCC Management";
             begin
-                "CCC Control Digits" := CCCMgmt.PrePadString("CCC Control Digits", MAXSTRLEN("CCC Control Digits"));
-                CCCMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
+                "CCC Control Digits" := IBANMgmt.PrePadString("CCC Control Digits", MAXSTRLEN("CCC Control Digits"));
+                IBANMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
             end;
         }
         field(31022902; "CCC No."; Text[21])
@@ -60,16 +54,15 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             Numeric = true;
             DataClassification = ToBeClassified;
             trigger OnValidate();
-            var
-                CCCMgmt: Codeunit "CCC Management";
+
             begin
                 "CCC Bank No." := COPYSTR("CCC No.", 1, 4);
                 "CCC Bank Branch No." := COPYSTR("CCC No.", 5, 4);
                 "CCC Bank Account No." := COPYSTR("CCC No.", 9, 11);
                 "CCC Control Digits" := COPYSTR("CCC No.", 20, 2);
-                "CCC No." := CCCMgmt.PrePadString("CCC No.", MAXSTRLEN("CCC No."));
-                CCCMgmt.CheckCCC("CCC No.");
-                IBAN := CCCMgmt.CheckIBANCountryCode("CCC No.", "Country/Region Code");
+                "CCC No." := IBANMgmt.PrePadString("CCC No.", MAXSTRLEN("CCC No."));
+                IBANMgmt.CheckCCC("CCC No.");
+                IBAN := IBANMgmt.CheckIBANCountryCode("CCC No.", "Country/Region Code");
             end;
         }
         modify(IBAN)
@@ -98,8 +91,7 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
                         ERROR('');
                     EXIT;
                 END;
-
-                CCCMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
+                IBANMgmt.BuildCCC("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
             end;
         }
         modify("Bank Account No.")
@@ -110,6 +102,18 @@ tableextension 50103 "Company Information Ext" extends "Company Information"
             end;
         }
     }
+
+    trigger OnAfterRename();
+
+    begin
+        IF Vendor.GET("Vendor No.") THEN BEGIN
+            Vendor."Preferred Bank Account Code" := Code;
+            Vendor.MODIFY;
+        END;
+    end;
+
     var
-        CCCMgmt: Codeunit "CCC Management";
+        CompanyInfo: Record "Company Information";
+        Vendor: Record Vendor;
+        IBANMgmt: Codeunit "IBAN Management";
 }
