@@ -166,18 +166,17 @@ codeunit 31022953 "CCC Management"
         EXIT(PADSTR('', MaxLen - STRLEN(InString), '0') + InString);
     end;
 
-    procedure BuildCCC(var "CCC No.": Text[21];var IBAN: Code[50]; "CCC Bank No.": Text[4]; "CCC Bank Branch No.": text[4]; "CCC Bank Account No.": Text[11]; "CCC Control Digits": text[2]; "Country/Region Code": Code[10]);
+    procedure BuildCCC(var CCCNo: Text[21]; var IBAN: Code[50]; CCCBankNo: Text[4]; CCCBankBranchNo: text[4]; CCCBankAccountNo: Text[11]; CCCControlDigits: text[2]; CountryRegionCode: Code[10]);
     var
         CompanyInfo: Record "Company Information";
     begin
-
-        "CCC No." := "CCC Bank No." + "CCC Bank Branch No." + "CCC Bank Account No." + "CCC Control Digits";
-        IF "CCC No." <> '' THEN
+        CCCNo := CCCBankNo + CCCBankBranchNo + CCCBankAccountNo + CCCControlDigits;
+        IF CCCNo <> '' THEN
             CompanyInfo.TESTFIELD("Bank Account No.", '');
 
-        IF("CCC Bank No." <> '') AND("CCC Bank Branch No." <> '') AND("CCC Bank Account No." <> '') AND("CCC Control Digits" <> '') THEN BEGIN
-            CheckCCC("CCC No.");
-            IBAN := CheckIBANCountryCode("CCC No.", "Country/Region Code");
+        IF(CCCBankNo <> '') AND(CCCBankBranchNo <> '') AND(CCCBankAccountNo <> '') AND(CCCControlDigits <> '') THEN BEGIN
+            CheckCCC(CCCNo);
+            IBAN := CheckIBANCountryCode(CCCNo, CountryRegionCode);
         END;
     end;
 }

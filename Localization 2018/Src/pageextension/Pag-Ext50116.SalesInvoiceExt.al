@@ -6,7 +6,7 @@ pageextension 50116 "Sales Invoice Ext" extends "Sales Invoice"
         {
             field("Cash-flow code"; "Cash-flow code")
             {
-                ApplicationArea=basic,suite;
+                ApplicationArea=All;
                 ToolTip='Specifies the Cash-flow code.';
             }
         }

@@ -6,6 +6,7 @@ pageextension 50110 "General Journal Ext" extends "General Journal"
         {
             field("Bal: cash-flow code"; "Bal: cash-flow code")
             {
+                ApplicationArea=All;
                 ToolTip = 'Specifies the balance account cash-flow code.';
             }
         }
@@ -13,6 +14,7 @@ pageextension 50110 "General Journal Ext" extends "General Journal"
         {
             field("Acc: cash-flow code"; "Acc: cash-flow code")
             {
+                ApplicationArea=All;
                 ToolTip = 'Specifies the account cash-flow code.';
             }
         }

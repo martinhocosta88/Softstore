@@ -7,12 +7,13 @@ pageextension 50100 "Chart of Accounts Extension" extends "Chart of Accounts"
             field("Income Stmt. Bal. Acc."; "Income Stmt. Bal. Acc.")
             {
                 ToolTip = 'Specifies the adjustment account for the comercial posting accounts.';
+                ApplicationArea=All;
                 Visible = false;
             }
             field("Taxonomy Code"; "Taxonomy Code")
             {
                 ToolTip = 'Specifies the Taxonomy Code';
-                ApplicationArea = Basic, Suite;
+                ApplicationArea=All;
             }
         }
     }

@@ -6,7 +6,7 @@ pageextension 50117 "Purchase Invoice Ext" extends "Purchase Invoice"
         {
             field("Cash-flow code"; "Cash-flow code")
             {
-                ApplicationArea=basic,suite;
+                ApplicationArea=All;
                 ToolTip='Specifies the Cash-flow code.';
             }
         }

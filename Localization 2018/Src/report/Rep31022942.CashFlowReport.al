@@ -199,4 +199,3 @@ report 31022942 "Cash-Flow Report"
         CashFlow2.RESET;
     end;
 }
-

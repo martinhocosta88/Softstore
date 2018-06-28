@@ -6,6 +6,7 @@ pageextension 50113 "Cash Receipt Journal Ext" extends "Cash Receipt Journal"
         {
             field("Bal: cash-flow code"; "Bal: cash-flow code")
             {
+                ApplicationArea=ALL;
                 ToolTip = 'Specifies the balance account cash-flow code.';
             }
         }
@@ -13,6 +14,7 @@ pageextension 50113 "Cash Receipt Journal Ext" extends "Cash Receipt Journal"
         {
             field("Acc: cash-flow code"; "Acc: cash-flow code")
             {
+                ApplicationArea=All;
                 ToolTip = 'Specifies the account cash-flow code.';
             }
         }

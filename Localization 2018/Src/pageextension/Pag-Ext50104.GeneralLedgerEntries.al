@@ -6,6 +6,7 @@ pageextension 50104 "General Ledger Entries" extends "General Ledger Entries"
         {
             field("Taxonomy Code"; "Taxonomy Code")
             {
+                ApplicationArea=All;
                 ToolTip = 'Specifies the Taxonomy Code.';
             }
         }
@@ -13,6 +14,7 @@ pageextension 50104 "General Ledger Entries" extends "General Ledger Entries"
         {
             field("Acc: cash-flow code"; "Acc: cash-flow code")
             {
+                ApplicationArea=All;
                 ToolTip = 'Specifies the account cash-flow code.';
             }
         }
@@ -20,6 +22,7 @@ pageextension 50104 "General Ledger Entries" extends "General Ledger Entries"
         {
             field("Bal: cash-flow code"; "Bal: cash-flow code")
             {
+                ApplicationArea=All;
                 ToolTip = 'Specifies the balance account cash-flow code.';
             }
         }
