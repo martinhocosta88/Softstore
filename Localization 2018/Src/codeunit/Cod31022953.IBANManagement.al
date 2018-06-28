@@ -180,4 +180,15 @@ codeunit 31022953 "IBAN Management"
             IBAN := CheckIBANCountryCode(CCCNo, CountryRegionCode);
         END;
     end;
+
+ procedure FillCCCFields(var CCCNo: Text[21];var IBAN: Code[50];var CCCBankNo: Text[4];var CCCBankBranchNo: text[4];var CCCBankAccountNo: Text[11];var CCCControlDigits: text[2];var CountryRegionCode: Code[10])
+    begin
+        IF IBAN <> '' THEN
+            CountryRegionCode := COPYSTR(IBAN, 1, 2);
+            CCCBankNo := COPYSTR(IBAN, 5, 4);
+            CCCBankBranchNo := COPYSTR(IBAN, 9, 4);
+            CCCBankAccountNo := COPYSTR(IBAN, 13, 11);
+            CCCControlDigits := COPYSTR(IBAN, 24, 2);
+            CCCNo := COPYSTR(IBAN, 5, 21);
+    end;
 }

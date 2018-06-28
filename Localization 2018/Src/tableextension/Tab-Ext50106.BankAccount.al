@@ -53,7 +53,6 @@ tableextension 50106 "Bank Account" extends "Bank Account"
             Numeric = true;
             DataClassification = ToBeClassified;
             trigger OnValidate();
-
             begin
                 "CCC Bank No." := COPYSTR("CCC No.", 1, 4);
                 "CCC Bank Branch No." := COPYSTR("CCC No.", 5, 4);
@@ -91,13 +90,7 @@ tableextension 50106 "Bank Account" extends "Bank Account"
         {
             trigger OnBeforeValidate();
             begin
-                IF IBAN <> '' THEN
-                    "Country/Region Code" := COPYSTR(IBAN, 1, 2);
-                "CCC Bank No." := COPYSTR(IBAN, 5, 4);
-                "CCC Bank Branch No." := COPYSTR(IBAN, 9, 4);
-                "CCC Bank Account No." := COPYSTR(IBAN, 13, 11);
-                "CCC Control Digits" := COPYSTR(IBAN, 24, 2);
-                "CCC No." := COPYSTR(IBAN, 5, 21);
+                IBANMgmt.FillCCCFields("CCC No.", IBAN, "CCC Bank No.", "CCC Bank Branch No.", "CCC Bank Account No.", "CCC Control Digits", "Country/Region Code");
             end;
         }
     }
