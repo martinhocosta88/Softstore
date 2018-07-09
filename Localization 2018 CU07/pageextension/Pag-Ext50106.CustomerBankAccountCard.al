@@ -1,4 +1,4 @@
-pageextension 50108 "Bank Account Card" extends "Bank Account Card"
+pageextension 50106 "Customer Bank Account Card" extends "Customer Bank Account Card"
 {
     //IBAN
     layout

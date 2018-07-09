@@ -1,4 +1,4 @@
-pageextension 50112 "Puchase Journal" extends "Purchase Journal"
+pageextension 50113 "Cash Receipt Journal" extends "Cash Receipt Journal"
 {
     //Cash-Flow
     layout
@@ -7,7 +7,7 @@ pageextension 50112 "Puchase Journal" extends "Purchase Journal"
         {
             field("Bal: cash-flow code"; "Bal: cash-flow code")
             {
-                ApplicationArea=All;
+                ApplicationArea=ALL;
                 ToolTip = 'Specifies the balance account cash-flow code.';
             }
         }
@@ -20,6 +20,4 @@ pageextension 50112 "Puchase Journal" extends "Purchase Journal"
             }
         }
     }
-
-
 }

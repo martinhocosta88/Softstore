@@ -1,4 +1,4 @@
-codeunit 31022951 "EventHandler"
+codeunit 31022951 "Cash-FLow Event Handler"
 {
     //Cash-Flow
     trigger OnRun()

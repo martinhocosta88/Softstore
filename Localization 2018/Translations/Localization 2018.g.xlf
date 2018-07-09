@@ -43,7 +43,7 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3005294240 - Method 1514700111 - NamedType 109183450" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 3142904750 - Method 1514700111 - NamedType 109183450" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>The account no. %1 needs a cash-flow code</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
@@ -313,12 +313,12 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
         </trans-unit>
-        <trans-unit id="PageExtension 203361780 - Control 885098114 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 3580867622 - Control 885098114 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the balance account cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
         </trans-unit>
-        <trans-unit id="PageExtension 203361780 - Control 885549068 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 3580867622 - Control 885549068 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the account cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
@@ -448,32 +448,72 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
         </trans-unit>
-        <trans-unit id="Report 196752165 - Control 2663384385 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 1231299085 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 2346885236 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 2663384385 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Account</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 2663384385 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the bank account that the printed checks will be drawn from.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
         </trans-unit>
-        <trans-unit id="Report 196752165 - Control 1514267703 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 1231299085 - Control 1514267703 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Check No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 1514267703 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Last Check No. field on the bank account card.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
         </trans-unit>
-        <trans-unit id="Report 196752165 - Control 1563725732 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 1231299085 - Control 1563725732 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One Check per Vendor per Document No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 1563725732 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if only one check is printed per vendor for each document number.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
         </trans-unit>
-        <trans-unit id="Report 196752165 - Control 2992590101 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 1231299085 - Control 2992590101 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reprint Checks</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 2992590101 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if checks are printed again if you canceled the printing due to a problem.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
         </trans-unit>
-        <trans-unit id="Report 196752165 - Control 4054877177 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 1231299085 - Control 4054877177 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Print</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 4054877177 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if you want to print the checks on blank paper before you print them on check forms.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
         </trans-unit>
-        <trans-unit id="Report 196752165 - Control 1059736969 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 1231299085 - Control 1059736969 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preprinted Stub</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1231299085 - Control 1059736969 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if you use check forms with preprinted stubs.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>

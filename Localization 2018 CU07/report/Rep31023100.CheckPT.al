@@ -1,11 +1,10 @@
-report 31023050 "Check (PT)"
+report 31023100 "Check(PT)"
 {
     //Check (PT)
     DefaultLayout = RDLC;
     RDLCLayout = './Check (PT) Report Layout.rdl';
     UsageCategory=ReportsAndAnalysis;
-    CaptionML = ENU='Check',
-                PTG='Cheque';
+    Caption = 'Check';
     Permissions = TableData 270=m;
 
     dataset
@@ -782,13 +781,11 @@ report 31023050 "Check (PT)"
             {
                 group(Options)
                 {
-                    CaptionML = ENU='Options',
-                                PTG='Opções';
+                    Caption='Options';
                     field(BankAccount;BankAcc2."No.")
                     {
                         ApplicationArea = Basic,Suite;
-                        CaptionML = ENU='Bank Account',
-                                    PTG='Conta Bancária';
+                        Caption ='Bank Account';
                         TableRelation = "Bank Account";
                         ToolTip = 'Specifies the bank account that the printed checks will be drawn from.';
 
@@ -800,37 +797,32 @@ report 31023050 "Check (PT)"
                     field(LastCheckNo;UseCheckNo)
                     {
                         ApplicationArea = Basic,Suite;
-                        CaptionML = ENU='Last Check No.',
-                                    PTG='Últ. N.º Cheque';
+                        Caption ='Last Check No.';
                         ToolTip = 'Specifies the value of the Last Check No. field on the bank account card.';
                     }
                     field(OneCheckPerVendorPerDocumentNo;OneCheckPrVendor)
                     {
                         ApplicationArea = Basic,Suite;
-                        CaptionML = ENU='One Check per Vendor per Document No.',
-                                    PTG='Um Cheque por Fornecedor e N.º de Documento';
+                        Caption = 'One Check per Vendor per Document No.';
                         MultiLine = true;
                         ToolTip = 'Specifies if only one check is printed per vendor for each document number.';
                     }
                     field(ReprintChecks;ReprintChecks)
                     {
                         ApplicationArea = Basic,Suite;
-                        CaptionML = ENU='Reprint Checks',
-                                    PTG='Reimprimir Cheques';
+                        Caption = 'Reprint Checks';
                         ToolTip = 'Specifies if checks are printed again if you canceled the printing due to a problem.';
                     }
                     field(TestPrinting;TestPrint)
                     {
                         ApplicationArea = Basic,Suite;
-                        CaptionML = ENU='Test Print',
-                                    PTG='Verificar Impressão';
+                        Caption = 'Test Print';
                         ToolTip = 'Specifies if you want to print the checks on blank paper before you print them on check forms.';
                     }
                     field(PreprintedStub;PreprintedStub)
                     {
                         ApplicationArea = Basic,Suite;
-                        CaptionML = ENU='Preprinted Stub',
-                                    PTG='Série Pré-impressa';
+                        Caption = 'Preprinted Stub';
                         ToolTip = 'Specifies if you use check forms with preprinted stubs.';
                     }
                 }
@@ -1074,46 +1066,6 @@ report 31023050 "Check (PT)"
         NoTextIndex : Integer;
         DecimalPosition : Decimal;
     begin
-        //soft,so
-        //NoText[1] := '****';
-        //GLSetup.GET;
-
-        //IF No < 1 THEN
-        //  AddToNoText(NoText,NoTextIndex,PrintExponent,Text026)
-        //ELSE
-        //  FOR Exponent := 4 DOWNTO 1 DO BEGIN
-        //    PrintExponent := FALSE;
-        //    Ones := No DIV POWER(1000,Exponent - 1);
-        //    Hundreds := Ones DIV 100;
-        //    Tens := (Ones MOD 100) DIV 10;
-        //    Ones := Ones MOD 10;
-        //    IF Hundreds > 0 THEN BEGIN
-        //      AddToNoText(NoText,NoTextIndex,PrintExponent,OnesText[Hundreds]);
-        //      AddToNoText(NoText,NoTextIndex,PrintExponent,Text027);
-        //    END;
-        //    IF Tens >= 2 THEN BEGIN
-        //      AddToNoText(NoText,NoTextIndex,PrintExponent,TensText[Tens]);
-        //      IF Ones > 0 THEN
-        //        AddToNoText(NoText,NoTextIndex,PrintExponent,OnesText[Ones]);
-        //    END ELSE
-        //      IF (Tens * 10 + Ones) > 0 THEN
-        //        AddToNoText(NoText,NoTextIndex,PrintExponent,OnesText[Tens * 10 + Ones]);
-        //    IF PrintExponent AND (Exponent > 1) THEN
-        //      AddToNoText(NoText,NoTextIndex,PrintExponent,ExponentText[Exponent]);
-        //    No := No - (Hundreds * 100 + Tens * 10 + Ones) * POWER(1000,Exponent - 1);
-        //  END;
-
-        //AddToNoText(NoText,NoTextIndex,PrintExponent,Text028); //NAVPT AddToNoText(NoText,NoTextIndex,PrintExponent,Text1110077);
-        //IF GLSetup."Amount Rounding Precision" <> 0 THEN
-        //  DecimalPosition := 1 / GLSetup."Amount Rounding Precision"
-        //ELSE
-        //  DecimalPosition := 1;
-        //AddToNoText(NoText,NoTextIndex,PrintExponent,(FORMAT(No * DecimalPosition) + '/' + FORMAT(DecimalPosition)));
-
-        //IF CurrencyCode <> '' THEN
-        //  AddToNoText(NoText,NoTextIndex,PrintExponent,CurrencyCode);
-        //soft,eo
-        //soft,sn
         CLEAR(NoText);
         NoTextIndex := 1;
 
@@ -1150,24 +1102,21 @@ report 31023050 "Check (PT)"
 
         IF ((HundMilion <> 0) OR (TenMilion <> 0) OR (UnitsMilion <> 0) OR
            (HundThousands <> 0) OR (TenThousands <> 0) OR (UnitsThousands <> 0))
-           //V92.00#00050,o AND ((Tens = 0) AND (Units = 0))THEN
-          //V92.00#00050,sn
+
            AND ((Hundreds <> 0) OR (Tens <> 0) OR (Units <> 0)) THEN
           IF (Tens <> 0) OR (Units <> 0) THEN
             AddToNoText(NoText,NoTextIndex, ' ' + TextHundreds(Hundreds,Tens,Units,TRUE))
           ELSE
             AddToNoText(NoText,NoTextIndex,Text31022946 + TextHundreds(Hundreds,Tens,Units,TRUE))
-          //V92.00#00050,en
-          //V92.00#00050,o AddToNoText(NoText,NoTextIndex,Text31022946 + TextHundreds(Hundreds,Tens,Units,TRUE))  //10
+
         ELSE
-          AddToNoText(NoText,NoTextIndex, ' ' + TextHundreds(Hundreds,Tens,Units,TRUE)); //V87.00#00045,n
-          //V92.00#00050,o AddToNoText(NoText,NoTextIndex,TextHundreds(Hundreds,Tens,Units,TRUE)); //100
+          AddToNoText(NoText,NoTextIndex, ' ' + TextHundreds(Hundreds,Tens,Units,TRUE));
 
         IF ((HundMilion <> 0) OR (TenMilion <> 0) OR (UnitsMilion <> 0) OR
            (HundThousands <> 0) OR (TenThousands <> 0) OR (UnitsThousands <> 0) OR
            (Hundreds <> 0)) AND ((Tens <> 0) OR (Units <> 0)) THEN
           AddToNoText(NoText,NoTextIndex,Text31022952 + TextTensUnits(Tens,Units,TRUE))  //10 //soft,n
-          //soft,o AddToNoText(NoText,NoTextIndex,Text31022946 + TextTensUnits(Tens,Units,TRUE))  //10
+
         ELSE
 
           AddToNoText(NoText,NoTextIndex,TextTensUnits(Tens,Units,TRUE));  //10
@@ -1214,12 +1163,11 @@ report 31023050 "Check (PT)"
            ELSE
              AddToNoText(NoText,NoTextIndex,UPPERCASE(GLSetup."Currency Decimal Unit Text") + ' ');
         END;
-        //soft,en
+
     end;
 
     local procedure AddToNoText(var NoText : array [2] of Text[80];var NoTextIndex : Integer;AddText : Text[30]);
     begin
-        //soft,o PrintExponent := TRUE;
 
         WHILE STRLEN(NoText[NoTextIndex] + ' ' + AddText) > MAXSTRLEN(NoText[1]) DO BEGIN
           NoTextIndex := NoTextIndex + 1;
@@ -1227,7 +1175,7 @@ report 31023050 "Check (PT)"
             ERROR(Text029,AddText);
         END;
 
-        //soft,o NoText[NoTextIndex] := DELCHR(NoText[NoTextIndex] + ' ' + AddText,'<');
+
         NoText[NoTextIndex] := DELCHR(NoText[NoTextIndex] + AddText,'<'); //soft,n
     end;
 
@@ -1281,7 +1229,7 @@ report 31023050 "Check (PT)"
             (CustLedgEntry2."Posting Date" <= CustLedgEntry2."Pmt. Discount Date")) OR
            CustLedgEntry2."Accepted Pmt. Disc. Tolerance"
         THEN BEGIN
-          //soft,o LineDiscount := -CustLedgEntry2."Remaining Pmt. Disc. Possible";
+
           LineDiscount := -CustLedgEntry2."Original Pmt. Disc. Possible"; //soft,n
           IF CustLedgEntry2."Accepted Payment Tolerance" <> 0 THEN
             LineDiscount := LineDiscount - CustLedgEntry2."Accepted Payment Tolerance";
@@ -1348,7 +1296,7 @@ report 31023050 "Check (PT)"
             (GenJnlLine."Posting Date" <= VendLedgEntry2."Pmt. Discount Date")) OR
            VendLedgEntry2."Accepted Pmt. Disc. Tolerance"
         THEN BEGIN
-          //soft,o LineDiscount := -VendLedgEntry2."Remaining Pmt. Disc. Possible";
+
           LineDiscount := -VendLedgEntry2."Original Pmt. Disc. Possible"; //soft,n
           IF VendLedgEntry2."Accepted Payment Tolerance" <> 0 THEN
             LineDiscount := LineDiscount - VendLedgEntry2."Accepted Payment Tolerance";

@@ -1,9 +1,9 @@
-pageextension 50108 "Bank Account Card" extends "Bank Account Card"
+pageextension 50105 "Company Information" extends "Company Information"
 {
     //IBAN
     layout
     {
-        addfirst(Transfer)
+        addafter("Bank Account No.")
         {
             field("CCC Bank No."; "CCC Bank No.")
             {

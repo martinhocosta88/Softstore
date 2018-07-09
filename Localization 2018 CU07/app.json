@@ -1,9 +1,9 @@
 {
-  "id": "32e0cf6a-b61a-43c7-9e4a-8701c0c98a1d",
-  "name": "Localization 2018",
+  "id": "672a7283-befc-494e-9d19-5c1db5093374",
+  "name": "Localization 2018 CU07",
   "publisher": "Default publisher",
   "brief": "",
-  "description": "IBAN,Taxonomies,Cash-flow,Check Chart of Accounts,Check (PT)",
+  "description": "",
   "version": "1.0.0.0",
   "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
@@ -16,7 +16,6 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
-  "features": "TranslationFile",
   "idRange": {
     "from": 50100,
     "to": 31023999
