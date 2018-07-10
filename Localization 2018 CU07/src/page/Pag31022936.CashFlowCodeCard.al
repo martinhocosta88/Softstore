@@ -13,21 +13,28 @@ page 31022936 "Cash-Flow Code Card"
             {
                 field("No."; "No.")
                 {
+                    ToolTip = 'Specificies the Cash-Flow Code No.';
+                    ApplicationArea = Basic,Suite;
                 }
                 field("Description"; "Description")
                 {
+                    ToolTip = 'Specificies the Cash-FLow Description';
+                    ApplicationArea = Basic,Suite;
                 }
                 field("Type"; "Type")
                 {
-
+                    ToolTip = 'Specificies the Cash-Flow Type';
+                    ApplicationArea = Basic,Suite;
                 }
                 field(Totaling; Totaling)
                 {
-
+                    ToolTip = 'Specificies the Cash-Flow Code Totaling';
+                    ApplicationArea = Basic,Suite;
                 }
                 field(Indentation; Indentation)
                 {
-
+                    ToolTip = 'Specificies the Cash-Flow Indentation';
+                    ApplicationArea = Basic,Suite;
                 }
             }
         }
@@ -46,7 +53,4 @@ page 31022936 "Cash-Flow Code Card"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

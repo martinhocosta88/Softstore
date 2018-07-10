@@ -18,28 +18,34 @@ page 31022935 "Cash-Flow Plan"
                     ToolTip = 'Specifies the account number.';
                     Style = Strong;
                     StyleExpr = NoEmphasize;
+                    ApplicationArea = Basic,Suite;
                 }
                 field(Description; Description)
                 {
                     ToolTip = 'Specifies the description.';
                     Style = Strong;
                     StyleExpr = NameEmphasize;
+                    ApplicationArea = Basic,Suite;
                 }
                 field("Type"; "Type")
                 {
                     ToolTip = 'Specifies account type.';
+                    ApplicationArea = Basic,Suite;
                 }
                 field("Totaling"; "Totaling")
                 {
                     ToolTip = 'Specifies the totaling amount.';
+                    ApplicationArea = Basic,Suite;
                 }
                 field(Indentation; Indentation)
                 {
                     ToolTip = 'Specifies the indentation level.';
+                    ApplicationArea = Basic,Suite;
                 }
                 field("Net Change"; "Net Change")
                 {
                     ToolTip = 'Specifies the net change.';
+                    ApplicationArea = Basic,Suite;
                 }
             }
         }
