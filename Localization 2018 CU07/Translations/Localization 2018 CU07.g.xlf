@@ -113,6 +113,31 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
         </trans-unit>
+        <trans-unit id="Page 3404562225 - Control 4200184881 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Code No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 3404562225 - Control 3461834954 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-FLow Description</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 3404562225 - Control 1878130204 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 3404562225 - Control 478049462 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Code Totaling</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 3404562225 - Control 2200046723 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Indentation</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
         <trans-unit id="Page 2107039125 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Codes List</source>
           <note from="Developer" annotates="general" priority="2" />
