@@ -67,6 +67,8 @@ tableextension 31023001 "G/L Account" extends "G/L Account"
             Editable = false;
         }
     }
+
+    //replicated function from an unexposed standard function. GIT awaiting //MSC
     local procedure GetCurrencyCode(): Code[10]
     var
         GLSetupRead: Boolean;
