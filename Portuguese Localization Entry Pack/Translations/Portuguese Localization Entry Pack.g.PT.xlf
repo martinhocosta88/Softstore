@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="Table 3922458431 - Property 2879900210">
         <source>Cash-Flow Plan</source>
-        <target>Plano Fluxo de Caixa</target>
+        <target>Plano Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="Table 3922458431 - Field 4200184881 - Property 2879900210">
         <source>No.</source>
@@ -84,11 +84,11 @@
       </trans-unit>
       <trans-unit id="Table 3363894443 - Property 2879900210">
         <source>Taxonomy Codes</source>
-        <target>Códigos Taxonomia</target>
+        <target>Códs. Taxonomia</target>
       </trans-unit>
       <trans-unit id="Table 3363894443 - Field 1476723134 - Property 3830149458">
         <source>Taxonomy Code</source>
-        <target>Código Taxonomia</target>
+        <target>Cód. Taxonomia</target>
       </trans-unit>
       <trans-unit id="Table 3363894443 - Field 2446257311 - Property 2879900210">
         <source>G/L Account Filter</source>
@@ -100,8 +100,7 @@
       </trans-unit>
       <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 746880067">
         <source>Missing group %1 - Account No. %2</source>
-        <target>
-        </target>
+        <target>Grupo em falta %1 - Nº Conta %2</target>
       </trans-unit>
       <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 1384576684">
         <source>This function checks the consistency of and completes the Chart of Accounts:\</source>
@@ -109,13 +108,11 @@
       </trans-unit>
       <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 2022273301">
         <source>- Checks that a corresponding balance account exists for every posting account.\</source>
-        <target>
-        </target>
+        <target>- Verifica se uma conta contrapartida existe para cada conta de registo.\</target>
       </trans-unit>
       <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 2491060895">
         <source>- Assigns values to the following fields: Income/Balance, Account Type, Totaling and Debit/Credit.\</source>
-        <target>
-        </target>
+        <target>- Atribui valores aos seguintes campos: Comercial/Balanço, Tipo Conta, Somatório e Débito/Crédito.\</target>
       </trans-unit>
       <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 3128757512">
         <source>Do you want to Check the Chart of Accounts?</source>
@@ -139,19 +136,19 @@
       </trans-unit>
       <trans-unit id="Page 3404562225 - Property 2879900210">
         <source>Cash-Flow Code Card</source>
-        <target>Ficha Código Fluxo Caixa</target>
+        <target>Ficha Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="Page 3404562225 - Control 4200184881 - Property 1295455071">
         <source>Specificies the Cash-Flow Code No.</source>
-        <target>Especifique o Nº do Código de Fluxo de Caixa.</target>
+        <target>Especifique o Nº do Código de Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="Page 3404562225 - Control 3461834954 - Property 1295455071">
         <source>Specificies the Cash-FLow Description</source>
-        <target>Especifique a Descrição de Fluxo de Caixa.</target>
+        <target>Especifique a Descrição de Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="Page 3404562225 - Control 1878130204 - Property 1295455071">
         <source>Specificies the Cash-Flow Type</source>
-        <target>Especifique o Tipo de Fluxo de Caixa.</target>
+        <target>Especifique o Tipo de Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="Page 3404562225 - Control 478049462 - Property 1295455071">
         <source>Specificies the Cash-Flow Code Totaling</source>
@@ -163,7 +160,7 @@
       </trans-unit>
       <trans-unit id="Page 2107039125 - Property 2879900210">
         <source>Taxonomy Codes List</source>
-        <target>Lista Códigos Taxonomia.</target>
+        <target>Lista Códs. Taxonomia.</target>
       </trans-unit>
       <trans-unit id="Page 2107039125 - Control 3912163357 - Property 1295455071">
         <source>Specify the Taxonomy Code</source>
@@ -247,8 +244,7 @@
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 2663384385 - Property 1295455071">
         <source>Specifies the bank account that the printed checks will be drawn from.</source>
-        <target>
-        </target>
+        <target>Especifica a conta bancária de onde o montante irá descontado.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 1514267703 - Property 2879900210">
         <source>Last Check No.</source>
@@ -256,8 +252,7 @@
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 1514267703 - Property 1295455071">
         <source>Specifies the value of the Last Check No. field on the bank account card.</source>
-        <target>
-        </target>
+        <target>Especifica o valor do campo Últ. Nº Cheque na ficha de conta bancária.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 1563725732 - Property 2879900210">
         <source>One Check per Vendor per Document No.</source>
@@ -265,8 +260,7 @@
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 1563725732 - Property 1295455071">
         <source>Specifies if only one check is printed per vendor for each document number.</source>
-        <target>
-        </target>
+        <target>Especifica se um cheque foi impresso por fornecedor para cada número documento.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 2992590101 - Property 2879900210">
         <source>Reprint Checks</source>
@@ -274,8 +268,7 @@
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 2992590101 - Property 1295455071">
         <source>Specifies if checks are printed again if you canceled the printing due to a problem.</source>
-        <target>
-        </target>
+        <target>Especifica se os cheques são impressos novamente caso a impressão tenha sido cancelada deviado a um problema.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 4054877177 - Property 2879900210">
         <source>Test Print</source>
@@ -283,8 +276,7 @@
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 4054877177 - Property 1295455071">
         <source>Specifies if you want to print the checks on blank paper before you print them on check forms.</source>
-        <target>
-        </target>
+        <target>Especifica se deseja imprimir os cheques em papel branco antes de serem impressos em formulários de cheque.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 1059736969 - Property 2879900210">
         <source>Preprinted Stub</source>
@@ -292,8 +284,7 @@
       </trans-unit>
       <trans-unit id="Report 1231299085 - Control 1059736969 - Property 1295455071">
         <source>Specifies if you use check forms with preprinted stubs.</source>
-        <target>
-        </target>
+        <target>Especifica se está a usar formulários de cheque com séries pré-impressas.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - NamedType 2476940767">
         <source>Preview is not allowed.</source>
@@ -796,7 +787,8 @@
         <target>%1 \ é um número demasiado comprido.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - NamedType 2566628424">
-        <source> </source>
+        <source>
+        </source>
         <target> E </target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - NamedType 1928931807">
@@ -825,8 +817,7 @@
       </trans-unit>
       <trans-unit id="PageExtension 3105459369 - Control 279493071 - Property 1295455071">
         <source>Specifies the adjustment account for the comercial posting accounts.</source>
-        <target>
-        </target>
+        <target>Especifica a conta de ajuste para as contas de registo.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3105459369 - Control 1476723134 - Property 1295455071">
         <source>Specifies the Taxonomy Code</source>
@@ -842,32 +833,27 @@
       </trans-unit>
       <trans-unit id="PageExtension 4219821699 - Control 2936790044 - Property 1295455071">
         <source>Specifies cash-flow code assoc.</source>
-        <target>
-        </target>
+        <target>Especifica se associa Cód. Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 4219821699 - Control 712889997 - Property 1295455071">
         <source>Specifies cash-flow code</source>
-        <target>Especifica o Código Fluxo de Caixa</target>
+        <target>Especifica o Código Fluxos Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 4081634891 - Control 1172175465 - Property 1295455071">
         <source>Specifies the Currency Decimal Unit Text</source>
-        <target>
-        </target>
+        <target>Especifica a Descrição Unid. Dec. Divisa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 4081634891 - Control 3512434395 - Property 1295455071">
         <source>Specifies the Curr. Dec. Unit Decimal Places</source>
-        <target>
-        </target>
+        <target>Especifica o Nº de Casas Unidade Decimal Divisa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2668789169 - Control 2936790044 - Property 1295455071">
         <source>Specifies cash-flow code assoc.</source>
-        <target>
-        </target>
+        <target>Especifica se associa Cód. Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2668789169 - Control 712889997 - Property 1295455071">
         <source>Specifies the cash-flow code</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2668789169 - Control 1476723134 - Property 1295455071">
         <source>Specifies the Taxonomy Code</source>
@@ -875,17 +861,15 @@
       </trans-unit>
       <trans-unit id="PageExtension 1887905131 - Control 1476723134 - Property 1295455071">
         <source>Specifies the Taxonomy Code.</source>
-        <target>Especifica o Código Taxonomia</target>
+        <target>Especifica o Código Taxonomia.</target>
       </trans-unit>
       <trans-unit id="PageExtension 1887905131 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica a Conta Cód. Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 1887905131 - Control 885098114 - Property 1295455071">
         <source>Specifies the balance account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica a Conta Contrapartida de Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3469146285 - Control 778216806 - Property 1295455071">
         <source>Specifies the bank number.</source>
@@ -893,23 +877,19 @@
       </trans-unit>
       <trans-unit id="PageExtension 3469146285 - Control 3716284338 - Property 1295455071">
         <source>Specifies the bank branch number.</source>
-        <target>
-        </target>
+        <target>Especifica o número da agência bancária.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3469146285 - Control 1113161156 - Property 1295455071">
         <source>Specifies the control digits for the bank account number</source>
-        <target>
-        </target>
+        <target>Especifica os dígitos de controle do número de conta bancária.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3469146285 - Control 588297277 - Property 1295455071">
         <source>Specifies the bank account number</source>
-        <target>
-        </target>
+        <target>Especifica o número de conta bancária.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3469146285 - Control 4277647424 - Property 1295455071">
         <source>Specifies the complete bank number.</source>
-        <target>
-        </target>
+        <target>Especifica o número bancário completo.</target>
       </trans-unit>
       <trans-unit id="TableExtension 3469146285 - Field 588297277 - Property 2879900210">
         <source>CCC Bank Account No.</source>
@@ -997,8 +977,7 @@
       </trans-unit>
       <trans-unit id="PageExtension 4050813720 - Control 682494963 - Property 1295455071">
         <source>Specifies if checks chart of accounts.</source>
-        <target>
-        </target>
+        <target>Especifica se verifica o plano de contas.</target>
       </trans-unit>
       <trans-unit id="TableExtension 4050813720 - Field 682494963 - Property 2879900210">
         <source>Check Chart of Accounts</source>
@@ -1006,132 +985,107 @@
       </trans-unit>
       <trans-unit id="TableExtension 4050813720 - Field 1172175465 - Property 2879900210">
         <source>Currency Decimal Unit Text</source>
-        <target>
-        </target>
+        <target>Descrição Unid. Dec. Divisa</target>
       </trans-unit>
       <trans-unit id="TableExtension 4050813720 - Field 3512434395 - Property 2879900210">
         <source>Curr. Dec. Unit Decimal Places</source>
-        <target>
-        </target>
+        <target>Nº Casas Unid. Dec. Divisa</target>
       </trans-unit>
       <trans-unit id="TableExtension 4050813720 - Field 947395910 - Property 2879900210">
         <source>Currency Text</source>
-        <target>
-        </target>
+        <target>Texto Divisa</target>
       </trans-unit>
       <trans-unit id="PageExtension 2583272393 - Control 885098114 - Property 1295455071">
         <source>Specifies the balance account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa Contrapartida.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2583272393 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 1727838235 - Control 885098114 - Property 1295455071">
         <source>Specifies the balance account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa Contrapartida.</target>
       </trans-unit>
       <trans-unit id="PageExtension 1727838235 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3580867622 - Control 885098114 - Property 1295455071">
         <source>Specifies the balance account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa Contrapartida.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3580867622 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 1638686336 - Control 885098114 - Property 1295455071">
         <source>Specifies the balance account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa Contrapartida.</target>
       </trans-unit>
       <trans-unit id="PageExtension 1638686336 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3196174509 - Control 885098114 - Property 1295455071">
         <source>Specifies the balance account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa Contrapartida.</target>
       </trans-unit>
       <trans-unit id="PageExtension 3196174509 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2805771090 - Control 695109909 - Property 1295455071">
         <source>Specifies the Sales Cash-flow code</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa de Venda.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2805771090 - Control 1384373683 - Property 1295455071">
         <source>Specifies the Sales Cash-flow code</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa de Venda.</target>
       </trans-unit>
       <trans-unit id="PageExtension 4034894651 - Control 712889997 - Property 1295455071">
         <source>Specifies the Cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2437096118 - Control 712889997 - Property 1295455071">
         <source>Specifies the Cash-flow code.</source>
-        <target>
-        </target>
+        <target>Especifica o Código Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="TableExtension 4274826855 - Field 1476723134 - Property 2879900210">
         <source>Taxonomy Code</source>
-        <target>Código Taxonomia</target>
+        <target>Cód. Taxonomia</target>
       </trans-unit>
       <trans-unit id="TableExtension 4274826855 - Field 279493071 - Property 2879900210">
         <source>Income Stmt. Bal. Acc.</source>
-        <target>
-        </target>
+        <target>Conta Regularização</target>
       </trans-unit>
       <trans-unit id="TableExtension 4274826855 - Field 712889997 - Property 2879900210">
         <source>Cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="TableExtension 4274826855 - Field 2936790044 - Property 2879900210">
         <source>Cash-flow code assoc.</source>
-        <target>
-        </target>
+        <target>Associar Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="TableExtension 4274826855 - Field 3045415570 - Property 2879900210">
         <source>Cash-flow - credit</source>
-        <target>
-        </target>
+        <target>Fluxos Caixa - crédito</target>
       </trans-unit>
       <trans-unit id="TableExtension 4274826855 - Field 4062068159 - Property 2879900210">
         <source>Cash-flow - debit</source>
-        <target>
-        </target>
+        <target>Fluxos Caixa - débito</target>
       </trans-unit>
       <trans-unit id="TableExtension 2825951060 - Field 885549068 - Property 2879900210">
         <source>Acc: cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="TableExtension 2825951060 - Field 885098114 - Property 2879900210">
         <source>Bal: cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa Contrp.</target>
       </trans-unit>
       <trans-unit id="TableExtension 2825951060 - Field 1476723134 - Property 2879900210">
         <source>Taxonomy Code</source>
-        <target>
-        </target>
+        <target>Cód. Taxonomia</target>
       </trans-unit>
       <trans-unit id="TableExtension 785108357 - Field 588297277 - Property 2879900210">
         <source>CCC Bank Account No.</source>
@@ -1155,8 +1109,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 785108357 - Change 284764054 - Method 3279464882 - NamedType 109183450">
         <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
-        <target>
-        </target>
+        <target>Eliminar %1 vai causar que %2 seja eliminado. Deseja continuar?</target>
       </trans-unit>
       <trans-unit id="TableExtension 4231435149 - Field 588297277 - Property 2879900210">
         <source>CCC Bank Account No.</source>
@@ -1180,8 +1133,7 @@
       </trans-unit>
       <trans-unit id="TableExtension 4231435149 - Change 284764054 - Method 3279464882 - NamedType 109183450">
         <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
-        <target>
-        </target>
+        <target>Eliminar %1 vai causar que %2 seja eliminado. Deseja continuar?</target>
       </trans-unit>
       <trans-unit id="TableExtension 1682139193 - Field 588297277 - Property 2879900210">
         <source>CCC Bank Account No.</source>
@@ -1205,58 +1157,47 @@
       </trans-unit>
       <trans-unit id="TableExtension 1682139193 - Change 284764054 - Method 3279464882 - NamedType 3128757512">
         <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
-        <target>
-        </target>
+        <target>Eliminar %1 vai causar que %2 seja eliminado. Deseja continuar?</target>
       </trans-unit>
       <trans-unit id="TableExtension 1806786327 - Field 885549068 - Property 2879900210">
         <source>Acc: cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="TableExtension 1806786327 - Field 885098114 - Property 2879900210">
         <source>Bal: cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa Contrp.</target>
       </trans-unit>
       <trans-unit id="TableExtension 2072992664 - Field 712889997 - Property 2879900210">
         <source>Cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="TableExtension 2072992664 - Field 712889997 - Method 2126772001 - NamedType 109183450">
         <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
-        <target>
-        </target>
+        <target>ATENÇÃO:\Para este método de pagamento não existe um Código Fluxos Caixa correspondente.</target>
       </trans-unit>
       <trans-unit id="TableExtension 3566004263 - Field 695109909 - Property 3830149458">
         <source>Sales Cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa Venda</target>
       </trans-unit>
       <trans-unit id="TableExtension 3566004263 - Field 1384373683 - Property 3830149458">
         <source>Purch. Cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa Compras</target>
       </trans-unit>
       <trans-unit id="TableExtension 1192395785 - Field 712889997 - Property 2879900210">
         <source>Cash-flow code</source>
-        <target>
-        </target>
+        <target>Cód. Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="TableExtension 1192395785 - Field 712889997 - Method 2126772001 - NamedType 109183450">
         <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
-        <target>
-        </target>
+        <target>ATENÇÃO:\Para este método de pagamento não existe um Código Fluxos Caixa correspondente.</target>
       </trans-unit>
       <trans-unit id="TableExtension 3561154705 - Field 1172175465 - Property 2879900210">
         <source>Currency Decimal Unit Text</source>
-        <target>
-        </target>
+        <target>Descrição Unid. Dec. Divisa</target>
       </trans-unit>
       <trans-unit id="TableExtension 3561154705 - Field 3512434395 - Property 2879900210">
         <source>Curr. Dec. Unit Decimal Places</source>
-        <target>
-        </target>
+        <target>Nº Casas Unid. Dec. Divisa</target>
       </trans-unit>
     </body>
   </file>
