@@ -70,7 +70,6 @@ page 31023086 "Withholding Tax Ledger Entries"
             }
         }
     }
-
     actions
     {
     }

@@ -266,20 +266,20 @@ report 31023015 "Income Statement"
                 WithTaxLedgEntry.SETRANGE("Entity No.","No.");
                 WithTaxLedgEntry.SETRANGE("Document Date",Startdate,Enddate);
                 WithTaxLedgEntry.SETRANGE("Has Withholding Tax",TRUE);
-                IF NOT  WithTaxLedgEntry.ISEMPTY THEN BEGIN  //V10.00#00001,n
+                IF NOT  WithTaxLedgEntry.ISEMPTY THEN BEGIN 
                   WithTaxLedgEntry.CALCSUMS("Income Amount","Withholding Tax Amount");
                   Amount1 := WithTaxLedgEntry."Income Amount";
                   Amount3 := WithTaxLedgEntry."Withholding Tax Amount";
-                END; //V10.00#00001,n
+                END;
                 WithTaxLedgEntry.RESET;
                 WithTaxLedgEntry.SETCURRENTKEY("Has Withholding Tax","Entity Type","Entity No.","Document Date");
                 WithTaxLedgEntry.SETRANGE("Entity No.","No.");
                 WithTaxLedgEntry.SETRANGE("Document Date",Startdate,Enddate);
                 WithTaxLedgEntry.SETRANGE("Has Withholding Tax",FALSE);
-                IF NOT  WithTaxLedgEntry.ISEMPTY THEN BEGIN //V10.00#00001,n
+                IF NOT  WithTaxLedgEntry.ISEMPTY THEN BEGIN 
                   WithTaxLedgEntry.CALCSUMS("Income Amount");
                   Amount2 := WithTaxLedgEntry."Income Amount";
-                END; //V10.00#00001,n
+                END; 
                 IF IncomeType.GET("Income Type") THEN;
             end;
 
