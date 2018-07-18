@@ -100,7 +100,7 @@ table 31022977 "Withholding Tax Ledger Entry"
         key(Key2;"VAT Registration No.","Withholding Tax Code","Document No.")
         {
         }
-        key(Key3;"Has Withholding Tax","Entity Type","Entity No.","Document Date")
+        key(Key3;"Has Withholding Tax","Entity Type","Entity No.","Document Date","Document Type")
         {
             SumIndexFields = "Income Amount","Withholding Tax Amount";
         }
