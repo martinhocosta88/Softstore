@@ -1,15 +1,15 @@
 {
-  "id": "2f9675e9-d254-4b60-a615-d43e0a3baa41",
-  "name": "Portuguese Language",
+  "id": "73d14853-663a-433f-bbe7-c0ec098e184b",
+  "name": "Withholding Tax App",
   "publisher": "Softstore SA",
-  "brief": "Microsoft Business Central Translation App for Portuguese Language.",
-  "description": "This App allows you to change your Microsoft Business Central language to Portuguese (PT-pt)",
+  "brief": "Withholding Tax",
+  "description": "Withholding Tax",
   "version": "1.0.0.0",
   "privacyStatement": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EcPwLYsi2KtCqaSYqYLBFOIBt37fK5edzTeOCSanwRE3nA?e=Vbd457",
   "EULA": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EX277hHtyXFEgaDoWqJQ2OMBKdUyZ0QsGArMSAPpN0IfFw?e=YP9wcV",
-  "help": "https://sstore-my.sharepoint.com/:w:/g/personal/suporte_softstore_pt/EXf044J7Rj5HtFU_wCNdC8IB3lmOtWq0_io9hMQPz_aMGg?e=wS5ytD",
-  "logo":"logo.gif",
-  "url":"http://www.softstore.pt",
+  "help": "http://XXXDocumentationXXX",
+  "url": "http://www.softstore.pt",
+  "logo": "logo.gif",
   "capabilities": [],
   "dependencies": [],
   "screenshots": [],
@@ -17,6 +17,6 @@
   "application": "12.0.0.0",
   "idRange": {
     "from": 50100,
-    "to": 50149
+    "to": 31023999
   }
 }
