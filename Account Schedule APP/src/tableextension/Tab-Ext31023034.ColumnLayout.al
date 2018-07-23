@@ -3,20 +3,24 @@
 // AL snippets start with t*, like tpageext - give them a try and happy coding!
 
 
-tableextension 50100 ColumnLayoutExt extends "Column Layout"
+tableextension 31023034 "Column Layout" extends "Column Layout"
 {
     fields
     {
+        // modify("Amount Type")
+        // {
+        //     //Option Extend: Adcionar debit balance e credit balance ao ammount type //MSC
+        // }
         field(31022890;"Amount Type 2"; Option)
         {
             OptionMembers = "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-            Editable = true;
+            OptionCaption ='Net Amount,Debit Amount,Credit Amount,,,,,,Debit Balance,Credit Balance';
             DataClassification = CustomerContent;
         }
         field(31022891;"Amount Type 3"; Option)
         {
             OptionMembers = "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-            Editable = true;
+            OptionCaption ='Net Amount,Debit Amount,Credit Amount,,,,,,Debit Balance,Credit Balance';
             DataClassification = CustomerContent;
         }
     }

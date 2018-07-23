@@ -3,7 +3,7 @@ report 31023014 "Withholding Taxes"
     DefaultLayout = RDLC;
     RDLCLayout = './Withholding Taxes.rdl';
     Caption = 'Withholding Taxes';
-
+    UsageCategory = ReportsAndAnalysis;
     dataset
     {
         dataitem("Withholding Tax Ledger Entry";"Withholding Tax Ledger Entry")

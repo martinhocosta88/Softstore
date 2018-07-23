@@ -10,7 +10,7 @@ codeunit 31022921 "Withholding Tax Management"
         PurchaseHeader : Record "Purchase Header";
         DimMgt : Codeunit DimensionManagement;
     //Post to gen jnl line. Work in progress. Consistent error //MSC
-    
+
     // [EventSubscriber(ObjectType::Codeunit, 12, 'OnBeforeGLFinishPosting', '', true, true)]
     // local procedure CheckPostWithholdingTax(Var GenJnlLine: Record 81;Balancing: Boolean);
     // var
@@ -120,7 +120,6 @@ codeunit 31022921 "Withholding Tax Management"
         END;
         EXIT(FALSE);
     end;
-
     procedure GetVATAmount(GenJnlLine : Record "Gen. Journal Line") : Decimal;
     var
         VATEntry : Record "VAT Entry";

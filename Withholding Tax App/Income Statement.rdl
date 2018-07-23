@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -10,196 +10,6 @@
       <rd:SecurityType>None</rd:SecurityType>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Vendor_No">
-          <DataField>Vendor_No</DataField>
-        </Field>
-        <Field Name="CompanyInfo_Picture">
-          <DataField>CompanyInfo_Picture</DataField>
-        </Field>
-        <Field Name="Vendor_Name_Vendor_Name_2">
-          <DataField>Vendor_Name_Vendor_Name_2</DataField>
-        </Field>
-        <Field Name="CompanyAddr_1">
-          <DataField>CompanyAddr_1</DataField>
-        </Field>
-        <Field Name="CompanyAddr_2">
-          <DataField>CompanyAddr_2</DataField>
-        </Field>
-        <Field Name="CompanyAddr_3">
-          <DataField>CompanyAddr_3</DataField>
-        </Field>
-        <Field Name="CompanyAddr_4">
-          <DataField>CompanyAddr_4</DataField>
-        </Field>
-        <Field Name="Vendor_Address">
-          <DataField>Vendor_Address</DataField>
-        </Field>
-        <Field Name="Vendor_Address_2">
-          <DataField>Vendor_Address_2</DataField>
-        </Field>
-        <Field Name="Vendor_Post_Code_Vendor_City">
-          <DataField>Vendor_Post_Code_Vendor_City</DataField>
-        </Field>
-        <Field Name="FORMAT_WORKDATE_0_Day_de_Month_Text_Year4">
-          <DataField>FORMAT_WORKDATE_0_Day_de_Month_Text_Year4</DataField>
-        </Field>
-        <Field Name="PageLoop_Number">
-          <DataField>PageLoop_Number</DataField>
-        </Field>
-        <Field Name="IncomeYear">
-          <DataField>IncomeYear</DataField>
-        </Field>
-        <Field Name="STRSUBSTNO_TextDescription_Vendor_Name_Vendor_Name_2_Vendor_VAT_Registration_No">
-          <DataField>STRSUBSTNO_TextDescription_Vendor_Name_Vendor_Name_2_Vendor_VAT_Registration_No</DataField>
-        </Field>
-        <Field Name="Amount1">
-          <DataField>Amount1</DataField>
-        </Field>
-        <Field Name="Amount1Format">
-          <DataField>Amount1Format</DataField>
-        </Field>
-        <Field Name="Amount2">
-          <DataField>Amount2</DataField>
-        </Field>
-        <Field Name="Amount2Format">
-          <DataField>Amount2Format</DataField>
-        </Field>
-        <Field Name="Amount3">
-          <DataField>Amount3</DataField>
-        </Field>
-        <Field Name="Amount3Format">
-          <DataField>Amount3Format</DataField>
-        </Field>
-        <Field Name="CurrencyString">
-          <DataField>CurrencyString</DataField>
-        </Field>
-        <Field Name="IncomesType_Description">
-          <DataField>IncomesType_Description</DataField>
-        </Field>
-        <Field Name="Income_StatementCaption">
-          <DataField>Income_StatementCaption</DataField>
-        </Field>
-        <Field Name="YearCaption">
-          <DataField>YearCaption</DataField>
-        </Field>
-        <Field Name="Remuneration_WorkingCaption">
-          <DataField>Remuneration_WorkingCaption</DataField>
-        </Field>
-        <Field Name="Without_RetentionCaption">
-          <DataField>Without_RetentionCaption</DataField>
-        </Field>
-        <Field Name="With_RetentionCaption">
-          <DataField>With_RetentionCaption</DataField>
-        </Field>
-        <Field Name="Having_been_made_the_following_deduction_Caption">
-          <DataField>Having_been_made_the_following_deduction_Caption</DataField>
-        </Field>
-        <Field Name="I_R_S_Caption">
-          <DataField>I_R_S_Caption</DataField>
-        </Field>
-        <Field Name="Text_Number">
-          <DataField>Text_Number</DataField>
-        </Field>
-        <Field Name="Customer_No">
-          <DataField>Customer_No</DataField>
-        </Field>
-        <Field Name="CompanyInfo_Picture_C">
-          <DataField>CompanyInfo_Picture_C</DataField>
-        </Field>
-        <Field Name="Customer_Name_Customer_Name_2">
-          <DataField>Customer_Name_Customer_Name_2</DataField>
-        </Field>
-        <Field Name="CompanyAddr_1_C">
-          <DataField>CompanyAddr_1_C</DataField>
-        </Field>
-        <Field Name="CompanyAddr_2_C">
-          <DataField>CompanyAddr_2_C</DataField>
-        </Field>
-        <Field Name="CompanyAddr_3_C">
-          <DataField>CompanyAddr_3_C</DataField>
-        </Field>
-        <Field Name="CompanyAddr_4_C">
-          <DataField>CompanyAddr_4_C</DataField>
-        </Field>
-        <Field Name="Customer_Address">
-          <DataField>Customer_Address</DataField>
-        </Field>
-        <Field Name="Customer_Address_2">
-          <DataField>Customer_Address_2</DataField>
-        </Field>
-        <Field Name="Customer_Post_Code_Customer_City">
-          <DataField>Customer_Post_Code_Customer_City</DataField>
-        </Field>
-        <Field Name="FORMAT_WORKDATE_0_Day_de_Month_Text_Year4_C">
-          <DataField>FORMAT_WORKDATE_0_Day_de_Month_Text_Year4_C</DataField>
-        </Field>
-        <Field Name="PageLoop_Number_C">
-          <DataField>PageLoop_Number_C</DataField>
-        </Field>
-        <Field Name="IncomeYear_C">
-          <DataField>IncomeYear_C</DataField>
-        </Field>
-        <Field Name="STRSUBSTNO_TextDescription_Customer_Name_Customer_Name_2_Customer_VAT_Registration_No">
-          <DataField>STRSUBSTNO_TextDescription_Customer_Name_Customer_Name_2_Customer_VAT_Registration_No</DataField>
-        </Field>
-        <Field Name="Amount1_C">
-          <DataField>Amount1_C</DataField>
-        </Field>
-        <Field Name="Amount1_CFormat">
-          <DataField>Amount1_CFormat</DataField>
-        </Field>
-        <Field Name="Amount2_C">
-          <DataField>Amount2_C</DataField>
-        </Field>
-        <Field Name="Amount2_CFormat">
-          <DataField>Amount2_CFormat</DataField>
-        </Field>
-        <Field Name="Amount3_C">
-          <DataField>Amount3_C</DataField>
-        </Field>
-        <Field Name="Amount3_CFormat">
-          <DataField>Amount3_CFormat</DataField>
-        </Field>
-        <Field Name="CurrencyString_C">
-          <DataField>CurrencyString_C</DataField>
-        </Field>
-        <Field Name="IncomesType_Description_C">
-          <DataField>IncomesType_Description_C</DataField>
-        </Field>
-        <Field Name="Income_StatementCaption_C">
-          <DataField>Income_StatementCaption_C</DataField>
-        </Field>
-        <Field Name="YearCaption_C">
-          <DataField>YearCaption_C</DataField>
-        </Field>
-        <Field Name="Remuneration_WorkingCaption_C">
-          <DataField>Remuneration_WorkingCaption_C</DataField>
-        </Field>
-        <Field Name="Without_RetentionCaption_C">
-          <DataField>Without_RetentionCaption_C</DataField>
-        </Field>
-        <Field Name="With_RetentionCaption_C">
-          <DataField>With_RetentionCaption_C</DataField>
-        </Field>
-        <Field Name="Having_been_made_the_following_deduction_Caption_C">
-          <DataField>Having_been_made_the_following_deduction_Caption_C</DataField>
-        </Field>
-        <Field Name="I_R_S_Caption_C">
-          <DataField>I_R_S_Caption_C</DataField>
-        </Field>
-        <Field Name="Text_Number_C">
-          <DataField>Text_Number_C</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -6090,4 +5900,194 @@ End Function</Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Vendor_No">
+          <DataField>Vendor_No</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Picture">
+          <DataField>CompanyInfo_Picture</DataField>
+        </Field>
+        <Field Name="Vendor_Name_Vendor_Name_2">
+          <DataField>Vendor_Name_Vendor_Name_2</DataField>
+        </Field>
+        <Field Name="CompanyAddr_1">
+          <DataField>CompanyAddr_1</DataField>
+        </Field>
+        <Field Name="CompanyAddr_2">
+          <DataField>CompanyAddr_2</DataField>
+        </Field>
+        <Field Name="CompanyAddr_3">
+          <DataField>CompanyAddr_3</DataField>
+        </Field>
+        <Field Name="CompanyAddr_4">
+          <DataField>CompanyAddr_4</DataField>
+        </Field>
+        <Field Name="Vendor_Address">
+          <DataField>Vendor_Address</DataField>
+        </Field>
+        <Field Name="Vendor_Address_2">
+          <DataField>Vendor_Address_2</DataField>
+        </Field>
+        <Field Name="Vendor_Post_Code_Vendor_City">
+          <DataField>Vendor_Post_Code_Vendor_City</DataField>
+        </Field>
+        <Field Name="FORMAT_WORKDATE_0_Day_de_Month_Text_Year4">
+          <DataField>FORMAT_WORKDATE_0_Day_de_Month_Text_Year4</DataField>
+        </Field>
+        <Field Name="PageLoop_Number">
+          <DataField>PageLoop_Number</DataField>
+        </Field>
+        <Field Name="IncomeYear">
+          <DataField>IncomeYear</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_TextDescription_Vendor_Name_Vendor_Name_2_Vendor_VAT_Registration_No">
+          <DataField>STRSUBSTNO_TextDescription_Vendor_Name_Vendor_Name_2_Vendor_VAT_Registration_No</DataField>
+        </Field>
+        <Field Name="Amount1">
+          <DataField>Amount1</DataField>
+        </Field>
+        <Field Name="Amount1Format">
+          <DataField>Amount1Format</DataField>
+        </Field>
+        <Field Name="Amount2">
+          <DataField>Amount2</DataField>
+        </Field>
+        <Field Name="Amount2Format">
+          <DataField>Amount2Format</DataField>
+        </Field>
+        <Field Name="Amount3">
+          <DataField>Amount3</DataField>
+        </Field>
+        <Field Name="Amount3Format">
+          <DataField>Amount3Format</DataField>
+        </Field>
+        <Field Name="CurrencyString">
+          <DataField>CurrencyString</DataField>
+        </Field>
+        <Field Name="IncomesType_Description">
+          <DataField>IncomesType_Description</DataField>
+        </Field>
+        <Field Name="Income_StatementCaption">
+          <DataField>Income_StatementCaption</DataField>
+        </Field>
+        <Field Name="YearCaption">
+          <DataField>YearCaption</DataField>
+        </Field>
+        <Field Name="Remuneration_WorkingCaption">
+          <DataField>Remuneration_WorkingCaption</DataField>
+        </Field>
+        <Field Name="Without_RetentionCaption">
+          <DataField>Without_RetentionCaption</DataField>
+        </Field>
+        <Field Name="With_RetentionCaption">
+          <DataField>With_RetentionCaption</DataField>
+        </Field>
+        <Field Name="Having_been_made_the_following_deduction_Caption">
+          <DataField>Having_been_made_the_following_deduction_Caption</DataField>
+        </Field>
+        <Field Name="I_R_S_Caption">
+          <DataField>I_R_S_Caption</DataField>
+        </Field>
+        <Field Name="Text_Number">
+          <DataField>Text_Number</DataField>
+        </Field>
+        <Field Name="Customer_No">
+          <DataField>Customer_No</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Picture_C">
+          <DataField>CompanyInfo_Picture_C</DataField>
+        </Field>
+        <Field Name="Customer_Name_Customer_Name_2">
+          <DataField>Customer_Name_Customer_Name_2</DataField>
+        </Field>
+        <Field Name="CompanyAddr_1_C">
+          <DataField>CompanyAddr_1_C</DataField>
+        </Field>
+        <Field Name="CompanyAddr_2_C">
+          <DataField>CompanyAddr_2_C</DataField>
+        </Field>
+        <Field Name="CompanyAddr_3_C">
+          <DataField>CompanyAddr_3_C</DataField>
+        </Field>
+        <Field Name="CompanyAddr_4_C">
+          <DataField>CompanyAddr_4_C</DataField>
+        </Field>
+        <Field Name="Customer_Address">
+          <DataField>Customer_Address</DataField>
+        </Field>
+        <Field Name="Customer_Address_2">
+          <DataField>Customer_Address_2</DataField>
+        </Field>
+        <Field Name="Customer_Post_Code_Customer_City">
+          <DataField>Customer_Post_Code_Customer_City</DataField>
+        </Field>
+        <Field Name="FORMAT_WORKDATE_0_Day_de_Month_Text_Year4_C">
+          <DataField>FORMAT_WORKDATE_0_Day_de_Month_Text_Year4_C</DataField>
+        </Field>
+        <Field Name="PageLoop_Number_C">
+          <DataField>PageLoop_Number_C</DataField>
+        </Field>
+        <Field Name="IncomeYear_C">
+          <DataField>IncomeYear_C</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_TextDescription_Customer_Name_Customer_Name_2_Customer_VAT_Registration_No">
+          <DataField>STRSUBSTNO_TextDescription_Customer_Name_Customer_Name_2_Customer_VAT_Registration_No</DataField>
+        </Field>
+        <Field Name="Amount1_C">
+          <DataField>Amount1_C</DataField>
+        </Field>
+        <Field Name="Amount1_CFormat">
+          <DataField>Amount1_CFormat</DataField>
+        </Field>
+        <Field Name="Amount2_C">
+          <DataField>Amount2_C</DataField>
+        </Field>
+        <Field Name="Amount2_CFormat">
+          <DataField>Amount2_CFormat</DataField>
+        </Field>
+        <Field Name="Amount3_C">
+          <DataField>Amount3_C</DataField>
+        </Field>
+        <Field Name="Amount3_CFormat">
+          <DataField>Amount3_CFormat</DataField>
+        </Field>
+        <Field Name="CurrencyString_C">
+          <DataField>CurrencyString_C</DataField>
+        </Field>
+        <Field Name="IncomesType_Description_C">
+          <DataField>IncomesType_Description_C</DataField>
+        </Field>
+        <Field Name="Income_StatementCaption_C">
+          <DataField>Income_StatementCaption_C</DataField>
+        </Field>
+        <Field Name="YearCaption_C">
+          <DataField>YearCaption_C</DataField>
+        </Field>
+        <Field Name="Remuneration_WorkingCaption_C">
+          <DataField>Remuneration_WorkingCaption_C</DataField>
+        </Field>
+        <Field Name="Without_RetentionCaption_C">
+          <DataField>Without_RetentionCaption_C</DataField>
+        </Field>
+        <Field Name="With_RetentionCaption_C">
+          <DataField>With_RetentionCaption_C</DataField>
+        </Field>
+        <Field Name="Having_been_made_the_following_deduction_Caption_C">
+          <DataField>Having_been_made_the_following_deduction_Caption_C</DataField>
+        </Field>
+        <Field Name="I_R_S_Caption_C">
+          <DataField>I_R_S_Caption_C</DataField>
+        </Field>
+        <Field Name="Text_Number_C">
+          <DataField>Text_Number_C</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

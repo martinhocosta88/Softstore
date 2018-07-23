@@ -3,50 +3,130 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Account Schedule APP">
     <body>
       <group id="body">
-        <trans-unit id="TableExtension 2113165311 - Field 1559628746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1451408208 - Control 1559628746 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Amount Type 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Column Layout - Control Amount Type 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1451408208 - Control 921932129 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Amount Type 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Column Layout - Control Amount Type 3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1451408208 - Field 1559628746 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount,Debit Amount,Credit Amount,,,,,,Debit Balance,Credit Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Amount Type 2 - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1451408208 - Field 1559628746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Amount Type 2</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:ColumnLayoutExt - Field:Amount Type 2</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Amount Type 2 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2113165311 - Field 921932129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1451408208 - Field 921932129 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount,Debit Amount,Credit Amount,,,,,,Debit Balance,Credit Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Amount Type 3 - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1451408208 - Field 921932129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Amount Type 3</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:ColumnLayoutExt - Field:Amount Type 3</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Amount Type 3 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 1577010943 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 3225894500 - Control 3237928115 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if it is Standardized.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule Names - Control Standardized - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Control 2630141873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifices Positive Only values.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Control Positive Only - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Control 521919925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies values in Reverse Sign.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Control Reverse Sign - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Control 2430487460 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies Totaling 2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Control Totaling 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Control 387552079 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifices Positive Only values.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Control Positive Only 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Control 3063652307 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies values in Reverse Sign.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Control Reverse Sign 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Action 216216420 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prepare to print the document. A report request window for the document opens where you can specify what to include on the print-out.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Action PrintStandardized - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1848868896 - Action 216216420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XXX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Action PrintStandardized - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1018831744 - Field 1577010943 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Column Value</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Column Value</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Column Value - Property caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 2630141873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1018831744 - Field 1577010943 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Value,2nd Value,3rd Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Column Value - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1018831744 - Field 2630141873 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Positive Only</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Positive Only</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Positive Only - Property caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 387552079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1018831744 - Field 387552079 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Positive Only 2</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Positive Only 2</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Positive Only 2 - Property caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 521919925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1018831744 - Field 521919925 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reverse Sign</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Reverse Sign</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Reverse Sign - Property caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 3063652307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1018831744 - Field 3063652307 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reverse Sign 2</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Reverse Sign 2</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Reverse Sign 2 - Property caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 2430487460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1018831744 - Field 2430487460 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Totaling 2</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Totaling 2</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Totaling 2 - Property caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1878461069 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 1018831744 - Field 1878130204 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension:AccScheduleLineExt - Field:Type</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Type - Property caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1018831744 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Debit,Credit,Assets,Liabilities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Line - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4206333399 - Field 3237928115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standardized</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Name - Field Standardized - Property Caption</note>
         </trans-unit>
       </group>
     </body>
