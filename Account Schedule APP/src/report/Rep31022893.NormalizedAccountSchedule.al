@@ -247,7 +247,7 @@ report 31022893 "Normalized Account Schedule"
                       ImprimeLin := NOT
                                (DataItemAccScheduleLine.Show IN [DataItemAccScheduleLine.Show::No,DataItemAccScheduleLine.Show::"When Positive Balance"]);
                       IF ImprimeLin THEN BEGIN
-                        NotZero := CalcColunas;
+                        NotZero := CalcColumns;
                         IF DataItemAccScheduleLine.Show = DataItemAccScheduleLine.Show::"If Any Column Not Zero" THEN
                           ImprimeLin := NotZero;
                       END;
@@ -255,13 +255,13 @@ report 31022893 "Normalized Account Schedule"
                      NotZero1 := FALSE;
                      ImprimeLin1 := (DataItemAccScheduleLine.Show IN [DataItemAccScheduleLine.Show::"When Positive Balance"]);
                      IF ImprimeLin1 THEN
-                       NotZero1 := CalcColunas;
+                       NotZero1 := CalcColumns;
                     END ELSE BEGIN
                       NotZero := FALSE;
                       ImprimeLin := NOT
                                (DataItemAccScheduleLine.Show IN [DataItemAccScheduleLine.Show::No,DataItemAccScheduleLine.Show::"When Positive Balance"]);
                       IF ImprimeLin THEN BEGIN
-                        NotZero := CalcColunas;
+                        NotZero := CalcColumns;
                         IF DataItemAccScheduleLine.Show = DataItemAccScheduleLine.Show::"If Any Column Not Zero" THEN
                           ImprimeLin := NotZero;
                       END;
@@ -269,7 +269,7 @@ report 31022893 "Normalized Account Schedule"
                       NotZero1 := FALSE;
                       ImprimeLin1 := (DataItemAccScheduleLine.Show IN [DataItemAccScheduleLine.Show::"When Positive Balance"]);
                       IF ImprimeLin1 THEN
-                        NotZero1 := CalcColunas;
+                        NotZero1 := CalcColumns;
                     END;
 
                     IF AccScheduleLine."Line No." = 0 THEN
@@ -357,6 +357,7 @@ report 31022893 "Normalized Account Schedule"
         ColumnLayoutTemp : Record "Column Layout" temporary;
         GenLedgerSetup : Record "General Ledger Setup";
         AccSchedManagement : Codeunit AccSchedManagement;
+        AccSchedManagementPT : Codeunit AccSchedManagementPT;
         UsePrePrint : Boolean;
         AccSchFilter : Text[250];
         FiscalYear1 : Text[30];
@@ -509,7 +510,7 @@ report 31022893 "Normalized Account Schedule"
         END;
     end;
 
-    procedure CalcColunas() : Boolean;
+    procedure CalcColumns() : Boolean;
     var
         NotZero : Boolean;
     begin
@@ -521,8 +522,8 @@ report 31022893 "Normalized Account Schedule"
             REPEAT
               IF ColumnLayoutTemp.Show <> ColumnLayoutTemp.Show::Never THEN BEGIN
                 i := i + 1;
-                ShowColValues[i] := AccSchedManagement.CalcCell(DataItemAccScheduleLine,ColumnLayoutTemp,FALSE);
-                IF AccSchedManagement.GetDivisionError THEN BEGIN
+                ShowColValues[i] := AccSchedManagementPT.CalcCell(DataItemAccScheduleLine,ColumnLayoutTemp,FALSE);
+                IF AccSchedManagementPT.GetDivisionError THEN BEGIN
                 IF ShowCurrError THEN BEGIN
                   ColValuesAsText[i] := Text31022893;
                   ColValuesAsText1[i] := Text31022893;

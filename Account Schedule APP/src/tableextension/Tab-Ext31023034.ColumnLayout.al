@@ -23,6 +23,13 @@ tableextension 31023034 "Column Layout" extends "Column Layout"
             OptionCaption ='Net Amount,Debit Amount,Credit Amount,,,,,,Debit Balance,Credit Balance';
             DataClassification = CustomerContent;
         }
+        field(31022892;"Ref"; Option)
+        {
+            InitValue="1";
+            OptionMembers = "1","2";
+            OptionCaption ='1,2';
+            DataClassification = CustomerContent;
+        }          
     }
     var
 }
