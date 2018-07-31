@@ -126,47 +126,47 @@
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 746880067" size-unit="char" translate="yes" xml:space="preserve">
           <source>Missing group %1 - Account No. %2</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022897</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022897</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
           <source>This function checks the consistency of and completes the Chart of Accounts:\</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022896</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022896</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
           <source>- Checks that a corresponding balance account exists for every posting account.\</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022895</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022895</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
           <source>- Assigns values to the following fields: Income/Balance, Account Type, Totaling and Debit/Credit.\</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022893</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022893</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
           <source>Do you want to Check the Chart of Accounts?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022892</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022892</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
           <source>Checking the Chart of Accounts #1########## @2@@@@@@@@@@@@@</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022891</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022891</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2397649453 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>The Chart of Accounts is correct.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CheckChartAcc - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CheckChartAcc - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="Codeunit 211026378 - Method 2433425993 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Indenting the Chart of Accounts #1##########</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Procedure CashFlowIndent - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CashFlowIndent - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="Codeunit 3807294585 - Method 615983447 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>The number you entered is not a valid NIB.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit IBAN Management - Procedure CheckCCC - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit IBAN Management - Method CheckCCC - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="Page 3404562225 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-Flow Code Card</source>
@@ -1141,7 +1141,7 @@
         <trans-unit id="TableExtension 3469146285 - Change 284764054 - Method 3279464882 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Company Information - Change Country/Region Code - Trigger OnBeforeValidate - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Company Information - Change Country/Region Code - Method OnBeforeValidate - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="PageExtension 2603476233 - Control 778216806 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the bank number.</source>
@@ -1386,7 +1386,7 @@
         <trans-unit id="TableExtension 785108357 - Change 284764054 - Method 3279464882 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer Bank Account - Change Country/Region Code - Trigger OnBeforeValidate - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer Bank Account - Change Country/Region Code - Method OnBeforeValidate - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 4231435149 - Field 588297277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>CCC Bank Account No.</source>
@@ -1416,7 +1416,7 @@
         <trans-unit id="TableExtension 4231435149 - Change 284764054 - Method 3279464882 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Vendor Bank Account - Change Country/Region Code - Trigger OnBeforeValidate - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Vendor Bank Account - Change Country/Region Code - Method OnBeforeValidate - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 1682139193 - Field 588297277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>CCC Bank Account No.</source>
@@ -1446,7 +1446,7 @@
         <trans-unit id="TableExtension 1682139193 - Change 284764054 - Method 3279464882 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Bank Account - Change Country/Region Code - Trigger OnBeforeValidate - NamedType Text31022892</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Bank Account - Change Country/Region Code - Method OnBeforeValidate - NamedType Text31022892</note>
         </trans-unit>
         <trans-unit id="TableExtension 1806786327 - Field 885549068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Acc: cash-flow code</source>
@@ -1466,7 +1466,7 @@
         <trans-unit id="TableExtension 2072992664 - Field 712889997 - Method 2126772001 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Header - Field Cash-flow code - Trigger OnValidate - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Header - Field Cash-flow code - Method OnValidate - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 3566004263 - Field 695109909 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Cash-flow code</source>
@@ -1486,7 +1486,7 @@
         <trans-unit id="TableExtension 1192395785 - Field 712889997 - Method 2126772001 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header - Field Cash-flow code - Trigger OnValidate - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header - Field Cash-flow code - Method OnValidate - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 3561154705 - Field 1172175465 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Currency Decimal Unit Text</source>

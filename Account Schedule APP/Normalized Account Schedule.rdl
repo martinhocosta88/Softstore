@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -10,177 +10,6 @@
       <rd:DataSourceID>d9e403a2-a3d0-40d2-9a8e-c2822d4aadf2</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Acc__Schedule_Name_Name">
-          <DataField>Acc__Schedule_Name_Name</DataField>
-        </Field>
-        <Field Name="UPPERCASE__Acc__Schedule_Name__Description_">
-          <DataField>UPPERCASE__Acc__Schedule_Name__Description_</DataField>
-        </Field>
-        <Field Name="FORMAT_TODAY_0_4_">
-          <DataField>FORMAT_TODAY_0_4_</DataField>
-        </Field>
-        <Field Name="CurrReport_PAGENO">
-          <DataField>CurrReport_PAGENO</DataField>
-        </Field>
-        <Field Name="CabTexto">
-          <DataField>CabTexto</DataField>
-        </Field>
-        <Field Name="USERID">
-          <DataField>USERID</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line__TABLENAME__________FiltroLinEsqCta">
-          <DataField>Acc__Schedule_Line__TABLENAME__________FiltroLinEsqCta</DataField>
-        </Field>
-        <Field Name="UPPERCASE_TipoActual_">
-          <DataField>UPPERCASE_TipoActual_</DataField>
-        </Field>
-        <Field Name="Cabecalho_3_">
-          <DataField>Cabecalho_3_</DataField>
-        </Field>
-        <Field Name="Cabecalho_6_">
-          <DataField>Cabecalho_6_</DataField>
-        </Field>
-        <Field Name="Cabecalho_1_">
-          <DataField>Cabecalho_1_</DataField>
-        </Field>
-        <Field Name="Cabecalho_2_">
-          <DataField>Cabecalho_2_</DataField>
-        </Field>
-        <Field Name="ArredCabecalho_1_">
-          <DataField>ArredCabecalho_1_</DataField>
-        </Field>
-        <Field Name="ArredCabecalho_2_">
-          <DataField>ArredCabecalho_2_</DataField>
-        </Field>
-        <Field Name="ArredCabecalho_3_">
-          <DataField>ArredCabecalho_3_</DataField>
-        </Field>
-        <Field Name="ArredCabecalho_6_">
-          <DataField>ArredCabecalho_6_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto1_6_">
-          <DataField>ValoresColComoTexto1_6_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto1_4_">
-          <DataField>ValoresColComoTexto1_4_</DataField>
-        </Field>
-        <Field Name="ImprimeLin">
-          <DataField>ImprimeLin</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto1_3_">
-          <DataField>ValoresColComoTexto1_3_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto1_2_">
-          <DataField>ValoresColComoTexto1_2_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto1_1_">
-          <DataField>ValoresColComoTexto1_1_</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line__Acc__Schedule_Line__Type">
-          <DataField>Acc__Schedule_Line__Acc__Schedule_Line__Type</DataField>
-        </Field>
-        <Field Name="ImprimeLin1">
-          <DataField>ImprimeLin1</DataField>
-        </Field>
-        <Field Name="Type_Assets">
-          <DataField>Type_Assets</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line__Row_No__">
-          <DataField>Acc__Schedule_Line__Row_No__</DataField>
-        </Field>
-        <Field Name="PADSTR_____Indentation___2____Description">
-          <DataField>PADSTR_____Indentation___2____Description</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_1_">
-          <DataField>ValoresColComoTexto_1_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_2_">
-          <DataField>ValoresColComoTexto_2_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_3_">
-          <DataField>ValoresColComoTexto_3_</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_6_">
-          <DataField>ValoresColComoTexto_6_</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line__Row_No___Control7">
-          <DataField>Acc__Schedule_Line__Row_No___Control7</DataField>
-        </Field>
-        <Field Name="PADSTR_____Indentation___2____Description_Control8">
-          <DataField>PADSTR_____Indentation___2____Description_Control8</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_1__Control9">
-          <DataField>ValoresColComoTexto_1__Control9</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_6__Control11">
-          <DataField>ValoresColComoTexto_6__Control11</DataField>
-        </Field>
-        <Field Name="New_Page">
-          <DataField>New_Page</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line__Row_No___Control92">
-          <DataField>Acc__Schedule_Line__Row_No___Control92</DataField>
-        </Field>
-        <Field Name="PADSTR_____Indentation___2____Description_Control93">
-          <DataField>PADSTR_____Indentation___2____Description_Control93</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_1__Control94">
-          <DataField>ValoresColComoTexto_1__Control94</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_2__Control95">
-          <DataField>ValoresColComoTexto_2__Control95</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_3__Control96">
-          <DataField>ValoresColComoTexto_3__Control96</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_6__Control99">
-          <DataField>ValoresColComoTexto_6__Control99</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line__Row_No___Control12">
-          <DataField>Acc__Schedule_Line__Row_No___Control12</DataField>
-        </Field>
-        <Field Name="PADSTR_____Indentation___2____Description_Control13">
-          <DataField>PADSTR_____Indentation___2____Description_Control13</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_1__Control14">
-          <DataField>ValoresColComoTexto_1__Control14</DataField>
-        </Field>
-        <Field Name="ValoresColComoTexto_6__Control16">
-          <DataField>ValoresColComoTexto_6__Control16</DataField>
-        </Field>
-        <Field Name="PageCaption">
-          <DataField>PageCaption</DataField>
-        </Field>
-        <Field Name="ANALYTIC_BALANCECaption">
-          <DataField>ANALYTIC_BALANCECaption</DataField>
-        </Field>
-        <Field Name="Row_No_Caption">
-          <DataField>Row_No_Caption</DataField>
-        </Field>
-        <Field Name="DescriptionCaption">
-          <DataField>DescriptionCaption</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line_Schedule_Name">
-          <DataField>Acc__Schedule_Line_Schedule_Name</DataField>
-        </Field>
-        <Field Name="Acc__Schedule_Line_Line_No_">
-          <DataField>Acc__Schedule_Line_Line_No_</DataField>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
-        <rd:TableName>Result</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2214,4 +2043,167 @@ End Function</Code>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>4af72120-c872-45b7-a900-ef8193ea9bb4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Acc__Schedule_Name_Name">
+          <DataField>Acc__Schedule_Name_Name</DataField>
+        </Field>
+        <Field Name="UPPERCASE__Acc__Schedule_Name__Description_">
+          <DataField>UPPERCASE__Acc__Schedule_Name__Description_</DataField>
+        </Field>
+        <Field Name="FORMAT_TODAY_0_4_">
+          <DataField>FORMAT_TODAY_0_4_</DataField>
+        </Field>
+        <Field Name="CabTexto">
+          <DataField>CabTexto</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line__TABLENAME__________AccSchFilter">
+          <DataField>Acc__Schedule_Line__TABLENAME__________AccSchFilter</DataField>
+        </Field>
+        <Field Name="UPPERCASE_CurrType_">
+          <DataField>UPPERCASE_CurrType_</DataField>
+        </Field>
+        <Field Name="Cabecalho_3_">
+          <DataField>Cabecalho_3_</DataField>
+        </Field>
+        <Field Name="Cabecalho_6_">
+          <DataField>Cabecalho_6_</DataField>
+        </Field>
+        <Field Name="Cabecalho_1_">
+          <DataField>Cabecalho_1_</DataField>
+        </Field>
+        <Field Name="Cabecalho_2_">
+          <DataField>Cabecalho_2_</DataField>
+        </Field>
+        <Field Name="ArredCabecalho_1_">
+          <DataField>ArredCabecalho_1_</DataField>
+        </Field>
+        <Field Name="ArredCabecalho_2_">
+          <DataField>ArredCabecalho_2_</DataField>
+        </Field>
+        <Field Name="ArredCabecalho_3_">
+          <DataField>ArredCabecalho_3_</DataField>
+        </Field>
+        <Field Name="ArredCabecalho_6_">
+          <DataField>ArredCabecalho_6_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText1_6_">
+          <DataField>ColValuesAsText1_6_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText1_4_">
+          <DataField>ColValuesAsText1_4_</DataField>
+        </Field>
+        <Field Name="ImprimeLin">
+          <DataField>ImprimeLin</DataField>
+        </Field>
+        <Field Name="ColValuesAsText1_3_">
+          <DataField>ColValuesAsText1_3_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText1_2_">
+          <DataField>ColValuesAsText1_2_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText1_1_">
+          <DataField>ColValuesAsText1_1_</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line__Acc__Schedule_Line__Type">
+          <DataField>Acc__Schedule_Line__Acc__Schedule_Line__Type</DataField>
+        </Field>
+        <Field Name="ImprimeLin1">
+          <DataField>ImprimeLin1</DataField>
+        </Field>
+        <Field Name="Type_Assets">
+          <DataField>Type_Assets</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line__Row_No__">
+          <DataField>Acc__Schedule_Line__Row_No__</DataField>
+        </Field>
+        <Field Name="PADSTR_____Indentation___2____Description">
+          <DataField>PADSTR_____Indentation___2____Description</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_1_">
+          <DataField>ColValuesAsText_1_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_2_">
+          <DataField>ColValuesAsText_2_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_3_">
+          <DataField>ColValuesAsText_3_</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_6_">
+          <DataField>ColValuesAsText_6_</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line__Row_No___Control7">
+          <DataField>Acc__Schedule_Line__Row_No___Control7</DataField>
+        </Field>
+        <Field Name="PADSTR_____Indentation___2____Description_Control8">
+          <DataField>PADSTR_____Indentation___2____Description_Control8</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_1__Control9">
+          <DataField>ColValuesAsText_1__Control9</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_6__Control11">
+          <DataField>ColValuesAsText_6__Control11</DataField>
+        </Field>
+        <Field Name="New_Page">
+          <DataField>New_Page</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line__Row_No___Control92">
+          <DataField>Acc__Schedule_Line__Row_No___Control92</DataField>
+        </Field>
+        <Field Name="PADSTR_____Indentation___2____Description_Control93">
+          <DataField>PADSTR_____Indentation___2____Description_Control93</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_1__Control94">
+          <DataField>ColValuesAsText_1__Control94</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_2__Control95">
+          <DataField>ColValuesAsText_2__Control95</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_3__Control96">
+          <DataField>ColValuesAsText_3__Control96</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_6__Control99">
+          <DataField>ColValuesAsText_6__Control99</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line__Row_No___Control12">
+          <DataField>Acc__Schedule_Line__Row_No___Control12</DataField>
+        </Field>
+        <Field Name="PADSTR_____Indentation___2____Description_Control13">
+          <DataField>PADSTR_____Indentation___2____Description_Control13</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_1__Control14">
+          <DataField>ColValuesAsText_1__Control14</DataField>
+        </Field>
+        <Field Name="ColValuesAsText_6__Control16">
+          <DataField>ColValuesAsText_6__Control16</DataField>
+        </Field>
+        <Field Name="PageCaption">
+          <DataField>PageCaption</DataField>
+        </Field>
+        <Field Name="ANALYTIC_BALANCECaption">
+          <DataField>ANALYTIC_BALANCECaption</DataField>
+        </Field>
+        <Field Name="Row_No_Caption">
+          <DataField>Row_No_Caption</DataField>
+        </Field>
+        <Field Name="DescriptionCaption">
+          <DataField>DescriptionCaption</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line_Schedule_Name">
+          <DataField>Acc__Schedule_Line_Schedule_Name</DataField>
+        </Field>
+        <Field Name="Acc__Schedule_Line_Line_No_">
+          <DataField>Acc__Schedule_Line_Line_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
