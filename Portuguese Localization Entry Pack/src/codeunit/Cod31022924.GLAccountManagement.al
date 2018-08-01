@@ -5,6 +5,7 @@ codeunit 31022924 "G/L Account Management"
     trigger OnRun()
     begin
     end;
+
     procedure CheckChartAcc()
     var
         Text31022897: Label 'Missing group %1 - Account No. %2';
@@ -20,7 +21,6 @@ codeunit 31022924 "G/L Account Management"
         LineCounter: Integer;
         NoOfRecords: Integer;
         FindAcc: Record "G/L Account";
-
 
     begin
         IF NOT HidePrintDialog THEN
