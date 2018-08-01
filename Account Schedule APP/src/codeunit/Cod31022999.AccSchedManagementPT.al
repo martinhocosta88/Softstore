@@ -57,34 +57,6 @@ codeunit 31022999 "AccSchedManagementPT"
         Text31022891: Label 'Q';
         Text31022892: Label 'Column Formula: %1';
 
-    procedure OpenSchedule(var CurrentSchedName: Code[10]; var AccSchedLine: Record "Acc. Schedule Line");
-    begin
-        CheckTemplateAndSetFilter(CurrentSchedName, AccSchedLine);
-    end;
-
-    procedure OpenAndCheckSchedule(var CurrentSchedName: Code[10]; var AccSchedLine: Record "Acc. Schedule Line");
-    var
-        GeneralLedgerSetup: Record "General Ledger Setup";
-    begin
-        CheckTemplateAndSetFilter(CurrentSchedName, AccSchedLine);
-        IF AccSchedLine.ISEMPTY THEN
-            EXIT;
-        GeneralLedgerSetup.GET;
-        IF CurrentSchedName IN
-           [GeneralLedgerSetup."Acc. Sched. for Balance Sheet", GeneralLedgerSetup."Acc. Sched. for Cash Flow Stmt",
-            GeneralLedgerSetup."Acc. Sched. for Income Stmt.", GeneralLedgerSetup."Acc. Sched. for Retained Earn."]
-        THEN
-            MESSAGE(SystemGeneratedAccSchedMsg);
-    end;
-
-    local procedure CheckTemplateAndSetFilter(var CurrentSchedName: Code[10]; var AccSchedLine: Record "Acc. Schedule Line");
-    begin
-        CheckTemplateName(CurrentSchedName);
-        AccSchedLine.FILTERGROUP(2);
-        AccSchedLine.SETRANGE("Schedule Name", CurrentSchedName);
-        AccSchedLine.FILTERGROUP(0);
-    end;
-
     local procedure CheckTemplateName(var CurrentSchedName: Code[10]);
     var
         AccSchedName: Record "Acc. Schedule Name";
@@ -101,41 +73,6 @@ codeunit 31022999 "AccSchedManagementPT"
         END;
     end;
 
-    procedure CheckName(CurrentSchedName: Code[10]);
-    var
-        AccSchedName: Record "Acc. Schedule Name";
-    begin
-        AccSchedName.GET(CurrentSchedName);
-    end;
-
-    procedure SetName(CurrentSchedName: Code[10]; var AccSchedLine: Record "Acc. Schedule Line");
-    begin
-        AccSchedLine.FILTERGROUP(2);
-        AccSchedLine.SETRANGE("Schedule Name", CurrentSchedName);
-        AccSchedLine.FILTERGROUP(0);
-        IF AccSchedLine.FIND('-') THEN;
-    end;
-
-    procedure LookupName(CurrentSchedName: Code[10]; var EntrdSchedName: Text[10]): Boolean;
-    var
-        AccSchedName: Record "Acc. Schedule Name";
-    begin
-        AccSchedName.Name := CurrentSchedName;
-        IF PAGE.RUNMODAL(0, AccSchedName) <> ACTION::LookupOK THEN
-            EXIT(FALSE);
-
-        EntrdSchedName := AccSchedName.Name;
-        EXIT(TRUE);
-    end;
-
-    procedure OpenColumns(var CurrentColumnName: Code[10]; var ColumnLayout: Record "Column Layout");
-    begin
-        CheckColumnTemplateName(CurrentColumnName);
-        ColumnLayout.FILTERGROUP(2);
-        ColumnLayout.SETRANGE("Column Layout Name", CurrentColumnName);
-        ColumnLayout.FILTERGROUP(0);
-    end;
-
     local procedure CheckColumnTemplateName(var CurrentColumnName: Code[10]);
     var
         ColumnLayoutName: Record "Column Layout Name";
@@ -150,47 +87,6 @@ codeunit 31022999 "AccSchedManagementPT"
             END;
             CurrentColumnName := ColumnLayoutName.Name;
         END;
-    end;
-
-    procedure CheckColumnName(CurrentColumnName: Code[10]);
-    var
-        ColumnLayoutName: Record "Column Layout Name";
-    begin
-        ColumnLayoutName.GET(CurrentColumnName);
-    end;
-
-    procedure SetColumnName(CurrentColumnName: Code[10]; var ColumnLayout: Record "Column Layout");
-    begin
-        ColumnLayout.RESET;
-        ColumnLayout.FILTERGROUP(2);
-        ColumnLayout.SETRANGE("Column Layout Name", CurrentColumnName);
-        ColumnLayout.FILTERGROUP(0);
-    end;
-
-    procedure CopyColumnsToTemp(NewColumnName: Code[10]; var TempColumnLayout: Record "Column Layout");
-    var
-        ColumnLayout: Record "Column Layout";
-    begin
-        TempColumnLayout.DELETEALL;
-        ColumnLayout.SETRANGE("Column Layout Name", NewColumnName);
-        IF ColumnLayout.FIND('-') THEN
-            REPEAT
-                TempColumnLayout := ColumnLayout;
-                TempColumnLayout.INSERT;
-            UNTIL ColumnLayout.NEXT = 0;
-        IF TempColumnLayout.FIND('-') THEN;
-    end;
-
-    procedure LookupColumnName(CurrentColumnName: Code[10]; var EntrdColumnName: Text[10]): Boolean;
-    var
-        ColumnLayoutName: Record "Column Layout Name";
-    begin
-        ColumnLayoutName.Name := CurrentColumnName;
-        IF PAGE.RUNMODAL(0, ColumnLayoutName) <> ACTION::LookupOK THEN
-            EXIT(FALSE);
-
-        EntrdColumnName := ColumnLayoutName.Name;
-        EXIT(TRUE);
     end;
 
     procedure CheckAnalysisView(CurrentSchedName: Code[10]; CurrentColumnName: Code[10]; TestColumnName: Boolean);
@@ -622,7 +518,7 @@ codeunit 31022999 "AccSchedManagementPT"
                         Result := LeftResult + RightResult;
                     '-':
                         Result := LeftResult - RightResult;
-                    //soft,sn
+                        //soft,sn
                     '[':
                         IF RightResult >= 0 THEN
                             Result := LeftResult + RightResult
@@ -1706,148 +1602,10 @@ codeunit 31022999 "AccSchedManagementPT"
         END;
     end;
 
-    // procedure FormatCellAsText(var ColumnLayout2 : Record "Column Layout";Value : Decimal;CalcAddCurr : Boolean) : Text[30];
-    // var
-    //     ValueAsText : Text[30];
-    // begin
-    //     ValueAsText := MatrixMgt.FormatValue(Value,ColumnLayout2."Rounding Factor",CalcAddCurr);
-
-    //     IF (ValueAsText <> '') AND
-    //        (ColumnLayout2."Column Type" = ColumnLayout2."Column Type"::Formula) AND
-    //        (STRPOS(ColumnLayout2.Formula,'%') > 1)
-    //     THEN
-    //       ValueAsText := ValueAsText + '%';
-
-    //     EXIT(ValueAsText);
-    // end;
-
     procedure GetDivisionError(): Boolean;
     begin
         EXIT(DivisionError);
     end;
-
-    // procedure GetPeriodError() : Boolean;
-    // begin
-    //     EXIT(PeriodError);
-    // end;
-
-    procedure InsertGLAccounts(var AccSchedLine: Record "Acc. Schedule Line");
-    var
-        GLAcc: Record "G/L Account";
-        GLAccList: Page "G/L Account List";
-        AccCounter: Integer;
-        AccSchedLineNo: Integer;
-    begin
-        GLAccList.LOOKUPMODE(TRUE);
-        IF GLAccList.RUNMODAL = ACTION::LookupOK THEN BEGIN
-            GLAccList.SetSelection(GLAcc);
-            AccCounter := GLAcc.COUNT;
-            IF AccCounter > 0 THEN BEGIN
-                AccSchedLineNo := AccSchedLine."Line No.";
-                MoveAccSchedLines(AccSchedLine, AccCounter);
-                IF GLAcc.FINDSET THEN
-                    REPEAT
-                        AccSchedLine.INIT;
-                        AccSchedLineNo := AccSchedLineNo + 10000;
-                        AccSchedLine."Line No." := AccSchedLineNo;
-                        AccSchedLine.Description := GLAcc.Name;
-                        AccSchedLine.Indentation := GLAcc.Indentation;
-                        AccSchedLine.Bold := GLAcc."Account Type" <> GLAcc."Account Type"::Posting;
-                        IF GLAcc."Account Type" IN
-                           //soft,o [GLAcc."Account Type"::Posting,GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"]
-                           [GLAcc."Account Type"::Posting, GLAcc."Account Type"::Total] //soft,n
-                        THEN BEGIN
-                            AccSchedLine.Totaling := GLAcc."No.";
-                            AccSchedLine."Row No." := COPYSTR(GLAcc."No.", 1, MAXSTRLEN(AccSchedLine."Row No."));
-                        END;
-                        IF GLAcc."Account Type" IN
-                           //soft,o [GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"]
-                           [GLAcc."Account Type"::Total] //soft,n
-                        THEN
-                            AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Total Accounts"
-                        ELSE
-                            AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Posting Accounts";
-                        AccSchedLine.INSERT;
-                    UNTIL GLAcc.NEXT = 0;
-            END;
-        END;
-    end;
-
-    // procedure InsertCFAccounts(var AccSchedLine : Record "Acc. Schedule Line");
-    // var
-    //     CashFlowAcc : Record "Cash Flow Account";
-    //     CashFlowAccList : Page "Cash Flow Account List";
-    //     AccCounter : Integer;
-    //     AccSchedLineNo : Integer;
-    // begin
-    //     CashFlowAccList.LOOKUPMODE(TRUE);
-    //     IF CashFlowAccList.RUNMODAL = ACTION::LookupOK THEN BEGIN
-    //       CashFlowAccList.SetSelection(CashFlowAcc);
-    //       AccCounter := CashFlowAcc.COUNT;
-    //       IF AccCounter > 0 THEN BEGIN
-    //         AccSchedLineNo := AccSchedLine."Line No.";
-    //         MoveAccSchedLines(AccSchedLine,AccCounter);
-    //         IF CashFlowAcc.FINDSET THEN
-    //           REPEAT
-    //             AccSchedLine.INIT;
-    //             AccSchedLineNo := AccSchedLineNo + 10000;
-    //             AccSchedLine."Line No." := AccSchedLineNo;
-    //             AccSchedLine.Description := CashFlowAcc.Name;
-    //             IF CashFlowAcc."Account Type" IN
-    //                [CashFlowAcc."Account Type"::Entry,CashFlowAcc."Account Type"::Total,CashFlowAcc."Account Type"::"End-Total"]
-    //             THEN BEGIN
-    //               AccSchedLine.Totaling := CashFlowAcc."No.";
-    //               AccSchedLine."Row No." := COPYSTR(CashFlowAcc."No.",1,MAXSTRLEN(AccSchedLine."Row No."));
-    //             END;
-    //             IF CashFlowAcc."Account Type" IN
-    //                [CashFlowAcc."Account Type"::Total,CashFlowAcc."Account Type"::"End-Total"]
-    //             THEN
-    //               AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Cash Flow Total Accounts"
-    //             ELSE
-    //               AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Cash Flow Entry Accounts";
-    //             AccSchedLine.INSERT;
-    //           UNTIL CashFlowAcc.NEXT = 0;
-    //       END;
-    //     END;
-    // end;
-
-    // procedure InsertCostTypes(var AccSchedLine : Record "Acc. Schedule Line");
-    // var
-    //     CostType : Record "Cost Type";
-    //     CostTypeList : Page "Cost Type List";
-    //     AccCounter : Integer;
-    //     AccSchedLineNo : Integer;
-    // begin
-    //     CostTypeList.LOOKUPMODE(TRUE);
-    //     IF CostTypeList.RUNMODAL = ACTION::LookupOK THEN BEGIN
-    //       CostTypeList.SetSelection(CostType);
-    //       AccCounter := CostType.COUNT;
-    //       IF AccCounter > 0 THEN BEGIN
-    //         AccSchedLineNo := AccSchedLine."Line No.";
-    //         MoveAccSchedLines(AccSchedLine,AccCounter);
-    //         IF CostType.FINDSET THEN
-    //           REPEAT
-    //             AccSchedLine.INIT;
-    //             AccSchedLineNo := AccSchedLineNo + 10000;
-    //             AccSchedLine."Line No." := AccSchedLineNo;
-    //             AccSchedLine.Description := CostType.Name;
-    //             IF CostType.Type IN
-    //                [CostType.Type::"Cost Type",CostType.Type::Total,CostType.Type::"End-Total"]
-    //             THEN BEGIN
-    //               AccSchedLine.Totaling := CostType."No.";
-    //               AccSchedLine."Row No." := COPYSTR(CostType."No.",1,MAXSTRLEN(AccSchedLine."Row No."));
-    //             END;
-    //             IF CostType.Type IN
-    //                [CostType.Type::Total,CostType.Type::"End-Total"]
-    //             THEN
-    //               AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Cost Type Total"
-    //             ELSE
-    //               AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Cost Type";
-    //             AccSchedLine.INSERT;
-    //           UNTIL CostType.NEXT = 0;
-    //       END;
-    //     END;
-    // end;
 
     local procedure ExchangeAmtAddCurrToLCY(AmountLCY: Decimal): Decimal;
     begin
@@ -1861,11 +1619,6 @@ codeunit 31022999 "AccSchedManagementPT"
             WORKDATE, GLSetup."Additional Reporting Currency", AmountLCY,
             CurrExchRate.ExchangeRate(WORKDATE, GLSetup."Additional Reporting Currency")));
     end;
-
-    // procedure SetAccSchedName(var NewAccSchedName : Record "Acc. Schedule Name");
-    // begin
-    //     AccSchedName := NewAccSchedName;
-    // end;
 
     procedure GetDimTotalingFilter(DimNo: Integer; DimTotaling: Text[250]): Text[1024];
     var
@@ -2242,30 +1995,6 @@ codeunit 31022999 "AccSchedManagementPT"
             END;
     end;
 
-    local procedure MoveAccSchedLines(var AccSchedLine: Record "Acc. Schedule Line"; Place: Integer);
-    var
-        AccSchedLineNo: Integer;
-        I: Integer;
-    begin
-        AccSchedLineNo := AccSchedLine."Line No.";
-        AccSchedLine.SETRANGE("Schedule Name", AccSchedLine."Schedule Name");
-        IF AccSchedLine.FIND('+') THEN
-            REPEAT
-                I := AccSchedLine."Line No.";
-                IF I > AccSchedLineNo THEN BEGIN
-                    AccSchedLine.DELETE;
-                    AccSchedLine."Line No." := I + 10000 * Place;
-                    AccSchedLine.INSERT;
-                END;
-            UNTIL (I <= AccSchedLineNo) OR (AccSchedLine.NEXT(-1) = 0);
-    end;
-
-    procedure SetStartDateEndDate(NewStartDate: Date; NewEndDate: Date);
-    begin
-        StartDate := NewStartDate;
-        EndDate := NewEndDate;
-    end;
-
     local procedure ConflictAmountType(AccSchedLine: Record "Acc. Schedule Line"; ColumnLayoutAmtType: Option "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance"; var AmountType: Option): Boolean;
     begin
         IF (ColumnLayoutAmtType = AccSchedLine."Amount Type") OR
@@ -2278,205 +2007,6 @@ codeunit 31022999 "AccSchedManagementPT"
             ELSE
                 EXIT(TRUE);
         EXIT(FALSE);
-    end;
-
-    procedure DrillDown(TempColumnLayout: Record "Column Layout" temporary; var AccScheduleLine: Record "Acc. Schedule Line"; PeriodLength: Option);
-    var
-        AccScheduleOverview: Page "Acc. Schedule Overview";
-        ErrorType: Option "None","Division by Zero","Period Error",Both;
-    begin
-        WITH AccScheduleLine DO BEGIN
-            IF TempColumnLayout."Column Type" = TempColumnLayout."Column Type"::Formula THEN BEGIN
-                CalcFieldError(ErrorType, "Line No.", TempColumnLayout."Line No.");
-                IF ErrorType <> ErrorType::None THEN
-                    MESSAGE(STRSUBSTNO(ColumnFormulaErrorMsg, TempColumnLayout.Formula, FORMAT(ErrorType)))
-                ELSE
-                    MESSAGE(ColumnFormulaMsg, TempColumnLayout.Formula);
-                EXIT;
-            END;
-
-            IF "Totaling Type" IN ["Totaling Type"::Formula, "Totaling Type"::"Set Base For Percent"] THEN BEGIN
-                MESSAGE(RowFormulaMsg, Totaling);
-                EXIT;
-            END;
-
-            IF Totaling = '' THEN
-                EXIT;
-
-            IF "Totaling Type" IN ["Totaling Type"::"Cash Flow Entry Accounts", "Totaling Type"::"Cash Flow Total Accounts"] THEN
-                DrillDownOnCFAccount(TempColumnLayout, AccScheduleLine)
-            ELSE
-                DrillDownOnGLAccount(TempColumnLayout, AccScheduleLine);
-        END;
-    end;
-
-    procedure DrillDownFromOverviewPage(TempColumnLayout: Record "Column Layout" temporary; var AccScheduleLine: Record "Acc. Schedule Line"; PeriodLength: Option);
-    begin
-        WITH AccScheduleLine DO BEGIN
-            IF "Totaling Type" IN ["Totaling Type"::Formula, "Totaling Type"::"Set Base For Percent"] THEN
-                MESSAGE(RowFormulaMsg, Totaling)
-            ELSE
-                DrillDown(TempColumnLayout, AccScheduleLine, PeriodLength);
-        END;
-    end;
-
-    local procedure DrillDownOnGLAccount(TempColumnLayout: Record "Column Layout" temporary; var AccScheduleLine: Record "Acc. Schedule Line");
-    var
-        GLAcc: Record "G/L Account";
-        GLAccAnalysisView: Record "G/L Account (Analysis View)";
-        CostType: Record "Cost Type";
-        ChartOfAccsAnalysisView: Page "Chart of Accs. (Analysis View)";
-    begin
-        WITH AccScheduleLine DO
-            IF "Totaling Type" IN ["Totaling Type"::"Cost Type", "Totaling Type"::"Cost Type Total"] THEN BEGIN
-                SetCostTypeRowFilters(CostType, AccScheduleLine, TempColumnLayout);
-                SetCostTypeColumnFilters(CostType, AccScheduleLine, TempColumnLayout);
-                COPYFILTER("Cost Center Filter", CostType."Cost Center Filter");
-                COPYFILTER("Cost Object Filter", CostType."Cost Object Filter");
-                COPYFILTER("Cost Budget Filter", CostType."Budget Filter");
-                CostType.FILTERGROUP(2);
-                CostType.SETFILTER("Cost Center Filter", GetDimTotalingFilter(1, "Cost Center Totaling"));
-                CostType.SETFILTER("Cost Object Filter", GetDimTotalingFilter(1, "Cost Object Totaling"));
-                CostType.FILTERGROUP(8);
-                CostType.SETFILTER("Cost Center Filter", GetDimTotalingFilter(1, TempColumnLayout."Cost Center Totaling"));
-                CostType.SETFILTER("Cost Object Filter", GetDimTotalingFilter(1, TempColumnLayout."Cost Object Totaling"));
-                CostType.FILTERGROUP(0);
-                PAGE.RUN(PAGE::"Chart of Cost Types", CostType);
-            END ELSE BEGIN
-                COPYFILTER("Business Unit Filter", GLAcc."Business Unit Filter");
-                COPYFILTER("G/L Budget Filter", GLAcc."Budget Filter");
-                SetGLAccRowFilters(GLAcc, AccScheduleLine, TempColumnLayout);
-                SetGLAccColumnFilters(GLAcc, AccScheduleLine, TempColumnLayout);
-                AccSchedName.GET("Schedule Name");
-                IF AccSchedName."Analysis View Name" = '' THEN BEGIN
-                    COPYFILTER("Dimension 1 Filter", GLAcc."Global Dimension 1 Filter");
-                    COPYFILTER("Dimension 2 Filter", GLAcc."Global Dimension 2 Filter");
-                    COPYFILTER("Business Unit Filter", GLAcc."Business Unit Filter");
-                    GLAcc.FILTERGROUP(2);
-                    GLAcc.SETFILTER("Global Dimension 1 Filter", GetDimTotalingFilter(1, "Dimension 1 Totaling"));
-                    GLAcc.SETFILTER("Global Dimension 2 Filter", GetDimTotalingFilter(2, "Dimension 2 Totaling"));
-                    GLAcc.FILTERGROUP(8);
-                    GLAcc.SETFILTER("Business Unit Filter", TempColumnLayout."Business Unit Totaling");
-                    GLAcc.SETFILTER("Global Dimension 1 Filter", GetDimTotalingFilter(1, TempColumnLayout."Dimension 1 Totaling"));
-                    GLAcc.SETFILTER("Global Dimension 2 Filter", GetDimTotalingFilter(2, TempColumnLayout."Dimension 2 Totaling"));
-                    GLAcc.FILTERGROUP(0);
-                    PAGE.RUN(PAGE::"Chart of Accounts (G/L)", GLAcc)
-                END ELSE BEGIN
-                    GLAcc.COPYFILTER("Date Filter", GLAccAnalysisView."Date Filter");
-                    GLAcc.COPYFILTER("Budget Filter", GLAccAnalysisView."Budget Filter");
-                    GLAcc.COPYFILTER("Business Unit Filter", GLAccAnalysisView."Business Unit Filter");
-                    GLAccAnalysisView.SETRANGE("Analysis View Filter", AccSchedName."Analysis View Name");
-                    GLAccAnalysisView.CopyDimFilters(AccScheduleLine);
-                    GLAccAnalysisView.FILTERGROUP(2);
-                    GLAccAnalysisView.SetDimFilters(
-                      GetDimTotalingFilter(1, "Dimension 1 Totaling"), GetDimTotalingFilter(2, "Dimension 2 Totaling"),
-                      GetDimTotalingFilter(3, "Dimension 3 Totaling"), GetDimTotalingFilter(4, "Dimension 4 Totaling"));
-                    GLAccAnalysisView.FILTERGROUP(8);
-                    GLAccAnalysisView.SetDimFilters(
-                      GetDimTotalingFilter(1, TempColumnLayout."Dimension 1 Totaling"),
-                      GetDimTotalingFilter(2, TempColumnLayout."Dimension 2 Totaling"),
-                      GetDimTotalingFilter(3, TempColumnLayout."Dimension 3 Totaling"),
-                      GetDimTotalingFilter(4, TempColumnLayout."Dimension 4 Totaling"));
-                    GLAccAnalysisView.SETFILTER("Business Unit Filter", TempColumnLayout."Business Unit Totaling");
-                    GLAccAnalysisView.FILTERGROUP(0);
-                    CLEAR(ChartOfAccsAnalysisView);
-                    ChartOfAccsAnalysisView.InsertTempGLAccAnalysisViews(GLAcc);
-                    ChartOfAccsAnalysisView.SETTABLEVIEW(GLAccAnalysisView);
-                    ChartOfAccsAnalysisView.RUN;
-                END;
-            END;
-    end;
-
-    local procedure DrillDownOnCFAccount(TempColumnLayout: Record "Column Layout" temporary; var AccScheduleLine: Record "Acc. Schedule Line");
-    var
-        CFAccount: Record 841;
-        GLAccAnalysisView: Record "G/L Account (Analysis View)";
-        ChartOfAccsAnalysisView: Page "Chart of Accs. (Analysis View)";
-    begin
-        WITH AccScheduleLine DO BEGIN
-            COPYFILTER("Cash Flow Forecast Filter", CFAccount."Cash Flow Forecast Filter");
-
-            SetCFAccRowFilter(CFAccount, AccScheduleLine);
-            SetCFAccColumnFilter(CFAccount, AccScheduleLine, TempColumnLayout);
-            AccSchedName.GET("Schedule Name");
-            IF AccSchedName."Analysis View Name" = '' THEN BEGIN
-                COPYFILTER("Dimension 1 Filter", CFAccount."Global Dimension 1 Filter");
-                COPYFILTER("Dimension 2 Filter", CFAccount."Global Dimension 2 Filter");
-                CFAccount.FILTERGROUP(2);
-                CFAccount.SETFILTER("Global Dimension 1 Filter", GetDimTotalingFilter(1, "Dimension 1 Totaling"));
-                CFAccount.SETFILTER("Global Dimension 2 Filter", GetDimTotalingFilter(2, "Dimension 2 Totaling"));
-                CFAccount.FILTERGROUP(8);
-                CFAccount.SETFILTER("Global Dimension 1 Filter", GetDimTotalingFilter(1, TempColumnLayout."Dimension 1 Totaling"));
-                CFAccount.SETFILTER("Global Dimension 2 Filter", GetDimTotalingFilter(2, TempColumnLayout."Dimension 2 Totaling"));
-                CFAccount.FILTERGROUP(0);
-                PAGE.RUN(PAGE::"Chart of Cash Flow Accounts", CFAccount)
-            END ELSE BEGIN
-                CFAccount.COPYFILTER("Date Filter", GLAccAnalysisView."Date Filter");
-                CFAccount.COPYFILTER("Cash Flow Forecast Filter", GLAccAnalysisView."Cash Flow Forecast Filter");
-                GLAccAnalysisView.SETRANGE("Analysis View Filter", AccSchedName."Analysis View Name");
-                GLAccAnalysisView.CopyDimFilters(AccScheduleLine);
-                GLAccAnalysisView.FILTERGROUP(2);
-                GLAccAnalysisView.SetDimFilters(
-                  GetDimTotalingFilter(1, "Dimension 1 Totaling"),
-                  GetDimTotalingFilter(2, "Dimension 2 Totaling"),
-                  GetDimTotalingFilter(3, "Dimension 3 Totaling"),
-                  GetDimTotalingFilter(4, "Dimension 4 Totaling"));
-                GLAccAnalysisView.FILTERGROUP(8);
-                GLAccAnalysisView.SetDimFilters(
-                  GetDimTotalingFilter(1, TempColumnLayout."Dimension 1 Totaling"),
-                  GetDimTotalingFilter(2, TempColumnLayout."Dimension 2 Totaling"),
-                  GetDimTotalingFilter(3, TempColumnLayout."Dimension 3 Totaling"),
-                  GetDimTotalingFilter(4, TempColumnLayout."Dimension 4 Totaling"));
-                GLAccAnalysisView.FILTERGROUP(0);
-                CLEAR(ChartOfAccsAnalysisView);
-                ChartOfAccsAnalysisView.InsertTempCFAccountAnalysisVie(CFAccount);
-                ChartOfAccsAnalysisView.SETTABLEVIEW(GLAccAnalysisView);
-                ChartOfAccsAnalysisView.RUN;
-            END;
-        END;
-    end;
-
-    procedure FindPeriod(var AccScheduleLine: Record "Acc. Schedule Line"; SearchText: Text[3]; PeriodType: Option Day,Week,Month,Quarter,Year,"Accounting Period");
-    var
-        Calendar: Record 2000000007;
-        PeriodFormMgt: Codeunit PeriodFormManagement;
-    begin
-        WITH AccScheduleLine DO BEGIN
-            IF GETFILTER("Date Filter") <> '' THEN BEGIN
-                Calendar.SETFILTER("Period Start", GETFILTER("Date Filter"));
-                IF NOT PeriodFormMgt.FindDate('+', Calendar, PeriodType) THEN
-                    PeriodFormMgt.FindDate('+', Calendar, PeriodType::Day);
-                Calendar.SETRANGE("Period Start");
-            END;
-            PeriodFormMgt.FindDate(SearchText, Calendar, PeriodType);
-            SETRANGE("Date Filter", Calendar."Period Start", Calendar."Period End");
-            IF GETRANGEMIN("Date Filter") = GETRANGEMAX("Date Filter") THEN
-                SETRANGE("Date Filter", GETRANGEMIN("Date Filter"));
-        END;
-    end;
-
-    procedure CalcFieldError(var ErrorType: Option "None","Division by Zero","Period Error",Both; RowNo: Integer; ColumnNo: Integer);
-    begin
-        AccSchedCellValue.SETRANGE("Row No.", RowNo);
-        AccSchedCellValue.SETRANGE("Column No.", ColumnNo);
-        ErrorType := ErrorType::None;
-        IF AccSchedCellValue.FINDFIRST THEN
-            CASE TRUE OF
-                AccSchedCellValue."Has Error":
-                    ErrorType := ErrorType::"Division by Zero";
-                AccSchedCellValue."Period Error":
-                    ErrorType := ErrorType::"Period Error";
-                AccSchedCellValue."Has Error" AND AccSchedCellValue."Period Error":
-                    ErrorType := ErrorType::Both;
-            END;
-
-        AccSchedCellValue.SETRANGE("Row No.");
-        AccSchedCellValue.SETRANGE("Column No.");
-    end;
-
-    procedure ForceRecalculate(NewRecalculate: Boolean);
-    begin
-        Recalculate := NewRecalculate;
     end;
 
     local procedure CalcLCYToACY(ColValue: Decimal): Decimal;
@@ -2492,12 +2022,12 @@ codeunit 31022999 "AccSchedManagementPT"
         EXIT(0);
     end;
 
-    procedure InitPrintAmountsInAddCurrency(Value: Boolean);
-    begin
-        //soft,sn
-        PrintAmountsInAddCurrency := Value;
-        //soft,en
-    end;
+    // procedure InitPrintAmountsInAddCurrency(Value: Boolean);
+    // begin
+    //     //soft,sn
+    //     PrintAmountsInAddCurrency := Value;
+    //     //soft,en
+    // end;
 
     // procedure SetHistoricGLAccRowFilters(var HistoricGLAcc : Record "31022909";var AccSchedLine2 : Record "85";var AccSchedColumn : Record "334");
     // begin

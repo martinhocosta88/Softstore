@@ -688,8 +688,8 @@ report 31023100 "Check(PT)"
                     BalancingType::Customer:
                       BEGIN
                         Cust.GET(BalancingNo);
-                        //IF Cust."Privacy Blocked" THEN                   //MSC
-                        //  ERROR(Cust.GetPrivacyBlockedGenericErrorText(Cust));
+                        IF Cust."Privacy Blocked" THEN                   
+                         ERROR(Cust.GetPrivacyBlockedGenericErrorText(Cust));
 
                         IF Cust.Blocked = Cust.Blocked::All THEN
                           ERROR(Text064,Cust.FIELDCAPTION(Blocked),Cust.Blocked,Cust.TABLECAPTION,Cust."No.");
@@ -703,8 +703,8 @@ report 31023100 "Check(PT)"
                     BalancingType::Vendor:
                       BEGIN
                         Vend.GET(BalancingNo);
-                      //  IF Vend."Privacy Blocked" THEN                  //MSC
-                      //    ERROR(Vend.GetPrivacyBlockedGenericErrorText(Vend));
+                       IF Vend."Privacy Blocked" THEN                  
+                         ERROR(Vend.GetPrivacyBlockedGenericErrorText(Vend));
 
                         IF Vend.Blocked IN [Vend.Blocked::All,Vend.Blocked::Payment] THEN
                           ERROR(Text064,Vend.FIELDCAPTION(Blocked),Vend.Blocked,Vend.TABLECAPTION,Vend."No.");
