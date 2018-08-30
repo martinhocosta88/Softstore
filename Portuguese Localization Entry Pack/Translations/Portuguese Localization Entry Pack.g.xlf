@@ -163,6 +163,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit G/L Account Management - Method CashFlowIndent - NamedType Text31022890</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3142904750 - Method 1514700111 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The account no. %1 needs a cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Cash-FLow Event Handler - Method InitGLEntry - NamedType Text31022890</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3807294585 - Method 615983447 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>The number you entered is not a valid NIB.</source>
           <note from="Developer" annotates="general" priority="2"></note>

@@ -31,35 +31,36 @@ codeunit 31022925 "Cash-FLow Event Handler"
         GenJournalLine."Bal: cash-flow code" := GenJournalLine2."Acc: cash-flow code";
     end;
 
-    // [EventSubscriber(ObjectType::Codeunit, 12, 'OnAfterInitGLEntry', '', true, true)]
-    // local procedure InitGLEntry(VAR GLEntry : Record "G/L Entry";GenJournalLine : Record "Gen. Journal Line";GLAccNo : Code[20])
-    // var
-    //     Text31022890:Label 'The account no. %1 needs a cash-flow code';
-    //     SourceCodeSetup:Record "Source Code Setup";
-    //     GLAcc:Record "G/L Account";
-    // begin    
-    //     SourceCodeSetup.GET;
-    //     IF GenJournalLine."Source Code" <> SourceCodeSetup."Exchange Rate Adjmt." THEN BEGIN
-    //     IF GLAcc."Cash-flow code assoc." AND
-    //         (GenJournalLine."Account Type"  IN [GenJournalLine."Account Type"::"G/L Account",GenJournalLine."Account Type"::"Bank Account"])
-    //     THEN BEGIN
-    //         IF GenJournalLine."Acc: cash-flow code" = '' THEN
-    //             ERROR(Text31022890,GLAccNo);
-    //         GLEntry."Acc: cash-flow code" := GenJournalLine."Acc: cash-flow code";
-    //         GLEntry."Bal: cash-flow code" := GenJournalLine."Bal: cash-flow code";
-    //     END;
-    //     END;
-    // end;
+    [EventSubscriber(ObjectType::Codeunit, 12, 'OnAfterInitGLEntry', '', true, true)]
+    local procedure InitGLEntry(VAR GLEntry: Record "G/L Entry"; GenJournalLine: Record "Gen. Journal Line")
+    var
+        Text31022890: Label 'The account no. %1 needs a cash-flow code';
+        SourceCodeSetup: Record "Source Code Setup";
+        GLAcc: Record "G/L Account";
+    begin
+        SourceCodeSetup.GET;
+        IF GenJournalLine."Source Code" <> SourceCodeSetup."Exchange Rate Adjmt." THEN BEGIN
+            IF GLAcc."Cash-flow code assoc." AND
+                (GenJournalLine."Account Type" IN [GenJournalLine."Account Type"::"G/L Account", GenJournalLine."Account Type"::"Bank Account"])
+            THEN BEGIN
+                IF GenJournalLine."Acc: cash-flow code" = '' THEN
+                    ERROR(Text31022890, GLEntry."G/L Account No.");
+                GLEntry."Acc: cash-flow code" := GenJournalLine."Acc: cash-flow code";
+                GLEntry."Bal: cash-flow code" := GenJournalLine."Bal: cash-flow code";
+            END;
+        END;
+    end;
 
-    // [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterSetApplyToDocNo', '', true, true)]
-    // local procedure SetApplytoDocNoPurch(PurchaseHeader : Record "Purchase Header";VAR GenJnlLine : Record "Gen. Journal Line")
-    // begin
-    //     GenJnlLine."Bal: cash-flow code" := PurchaseHeader."Cash-flow code";
-    // end;
-    // [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterSetApplyToDocNo', '', true, true)]
-    // local procedure SetApplytoDocNoSales(SalesHeader : Record "Sales Header";VAR GenJnlLine : Record "Gen. Journal Line")
-    // begin
-    //     GenJnlLine."Bal: cash-flow code" := SalesHeader."Cash-flow code";
-    // end;
+    [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterSetApplyToDocNo', '', true, true)]
+    local procedure SetApplytoDocNoPurch(VAR GenJournalLine: Record "Gen. Journal Line"; PurchaseHeader: Record "Purchase Header")
+    begin
+        GenJournalLine."Bal: cash-flow code" := PurchaseHeader."Cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterSetApplyToDocNo', '', true, true)]
+    local procedure SetApplytoDocNoSales(VAR GenJournalLine: Record "Gen. Journal Line"; SalesHeader: Record "Sales Header")
+    begin
+        GenJournalLine."Bal: cash-flow code" := SalesHeader."Cash-flow code";
+    end;
 
 }

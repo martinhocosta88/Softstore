@@ -1,7 +1,6 @@
 codeunit 31022999 "AccSchedManagementPT"
 {
     TableNo = 85;
-
     trigger OnRun();
     begin
     end;
@@ -25,7 +24,6 @@ codeunit 31022999 "AccSchedManagementPT"
         GLSetup: Record "General Ledger Setup";
         AddRepCurrency: Record Currency;
         AnalysisView: Record "Analysis View";
-        MatrixMgt: Codeunit "Matrix Management";
         AnalysisViewRead: Boolean;
         StartDate: Date;
         EndDate: Date;
@@ -46,16 +44,9 @@ codeunit 31022999 "AccSchedManagementPT"
         Text022: Label 'You cannot have more than %1 lines with %2 of %3.';
         Text023: Label 'Formulas ending with a percent sign require %2 %1 on a line before it.';
         Text024: Label 'The %1 %3 on the %2 must equal the %4 %6 on the %5 when any Dimension Totaling is used in any Column.';
-        ColumnFormulaMsg: Label 'Column formula: %1.';
-        RowFormulaMsg: Label 'Row formula: %1.';
-        ColumnFormulaErrorMsg: Label 'Column formula: %1. \Error: %2.';
         Recalculate: Boolean;
-        SystemGeneratedAccSchedMsg: Label 'Warning: This account schedule may be automatically updated by the system, so any changes you make may be lost.';
         GlAcc1: Record "G/L Account";
         PrintAmountsInAddCurrency: Boolean;
-        Text31022890: Label 'M';
-        Text31022891: Label 'Q';
-        Text31022892: Label 'Column Formula: %1';
 
     local procedure CheckTemplateName(var CurrentSchedName: Code[10]);
     var
@@ -72,6 +63,7 @@ codeunit 31022999 "AccSchedManagementPT"
             CurrentSchedName := AccSchedName.Name;
         END;
     end;
+
 
     local procedure CheckColumnTemplateName(var CurrentColumnName: Code[10]);
     var
@@ -177,10 +169,8 @@ codeunit 31022999 "AccSchedManagementPT"
     begin
         IF Formula = '' THEN
             EXIT;
-
         ColumnLayout.ParsePeriodFormula(
-          Formula, Steps, Type, RangeFromType, RangeToType, RangeFromInt, RangeToInt);
-
+         Formula, Steps, Type, RangeFromType, RangeToType, RangeFromInt, RangeToInt);
         // Find current period
         AccountingPeriod.SETFILTER("Starting Date", '<=%1', Date);
         IF NOT AccountingPeriod.FIND('+') THEN BEGIN
@@ -191,7 +181,6 @@ codeunit 31022999 "AccSchedManagementPT"
                 AccountingPeriod.FIND('+')
         END;
         AccountingPeriod.RESET;
-
         CASE Type OF
             Type::Period:
                 BEGIN
@@ -210,7 +199,6 @@ codeunit 31022999 "AccSchedManagementPT"
                             AccountingPeriodFY."New Fiscal Year" := TRUE;
                     AccountingPeriodFY.SETRANGE("New Fiscal Year", TRUE);
                     AccountingPeriodFY.NEXT(Steps);
-
                     AccPeriodStartOrEnd(AccountingPeriodFY, CurrentPeriodNo, RangeFromType, RangeFromInt, FALSE, StartDate);
                     AccPeriodStartOrEnd(AccountingPeriodFY, CurrentPeriodNo, RangeToType, RangeToInt, TRUE, EndDate);
                 END;
@@ -291,7 +279,6 @@ codeunit 31022999 "AccSchedManagementPT"
     begin
         CLEAR(BasePercentLine);
         BaseIdx := 0;
-
         WITH AccSchedLine DO BEGIN
             SETRANGE("Schedule Name", "Schedule Name");
             IF FIND('-') THEN
@@ -306,7 +293,6 @@ codeunit 31022999 "AccSchedManagementPT"
                     END;
                 UNTIL NEXT = 0;
         END;
-
         IF BaseIdx = 0 THEN BEGIN
             AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Set Base For Percent";
             ShowError(
@@ -321,7 +307,6 @@ codeunit 31022999 "AccSchedManagementPT"
     begin
         IF BasePercentLine[1] = 0 THEN
             InitBasePercents(AccSchedLine, ColumnLayout);
-
         BaseIdx := ARRAYLEN(BasePercentLine);
         REPEAT
             IF BasePercentLine[BaseIdx] <> 0 THEN
@@ -329,7 +314,6 @@ codeunit 31022999 "AccSchedManagementPT"
                     EXIT(BasePercentLine[BaseIdx]);
             BaseIdx := BaseIdx - 1;
         UNTIL BaseIdx = 0;
-
         AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Set Base For Percent";
         ShowError(
           STRSUBSTNO(Text023, AccSchedLine.FIELDCAPTION("Totaling Type"), AccSchedLine."Totaling Type"),
@@ -351,14 +335,13 @@ codeunit 31022999 "AccSchedManagementPT"
         CallLevel := 0;
         CallingAccSchedLineID := AccSchedLine."Line No.";
         CallingColumnLayoutID := ColumnLayout."Line No.";
-
         IF (OldAccSchedLineFilters <> AccSchedLine.GETFILTERS) OR
-           (OldColumnLayoutFilters <> ColumnLayout.GETFILTERS) OR
-           (OldAccSchedLineName <> AccSchedLine."Schedule Name") OR
-           (OldColumnLayoutName <> ColumnLayout."Column Layout Name") OR
-           (OldCalcAddCurr <> CalcAddCurr) OR
-           Recalculate
-        THEN BEGIN
+          (OldColumnLayoutFilters <> ColumnLayout.GETFILTERS) OR
+          (OldAccSchedLineName <> AccSchedLine."Schedule Name") OR
+          (OldColumnLayoutName <> ColumnLayout."Column Layout Name") OR
+          (OldCalcAddCurr <> CalcAddCurr) OR
+          Recalculate
+       THEN BEGIN
             AccSchedCellValue.RESET;
             AccSchedCellValue.DELETEALL;
             CLEAR(BasePercentLine);
@@ -368,7 +351,6 @@ codeunit 31022999 "AccSchedManagementPT"
             OldColumnLayoutName := ColumnLayout."Column Layout Name";
             OldCalcAddCurr := CalcAddCurr;
         END;
-
         Result := CalcCellValue(AccSchedLine, ColumnLayout, CalcAddCurr);
         WITH ColumnLayout DO BEGIN
             CASE Show OF
@@ -442,12 +424,10 @@ codeunit 31022999 "AccSchedManagementPT"
         AccSchedLineID: Integer;
     begin
         Result := 0;
-
         CallLevel := CallLevel + 1;
         IF CallLevel > 25 THEN
             ShowError(Text020,
               AccSchedLine, ColumnLayout);
-
         Expression := DELCHR(Expression, '<>', ' ');
         IF STRLEN(Expression) > 0 THEN BEGIN
             Parantheses := 0;
@@ -574,7 +554,6 @@ codeunit 31022999 "AccSchedManagementPT"
         EXIT(Result);
     end;
 
-
     procedure SetGLAccColumnFilters(var GLAcc: Record "G/L Account"; AccSchedLine2: Record "Acc. Schedule Line"; var ColumnLayout: Record "Column Layout");
     var
         FromDate: Date;
@@ -693,83 +672,48 @@ codeunit 31022999 "AccSchedManagementPT"
                             THEN BEGIN
                                 AccSchedLine.COPYFILTERS(AccountScheduleLine);
                                 //soft,o SetGLAccRowFilters(GLAcc,AccSchedLine);
-                                //soft,sn
-                                IF AccSchedName.GET(AccSchedLine."Schedule Name") AND AccSchedName."Acc. No. Referred to old Acc." THEN BEGIN
-                                    SetHistoricGLAccRowFilters(HistoricGLAcc, AccSchedLine, ColumnLayout);
-                                    SetHistoricGLAccColumnFilters(HistoricGLAcc, AccSchedLine, ColumnLayout);
-                                    IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Posting Accounts") AND
-                                       (STRLEN(AccSchedLine.Totaling) <= MAXSTRLEN(GLAcc.Totaling)) AND (STRPOS(AccSchedLine.Totaling, '*') = 0)
-                                    THEN BEGIN
-                                        HistoricGLAcc."Account Type" := HistoricGLAcc."Account Type"::Total;
-                                        HistoricGLAcc.Totaling := AccSchedLine.Totaling;
-                                        Result := Result + CalcHistoricGLAcc(HistoricGLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                    END ELSE
-                                        IF HistoricGLAcc.FINDFIRST THEN
-                                            REPEAT
-                                                Result := Result + CalcHistoricGLAcc(HistoricGLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                            UNTIL HistoricGLAcc.NEXT = 0;
-                                END ELSE BEGIN
-                                    SetGLAccRowFilters(GLAcc, AccSchedLine, ColumnLayout);
-                                    //soft,en
-                                    SetGLAccColumnFilters(GLAcc, AccSchedLine, ColumnLayout);
-                                    IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Posting Accounts") AND
-                                       (STRLEN(AccSchedLine.Totaling) <= MAXSTRLEN(GLAcc.Totaling)) AND (STRPOS(AccSchedLine.Totaling, '*') = 0)
-                                    THEN BEGIN
-                                        GLAcc."Account Type" := GLAcc."Account Type"::Total;
-                                        GLAcc.Totaling := AccSchedLine.Totaling;
-                                        Result := Result + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                    END ELSE
-                                        IF GLAcc.FIND('-') THEN
-                                            REPEAT
-                                                Result := Result + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                            UNTIL GLAcc.NEXT = 0;
-                                END;
+                                SetGLAccRowFilters(GLAcc, AccSchedLine, ColumnLayout); //soft,n
+                                //soft,en
+                                SetGLAccColumnFilters(GLAcc, AccSchedLine, ColumnLayout);
+                                IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Posting Accounts") AND
+                                   (STRLEN(AccSchedLine.Totaling) <= MAXSTRLEN(GLAcc.Totaling)) AND (STRPOS(AccSchedLine.Totaling, '*') = 0)
+                                THEN BEGIN
+                                    GLAcc."Account Type" := GLAcc."Account Type"::Total;
+                                    GLAcc.Totaling := AccSchedLine.Totaling;
+                                    Result := Result + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
+                                END ELSE
+                                    IF GLAcc.FIND('-') THEN
+                                        REPEAT
+                                            Result := Result + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
+                                        UNTIL GLAcc.NEXT = 0;
                                 //soft,sn
                             END ELSE BEGIN
                                 AccSchedLine.COPYFILTERS(AccountScheduleLine);
-                                IF AccSchedName.GET(AccSchedLine."Schedule Name") AND AccSchedName."Acc. No. Referred to old Acc." THEN BEGIN
-                                    SetHistoricGLAccRowFilters(HistoricGLAcc, AccSchedLine, ColumnLayout);
-                                    SetHistoricGLAccColumnFilters(HistoricGLAcc, AccSchedLine, ColumnLayout);
-                                    IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Posting Accounts") AND
-                                      (STRLEN(AccSchedLine."Totaling 2") <= 30)
-                                    THEN BEGIN
-                                        HistoricGLAcc."Account Type" := HistoricGLAcc."Account Type"::"2";
-                                        HistoricGLAcc.Totaling := AccSchedLine."Totaling 2";
-                                        Result2 := Result2 + CalcHistoricGLAcc(HistoricGLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                    END ELSE
-                                        IF HistoricGLAcc.FINDFIRST THEN
-                                            REPEAT
-                                                Result2 := Result2 + CalcHistoricGLAcc(HistoricGLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                            UNTIL HistoricGLAcc.NEXT = 0;
-                                END ELSE BEGIN
-                                    SetGLAccRowFilters(GLAcc, AccSchedLine, ColumnLayout);
-                                    SetGLAccColumnFilters(GLAcc, AccSchedLine, ColumnLayout);
-                                    IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Posting Accounts") AND
-                                       (STRLEN(AccSchedLine."Totaling 2") <= 30)
-                                    THEN BEGIN
-                                        GLAcc."Account Type" := GLAcc."Account Type"::Total;
-                                        GLAcc.Totaling := AccSchedLine."Totaling 2";
-                                        Result2 := Result2 + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                    END ELSE
-                                        IF GLAcc.FINDFIRST THEN
-                                            REPEAT
-                                                Result2 := Result2 + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
-                                            UNTIL GLAcc.NEXT = 0;
-                                END;
+                                SetGLAccRowFilters(GLAcc, AccSchedLine, ColumnLayout);
+                                SetGLAccColumnFilters(GLAcc, AccSchedLine, ColumnLayout);
+                                IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Posting Accounts") AND
+                                   (STRLEN(AccSchedLine."Totaling 2") <= 30)
+                                THEN BEGIN
+                                    GLAcc."Account Type" := GLAcc."Account Type"::Total;
+                                    GLAcc.Totaling := AccSchedLine."Totaling 2";
+                                    Result2 := Result2 + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
+                                END ELSE
+                                    IF GLAcc.FINDFIRST THEN
+                                        REPEAT
+                                            Result2 := Result2 + CalcGLAcc(GLAcc, AccSchedLine, ColumnLayout, CalcAddCurr);
+                                        UNTIL GLAcc.NEXT = 0;
                             END;
                             //soft,en
                         END;//SS.10.00.03.03,n
-
                         IF AccSchedLine."Totaling Type" IN
-                           [AccSchedLine."Totaling Type"::"Cost Type", AccSchedLine."Totaling Type"::"Cost Type Total"]
-                        THEN BEGIN
+                          [AccSchedLine."Totaling Type"::"Cost Type", AccSchedLine."Totaling Type"::"Cost Type Total"]
+                       THEN BEGIN
                             AccSchedLine.COPYFILTERS(AccountScheduleLine);
                             SetCostTypeRowFilters(CostType, AccSchedLine, ColumnLayout);
                             SetCostTypeColumnFilters(CostType, AccSchedLine, ColumnLayout);
-
                             IF (AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Cost Type") AND
-                               (STRLEN(AccSchedLine.Totaling) <= MAXSTRLEN(GLAcc.Totaling)) AND (STRPOS(AccSchedLine.Totaling, '*') = 0)
-                            THEN BEGIN
+                              (STRLEN(AccSchedLine.Totaling) <= MAXSTRLEN(GLAcc.Totaling)) AND (STRPOS(AccSchedLine.Totaling, '*') = 0)
+                           THEN BEGIN
                                 CostType.Type := CostType.Type::Total;
                                 CostType.Totaling := AccSchedLine.Totaling;
                                 Result := Result + CalcCostType(CostType, AccSchedLine, ColumnLayout, CalcAddCurr);
@@ -780,10 +724,9 @@ codeunit 31022999 "AccSchedManagementPT"
                                     UNTIL CostType.NEXT = 0;
                             END;
                         END;
-
                         IF AccSchedLine."Totaling Type" IN
-                           [AccSchedLine."Totaling Type"::"Cash Flow Entry Accounts", AccSchedLine."Totaling Type"::"Cash Flow Total Accounts"]
-                        THEN BEGIN
+                          [AccSchedLine."Totaling Type"::"Cash Flow Entry Accounts", AccSchedLine."Totaling Type"::"Cash Flow Total Accounts"]
+                       THEN BEGIN
                             AccSchedLine.COPYFILTERS(AccountScheduleLine);
                             SetCFAccRowFilter(CFAccount, AccSchedLine);
                             SetCFAccColumnFilter(CFAccount, AccSchedLine, ColumnLayout);
@@ -813,12 +756,10 @@ codeunit 31022999 "AccSchedManagementPT"
             Result := -Result;
         IF AccSchedLine."Positive Only" AND (Result < 0) THEN
             Result := 0;
-
         IF AccSchedLine."Reverse Sign 2" THEN
             Result2 := -Result2;
         IF AccSchedLine."Positive Only 2" AND (Result2 < 0) THEN
             Result2 := 0;
-
         IF ColumnLayout.Ref = ColumnLayout.Ref::"2" THEN
             Result := Result2;
         //SS.10.00.03.03,o END; 
@@ -846,7 +787,6 @@ codeunit 31022999 "AccSchedManagementPT"
         UseDimFilter := FALSE;
         IF AccSchedName.Name <> AccSchedLine."Schedule Name" THEN
             AccSchedName.GET(AccSchedLine."Schedule Name");
-
         //soft,sn
         AmountType := ColumnLayout."Amount Type";
         AmountType2 := ColumnLayout."Amount Type 2";
@@ -1006,10 +946,9 @@ codeunit 31022999 "AccSchedManagementPT"
                                                 END;
                                             END; //SS.10.00.03.01,n
                                         END;
-
                                     ((AmountType = AmountType::"Credit Balance") AND (AccSchedLine."Column Value" = 0)) OR
-                                    ((AmountType2 = AmountType2::"Credit Balance") AND (AccSchedLine."Column Value" = 1)) OR
-                                    ((AmountType3 = AmountType3::"Credit Balance") AND (AccSchedLine."Column Value" = 2)):
+                                   ((AmountType2 = AmountType2::"Credit Balance") AND (AccSchedLine."Column Value" = 1)) OR
+                                   ((AmountType3 = AmountType3::"Credit Balance") AND (AccSchedLine."Column Value" = 2)):
                                         BEGIN
                                             GlAcc1 := GLAcc;
                                             GlAcc1.COPYFILTERS(GLAcc);
@@ -1072,7 +1011,6 @@ codeunit 31022999 "AccSchedManagementPT"
                                   GetDimTotalingFilter(2, AccSchedLine."Dimension 2 Totaling"),
                                   GetDimTotalingFilter(3, AccSchedLine."Dimension 3 Totaling"),
                                   GetDimTotalingFilter(4, AccSchedLine."Dimension 4 Totaling"));
-
                                 SETFILTER("Business Unit Code", ColumnLayout."Business Unit Totaling"); //soft,n
                                 FILTERGROUP(8);
                                 SetDimFilters(
@@ -1148,7 +1086,7 @@ codeunit 31022999 "AccSchedManagementPT"
                                                 ColValue := "Credit Amount";
                                             END;
                                         END;
-                                    //soft,sn
+                                        //soft,sn
                                     ((AmountType = AmountType::"Debit Balance") AND (AccSchedLine."Column Value" = 0)) OR
                                     ((AmountType2 = AmountType2::"Debit Balance") AND (AccSchedLine."Column Value" = 1)) OR
                                     ((AmountType3 = AmountType3::"Debit Balance") AND (AccSchedLine."Column Value" = 2)):
@@ -1264,7 +1202,6 @@ codeunit 31022999 "AccSchedManagementPT"
                                 SETFILTER("Global Dimension 2 Code", GetDimTotalingFilter(2, ColumnLayout."Dimension 2 Totaling"));
                                 SETFILTER("Business Unit Code", ColumnLayout."Business Unit Totaling");
                                 FILTERGROUP(0);
-
                                 CASE AmountType OF
                                     AmountType::"Net Amount":
                                         BEGIN
@@ -1316,13 +1253,11 @@ codeunit 31022999 "AccSchedManagementPT"
                                 AccSchedLine.COPYFILTER("Business Unit Filter", "Business Unit Code");
                                 CopyDimFilters(AccSchedLine);
                                 FILTERGROUP(2);
-
                                 SetDimFilters(
-                                  GetDimTotalingFilter(1, AccSchedLine."Dimension 1 Totaling"),
-                                  GetDimTotalingFilter(2, AccSchedLine."Dimension 2 Totaling"),
-                                  GetDimTotalingFilter(3, AccSchedLine."Dimension 3 Totaling"),
-                                  GetDimTotalingFilter(4, AccSchedLine."Dimension 4 Totaling"));
-
+                                 GetDimTotalingFilter(1, AccSchedLine."Dimension 1 Totaling"),
+                                 GetDimTotalingFilter(2, AccSchedLine."Dimension 2 Totaling"),
+                                 GetDimTotalingFilter(3, AccSchedLine."Dimension 3 Totaling"),
+                                 GetDimTotalingFilter(4, AccSchedLine."Dimension 4 Totaling"));
                                 SETFILTER("Business Unit Code", ColumnLayout."Business Unit Totaling"); //soft,n
                                 FILTERGROUP(8);
                                 SetDimFilters(
@@ -1332,7 +1267,6 @@ codeunit 31022999 "AccSchedManagementPT"
                                   GetDimTotalingFilter(4, ColumnLayout."Dimension 4 Totaling"));
                                 SETFILTER("Business Unit Code", ColumnLayout."Business Unit Totaling");
                                 FILTERGROUP(0);
-
                                 CASE AmountType OF
                                     AmountType::"Net Amount":
                                         BEGIN
@@ -1433,16 +1367,13 @@ codeunit 31022999 "AccSchedManagementPT"
         ColValue := 0;
         IF AccSchedName.Name <> AccSchedLine."Schedule Name" THEN
             AccSchedName.GET(AccSchedLine."Schedule Name");
-
         //soft,sn
         AmountType := ColumnLayout."Amount Type";
         AmountType2 := ColumnLayout."Amount Type 2";
         AmountType3 := ColumnLayout."Amount Type 3";
         //soft,en
-
         IF ConflictAmountType(AccSchedLine, ColumnLayout."Amount Type", AmountType) THEN
             EXIT(0);
-
         IF ColumnLayout."Column Type" <> ColumnLayout."Column Type"::Formula THEN
             CASE ColumnLayout."Ledger Entry Type" OF
                 ColumnLayout."Ledger Entry Type"::Entries:
@@ -1478,7 +1409,6 @@ codeunit 31022999 "AccSchedManagementPT"
                         ELSE
                             WITH AnalysisViewEntry DO BEGIN
                                 SETRANGE("Analysis View Code", AccSchedName."Analysis View Name");
-
                                 SETRANGE("Account Source", "Account Source"::"Cash Flow Account");
                                 IF CFAccount.Totaling = '' THEN
                                     SETRANGE("Account No.", CFAccount."No.")
@@ -1500,7 +1430,6 @@ codeunit 31022999 "AccSchedManagementPT"
                                   GetDimTotalingFilter(3, ColumnLayout."Dimension 3 Totaling"),
                                   GetDimTotalingFilter(4, ColumnLayout."Dimension 4 Totaling"));
                                 FILTERGROUP(0);
-
                                 CASE ColumnLayout."Amount Type" OF
                                     ColumnLayout."Amount Type"::"Net Amount":
                                         BEGIN
@@ -1511,17 +1440,13 @@ codeunit 31022999 "AccSchedManagementPT"
                             END;
                     END;
             END;
-
         EXIT(ColValue);
     end;
-
-
 
     procedure SetCFAccRowFilter(var CFAccount: Record "Cash Flow Account"; var AccSchedLine2: Record "Acc. Schedule Line");
     begin
         WITH AccSchedLine2 DO BEGIN
             COPYFILTER("Cash Flow Forecast Filter", CFAccount."Cash Flow Forecast Filter");
-
             CASE "Totaling Type" OF
                 "Totaling Type"::"Cash Flow Entry Accounts":
                     BEGIN
@@ -1536,7 +1461,6 @@ codeunit 31022999 "AccSchedManagementPT"
             END;
         END;
     end;
-
 
     procedure SetCFAccColumnFilter(var CFAccount: Record "Cash Flow Account"; AccSchedLine2: Record "Acc. Schedule Line"; var ColumnLayout2: Record "Column Layout");
     var
@@ -1607,17 +1531,17 @@ codeunit 31022999 "AccSchedManagementPT"
         EXIT(DivisionError);
     end;
 
+
     local procedure ExchangeAmtAddCurrToLCY(AmountLCY: Decimal): Decimal;
     begin
         IF NOT GLSetupRead THEN BEGIN
             GLSetup.GET;
             GLSetupRead := TRUE;
         END;
-
         EXIT(
-          CurrExchRate.ExchangeAmtLCYToFCY(
-            WORKDATE, GLSetup."Additional Reporting Currency", AmountLCY,
-            CurrExchRate.ExchangeRate(WORKDATE, GLSetup."Additional Reporting Currency")));
+         CurrExchRate.ExchangeAmtLCYToFCY(
+           WORKDATE, GLSetup."Additional Reporting Currency", AmountLCY,
+           CurrExchRate.ExchangeRate(WORKDATE, GLSetup."Additional Reporting Currency")));
     end;
 
     procedure GetDimTotalingFilter(DimNo: Integer; DimTotaling: Text[250]): Text[1024];
@@ -1645,7 +1569,6 @@ codeunit 31022999 "AccSchedManagementPT"
             IF ResultFilter2 <> '' THEN
                 IF STRLEN(ResultFilter) + STRLEN(ResultFilter2) + 1 > MAXSTRLEN(ResultFilter) THEN
                     ERROR(Text021, DimTotaling);
-
             IF ResultFilter <> '' THEN
                 ResultFilter := ResultFilter + '|';
             ResultFilter := COPYSTR(ResultFilter + ResultFilter2, 1, MAXSTRLEN(ResultFilter));
@@ -1664,9 +1587,7 @@ codeunit 31022999 "AccSchedManagementPT"
         IF CostAccSetup.GET THEN;
         IF DimTotaling = '' THEN
             EXIT(DimTotaling);
-
         CheckAnalysisView(AccSchedName.Name, '', FALSE);
-
         CASE DimNo OF
             1:
                 DimCode := AnalysisView."Dimension 1 Code";
@@ -1683,7 +1604,6 @@ codeunit 31022999 "AccSchedManagementPT"
         END;
         IF DimCode = '' THEN
             EXIT(DimTotaling);
-
         DimVal.SETRANGE("Dimension Code", DimCode);
         DimVal.SETFILTER(Code, DimTotaling);
         IF DimVal.FIND('-') THEN
@@ -1699,10 +1619,8 @@ codeunit 31022999 "AccSchedManagementPT"
                     ResultFilter := ResultFilter + DimVal.Totaling;
                 END;
             UNTIL (DimVal.NEXT = 0) OR NOT DimValTotaling;
-
         IF DimValTotaling THEN
             EXIT(ResultFilter);
-
         EXIT(DimTotaling);
     end;
 
@@ -1723,13 +1641,10 @@ codeunit 31022999 "AccSchedManagementPT"
         ColValue := 0;
         IF AccSchedName.Name <> AccSchedLine."Schedule Name" THEN
             AccSchedName.GET(AccSchedLine."Schedule Name");
-
         IF ConflictAmountType(AccSchedLine, ColumnLayout."Amount Type", AmountType) THEN
             EXIT(0);
-
         TestBalance :=
-          AccSchedLine.Show IN [AccSchedLine.Show::"When Positive Balance", AccSchedLine.Show::"When Negative Balance"];
-
+         AccSchedLine.Show IN [AccSchedLine.Show::"When Positive Balance", AccSchedLine.Show::"When Negative Balance"];
         IF ColumnLayout."Column Type" <> ColumnLayout."Column Type"::Formula THEN BEGIN
             UseDimFilter := HasDimFilter(AccSchedLine, ColumnLayout) OR HasCostDimFilter(AccSchedLine);
             IF ColumnLayout."Ledger Entry Type" = ColumnLayout."Ledger Entry Type"::Entries THEN BEGIN
@@ -1804,21 +1719,17 @@ codeunit 31022999 "AccSchedManagementPT"
                         END;
                 END;
             END;
-
             IF ColumnLayout."Ledger Entry Type" = ColumnLayout."Ledger Entry Type"::"Budget Entries" THEN BEGIN
                 WITH CostBudgEntry DO BEGIN
                     SETCURRENTKEY("Budget Name", "Cost Type No.", "Cost Center Code", "Cost Object Code", Date);
-
                     IF CostType.Totaling = '' THEN
                         SETRANGE("Cost Type No.", CostType."No.")
                     ELSE
                         SETFILTER("Cost Type No.", CostType.Totaling);
-
                     CostType.COPYFILTER("Date Filter", Date);
                     AccSchedLine.COPYFILTER("Cost Budget Filter", "Budget Name");
                     AccSchedLine.COPYFILTER("Cost Center Filter", "Cost Center Code");
                     AccSchedLine.COPYFILTER("Cost Object Filter", "Cost Object Code");
-
                     FILTERGROUP(2);
                     SETFILTER("Cost Center Code", GetDimTotalingFilter(5, AccSchedLine."Cost Center Totaling"));
                     SETFILTER("Cost Object Code", GetDimTotalingFilter(6, AccSchedLine."Cost Object Totaling"));
@@ -1832,9 +1743,7 @@ codeunit 31022999 "AccSchedManagementPT"
                     SETFILTER("Cost Object Code", GetDimTotalingFilter(6, ColumnLayout."Cost Object Totaling"));
                     FILTERGROUP(0);
                 END;
-
                 CostBudgEntry.CALCSUMS(Amount);
-
                 CASE AmountType OF
                     AmountType::"Net Amount":
                         ColValue := CostBudgEntry.Amount;
@@ -1849,7 +1758,6 @@ codeunit 31022999 "AccSchedManagementPT"
                 IF CalcAddCurr THEN
                     ColValue := CalcLCYToACY(ColValue);
             END;
-
             IF TestBalance THEN BEGIN
                 IF AccSchedLine.Show = AccSchedLine.Show::"When Positive Balance" THEN
                     IF Balance < 0 THEN
@@ -1877,7 +1785,6 @@ codeunit 31022999 "AccSchedManagementPT"
                         CostType.SETFILTER(Type, '<>%1', CostType.Type::"Cost Type");
                     END;
             END;
-
             CostType.SETFILTER("Cost Center Filter", GETFILTER("Cost Center Filter"));
             CostType.SETFILTER("Cost Object Filter", GETFILTER("Cost Object Filter"));
             IF ColumnLayout."Ledger Entry Type" = ColumnLayout."Ledger Entry Type"::"Budget Entries" THEN
@@ -1995,6 +1902,7 @@ codeunit 31022999 "AccSchedManagementPT"
             END;
     end;
 
+
     local procedure ConflictAmountType(AccSchedLine: Record "Acc. Schedule Line"; ColumnLayoutAmtType: Option "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance"; var AmountType: Option): Boolean;
     begin
         IF (ColumnLayoutAmtType = AccSchedLine."Amount Type") OR
@@ -2009,6 +1917,7 @@ codeunit 31022999 "AccSchedManagementPT"
         EXIT(FALSE);
     end;
 
+
     local procedure CalcLCYToACY(ColValue: Decimal): Decimal;
     begin
         IF NOT GLSetupRead THEN BEGIN
@@ -2022,716 +1931,13 @@ codeunit 31022999 "AccSchedManagementPT"
         EXIT(0);
     end;
 
-    // procedure InitPrintAmountsInAddCurrency(Value: Boolean);
-    // begin
-    //     //soft,sn
-    //     PrintAmountsInAddCurrency := Value;
-    //     //soft,en
-    // end;
-
-    // procedure SetHistoricGLAccRowFilters(var HistoricGLAcc : Record "31022909";var AccSchedLine2 : Record "85";var AccSchedColumn : Record "334");
-    // begin
-    //     //soft,sn
-    //     WITH AccSchedLine2 DO BEGIN
-    //       CASE "Totaling Type" OF
-    //         "Totaling Type"::"Posting Accounts":
-    //         BEGIN
-    //           IF AccSchedColumn.Ref = AccSchedColumn.Ref::"1" THEN
-    //              HistoricGLAcc.SETFILTER("No.",Totaling)
-    //           ELSE
-    //              HistoricGLAcc.SETFILTER("No.","Totaling 2");
-    //           HistoricGLAcc.SETRANGE("Account Type",HistoricGLAcc."Account Type"::Posting);
-    //         END;
-    //         "Totaling Type"::"Total Accounts":
-    //         BEGIN
-    //           IF AccSchedColumn.Ref = AccSchedColumn.Ref::"1" THEN
-    //              HistoricGLAcc.SETFILTER("No.",Totaling)
-    //           ELSE
-    //              HistoricGLAcc.SETFILTER("No.","Totaling 2");
-    //           HistoricGLAcc.SETFILTER("Account Type",'<>%1',HistoricGLAcc."Account Type"::Posting);
-    //         END;
-    //       END;
-    //     END;
-    // end;
-
-    // procedure SetHistoricGLAccColumnFilters(var HistoricGLAcc : Record "31022909";AccSchedLine2 : Record "85";var ColumnLayout : Record "334");
+    //MSC Event Request
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Acc. Sched. BarChart DrillDown", 'OnAfterSetGLAccRowFilters', '', true, true)]
+    // local procedure MyProcedure(var GLAcc:Record "G/L Account";AccSchedLine:record "Acc. Schedule Line";var ColumnLayout:Record "Column Layout")
     // var
-    //     FromDate : Date;
-    //     ToDate : Date;
-    //     FiscalStartDate2 : Date;
+    // AccSchedMgmtPT
     // begin
-    //     //soft,sn
-    //     WITH ColumnLayout DO BEGIN
-    //       IF (FORMAT("Comparison Date Formula") <> '0') AND (FORMAT("Comparison Date Formula") <> '') THEN BEGIN
-    //         FromDate := CALCDATE("Comparison Date Formula",StartDate);
-    //         IF (EndDate = CALCDATE('<CM>',EndDate)) AND
-    //            ((STRPOS(FORMAT("Comparison Date Formula"),Text31022890) > 0) OR
-    //             (STRPOS(FORMAT("Comparison Date Formula"),Text31022891) > 0) OR
-    //             (STRPOS(FORMAT("Comparison Date Formula"),Text31022892) > 0))
-    //     THEN
-    //           ToDate := CALCDATE('<CM>',CALCDATE("Comparison Date Formula",EndDate))
-    //         ELSE
-    //           ToDate := CALCDATE("Comparison Date Formula",EndDate);
-    //         FiscalStartDate2 := FindFiscalYear(ToDate);
-    //       END ELSE IF "Comparison Period Formula" <> '' THEN BEGIN
-    //         AccPeriodStartEnd("Comparison Period Formula",StartDate,FromDate,ToDate);
-    //         FiscalStartDate2 := FindFiscalYear(ToDate);
-    //       END ELSE BEGIN
-    //         FromDate := StartDate;
-    //         ToDate := EndDate;
-    //         FiscalStartDate2 := FiscalStartDate;
-    //       END;
-    //       CASE "Column Type" OF
-    //         "Column Type"::"Net Change" :
-    //           CASE AccSchedLine2."Row Type" OF
-    //             AccSchedLine2."Row Type"::"Net Change":
-    //               HistoricGLAcc.SETRANGE("Date Filter",FromDate,ToDate);
-    //             AccSchedLine2."Row Type"::"Beginning Balance":
-    //               HistoricGLAcc.SETFILTER("Date Filter",'<%1',FromDate);  // always includes closing date
-    //             AccSchedLine2."Row Type"::"Balance at Date":
-    //               HistoricGLAcc.SETRANGE("Date Filter",0D,ToDate);
-    //           END;
-    //         "Column Type"::"Balance at Date" :
-    //           IF AccSchedLine2."Row Type" = AccSchedLine2."Row Type"::"Beginning Balance" THEN
-    //             HistoricGLAcc.SETRANGE("Date Filter",0D)   // Force a zero return
-    //     ELSE
-    //             HistoricGLAcc.SETRANGE("Date Filter",0D,ToDate);
-    //         "Column Type"::"Beginning Balance" :
-    //           IF AccSchedLine2."Row Type" = AccSchedLine2."Row Type"::"Balance at Date" THEN
-    //             HistoricGLAcc.SETRANGE("Date Filter",0D)   // Force a zero return
-    //       ELSE
-    //             HistoricGLAcc.SETRANGE(
-    //               "Date Filter",0D,CLOSINGDATE(FromDate-1));
-    //         "Column Type"::"Year to Date" :
-    //           CASE AccSchedLine2."Row Type" OF
-    //             AccSchedLine2."Row Type"::"Net Change":
-    //               HistoricGLAcc.SETRANGE("Date Filter",FiscalStartDate2,ToDate);
-    //             AccSchedLine2."Row Type"::"Beginning Balance":
-    //               HistoricGLAcc.SETFILTER("Date Filter",'<%1',FiscalStartDate2);  // always includes closing date
-    //             AccSchedLine2."Row Type"::"Balance at Date":
-    //               HistoricGLAcc.SETRANGE("Date Filter",0D,ToDate);
-    //           END;
-    //         "Column Type"::"Rest of Fiscal Year" :
-    //           CASE AccSchedLine2."Row Type" OF
-    //             AccSchedLine2."Row Type"::"Net Change":
-    //               HistoricGLAcc.SETRANGE(
-    //                 "Date Filter",CALCDATE('<+1D>',ToDate),FindEndOfFiscalYear(FiscalStartDate2));
-    //             AccSchedLine2."Row Type"::"Beginning Balance":
-    //               HistoricGLAcc.SETRANGE("Date Filter",0D,ToDate);
-    //             AccSchedLine2."Row Type"::"Balance at Date":
-    //               HistoricGLAcc.SETRANGE("Date Filter",0D,FindEndOfFiscalYear(ToDate));
-    //           END;
-    //         "Column Type"::"Entire Fiscal Year" :
-    //           CASE AccSchedLine2."Row Type" OF
-    //             AccSchedLine2."Row Type"::"Net Change":
-    //               HistoricGLAcc.SETRANGE(
-    //                 "Date Filter",
-    //                 FiscalStartDate2,
-    //                 FindEndOfFiscalYear(FiscalStartDate2));
-    //             AccSchedLine2."Row Type"::"Beginning Balance":
-    //               HistoricGLAcc.SETFILTER("Date Filter",'<%1',FiscalStartDate2);  // always includes closing date
-    //             AccSchedLine2."Row Type"::"Balance at Date":
-    //               HistoricGLAcc.SETRANGE("Date Filter",0D,FindEndOfFiscalYear(ToDate));
-    //           END;
-    //       END;
-    //     END;
-    //     //soft,en
+    //     AccSchedMgmtPT.SetGLAccRowFilters(GLAcc,AccSchedLine,ColumnLayout);       
     // end;
 
-    // local procedure CalcHistoricGLAcc(var HistoricGLAcc : Record "31022909";var AccSchedLine : Record "85";var ColumnLayout : Record "334";CalcAddCurr : Boolean) ColValue : Decimal;
-    // var
-    //     GLEntry : Record "17";
-    //     GLBudgEntry : Record "96";
-    //     AnalysisViewEntry : Record "365";
-    //     AnalysisViewBudgetEntry : Record "366";
-    //     AmountType : Option "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-    //     TestBalance : Boolean;
-    //     Balance : Decimal;
-    //     UseBusUnitFilter : Boolean;
-    //     UseDimFilter : Boolean;
-    //     AnalysisViewEntry1 : Record "365";
-    //     AmountType2 : Option "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-    //     AmountType3 : Option "Net Amount","Debit Amount","Credit Amount",,,,,,"Debit Balance","Credit Balance";
-    // begin
-    //     //soft,sn
-    //     ColValue := 0;
-    //     IF AccSchedName.Name <> AccSchedLine."Schedule Name" THEN
-    //       AccSchedName.GET(AccSchedLine."Schedule Name");
-    //     AmountType :=  ColumnLayout."Amount Type";
-    //     AmountType2 :=  ColumnLayout."Amount Type 2";
-    //     AmountType3 :=  ColumnLayout."Amount Type 3";
-    //     CASE AccSchedLine."Amount Type" OF
-    //       AccSchedLine."Amount Type"::"Debit Amount":
-    //         CASE AmountType OF
-    //           AmountType::"Net Amount":
-    //             AmountType := AmountType::"Debit Amount";
-    //           AmountType::"Credit Amount":
-    //             EXIT(0);
-    //       END;
-    //       AccSchedLine."Amount Type"::"Credit Amount":
-    //         CASE AmountType OF
-    //           AmountType::"Net Amount":
-    //             AmountType := AmountType::"Credit Amount";
-    //           AmountType::"Debit Amount":
-    //             EXIT(0);
-    //         END;
-    //       END;
-    //     TestBalance :=
-    //       AccSchedLine.Show IN [AccSchedLine.Show::"When Positive Balance",AccSchedLine.Show::"When Negative Balance"];
-    //     IF ColumnLayout."Column Type" <> ColumnLayout."Column Type"::Formula THEN BEGIN
-    //       UseBusUnitFilter := (AccSchedLine.GETFILTER("Business Unit Filter") <> '') OR (ColumnLayout."Business Unit Totaling" <> '');
-    //       UseDimFilter :=
-    //         (AccSchedLine."Dimension 1 Totaling" <> '') OR
-    //         (AccSchedLine."Dimension 2 Totaling" <> '') OR
-    //         (AccSchedLine."Dimension 3 Totaling" <> '') OR
-    //         (AccSchedLine."Dimension 4 Totaling" <> '') OR
-    //         (AccSchedLine.GETFILTER("Dimension 1 Filter") <> '') OR
-    //         (AccSchedLine.GETFILTER("Dimension 2 Filter") <> '') OR
-    //         (AccSchedLine.GETFILTER("Dimension 3 Filter") <> '') OR
-    //         (AccSchedLine.GETFILTER("Dimension 4 Filter") <> '') OR
-    //         (ColumnLayout."Dimension 1 Totaling" <> '') OR
-    //         (ColumnLayout."Dimension 2 Totaling" <> '') OR
-    //         (ColumnLayout."Dimension 3 Totaling" <> '') OR
-    //         (ColumnLayout."Dimension 4 Totaling" <> '');
-    //        CASE ColumnLayout."Ledger Entry Type" OF
-    //         ColumnLayout."Ledger Entry Type"::Entries :
-    //           BEGIN
-    //             IF AccSchedName."Analysis View Name" = '' THEN
-    //               WITH GLEntry DO BEGIN
-    //                 IF UseBusUnitFilter THEN
-    //                   IF UseDimFilter THEN
-    //                     SETCURRENTKEY(
-    //                       "Old G/L Account No.","Business Unit Code","Global Dimension 1 Code","Global Dimension 2 Code")
-    //                   ELSE
-    //                     SETCURRENTKEY(
-    //                       "Old G/L Account No.","Business Unit Code","Posting Date")
-    //                 ELSE
-    //                   IF UseDimFilter THEN
-    //                     SETCURRENTKEY("Old G/L Account No.","Global Dimension 1 Code","Global Dimension 2 Code")
-    //                   ELSE
-    //                     SETCURRENTKEY("Old G/L Account No.","Posting Date");
-    //                 IF HistoricGLAcc.Totaling = '' THEN
-    //                   SETRANGE("Old G/L Account No.",HistoricGLAcc."No.")
-    //                 ELSE
-    //                   SETFILTER("Old G/L Account No.",HistoricGLAcc.Totaling);
-    //                 HistoricGLAcc.COPYFILTER("Date Filter","Posting Date");
-    //                 AccSchedLine.COPYFILTER("Business Unit Filter","Business Unit Code");
-    //                 AccSchedLine.COPYFILTER("Dimension 1 Filter","Global Dimension 1 Code");
-    //                 AccSchedLine.COPYFILTER("Dimension 2 Filter","Global Dimension 2 Code");
-    //                 FILTERGROUP(2);
-    //                 SETFILTER("Global Dimension 1 Code",GetDimTotalingFilter(1,AccSchedLine."Dimension 1 Totaling"));
-    //                 SETFILTER("Global Dimension 2 Code",GetDimTotalingFilter(2,AccSchedLine."Dimension 2 Totaling"));
-    //                 FILTERGROUP(6);
-    //                 SETFILTER("Global Dimension 1 Code",GetDimTotalingFilter(1,ColumnLayout."Dimension 1 Totaling"));
-    //                 SETFILTER("Global Dimension 2 Code",GetDimTotalingFilter(2,ColumnLayout."Dimension 2 Totaling"));
-    //                 SETFILTER("Business Unit Code",ColumnLayout."Business Unit Totaling");
-    //                 FILTERGROUP(0);
-
-    //                 CASE TRUE OF
-    //                   ((AmountType = AmountType::"Net Amount") AND (AccSchedLine."Column Value" = 0)) OR
-    //                   ((AmountType2 = AmountType2::"Net Amount") AND (AccSchedLine."Column Value" = 1)) OR
-    //                   ((AmountType3 = AmountType3::"Net Amount") AND (AccSchedLine."Column Value" = 2)):
-    //                     BEGIN
-    //                       IF CalcAddCurr THEN BEGIN
-    //                         CALCSUMS("Additional-Currency Amount");
-    //                         ColValue := "Additional-Currency Amount";
-    //                       END ELSE BEGIN
-    //                         CALCSUMS(Amount);
-    //                         ColValue := Amount;
-    //                       END;
-    //                       Balance := ColValue;
-    //                     END;
-    //                     ((AmountType = AmountType::"Debit Amount") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Debit Amount") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Debit Amount") AND (AccSchedLine."Column Value" = 2)):
-    //                     BEGIN
-    //                       IF CalcAddCurr THEN BEGIN
-    //                         IF TestBalance THEN BEGIN
-    //                           CALCSUMS("Add.-Currency Debit Amount","Additional-Currency Amount");
-    //                           Balance := "Additional-Currency Amount";
-    //                         END ELSE
-    //                           CALCSUMS("Add.-Currency Debit Amount");
-    //                         ColValue := "Add.-Currency Debit Amount";
-    //                       END ELSE BEGIN
-    //                         IF TestBalance THEN BEGIN
-    //                           CALCSUMS("Debit Amount",Amount);
-    //                           Balance := Amount;
-    //                         END ELSE
-    //                           CALCSUMS("Debit Amount");
-    //                         ColValue := "Debit Amount";
-    //                       END;
-    //                     END;
-    //                     ((AmountType = AmountType::"Credit Amount") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Credit Amount") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Credit Amount") AND (AccSchedLine."Column Value" = 2)):
-    //                     BEGIN
-    //                       IF CalcAddCurr THEN BEGIN
-    //                         IF TestBalance THEN BEGIN
-    //                           CALCSUMS("Add.-Currency Credit Amount","Additional-Currency Amount");
-    //                           Balance := "Additional-Currency Amount";
-    //                         END ELSE
-    //                           CALCSUMS("Add.-Currency Credit Amount");
-    //                         ColValue := "Add.-Currency Credit Amount";
-    //                       END ELSE BEGIN
-    //                         IF TestBalance THEN BEGIN
-    //                           CALCSUMS("Credit Amount",Amount);
-    //                           Balance := Amount;
-    //                         END ELSE
-    //                           CALCSUMS("Credit Amount");
-    //                         ColValue := "Credit Amount";
-    //                       END;
-    //                     END;
-    //                     ((AmountType = AmountType::"Debit Balance") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Debit Balance") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Debit Balance") AND (AccSchedLine."Column Value" = 2)):
-    //                       BEGIN
-    //                         HistoricGlAcc1 := HistoricGLAcc;
-    //                         HistoricGlAcc1.COPYFILTERS(HistoricGLAcc);
-    //                         //SS.10.00.03.01,sn
-    //                         HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                         HistoricGlAcc1.SETFILTER("Global Dimension 1 Filter",GLEntry.GETFILTER("Global Dimension 1 Code"));
-    //                         HistoricGlAcc1.SETFILTER("Global Dimension 2 Filter",GLEntry.GETFILTER("Global Dimension 2 Code"));
-    //                         IF AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Total Accounts" THEN BEGIN
-    //                           HistoricGlAcc1.SETRANGE("Account Type",GlAcc1."Account Type"::Total);
-    //                           IF PrintAmountsInAddCurrency THEN BEGIN
-    //                               HistoricGlAcc1.CALCFIELDS("Additional-Currency Net Change");
-    //                               IF HistoricGlAcc1."Net Change" > 0 THEN
-    //                                 ColValue := HistoricGlAcc1."Additional-Currency Net Change";
-    //                             END ELSE BEGIN
-    //                               HistoricGlAcc1.CALCFIELDS("Net Change");
-    //                               IF HistoricGlAcc1."Net Change" > 0 THEN
-    //                                 ColValue := HistoricGlAcc1."Net Change";
-    //                             END;
-    //                         END ELSE BEGIN
-    //                         //SS.10.00.03.01,en
-    //                           HistoricGlAcc1.SETRANGE("Account Type",HistoricGlAcc1."Account Type"::Posting);
-    //                           //SS.10.00.03.01,so
-    //                           //HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                           //HistoricGlAcc1.SETFILTER("Global Dimension 1 Filter",GLEntry.GETFILTER("Global Dimension 1 Code"));
-    //                           //HistoricGlAcc1.SETFILTER("Global Dimension 2 Filter",GLEntry.GETFILTER("Global Dimension 2 Code"));
-    //                           //SS.10.00.03.01,eo
-    //                           IF NOT HistoricGlAcc1.ISEMPTY THEN BEGIN
-    //                             HistoricGlAcc1.FINDSET;
-    //                             REPEAT
-    //                               IF PrintAmountsInAddCurrency THEN BEGIN
-    //                                 HistoricGlAcc1.CALCFIELDS("Additional-Currency Net Change");
-    //                                 IF HistoricGlAcc1."Net Change" > 0 THEN
-    //                                   ColValue := ColValue + HistoricGlAcc1."Additional-Currency Net Change";
-    //                               END ELSE BEGIN
-    //                                 HistoricGlAcc1.CALCFIELDS("Net Change");
-    //                                 IF HistoricGlAcc1."Net Change" > 0 THEN
-    //                                   ColValue := ColValue + HistoricGlAcc1."Net Change";
-    //                               END;
-    //                             UNTIL HistoricGlAcc1.NEXT = 0;
-    //                           END;
-    //                         END; //SS.10.00.03.01,n
-    //                       END;
-
-    //                     ((AmountType = AmountType::"Credit Balance") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Credit Balance") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Credit Balance") AND (AccSchedLine."Column Value" = 2)):
-    //                       BEGIN
-    //                         HistoricGlAcc1 := HistoricGLAcc;
-    //                         HistoricGlAcc1.COPYFILTERS(HistoricGLAcc);
-    //                         //SS.10.00.03.01,sn
-    //                         HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                         HistoricGlAcc1.SETFILTER("Global Dimension 1 Filter",GLEntry.GETFILTER("Global Dimension 1 Code"));
-    //                         HistoricGlAcc1.SETFILTER("Global Dimension 2 Filter",GLEntry.GETFILTER("Global Dimension 2 Code"));
-    //                         IF AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Total Accounts" THEN BEGIN
-    //                           HistoricGlAcc1.SETRANGE("Account Type",GlAcc1."Account Type"::Total);
-    //                           IF PrintAmountsInAddCurrency THEN BEGIN
-    //                             HistoricGlAcc1.CALCFIELDS("Additional-Currency Net Change");
-    //                             IF HistoricGlAcc1."Net Change" < 0 THEN
-    //                               ColValue := HistoricGlAcc1."Additional-Currency Net Change";
-    //                           END ELSE BEGIN
-    //                             HistoricGlAcc1.CALCFIELDS("Net Change");
-    //                             IF HistoricGlAcc1."Net Change" < 0 THEN
-    //                               ColValue := HistoricGlAcc1."Net Change";
-    //                           END;
-    //                         END ELSE BEGIN
-    //                           //SS.10.00.03.01,en
-    //                           HistoricGlAcc1.SETRANGE("Account Type",HistoricGlAcc1."Account Type"::Posting);
-    //                           //SS.10.00.03.01,so
-    //                           //HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                           //HistoricGlAcc1.SETFILTER("Global Dimension 1 Filter",GLEntry.GETFILTER("Global Dimension 1 Code"));
-    //                           //HistoricGlAcc1.SETFILTER("Global Dimension 2 Filter",GLEntry.GETFILTER("Global Dimension 2 Code"));
-    //                           //SS.10.00.03.01,eo
-    //                           IF NOT HistoricGlAcc1.ISEMPTY THEN BEGIN
-    //                             HistoricGlAcc1.FINDSET;
-    //                             REPEAT
-    //                               IF PrintAmountsInAddCurrency THEN BEGIN
-    //                                 HistoricGlAcc1.CALCFIELDS("Additional-Currency Net Change");
-    //                                 IF HistoricGlAcc1."Net Change" < 0 THEN
-    //                                   ColValue := ColValue + HistoricGlAcc1."Additional-Currency Net Change";
-    //                               END ELSE BEGIN
-    //                                 HistoricGlAcc1.CALCFIELDS("Net Change");
-    //                                 IF HistoricGlAcc1."Net Change" < 0 THEN
-    //                                   ColValue := ColValue + HistoricGlAcc1."Net Change";
-    //                               END;
-    //                             UNTIL HistoricGlAcc1.NEXT = 0;
-    //                           END;
-    //                         END; //SS.10.00.03.01,n
-    //                       END;
-    //                   END;
-    //                 END
-    //               ELSE
-    //                 WITH AnalysisViewEntry DO BEGIN
-    //                   SETRANGE("Analysis View Code",AccSchedName."Analysis View Name");
-    //                   IF HistoricGLAcc.Totaling = '' THEN
-    //                     SETRANGE("Old G/L Account No.",HistoricGLAcc."No.")
-    //                   ELSE
-    //                     SETFILTER("Old G/L Account No.",HistoricGLAcc.Totaling);
-    //                   HistoricGLAcc.COPYFILTER("Date Filter","Posting Date");
-    //                   AccSchedLine.COPYFILTER("Business Unit Filter","Business Unit Code");
-    //                   AccSchedLine.COPYFILTER("Dimension 1 Filter","Dimension 1 Value Code");
-    //                   AccSchedLine.COPYFILTER("Dimension 2 Filter","Dimension 2 Value Code");
-    //                   AccSchedLine.COPYFILTER("Dimension 3 Filter","Dimension 3 Value Code");
-    //                   AccSchedLine.COPYFILTER("Dimension 4 Filter","Dimension 4 Value Code");
-    //                   FILTERGROUP(2);
-    //                   SETFILTER("Dimension 1 Value Code",GetDimTotalingFilter(1,AccSchedLine."Dimension 1 Totaling"));
-    //                   SETFILTER("Dimension 2 Value Code",GetDimTotalingFilter(2,AccSchedLine."Dimension 2 Totaling"));
-    //                   SETFILTER("Dimension 3 Value Code",GetDimTotalingFilter(3,AccSchedLine."Dimension 3 Totaling"));
-    //                   SETFILTER("Dimension 4 Value Code",GetDimTotalingFilter(4,AccSchedLine."Dimension 4 Totaling"));
-    //                   FILTERGROUP(6);
-    //                   SETFILTER("Dimension 1 Value Code",GetDimTotalingFilter(1,ColumnLayout."Dimension 1 Totaling"));
-    //                   SETFILTER("Dimension 2 Value Code",GetDimTotalingFilter(2,ColumnLayout."Dimension 2 Totaling"));
-    //                   SETFILTER("Dimension 3 Value Code",GetDimTotalingFilter(3,ColumnLayout."Dimension 3 Totaling"));
-    //                   SETFILTER("Dimension 4 Value Code",GetDimTotalingFilter(4,ColumnLayout."Dimension 4 Totaling"));
-    //                   SETFILTER("Business Unit Code",ColumnLayout."Business Unit Totaling");
-    //                   FILTERGROUP(0);
-
-    //                   CASE TRUE OF
-    //                     ((AmountType = AmountType::"Net Amount") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Net Amount") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Net Amount") AND (AccSchedLine."Column Value" = 2)):
-    //     BEGIN
-    //                         IF CalcAddCurr THEN BEGIN
-    //                           CALCSUMS("Add.-Curr. Amount");
-    //                           ColValue := "Add.-Curr. Amount";
-    //       END ELSE BEGIN
-    //                           CALCSUMS(Amount);
-    //                           ColValue := Amount;
-    //                         END;
-    //                         Balance := ColValue;
-    //                       END;
-    //                     ((AmountType = AmountType::"Debit Amount") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Debit Amount") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Debit Amount") AND (AccSchedLine."Column Value" = 2)):
-    //                       BEGIN
-    //                         IF CalcAddCurr THEN BEGIN
-    //                           IF TestBalance THEN BEGIN
-    //                             CALCSUMS("Add.-Curr. Debit Amount","Add.-Curr. Amount");
-    //                             Balance := "Add.-Curr. Amount";
-    //                           END ELSE
-    //                             CALCSUMS("Add.-Curr. Debit Amount");
-    //                             ColValue := "Add.-Curr. Debit Amount";
-    //         END ELSE BEGIN
-    //                           IF TestBalance THEN BEGIN
-    //                             CALCSUMS("Debit Amount",Amount);
-    //                             Balance := Amount;
-    //                           END ELSE
-    //                             CALCSUMS("Debit Amount");
-    //                             ColValue := "Debit Amount";
-    //                           END;
-    //                         END;
-    //                     ((AmountType = AmountType::"Credit Amount") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Credit Amount") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Credit Amount") AND (AccSchedLine."Column Value" = 2)):
-    //                       BEGIN
-    //                         IF CalcAddCurr THEN BEGIN
-    //                           IF TestBalance THEN BEGIN
-    //                             CALCSUMS("Add.-Curr. Credit Amount","Add.-Curr. Amount");
-    //                             Balance := "Add.-Curr. Amount";
-    //                           END ELSE
-    //                             CALCSUMS("Add.-Curr. Credit Amount");
-    //                           ColValue := "Add.-Curr. Credit Amount";
-    //                         END ELSE BEGIN
-    //                           IF TestBalance THEN BEGIN
-    //                             CALCSUMS("Credit Amount",Amount);
-    //                             Balance := Amount;
-    //                           END ELSE
-    //                             CALCSUMS("Credit Amount");
-    //                           ColValue := "Credit Amount";
-    //                         END;
-    //                       END;
-    //                     ((AmountType = AmountType::"Debit Balance") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Debit Balance") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Debit Balance") AND (AccSchedLine."Column Value" = 2)):
-    //                       BEGIN
-    //                         AnalysisViewEntry1 := AnalysisViewEntry;
-    //                         AnalysisViewEntry1.COPYFILTERS(AnalysisViewEntry);
-    //                         HistoricGlAcc1 := HistoricGLAcc;
-    //                         HistoricGlAcc1.COPYFILTERS(HistoricGLAcc);
-    //                         //SS.10.00.03.01,sn
-    //                         IF AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Total Accounts" THEN BEGIN
-    //                           AnalysisViewEntry1.SETFILTER("Old G/L Account No.",HistoricGLAcc."No.");
-    //                           IF PrintAmountsInAddCurrency THEN BEGIN
-    //                             AnalysisViewEntry1.CALCSUMS("Add.-Curr. Amount");
-    //                             IF AnalysisViewEntry1."Add.-Curr. Amount" > 0 THEN
-    //                               ColValue := AnalysisViewEntry1."Add.-Curr. Amount";
-    //                           END ELSE BEGIN
-    //                             AnalysisViewEntry1.CALCSUMS(Amount);
-    //                             IF AnalysisViewEntry1.Amount > 0 THEN
-    //                               ColValue := AnalysisViewEntry1.Amount;
-    //                           END;
-    //                         END ELSE BEGIN
-    //                         //SS.10.00.03.01,en
-    //                           HistoricGlAcc1.SETRANGE("Account Type",HistoricGlAcc1."Account Type"::Posting);
-    //                           HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                           IF NOT HistoricGlAcc1.ISEMPTY THEN BEGIN
-    //                             HistoricGlAcc1.FINDSET;
-    //                             REPEAT
-    //                               AnalysisViewEntry1.SETFILTER("Old G/L Account No.",HistoricGlAcc1."No.");
-    //                               IF PrintAmountsInAddCurrency THEN BEGIN
-    //                                 AnalysisViewEntry1.CALCSUMS("Add.-Curr. Amount");
-    //                                 IF AnalysisViewEntry1."Add.-Curr. Amount" > 0 THEN
-    //                                   ColValue := ColValue + AnalysisViewEntry1."Add.-Curr. Amount";
-    //                               END ELSE BEGIN
-    //                                 AnalysisViewEntry1.CALCSUMS(Amount);
-    //                                 IF AnalysisViewEntry1.Amount > 0 THEN
-    //                                   ColValue := ColValue + AnalysisViewEntry1.Amount;
-    //                                 END;
-    //                             UNTIL HistoricGlAcc1.NEXT = 0;
-    //                           END;
-    //                         END;
-    //                       END;
-    //                     ((AmountType = AmountType::"Credit Balance") AND (AccSchedLine."Column Value" = 0)) OR
-    //                     ((AmountType2 = AmountType2::"Credit Balance") AND (AccSchedLine."Column Value" = 1)) OR
-    //                     ((AmountType3 = AmountType3::"Credit Balance") AND (AccSchedLine."Column Value" = 2)):
-    //                       BEGIN
-    //                         AnalysisViewEntry1 := AnalysisViewEntry;
-    //                         AnalysisViewEntry1.COPYFILTERS(AnalysisViewEntry);
-    //                         HistoricGlAcc1 := HistoricGLAcc;
-    //                         HistoricGlAcc1.COPYFILTERS(HistoricGLAcc);
-    //                         //SS.10.00.03.01,sn
-    //                         IF AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Total Accounts" THEN BEGIN
-    //                           AnalysisViewEntry1.SETFILTER("Old G/L Account No.",HistoricGLAcc."No.");
-    //                           IF PrintAmountsInAddCurrency THEN BEGIN
-    //                             AnalysisViewEntry1.CALCSUMS("Add.-Curr. Amount");
-    //                             IF AnalysisViewEntry1."Add.-Curr. Amount" < 0 THEN
-    //                               ColValue := AnalysisViewEntry1."Add.-Curr. Amount";
-    //                           END ELSE BEGIN
-    //                             AnalysisViewEntry1.CALCSUMS(Amount);
-    //                             IF AnalysisViewEntry1.Amount < 0 THEN
-    //                               ColValue := AnalysisViewEntry1.Amount;
-    //                           END;
-    //                         END ELSE BEGIN
-    //                         //SS.10.00.03.01,en
-    //                           HistoricGlAcc1.SETRANGE("Account Type",HistoricGlAcc1."Account Type"::Posting);
-    //                           HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                           IF NOT HistoricGlAcc1.ISEMPTY THEN BEGIN
-    //                             HistoricGlAcc1.FINDSET;
-    //                             REPEAT
-    //                               AnalysisViewEntry1.SETFILTER("Old G/L Account No.",HistoricGlAcc1."No.");
-    //                               IF PrintAmountsInAddCurrency THEN BEGIN
-    //                                 AnalysisViewEntry1.CALCSUMS("Add.-Curr. Amount");
-    //                                 IF AnalysisViewEntry1."Add.-Curr. Amount" < 0 THEN
-    //                                   ColValue := ColValue + AnalysisViewEntry1."Add.-Curr. Amount";
-    //                               END ELSE BEGIN
-    //                                 AnalysisViewEntry1.CALCSUMS(Amount);
-    //                                 IF AnalysisViewEntry1.Amount < 0 THEN
-    //                                   ColValue := ColValue + AnalysisViewEntry1.Amount;
-    //                               END;
-    //                             UNTIL HistoricGlAcc1.NEXT = 0;
-    //                           END;
-    //                         END; //SS.10.00.03.01,n
-    //                       END;
-    //         END;
-    //       END;
-    //     END;
-
-    //           ColumnLayout."Ledger Entry Type"::"Budget Entries" :
-    //             BEGIN
-    //              IF AccSchedName."Analysis View Name" = '' THEN
-    //                WITH GLBudgEntry DO BEGIN
-    //                  IF UseBusUnitFilter OR UseDimFilter THEN
-    //                    SETCURRENTKEY(
-    //                      "Budget Name","Old G/L Account No.","Business Unit Code",
-    //                      "Global Dimension 1 Code","Global Dimension 2 Code",
-    //                      "Budget Dimension 1 Code","Budget Dimension 2 Code",
-    //                      "Budget Dimension 3 Code","Budget Dimension 4 Code",Date)
-    //                  ELSE
-    //                    SETCURRENTKEY("Budget Name","Old G/L Account No.",Date);
-    //                  IF HistoricGLAcc.Totaling = '' THEN
-    //                    SETRANGE("Old G/L Account No.",HistoricGLAcc."No.")
-    //                  ELSE
-    //                    SETFILTER("Old G/L Account No.",HistoricGLAcc.Totaling);
-    //                  HistoricGLAcc.COPYFILTER("Date Filter",Date);
-    //                  AccSchedLine.COPYFILTER("G/L Budget Filter","Budget Name");
-    //                  AccSchedLine.COPYFILTER("Business Unit Filter","Business Unit Code");
-    //                  AccSchedLine.COPYFILTER("Dimension 1 Filter","Global Dimension 1 Code");
-    //                  AccSchedLine.COPYFILTER("Dimension 2 Filter","Global Dimension 2 Code");
-    //                  FILTERGROUP(2);
-    //                  SETFILTER("Global Dimension 1 Code",GetDimTotalingFilter(1,AccSchedLine."Dimension 1 Totaling"));
-    //                  SETFILTER("Global Dimension 2 Code",GetDimTotalingFilter(2,AccSchedLine."Dimension 2 Totaling"));
-    //                  FILTERGROUP(6);
-    //                  SETFILTER("Global Dimension 1 Code",GetDimTotalingFilter(1,ColumnLayout."Dimension 1 Totaling"));
-    //                  SETFILTER("Global Dimension 2 Code",GetDimTotalingFilter(2,ColumnLayout."Dimension 2 Totaling"));
-    //                  SETFILTER("Business Unit Code",ColumnLayout."Business Unit Totaling");
-    //                  FILTERGROUP(0);
-
-    //                  CASE AmountType OF
-    //                    AmountType::"Net Amount" :
-    //                      BEGIN
-    //                        CALCSUMS(Amount);
-    //                        ColValue := Amount;
-    //                      END;
-    //                    AmountType::"Debit Amount" :
-    //                      BEGIN
-    //                        CALCSUMS(Amount);
-    //                        ColValue := Amount;
-    //                         IF ColValue < 0 THEN
-    //                          ColValue := 0;
-    //                      END;
-    //                    AmountType::"Credit Amount" :
-    //                      BEGIN
-    //                        CALCSUMS(Amount);
-    //                        ColValue := -Amount;
-    //                        IF ColValue < 0 THEN
-    //                          ColValue := 0;
-    //                      END;
-    //                    AmountType::"Debit Balance" :
-    //                      BEGIN
-    //                        HistoricGLAcc.CALCFIELDS("Net Change");
-    //                         ColValue := HistoricGLAcc."Net Change";
-    //                         IF ColValue < 0 THEN
-    //                         ColValue := 0;
-    //                      END;
-    //                    AmountType::"Credit Balance" :
-    //                      BEGIN
-    //                        HistoricGLAcc.CALCFIELDS("Net Change");
-    //                        ColValue := HistoricGLAcc."Net Change";
-    //                        IF ColValue > 0 THEN
-    //                          ColValue := 0;
-    //                      END;
-    //                  END;
-    //                  Balance := Amount;
-    //                END
-    //              ELSE
-    //                WITH AnalysisViewBudgetEntry DO BEGIN
-    //                  IF HistoricGLAcc.Totaling = '' THEN
-    //                    SETRANGE("Old G/L Account No.",HistoricGLAcc."No.")
-    //                  ELSE
-    //                    SETFILTER("Old G/L Account No.",HistoricGLAcc.Totaling);
-    //                  SETRANGE("Analysis View Code",AccSchedName."Analysis View Name");
-    //                  HistoricGLAcc.COPYFILTER("Date Filter","Posting Date");
-    //                  AccSchedLine.COPYFILTER("G/L Budget Filter","Budget Name");
-    //                  AccSchedLine.COPYFILTER("Business Unit Filter","Business Unit Code");
-    //                  AccSchedLine.COPYFILTER("Dimension 1 Filter","Dimension 1 Value Code");
-    //                  AccSchedLine.COPYFILTER("Dimension 2 Filter","Dimension 2 Value Code");
-    //                  AccSchedLine.COPYFILTER("Dimension 3 Filter","Dimension 3 Value Code");
-    //                  AccSchedLine.COPYFILTER("Dimension 4 Filter","Dimension 4 Value Code");
-    //                  FILTERGROUP(2);
-    //                  SETFILTER("Dimension 1 Value Code",GetDimTotalingFilter(1,AccSchedLine."Dimension 1 Totaling"));
-    //                  SETFILTER("Dimension 2 Value Code",GetDimTotalingFilter(2,AccSchedLine."Dimension 2 Totaling"));
-    //                  SETFILTER("Dimension 3 Value Code",GetDimTotalingFilter(3,AccSchedLine."Dimension 3 Totaling"));
-    //                  SETFILTER("Dimension 4 Value Code",GetDimTotalingFilter(4,AccSchedLine."Dimension 4 Totaling"));
-    //                  FILTERGROUP(6);
-    //                  SETFILTER("Dimension 1 Value Code",GetDimTotalingFilter(1,ColumnLayout."Dimension 1 Totaling"));
-    //                  SETFILTER("Dimension 2 Value Code",GetDimTotalingFilter(2,ColumnLayout."Dimension 2 Totaling"));
-    //                  SETFILTER("Dimension 3 Value Code",GetDimTotalingFilter(3,ColumnLayout."Dimension 3 Totaling"));
-    //                  SETFILTER("Dimension 4 Value Code",GetDimTotalingFilter(4,ColumnLayout."Dimension 4 Totaling"));
-    //                  SETFILTER("Business Unit Code",ColumnLayout."Business Unit Totaling");
-    //                  FILTERGROUP(0);
-
-    //                  CASE AmountType OF
-    //                    AmountType::"Net Amount" :
-    //                      BEGIN
-    //                        CALCSUMS(Amount);
-    //                        ColValue := Amount;
-    //                      END;
-    //                    AmountType::"Debit Amount" :
-    //                      BEGIN
-    //                        CALCSUMS(Amount);
-    //                        ColValue := Amount;
-    //                        IF ColValue < 0 THEN
-    //                          ColValue := 0;
-    //                      END;
-    //                    AmountType::"Credit Amount" :
-    //                      BEGIN
-    //                        CALCSUMS(Amount);
-    //                        ColValue := -Amount;
-    //                        IF ColValue < 0 THEN
-    //                          ColValue := 0;
-    //                      END;
-    //                    AmountType::"Debit Balance" :
-    //                      BEGIN
-    //                        HistoricGlAcc1 := HistoricGLAcc;
-    //                        HistoricGlAcc1.COPYFILTERS(HistoricGLAcc);
-    //                        //SS.10.00.03.01,sn
-    //                        HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                         IF AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Total Accounts" THEN BEGIN
-    //                           HistoricGlAcc1.SETRANGE("Account Type",GlAcc1."Account Type"::Total);
-    //                           HistoricGlAcc1.CALCSUMS("Budgeted Amount");
-    //                           IF HistoricGlAcc1."Budgeted Amount" > 0 THEN
-    //                             ColValue := HistoricGlAcc1."Budgeted Amount";
-    //                         END ELSE BEGIN
-    //                         //SS.10.00.03.01,en
-    //                           HistoricGlAcc1.SETRANGE("Account Type",HistoricGLAcc."Account Type"::Posting);
-    //                           //SS.10.00.03.01,o HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                           IF NOT HistoricGlAcc1.ISEMPTY THEN BEGIN
-    //                             HistoricGlAcc1.FINDSET;
-    //                             REPEAT
-    //                               HistoricGlAcc1.CALCFIELDS("Budgeted Amount");
-    //                               IF HistoricGlAcc1."Budgeted Amount" > 0 THEN
-    //                                 ColValue := ColValue + HistoricGlAcc1."Budgeted Amount";
-    //                             UNTIL HistoricGlAcc1.NEXT = 0;
-    //                           END;
-    //                         END; //SS.10.00.03.01,n
-    //                       END;
-    //                    AmountType::"Credit Balance" :
-    //                      BEGIN
-    //                        HistoricGlAcc1 := HistoricGLAcc;
-    //                        HistoricGlAcc1.COPYFILTERS(HistoricGLAcc);
-    //                        //SS.10.00.03.01,sn
-    //                        HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                         IF AccSchedLine."Totaling Type" = AccSchedLine."Totaling Type"::"Total Accounts" THEN BEGIN
-    //                           HistoricGlAcc1.SETRANGE("Account Type",GlAcc1."Account Type"::Total);
-    //                           HistoricGlAcc1.CALCFIELDS("Budgeted Amount");
-    //                           IF HistoricGlAcc1."Budgeted Amount" < 0 THEN
-    //                             ColValue := HistoricGlAcc1."Budgeted Amount";
-    //                         END ELSE BEGIN
-    //                         //SS.10.00.03.01,en
-    //                           HistoricGlAcc1.SETRANGE("Account Type",HistoricGLAcc."Account Type"::Posting);
-    //                           //SS.10.00.03.01,O HistoricGlAcc1.SETFILTER("No.",HistoricGLAcc.Totaling);
-    //                           IF NOT HistoricGlAcc1.ISEMPTY THEN BEGIN
-    //                             HistoricGlAcc1.FINDSET;
-    //                             REPEAT
-    //                               HistoricGlAcc1.CALCFIELDS("Budgeted Amount");
-    //                               IF HistoricGlAcc1."Budgeted Amount" < 0 THEN
-    //                                 ColValue := ColValue + HistoricGlAcc1."Budgeted Amount";
-    //                             UNTIL HistoricGlAcc1.NEXT = 0;
-    //                           END;
-    //                        END; //SS.10.00.03.01,n
-    //                      END;
-    //                  END;
-    //                  Balance := Amount;
-    //                END;
-    //              IF CalcAddCurr THEN BEGIN
-    //                IF NOT GLSetupRead THEN BEGIN
-    //                  GLSetup.GET;
-    //                  GLSetupRead := TRUE;
-    //                  IF GLSetup."Additional Reporting Currency" <> '' THEN
-    //                    AddRepCurrency.GET(GLSetup."Additional Reporting Currency");
-    //                END;
-    //                IF GLSetup."Additional Reporting Currency" <> '' THEN
-    //                  ColValue := ROUND(ExchangeAmtAddCurrToLCY(ColValue),AddRepCurrency."Amount Rounding Precision")
-    //                ELSE
-    //                  ColValue := 0;
-    //              END;
-    //            END;
-    //       END;
-    //       IF TestBalance THEN BEGIN
-    //         IF AccSchedLine.Show = AccSchedLine.Show::"When Positive Balance" THEN
-    //           IF Balance < 0 THEN
-    //             EXIT(0);
-    //         IF AccSchedLine.Show = AccSchedLine.Show::"When Negative Balance" THEN
-    //           IF Balance > 0 THEN
-    //             EXIT(0);
-    //       END;
-    //     END;
-    //     EXIT(ColValue);
-    //     //soft,en
-    // end;
 }
-

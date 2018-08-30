@@ -3,6 +3,196 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Account Schedule APP">
     <body>
       <group id="body">
+        <trans-unit id="Table 2187252214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc. Schedule Buffer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Acc. Schedule Buffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2187252214 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Acc. Schedule Buffer - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2187252214 - Field 102724924 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance (Curr. Year)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Acc. Schedule Buffer - Field Balance (Curr. Year) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2187252214 - Field 2567375641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance (Prev. Year)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Acc. Schedule Buffer - Field Balance (Prev. Year) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DEFAULT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Schedule</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Columns</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 2939533186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You have entered an illegal value or a nonexistent row number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text012</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You have entered an illegal value or a nonexistent column number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text013</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 1195352358" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1\\ %2 %3 %4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text016</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 557655741" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The error occurred when the program tried to calculate:\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text017</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 857534312" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc. Sched. Line: Row No. = %1, Line No. = %2, Totaling = %3\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text018</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 219837695" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc. Sched. Column: Column No. = %1, Line No. = %2, Formula  = %3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text019</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 1940672225" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Because of circular references, the program cannot calculate a formula.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text020</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 2578368842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Conversion of dimension totaling filter %1 results in a filter that becomes too long.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text021</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 665278991" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot have more than %1 lines with %2 of %3.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text022</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 1302975608" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formulas ending with a percent sign require %2 %1 on a line before it.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text023</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 196491397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The %1 %3 on the %2 must equal the %4 %6 on the %5 when any Dimension Totaling is used in any Column.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text024</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3984828147" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column formula: %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType ColumnFormulaMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3838932199" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Row formula: %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType RowFormulaMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 418649963" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column formula: %1. \Error: %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType ColumnFormulaErrorMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3145128941" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warning: This account schedule may be automatically updated by the system, so any changes you make may be lost.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType SystemGeneratedAccSchedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Q</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3043076457 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column Formula: %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AccSchedManagementPT - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Normalized Account Schedule</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - Control 1352670974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Amounts in Add. currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - Control ImprValoresEmDivAdic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the date that the accounts refer to</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>(Thousands)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>(Millions)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>* ERROR *</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select just one account scheme</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All amounts in </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 650077689" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType PageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 2365166292" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ANALYTIC BALANCE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType ANALYTIC_BALANCECaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 3831959225" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Row No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType Row_No_CaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053403567 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Normalized Account Schedule - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1451408208 - Control 1559628746 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Amount Type 2</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -32,6 +222,16 @@
           <source>Amount Type 3</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Amount Type 3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1451408208 - Field 2474832731 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1,2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Ref - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1451408208 - Field 2474832731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ref</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Column Layout - Field Ref - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3225894500 - Control 3237928115 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if it is Standardized.</source>
@@ -74,7 +274,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Action PrintStandardized - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1848868896 - Action 216216420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>XXX</source>
+          <source>Print</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Account Schedule - Action PrintStandardized - Property Caption</note>
         </trans-unit>
@@ -127,6 +327,11 @@
           <source>Standardized</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Schedule Name - Field Standardized - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2066015583 - Field 2533693419 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Acc. Sched. Cell Value - Field Value2 - Property Caption</note>
         </trans-unit>
       </group>
     </body>
