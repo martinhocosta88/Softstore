@@ -8,16 +8,24 @@ tableextension 31023011 "Sales Header" extends "Sales Header"
             trigger OnAfterValidate()
             var
                 PaymentMethod:Record "Payment Method";
+                GLAcc:Record "G/L Account";
+                BankAcc:Record "Bank Account";
+                BankAccPostingGroup:Record "Bank Account Posting Group";
             begin
-                PaymentMethod.Init;
-                IF "Payment Method Code" <> '' THEN
-                    PaymentMethod.GET("Payment Method Code")
-                ELSE BEGIN
-                    "Cash-flow code" := '';
+                "Cash-Flow Code" := '';
+                CASE PaymentMethod."Bal. Account Type" OF
+                PaymentMethod."Bal. Account Type"::"G/L Account":
+                    IF GLAcc.GET(PaymentMethod."Bal. Account No.") THEN
+                    "Cash-Flow Code" := GLAcc."Cash-flow code";
+                PaymentMethod."Bal. Account Type"::"Bank Account":
+                    IF BankAcc.GET(PaymentMethod."Bal. Account No.") AND
+                    BankAccPostingGroup.GET(BankAcc."Bank Acc. Posting Group") AND
+                    GLAcc.GET(BankAccPostingGroup."G/L Bank Account No.") THEN
+                    "Cash-Flow Code" := GLAcc."Cash-flow code";
                 END;
-                "Cash-flow code" := PaymentMethod."Purch. Cash-flow Code";
             end;
         }
+
         field(31022895; "Cash-flow code"; Code[10])
         {
             TableRelation = "Cash-Flow Plan"."No." WHERE (Type = CONST (Posting));

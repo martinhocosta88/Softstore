@@ -10,6 +10,10 @@
   "help": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EchrxV7wd_VMvSvx5rwCJPAB2RBzNLBjXy0pmC10uoeM-Q?e=cWhPaL",
   "logo":"logo.gif",
   "url":"http://www.softstore.pt",
+  "helpBaseUrl":"https://docs.microsoft.com/{0}/dynamics365/business-central)",
+  "supportedLocales": [
+    "pt-PT"
+  ],
   "capabilities": [],
   "dependencies": [],
   "screenshots": [],

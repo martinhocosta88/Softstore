@@ -1298,16 +1298,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Payment Journal - Control Acc: cash-flow code - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2805771090 - Control 695109909 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the Sales Cash-flow code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Payment Methods - Control Sales Cash-flow code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 2805771090 - Control 1384373683 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the Sales Cash-flow code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Payment Methods - Control Purch. Cash-flow code - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 4034894651 - Control 712889997 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1473,16 +1463,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Header - Field Cash-flow code - Method OnValidate - NamedType Text31022890</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3566004263 - Field 695109909 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sales Cash-flow code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Payment Method - Field Sales Cash-flow code - Property caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3566004263 - Field 1384373683 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purch. Cash-flow code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Payment Method - Field Purch. Cash-flow code - Property caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 1192395785 - Field 712889997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1502,6 +1482,11 @@
           <source>Curr. Dec. Unit Decimal Places</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Currency - Field Curr. Dec. Unit Decimal Places - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2110786292 - Field 885549068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc: cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Bank Acc. Reconciliation Line - Field Acc: cash-flow code - Property Caption</note>
         </trans-unit>
       </group>
     </body>
