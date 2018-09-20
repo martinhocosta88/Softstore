@@ -79,7 +79,7 @@
         <target>Mapa Fluxos Caixa</target>
       </trans-unit>
       <trans-unit id="Page 3922458431 - Action 142330284 - Property 1295455071">
-        <source>Generates the Cash-Flow report.</source>
+        <source>Generates de Cash-Flow report.</source>
         <target>Gera o Mapa Fluxos de Caixa.</target>
       </trans-unit>
       <trans-unit id="Table 3363894443 - Property 2879900210">
@@ -130,9 +130,13 @@
         <source>Indenting the Chart of Accounts #1##########</source>
         <target>A indentar o Plano de Contas #1##########</target>
       </trans-unit>
+      <trans-unit id="Codeunit 3142904750 - Method 1514700111 - NamedType 109183450">
+        <source>The account no. %1 needs a cash-flow code</source>
+        <target>A conta nº %1 precisa de um Cód. Fluxo de Caixa.</target>
+      </trans-unit>
       <trans-unit id="Codeunit 3807294585 - Method 615983447 - NamedType 109183450">
         <source>The number you entered is not a valid NIB.</source>
-        <target>O número introduzido não é um NIB válido.</target>
+        <target>O número inserido não é um NIB válido.</target>
       </trans-unit>
       <trans-unit id="Page 3404562225 - Property 2879900210">
         <source>Cash-Flow Code Card</source>
@@ -167,7 +171,7 @@
         <target>Especifique o Código Taxonomia.</target>
       </trans-unit>
       <trans-unit id="Page 2107039125 - Control 3461834954 - Property 1295455071">
-        <source>Specify the Description of the Taxonomy Code.</source>
+        <source>Specify the Description of the Taxonomy Code</source>
         <target>Especifique a Descrição do Código Taxonomia.</target>
       </trans-unit>
       <trans-unit id="Report 142330284 - Property 2879900210">
@@ -787,8 +791,7 @@
         <target>%1 \ é um número demasiado comprido.</target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - NamedType 2566628424">
-        <source>
-        </source>
+        <source> </source>
         <target> E </target>
       </trans-unit>
       <trans-unit id="Report 1231299085 - NamedType 1928931807">
@@ -928,7 +931,7 @@
         <target>Especifica os dígitos de controlo para o número de conta bancária.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2603476233 - Control 588297277 - Property 1295455071">
-        <source>Specifies the bank account number.</source>
+        <source>Specifies the bank account number</source>
         <target>Especifica o número de conta bancária.</target>
       </trans-unit>
       <trans-unit id="PageExtension 2603476233 - Control 4277647424 - Property 1295455071">
@@ -978,6 +981,21 @@
       <trans-unit id="PageExtension 4050813720 - Control 682494963 - Property 1295455071">
         <source>Specifies if checks chart of accounts.</source>
         <target>Especifica se verifica o plano de contas.</target>
+      </trans-unit>
+      <trans-unit id="PageExtension 4050813720 - Control 1172175465 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <source>Specifies the Currency Decimal Unit Text.</source>
+        <note from="Developer" annotates="general" priority="2"></note>
+        <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Ledger Setup - Control Currency Decimal Unit Text - Property ToolTip</note>
+      </trans-unit>
+      <trans-unit id="PageExtension 4050813720 - Control 3512434395 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <source>Specifies the Curr. Dec. Unit Decimal Places.</source>
+        <note from="Developer" annotates="general" priority="2"></note>
+        <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Ledger Setup - Control Curr. Dec. Unit Decimal Places - Property ToolTip</note>
+      </trans-unit>
+      <trans-unit id="PageExtension 4050813720 - Control 947395910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <source>Specifies Currency Text.</source>
+        <note from="Developer" annotates="general" priority="2"></note>
+        <note from="Xliff Generator" annotates="general" priority="3">PageExtension General Ledger Setup - Control Currency Text - Property ToolTip</note>
       </trans-unit>
       <trans-unit id="TableExtension 4050813720 - Field 682494963 - Property 2879900210">
         <source>Check Chart of Accounts</source>
@@ -1034,14 +1052,6 @@
       <trans-unit id="PageExtension 3196174509 - Control 885549068 - Property 1295455071">
         <source>Specifies the account cash-flow code.</source>
         <target>Especifica o Código Fluxos de Caixa.</target>
-      </trans-unit>
-      <trans-unit id="PageExtension 2805771090 - Control 695109909 - Property 1295455071">
-        <source>Specifies the Sales Cash-flow code</source>
-        <target>Especifica o Código Fluxos de Caixa de Venda.</target>
-      </trans-unit>
-      <trans-unit id="PageExtension 2805771090 - Control 1384373683 - Property 1295455071">
-        <source>Specifies the Sales Cash-flow code</source>
-        <target>Especifica o Código Fluxos de Caixa de Venda.</target>
       </trans-unit>
       <trans-unit id="PageExtension 4034894651 - Control 712889997 - Property 1295455071">
         <source>Specifies the Cash-flow code.</source>
@@ -1175,14 +1185,6 @@
         <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
         <target>ATENÇÃO:\Para este método de pagamento não existe um Código Fluxos Caixa correspondente.</target>
       </trans-unit>
-      <trans-unit id="TableExtension 3566004263 - Field 695109909 - Property 3830149458">
-        <source>Sales Cash-flow code</source>
-        <target>Cód. Fluxos Caixa Venda</target>
-      </trans-unit>
-      <trans-unit id="TableExtension 3566004263 - Field 1384373683 - Property 3830149458">
-        <source>Purch. Cash-flow code</source>
-        <target>Cód. Fluxos Caixa Compras</target>
-      </trans-unit>
       <trans-unit id="TableExtension 1192395785 - Field 712889997 - Property 2879900210">
         <source>Cash-flow code</source>
         <target>Cód. Fluxos Caixa</target>
@@ -1198,6 +1200,10 @@
       <trans-unit id="TableExtension 3561154705 - Field 3512434395 - Property 2879900210">
         <source>Curr. Dec. Unit Decimal Places</source>
         <target>Nº Casas Unid. Dec. Divisa</target>
+      </trans-unit>
+      <trans-unit id="TableExtension 2110786292 - Field 885549068 - Property 2879900210">
+        <source>Acc: cash-flow code</source>
+        <target>Cód. Fluxos Caixa</target>
       </trans-unit>
     </body>
   </file>

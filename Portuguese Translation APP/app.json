@@ -10,9 +10,9 @@
   "help": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EchrxV7wd_VMvSvx5rwCJPAB2RBzNLBjXy0pmC10uoeM-Q?e=cWhPaL",
   "logo":"logo.gif",
   "url":"http://www.softstore.pt",
-  "helpBaseUrl":"https://docs.microsoft.com/{0}/dynamics365/business-central)",
+  "helpBaseUrl":"http://help.softstore.pt/{0}/dynamics365/business-central/",
   "supportedLocales": [
-    "pt-PT"
+    "pt-PT"    
   ],
   "capabilities": [],
   "dependencies": [],
@@ -22,6 +22,5 @@
   "idRange": {
     "from": 31022890,
     "to": 31023900
-
   }
 }

@@ -8,9 +8,10 @@
             "server": "http://SoftstorePT",
             "serverInstance": "nav",
             "authentication": "UserPassword",
-            "schemaUpdateMode": "Recreate",
+            "schemaUpdateMode":"Recreate",
             // "startupObjectId": 22,
             // "startupObjectType": "Page"
+
         }
     ]
 }

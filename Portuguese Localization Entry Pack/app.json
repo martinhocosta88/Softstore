@@ -2,12 +2,12 @@
   "id": "0b0a0933-50d9-4352-8803-7bf91e6c5491",
   "name": "Portuguese Localization Entry Pack",
   "publisher": "Softstore SA",
-  "brief": "Portuguese Localization Entry Pack provides entry level functionalities such as Check Chart of Accounts, Cash-flow (PT), Taxonomies, IBAN Construction, Check(PT)",
+  "brief": "Entry Pack of functionalities for Portuguse Localization",
   "description": "Portuguese Localization Entry Pack provides entry level functionalities such as Check Chart of Accounts, Cash-flow (PT), Taxonomies, IBAN Construction, Check(PT)",
   "version": "1.0.0.0",
   "privacyStatement": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EcPwLYsi2KtCqaSYqYLBFOIBt37fK5edzTeOCSanwRE3nA?e=Vbd457",
   "EULA": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EX277hHtyXFEgaDoWqJQ2OMBKdUyZ0QsGArMSAPpN0IfFw?e=YP9wcV",
-  "help": "https://sstore-my.sharepoint.com/:w:/g/personal/suporte_softstore_pt/ESb3tSFTLLJNq_pUoB97EqYB66iGRBLa27oPihAIu1REiA?e=zNDVDn",
+  "help": "https://sstore-my.sharepoint.com/:b:/g/personal/suporte_softstore_pt/EdYY3JN9e6hPsW6WF5rw5iYB3HzZZRkdfi81Jp8isqGvkg?e=supxNN",
   "url": "http://www.softstore.pt",
   "logo": "logo.gif",
   "capabilities": [],
@@ -19,7 +19,7 @@
     "TranslationFile"
   ],
   "idRange": {
-    "from": 50100,
+    "from": 31022890,
     "to": 31023999
   }
 }
