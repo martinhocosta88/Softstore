@@ -9,9 +9,6 @@
             "serverInstance": "nav",
             "authentication": "UserPassword",
             "schemaUpdateMode":"Recreate",
-            // "startupObjectId": 22,
-            // "startupObjectType": "Page"
-
         }
     ]
 }
