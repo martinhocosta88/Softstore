@@ -8,5 +8,4 @@ codeunit 31022923 "PTSS UploadData"
         NavApp.LoadPackageData(31022979);
         NavApp.LoadPackageData(31022923);
     end;
-
 }

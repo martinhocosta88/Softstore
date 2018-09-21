@@ -3,7 +3,6 @@ pageextension 31023102 "PTSS Currencies" extends Currencies
     //Check (PT)
     layout
     {
-
         addafter(Description)
         {
             field("PTSS Currency Decimal Unit Text"; "PTSS Currency Decimal Unit Text")
