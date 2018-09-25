@@ -170,8 +170,10 @@ codeunit 31022927 "PTSS IBAN Management"
     var
         CompanyInfo: Record "Company Information";
     begin
+        CompanyInfo.get;
         CCCNo := CCCBankNo + CCCBankBranchNo + CCCBankAccountNo + CCCControlDigits;
         IF CCCNo <> '' THEN
+
             CompanyInfo.TESTFIELD("Bank Account No.", '');
 
         IF (CCCBankNo <> '') AND (CCCBankBranchNo <> '') AND (CCCBankAccountNo <> '') AND (CCCControlDigits <> '') THEN BEGIN
