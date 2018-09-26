@@ -1,4 +1,4 @@
-report 31023100 "Check(PT)"
+report 31023100 "PTSS Check(PT)"
 {
     //Check (PT)
     DefaultLayout = RDLC;

@@ -23,7 +23,7 @@ pageextension 31023100 "PTSS Chart of Accounts" extends "Chart of Accounts"
     {
         addlast("F&unctions")
         {
-            action(CheckChart)
+            action("PTSS CheckChart")
             {
                 Image = IndentChartOfAccounts;
                 Caption = 'Check Chart of Accounts';
