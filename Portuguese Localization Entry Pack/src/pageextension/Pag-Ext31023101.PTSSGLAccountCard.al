@@ -25,6 +25,16 @@ pageextension 31023101 "PTSS G/L Account Card" extends "G/L Account Card"
                 ApplicationArea = All;
                 ToolTip = 'Specifies cash-flow code';
             }
+
+        }
+        addafter("Default IC Partner G/L Acc. No")
+        {
+            field("PTSS Income Stmt. Bal. Acc."; "PTSS Income Stmt. Bal. Acc.")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Income Stmt. Bal. Acc.';
+            }
+
         }
     }
 }

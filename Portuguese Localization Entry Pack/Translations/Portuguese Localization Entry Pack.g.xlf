@@ -1053,6 +1053,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account Card - Control PTSS Cash-flow code - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4212971375 - Control 647406979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Income Stmt. Bal. Acc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account Card - Control PTSS Income Stmt. Bal. Acc. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4245596183 - Control 393947421 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Currency Decimal Unit Text</source>
           <note from="Developer" annotates="general" priority="2"></note>

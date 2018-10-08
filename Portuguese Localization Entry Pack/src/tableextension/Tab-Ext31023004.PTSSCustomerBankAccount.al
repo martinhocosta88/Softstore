@@ -10,7 +10,10 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
             DataClassification = CustomerContent;
             trigger OnValidate();
             begin
-                "PTSS CCC Bank Account No." := IBANMgmt.PrePadString("PTSS CCC Bank Account No.", MAXSTRLEN("PTSS CCC Bank Account No."));
+                If "PTSS CCC Bank Account No." <> '' then
+                    "PTSS CCC Bank Account No." := IBANMgmt.PrePadString("PTSS CCC Bank Account No.", MAXSTRLEN("PTSS CCC Bank Account No."))
+                Else
+                    IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
                 IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
             end;
         }
@@ -21,7 +24,10 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
             DataClassification = CustomerContent;
             trigger OnValidate();
             begin
-                "PTSS CCC Bank Branch No." := IBANMgmt.PrePadString("PTSS CCC Bank Branch No.", MAXSTRLEN("PTSS CCC Bank Branch No."));
+                if "PTSS CCC Bank Branch No." <> '' then
+                    "PTSS CCC Bank Branch No." := IBANMgmt.PrePadString("PTSS CCC Bank Branch No.", MAXSTRLEN("PTSS CCC Bank Branch No."))
+                else
+                    IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
                 IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
             end;
         }
@@ -32,7 +38,10 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
             DataClassification = CustomerContent;
             trigger OnValidate();
             begin
-                "PTSS CCC Bank No." := IBANMgmt.PrePadString("PTSS CCC Bank No.", MAXSTRLEN("PTSS CCC Bank No."));
+                if "PTSS CCC Bank No." <> '' then
+                    "PTSS CCC Bank No." := IBANMgmt.PrePadString("PTSS CCC Bank No.", MAXSTRLEN("PTSS CCC Bank No."))
+                else
+                    IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
                 IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
             end;
         }
@@ -43,7 +52,10 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
             DataClassification = CustomerContent;
             trigger OnValidate();
             begin
-                "PTSS CCC Control Digits" := IBANMgmt.PrePadString("PTSS CCC Control Digits", MAXSTRLEN("PTSS CCC Control Digits"));
+                If "PTSS CCC Control Digits" <> '' then
+                    "PTSS CCC Control Digits" := IBANMgmt.PrePadString("PTSS CCC Control Digits", MAXSTRLEN("PTSS CCC Control Digits"))
+                else
+                    IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
                 IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
             end;
         }
@@ -55,20 +67,26 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
             trigger OnValidate();
 
             begin
+                IBANMgmt.CheckCCC("PTSS CCC No.");
+                IBAN := IBANMgmt.CheckIBANCountryCode("PTSS CCC No.", "Country/Region Code");
                 "PTSS CCC Bank No." := COPYSTR("PTSS CCC No.", 1, 4);
                 "PTSS CCC Bank Branch No." := COPYSTR("PTSS CCC No.", 5, 4);
                 "PTSS CCC Bank Account No." := COPYSTR("PTSS CCC No.", 9, 11);
                 "PTSS CCC Control Digits" := COPYSTR("PTSS CCC No.", 20, 2);
                 "PTSS CCC No." := IBANMgmt.PrePadString("PTSS CCC No.", MAXSTRLEN("PTSS CCC No."));
-                IBANMgmt.CheckCCC("PTSS CCC No.");
-                IBAN := IBANMgmt.CheckIBANCountryCode("PTSS CCC No.", "Country/Region Code");
             end;
         }
         modify(IBAN)
         {
             trigger OnBeforeValidate();
             begin
-                IBANMgmt.FillCCCFields("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
+                IF IBAN <> '' THEN
+                    VALIDATE("Country/Region Code", COPYSTR(IBAN, 1, 2));
+                "PTSS CCC Bank No." := COPYSTR(IBAN, 5, 4);
+                "PTSS CCC Bank Branch No." := COPYSTR(IBAN, 9, 4);
+                "PTSS CCC Bank Account No." := COPYSTR(IBAN, 13, 11);
+                "PTSS CCC Control Digits" := COPYSTR(IBAN, 24, 2);
+                "PTSS CCC No." := COPYSTR(IBAN, 5, 21);
             end;
         }
         modify("Country/Region Code")
@@ -78,10 +96,9 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
                 Text31022890: label 'Deleting %1 will cause %2 to be deleted. Do you want to continue?';
             begin
                 IF ("Country/Region Code" = '') AND (IBAN <> '') THEN BEGIN
-                    IF CONFIRM(Text31022890, FALSE, FIELDCAPTION("Country/Region Code"), FIELDCAPTION(IBAN)) THEN
-                        CLEAR(IBAN)
-                    ELSE
+                    IF NOT CONFIRM(Text31022890, FALSE, FIELDCAPTION("Country/Region Code"), FIELDCAPTION(IBAN)) THEN
                         ERROR('');
+                    IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
                     EXIT;
                 END;
                 IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
