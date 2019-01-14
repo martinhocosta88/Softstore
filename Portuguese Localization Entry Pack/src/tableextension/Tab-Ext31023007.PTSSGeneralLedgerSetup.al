@@ -10,13 +10,13 @@ tableextension 31023007 "PTSS General Ledger Setup" extends "General Ledger Setu
             Caption = 'Check Chart of Accounts';
             DataClassification = CustomerContent;
         }
-        field(31022890; "PTSS Currency Decimal Unit Text"; Text[30])
+        field(31022890; "PTSS Curr. Decimal Unit Text"; Text[30])
         {
             //Check (PT)
             Caption = 'Currency Decimal Unit Text';
             DataClassification = CustomerContent;
         }
-        field(31022891; "PTSS Curr. Dec. Unit Decimal Places"; Integer)
+        field(31022891; "PTSS Cur. Dec. Unit Dec. Place"; Integer)
         {
             //Check (PT)
             Caption = 'Curr. Dec. Unit Decimal Places';

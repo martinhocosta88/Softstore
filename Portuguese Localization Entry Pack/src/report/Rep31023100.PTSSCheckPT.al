@@ -1117,17 +1117,16 @@ report 31023100 "PTSS Check(PT)"
             AddToNoText(NoText, NoTextIndex, Text31022952 + TextTensUnits(Tens, Units, TRUE))  //10 //soft,n
 
         ELSE
-
             AddToNoText(NoText, NoTextIndex, TextTensUnits(Tens, Units, TRUE));  //10
 
         IF CurrencyCode <> '' THEN BEGIN
             Currency.GET(CurrencyCode);
             AddToNoText(NoText, NoTextIndex, UPPERCASE(Currency.Description) + ' ');
-            NdescDecimalPlaces := Currency."PTSS Curr. Dec. Unit Decimal Places";
+            NdescDecimalPlaces := Currency."PTSS Cur. Dec. Unit Dec. Place";
         END ELSE BEGIN
             GLSetup.GET;
             AddToNoText(NoText, NoTextIndex, UPPERCASE(GLSetup."PTSS Currency Text") + ' ');
-            NdescDecimalPlaces := GLSetup."PTSS Curr. Dec. Unit Decimal Places";
+            NdescDecimalPlaces := GLSetup."PTSS Cur. Dec. Unit Dec. Place";
         END;
 
         IF DecimalPlaces > 0 THEN BEGIN
@@ -1158,9 +1157,9 @@ report 31023100 "PTSS Check(PT)"
             AddToNoText(NoText, NoTextIndex, TextTensUnits(Tens, Units, TRUE));
 
             IF CurrencyCode <> '' THEN
-                AddToNoText(NoText, NoTextIndex, UPPERCASE(Currency."PTSS Currency Decimal Unit Text") + ' ')
+                AddToNoText(NoText, NoTextIndex, UPPERCASE(Currency."PTSS Curr. Decimal Unit Text") + ' ')
             ELSE
-                AddToNoText(NoText, NoTextIndex, UPPERCASE(GLSetup."PTSS Currency Decimal Unit Text") + ' ');
+                AddToNoText(NoText, NoTextIndex, UPPERCASE(GLSetup."PTSS Curr. Decimal Unit Text") + ' ');
         END;
 
     end;

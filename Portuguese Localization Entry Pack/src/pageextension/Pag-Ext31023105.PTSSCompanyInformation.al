@@ -1,6 +1,7 @@
 pageextension 31023105 "PTSS Company Information" extends "Company Information"
 {
     //IBAN
+    //CAE Code
     layout
     {
         addafter("Bank Account No.")
@@ -29,6 +30,21 @@ pageextension 31023105 "PTSS Company Information" extends "Company Information"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the complete bank number.';
+            }
+
+        }
+        addafter("VAT Registration No.")
+        {
+            field("PTSS CAE Code"; "PTSS CAE Code")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the CAE Code.';
+
+            }
+            field("PTSS CAE Description"; "PTSS CAE Description")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the CAE Description';
             }
         }
     }

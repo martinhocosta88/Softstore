@@ -172,8 +172,6 @@ codeunit 31022927 "PTSS IBAN Management"
     begin
         CompanyInfo.get;
         CCCNo := CCCBankNo + CCCBankBranchNo + CCCBankAccountNo + CCCControlDigits;
-        //IF CCCNo <> '' THEN
-        //    CompanyInfo.TESTFIELD("Bank Account No.", '');
 
         IF (CCCBankNo <> '') AND (CCCBankBranchNo <> '') AND (CCCBankAccountNo <> '') AND (CCCControlDigits <> '') THEN BEGIN
             CheckCCC(CCCNo);
@@ -196,5 +194,10 @@ codeunit 31022927 "PTSS IBAN Management"
     begin
         Clear(IBAN);
         Clear(NIB);
+    end;
+
+    local procedure SetIBAN()
+    begin
+
     end;
 }

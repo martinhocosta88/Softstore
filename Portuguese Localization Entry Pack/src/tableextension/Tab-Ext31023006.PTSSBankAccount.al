@@ -67,13 +67,7 @@ tableextension 31023006 "PTSS Bank Account" extends "Bank Account"
             DataClassification = CustomerContent;
             trigger OnValidate();
             begin
-                IBANMgmt.CheckCCC("PTSS CCC No.");
-                IBAN := IBANMgmt.CheckIBANCountryCode("PTSS CCC No.", "Country/Region Code");
-                "PTSS CCC Bank No." := COPYSTR("PTSS CCC No.", 1, 4);
-                "PTSS CCC Bank Branch No." := COPYSTR("PTSS CCC No.", 5, 4);
-                "PTSS CCC Bank Account No." := COPYSTR("PTSS CCC No.", 9, 11);
-                "PTSS CCC Control Digits" := COPYSTR("PTSS CCC No.", 20, 2);
-                "PTSS CCC No." := IBANMgmt.PrePadString("PTSS CCC No.", MAXSTRLEN("PTSS CCC No."));
+                ValidateNIB();
             end;
         }
         modify("Bank Account No.")
@@ -89,29 +83,57 @@ tableextension 31023006 "PTSS Bank Account" extends "Bank Account"
             var
                 Text31022892: label 'Deleting %1 will cause %2 to be deleted. Do you want to continue?';
             begin
-                IF ("Country/Region Code" = '') AND (IBAN <> '') THEN BEGIN
-                    IF NOT CONFIRM(Text31022892, FALSE, FIELDCAPTION("Country/Region Code"), FIELDCAPTION(IBAN)) THEN
-                        ERROR('');
-                    IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
-                    EXIT;
-                END;
-                IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
+                SetIBAN();
             end;
         }
         modify(IBAN)
         {
             trigger OnBeforeValidate();
             begin
-                IF IBAN <> '' THEN
-                    VALIDATE("Country/Region Code", COPYSTR(IBAN, 1, 2));
-                "PTSS CCC Bank No." := COPYSTR(IBAN, 5, 4);
-                "PTSS CCC Bank Branch No." := COPYSTR(IBAN, 9, 4);
-                "PTSS CCC Bank Account No." := COPYSTR(IBAN, 13, 11);
-                "PTSS CCC Control Digits" := COPYSTR(IBAN, 24, 2);
-                "PTSS CCC No." := COPYSTR(IBAN, 5, 21);
+                ValidateIBAN();
             end;
         }
     }
+    local procedure SetIBAN()
+
+    var
+        Text31022890: label 'Deleting %1 will cause %2 to be deleted. Do you want to continue?';
+    begin
+        IF ("Country/Region Code" = '') AND (IBAN <> '') THEN BEGIN
+            IF NOT CONFIRM(Text31022890, FALSE, FIELDCAPTION("Country/Region Code"), FIELDCAPTION(IBAN)) THEN
+                ERROR('');
+            IBANMgmt.ClearIBANNIB(IBAN, "PTSS CCC No.");
+            EXIT;
+        END;
+        IBANMgmt.BuildCCC("PTSS CCC No.", IBAN, "PTSS CCC Bank No.", "PTSS CCC Bank Branch No.", "PTSS CCC Bank Account No.", "PTSS CCC Control Digits", "Country/Region Code");
+    end;
+
+    local procedure ValidateIBAN()
+    begin
+        IF IBAN <> '' THEN
+            VALIDATE("Country/Region Code", COPYSTR(IBAN, 1, 2));
+
+        "PTSS CCC Bank No." := COPYSTR(IBAN, 5, 4);
+        "PTSS CCC Bank Branch No." := COPYSTR(IBAN, 9, 4);
+        "PTSS CCC Bank Account No." := COPYSTR(IBAN, 13, 11);
+        "PTSS CCC Control Digits" := COPYSTR(IBAN, 24, 2);
+        "PTSS CCC No." := COPYSTR(IBAN, 5, 21);
+        "Bank Account No." := "PTSS CCC Bank Account No.";
+        "Bank Branch No." := "PTSS CCC Bank Branch No.";
+    end;
+
+    local procedure ValidateNIB()
+    begin
+        "PTSS CCC Bank No." := COPYSTR("PTSS CCC No.", 1, 4);
+        "PTSS CCC Bank Branch No." := COPYSTR("PTSS CCC No.", 5, 4);
+        "PTSS CCC Bank Account No." := COPYSTR("PTSS CCC No.", 9, 11);
+        "PTSS CCC Control Digits" := COPYSTR("PTSS CCC No.", 20, 2);
+        "PTSS CCC No." := IBANMgmt.PrePadString("PTSS CCC No.", MAXSTRLEN("PTSS CCC No."));
+
+        IBANMgmt.CheckCCC("PTSS CCC No.");
+        IBAN := IBANMgmt.CheckIBANCountryCode("PTSS CCC No.", "Country/Region Code");
+    end;
+
     var
         CompanyInfo: Record "Company Information";
         IBANMgmt: Codeunit "PTSS IBAN Management";

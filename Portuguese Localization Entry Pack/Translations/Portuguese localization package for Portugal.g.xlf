@@ -1,0 +1,1724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Portuguese localization package for Portugal">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 818230259 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Plan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 995090288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Date Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 2304016699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Change</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Net Change - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting,Totaling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 478049462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Totaling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Totaling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 818230259 - Field 2200046723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indentation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Cash-Flow Plan - Field Indentation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Plan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies account type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Control 478049462 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the totaling amount.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Control Totaling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Control 2200046723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the indentation level.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Control Indentation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Control 2304016699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the net change.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Control Net Change - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Action 3237057479 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indent Cash-Flow Plan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Action PTSS Indent Cash-Flow Plan - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Action 3237057479 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indents Cash-Flow Plan.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Action PTSS Indent Cash-Flow Plan - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Action 3179491768 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Action PTSS Cash-Flow Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 818230259 - Action 3179491768 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generates de Cash-Flow report.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Action PTSS Cash-Flow Report - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Inventory Comm. Log</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Field 3301321002 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date/Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Field Date/Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Field User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Field 1987624935 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fiscal Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Field Fiscal Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Field 458406397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Field Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4075069447 - Field 1903100707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Item Ledger Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Inventory Comm. Log - Field Last Item Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1927647223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Taxonomy Codes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Taxonomy Codes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1927647223 - Field 1476723134 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Taxonomy Codes - Field Taxonomy Code - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1927647223 - Field 2446257311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Taxonomy Codes - Field G/L Account Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1927647223 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Taxonomy Codes - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3526043857 - Method 3569763846 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are Inventory Periods open in this fiscal year.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Inv. Comm. Management - Method SetData - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 746880067" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Missing group %1 - Account No. %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022897</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This function checks the consistency of and completes the Chart of Accounts:\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>- Checks that a corresponding balance account exists for every posting account.\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>- Assigns values to the following fields: Income/Balance, Account Type, Totaling and Debit/Credit.\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to Check the Chart of Accounts?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checking the Chart of Accounts #1########## @2@@@@@@@@@@@@@</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2397649453 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Chart of Accounts is correct.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CheckChartAcc - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3383237694 - Method 2433425993 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indenting the Chart of Accounts #1##########</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS G/L Account Management - Method CashFlowIndent - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4094453050 - Method 1514700111 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The account no. %1 needs a cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Cash-FLow Event Handler - Method InitGLEntry - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3137281165 - Method 615983447 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The number you entered is not a valid NIB.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS IBAN Management - Method CheckCCC - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Page 393401157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Code Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 393401157 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Code No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 393401157 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-FLow Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 393401157 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 393401157 - Control 478049462 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Code Totaling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control Totaling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 393401157 - Control 2200046723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specificies the Cash-Flow Indentation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control Indentation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export AT Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 3465500804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Month</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control Month - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 3465500804 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>January,February,March,April,May,June,July,August,September,October,November,December</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control Month - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 3004095410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control File Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 3004095410 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XML,CSV</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control File Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Control 804481195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Control File Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Action 2105307182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Action Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Action 1425053210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Action Export Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Action 1425053210 - Method 1377591017 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export to XML File</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Action Export Inventory - Method OnAction - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - Action 1425053210 - Method 1377591017 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XML Files (*.xml)|*.xml|All Files (*.*)|*.*</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - Action Export Inventory - Method OnAction - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name should be specified before exporting.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory AT.csv</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Page 382614579 - NamedType 746880067" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory AT.xml</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Inventory Comm. - NamedType Text31022897</note>
+        </trans-unit>
+        <trans-unit id="Page 2754752732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Communication Inventory Log</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS AT Com. Inventory Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1703116481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Taxonomy Codes List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Taxonomy Codes List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1703116481 - Control 3912163357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Taxonomy Codes List - Control Taxomy Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1703116481 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the Description of the Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Taxonomy Codes List - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - Control 543275552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - Control StartingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - Control 2434526205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Formula</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - Control PeriodFormula - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - Control 2093629711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comparing Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - Control ComparingMethod - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - Control 2093629711 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Homologous Period,Previous Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - Control ComparingMethod - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - ReportLabel 1342443625" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - ReportLabel TitleReport_caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - ReportLabel 3653912790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - ReportLabel Page_Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - ReportLabel 1645344252" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - ReportLabel No_Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - ReportLabel 2089336185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - ReportLabel Description_Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - NamedType 3004921922" size-unit="char" translate="yes" xml:space="preserve">
+          <source>to</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType ToText</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - NamedType 2392829959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Period: %1 to %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType FilterText</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - NamedType 2723519602" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date should be greater or equal to Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType ErrorDates1</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - NamedType 807647320" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Net Change:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType NetChangeText</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - NamedType 1993866747" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance at period begining:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType OpeningText</note>
+        </trans-unit>
+        <trans-unit id="Report 3179491768 - NamedType 2618466334" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance at the period ending:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType EndingText</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 2663384385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control BankAccount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 2663384385 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account that the printed checks will be drawn from.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control BankAccount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 1514267703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Check No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control LastCheckNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 1514267703 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Last Check No. field on the bank account card.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control LastCheckNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 1563725732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One Check per Vendor per Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control OneCheckPerVendorPerDocumentNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 1563725732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if only one check is printed per vendor for each document number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control OneCheckPerVendorPerDocumentNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 2992590101 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reprint Checks</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control ReprintChecks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 2992590101 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if checks are printed again if you canceled the printing due to a problem.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control ReprintChecks - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 4054877177 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Print</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control TestPrinting - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 4054877177 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to print the checks on blank paper before you print them on check forms.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control TestPrinting - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 1059736969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preprinted Stub</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control PreprintedStub - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - Control 1059736969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you use check forms with preprinted stubs.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - Control PreprintedStub - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Preview is not allowed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Check No. must be filled in.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filters on %1 and %2 are not allowed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XXXXXXXXXXXXXXXX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>must be entered.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Bank Account and the General Journal Line must have the same currency.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Both Bank Accounts must have the same currency.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text008</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1664139952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XXXXXXXXXX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text010</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XXXX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text011</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2939533186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XX.XXXXXXXXXX.XXXX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text012</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 already exists.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text013</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 4214926420" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check for %1 %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text014</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1195352358" size-unit="char" translate="yes" xml:space="preserve">
+          <source>In the Check report, One Check per Vendor and Document No.\must not be activated when Applies-to ID is specified in the journal lines.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text016</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 219837695" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text019</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1940672225" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The total amount of check %1 is %2. The amount must be positive.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text020</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2578368842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID VOID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text021</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 665278991" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NON-NEGOTIABLE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text022</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1302975608" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test print</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text023</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 196491397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XXXX.XX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text024</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 834188014" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text025</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3216065459" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ZERO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text026</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3853762076" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HUNDRED</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text027</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2747277865" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AND</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text028</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3384974482" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 results in a written number that is too long.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text029</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1148659762" size-unit="char" translate="yes" xml:space="preserve">
+          <source> is already applied to %1 %2 for customer %3.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text030</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 510963145" size-unit="char" translate="yes" xml:space="preserve">
+          <source> is already applied to %1 %2 for vendor %3.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text031</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 4168233824" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text032</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3530537207" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text033</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3699446230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THREE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text034</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3061749613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOUR</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text035</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2424052996" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIVE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text036</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1786356379" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIX</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text037</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 342054122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text038</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3999324801" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text039</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1404403683" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text040</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2042100300" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text041</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2679796917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ELEVEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text042</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3317493534" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWELVE</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text043</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3148584511" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text044</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3786281128" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOURTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text045</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 129010449" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text046</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 766707066" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text047</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2211009323" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text048</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2848705940" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text049</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 612391220" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text050</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 4269661899" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWENTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text051</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1887784454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text052</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1250087837" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FORTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text053</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2356572048" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text054</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1718875431" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text055</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3631965282" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text056</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2994268665" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text057</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 4100752876" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text058</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3463056259" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THOUSAND</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text059</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 888923493" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MILLION</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text060</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1526620110" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BILLION</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text061</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3908497555" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account,Customer,Vendor,Bank Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text062</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 251226876" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text063</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2633104321" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must not be %2 for %3 %4.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text064</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3270800938" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subtotal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text065</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3919590978" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType CheckNoTextCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1085275642" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType LineAmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1857519089" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType LineDiscountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3285233284" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType AmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2833281111" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType DocNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3112881028" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType DocDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3383796882" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType CurrencyCodeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2997913496" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType YourDocNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1537992153" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transport</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType TransportCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;decimals&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MILLIONS </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE MILLION </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE THOUSAND </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWO HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 746880067" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THREE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022897</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 915789090" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOUR HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022898</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 278092473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIVE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022899</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3149589562" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIX HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022900</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVEN HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022901</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1874196328" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHT HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022902</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1236499711" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022903</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1405408734" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWO HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022904</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 767712117" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THREE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022905</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 130015500" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOUR HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022906</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3787286179" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIVE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022907</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3956195202" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIX HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022908</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3318498585" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVEN HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022909</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2893845641" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHT HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022910</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3531542258" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022911</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1618452407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TEN </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022912</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2256149024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ELEVEN </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022913</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1149664813" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWELVE </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022914</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1787361430" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTEEN </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022915</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 4169238875" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOURTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022916</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 511968196" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTEEN </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022917</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2087240001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TEN  </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022918</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2724936618" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWENTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022919</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3685858104" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWENTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022920</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3048161487" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022921</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 666284042" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022922</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 28587425" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FORTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022923</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1941677276" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FORTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022924</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1303980659" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022925</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3217070510" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022926</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2579373893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022927</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 197496448" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022928</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3854767127" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022929</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3409325831" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022930</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 4047022448" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022931</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 389751769" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022932</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1027448386" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022933</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1665145003" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETY </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022934</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2302841620" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022935</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2940538237" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022936</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3578234854" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWO </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022937</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2602720191" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THREE </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022938</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3240416808" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOUR </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022939</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2097840830" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIVE </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022940</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1460144213" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIX </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022941</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 822447596" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVEN </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022942</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 184750979" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHT </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022943</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3842021658" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINE </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022944</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 3204325041" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 \results in a written number which is too long.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022945</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2566628424" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022946</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1928931807" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022947</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2904446470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022948</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2266749853" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022949</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 1821308557" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETEEN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022950</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 2459005174" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE HUNDRED </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022951</note>
+        </trans-unit>
+        <trans-unit id="Report 1393326393 - NamedType 545915323" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AND </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022952</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1700350649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Inventory Communication</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. CSV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1700350649 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Block: #1##############</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. CSV - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1700350649 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record: #2##########################</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. CSV - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1700350649 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stock</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. CSV - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1700350649 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Saving File.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. CSV - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 497314604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Inventory Communication</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. XML - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 497314604 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Block: #1##############</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. XML - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 497314604 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record: #2##########################</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. XML - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 497314604 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stock</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. XML - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 497314604 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Saving File.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT Inventory Comm. XML - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2354003197 - Control 647406979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the adjustment account for the comercial posting accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Chart of Accounts - Control PTSS Income Stmt. Bal. Acc. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2354003197 - Control 1762746698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Chart of Accounts - Control PTSS Taxonomy Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2354003197 - Action 4088684562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Chart of Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Chart of Accounts - Action PTSS CheckChart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4212971375 - Control 1762746698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account Card - Control PTSS Taxonomy Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4212971375 - Control 1144910344 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies cash-flow code assoc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account Card - Control PTSS Cash-flow code assoc. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4212971375 - Control 964165017 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account Card - Control PTSS Cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4212971375 - Control 647406979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Income Stmt. Bal. Acc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account Card - Control PTSS Income Stmt. Bal. Acc. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4245596183 - Control 393947421 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Currency Decimal Unit Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Currencies - Control PTSS Currency Decimal Unit Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4245596183 - Control 1500556935 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Curr. Dec. Unit Decimal Places</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Currencies - Control PTSS Curr. Dec. Unit Decimal Places - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1358368261 - Control 1144910344 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies cash-flow code assoc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account List - Control PTSS Cash-flow code assoc. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1358368261 - Control 964165017 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account List - Control PTSS Cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1358368261 - Control 1762746698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS G/L Account List - Control PTSS Taxonomy Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 731325783 - Control 1762746698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Taxonomy Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Entries - Control PTSS Taxonomy Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 731325783 - Control 3898862680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Entries - Control PTSS Acc: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 731325783 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the balance account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Entries - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 714374514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CCC Bank No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 2940350406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank branch number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CCC Bank Branch No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 847337232 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the control digits for the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CCC Control Digits - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 4106199881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CCC Bank Account No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 1040710644 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the complete bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CCC No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 2368925826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the CAE Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CAE Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 4067100791 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the CAE Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CAE Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CCC Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 2940350406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Branch No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CCC Bank Branch No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 714374514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CCC Bank No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 847337232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Control Digits</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CCC Control Digits - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 1040710644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CCC No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 2368925826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CAE Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CAE Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 4067100791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CAE Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CAE Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Method 1985654370 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Method SetIBAN - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2889782151 - Control 714374514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Bank Acc. Card - Control PTSS CCC Bank No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2889782151 - Control 2940350406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank branch number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Bank Acc. Card - Control PTSS CCC Bank Branch No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2889782151 - Control 847337232 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the control digits for the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Bank Acc. Card - Control PTSS CCC Control Digits - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2889782151 - Control 4106199881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Bank Acc. Card - Control PTSS CCC Bank Account No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2889782151 - Control 1040710644 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the complete bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Bank Acc. Card - Control PTSS CCC No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2653470821 - Control 714374514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Bank Account Card - Control PTSS CCC Bank No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2653470821 - Control 2940350406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank branch number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Bank Account Card - Control PTSS CCC Bank Branch No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2653470821 - Control 847337232 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the control digits for the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Bank Account Card - Control PTSS CCC Control Digits - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2653470821 - Control 4106199881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Bank Account Card - Control PTSS CCC Bank Account No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2653470821 - Control 1040710644 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the complete bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Bank Account Card - Control PTSS CCC No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 714374514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS CCC Bank No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 2940350406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank branch number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS CCC Bank Branch No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 847337232 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the control digits for the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS CCC Control Digits - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 4106199881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS CCC Bank Account No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 1040710644 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the complete bank number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS CCC No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 2665286207 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if checks chart of accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Check Chart of Accounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 393947421 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Currency Decimal Unit Text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Currency Decimal Unit Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 1500556935 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Curr. Dec. Unit Decimal Places.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Curr. Dec. Unit Decimal Places - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 3980506130 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies Currency Text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Currency Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 2665286207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Chart of Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS Check Chart of Accounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 3573198224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Decimal Unit Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS Curr. Decimal Unit Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 3296584997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Curr. Dec. Unit Decimal Places</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS Cur. Dec. Unit Dec. Place - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 3980506130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS Currency Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 24401309 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the balance account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Journal - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 24401309 - Control 3898862680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2606874567 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the balance account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Journal - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2606874567 - Control 3898862680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2248904626 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the balance account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purchase Journal - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2248904626 - Control 3898862680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purchase Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the balance account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 3898862680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282161273 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the balance account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282161273 - Control 3898862680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the account cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1071452935 - Control 964165017 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Invoice - Control PTSS Cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3405942818 - Control 964165017 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Cash-flow code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purchase Invoice - Control PTSS Cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Taxonomy Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - Field 647406979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Income Stmt. Bal. Acc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Income Stmt. Bal. Acc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - Field 964165017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - Field 1144910344 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow code assoc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Cash-flow code assoc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - Field 1812106086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow - credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Cash-flow - credit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - Field 3531232467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow - debit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Cash-flow - debit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2556192736 - Field 3898862680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc: cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Entry - Field PTSS Acc: cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2556192736 - Field 2073393174 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bal: cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Entry - Field PTSS Bal: cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2556192736 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Taxonomy Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Entry - Field PTSS Taxonomy Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2223176305 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer Bank Account - Field PTSS CCC Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2223176305 - Field 2940350406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Branch No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer Bank Account - Field PTSS CCC Bank Branch No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2223176305 - Field 714374514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer Bank Account - Field PTSS CCC Bank No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2223176305 - Field 847337232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Control Digits</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer Bank Account - Field PTSS CCC Control Digits - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2223176305 - Field 1040710644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer Bank Account - Field PTSS CCC No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2223176305 - Method 1985654370 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer Bank Account - Method SetIBAN - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 623898361 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Bank Account - Field PTSS CCC Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 623898361 - Field 2940350406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Branch No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Bank Account - Field PTSS CCC Bank Branch No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 623898361 - Field 714374514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Bank Account - Field PTSS CCC Bank No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 623898361 - Field 847337232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Control Digits</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Bank Account - Field PTSS CCC Control Digits - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 623898361 - Field 1040710644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Bank Account - Field PTSS CCC No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 623898361 - Method 1985654370 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Bank Account - Method SetIBAN - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS CCC Bank Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 2940350406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank Branch No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS CCC Bank Branch No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 714374514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Bank No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS CCC Bank No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 847337232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC Control Digits</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS CCC Control Digits - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 1040710644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CCC No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS CCC No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Change 284764054 - Method 3279464882 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Change Country/Region Code - Method OnBeforeValidate - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Method 1985654370 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Method SetIBAN - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 3898862680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc: cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS Acc: cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 2073393174 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bal: cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS Bal: cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1499711212 - Field 964165017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchase Header - Field PTSS Cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1499711212 - Field 964165017 - Method 2126772001 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchase Header - Field PTSS Cash-flow code - Method OnValidate - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 117010941 - Field 964165017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Header - Field PTSS Cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 117010941 - Field 964165017 - Method 2126772001 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Header - Field PTSS Cash-flow code - Method OnValidate - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 822576549 - Field 3573198224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Decimal Unit Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Currency - Field PTSS Curr. Decimal Unit Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 822576549 - Field 3296584997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Curr. Dec. Unit Decimal Places</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Currency - Field PTSS Cur. Dec. Unit Dec. Place - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 925093365 - Field 3898862680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc: cash-flow code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Acc. Reconc. Line - Field PTSS Acc: cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 92015323 - Field 2672377648 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Item Category</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Item Category - Field PTSS AT Item Category - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1415547908 - Field 1107057883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-flow - credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Item Ledger Entry - Field PTSS Location Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 640104755 - Field 1107057883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Location - Field PTSS Location Type - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

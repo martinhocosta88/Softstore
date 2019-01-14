@@ -5,10 +5,11 @@
             "type": "al",
             "request": "launch",
             "name": "Yourownserver",
-            "server": "http://SoftstoreBC",
+            "server": "http://SoftstoreBCdata",
             "serverInstance": "nav",
             "authentication": "UserPassword",
             "schemaUpdateMode":"Recreate",
+            
         }
     ]
 }
