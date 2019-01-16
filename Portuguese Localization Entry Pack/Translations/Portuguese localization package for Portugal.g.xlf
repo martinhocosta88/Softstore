@@ -103,6 +103,221 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Action PTSS Cash-Flow Report - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Table 1782966977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Ledger Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3286668834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3465500804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Month</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Month - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 825859763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finance Institution ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Finance Institution ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 1681926502 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Company ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3768103497 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Identification Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Identification Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 958630313 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Reference Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 1543945128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record Nature</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Record Nature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 1313556613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field NPC 2nd Intervener - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3455459357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 2638546648 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Amount Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3699788827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Account Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 377554902 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IF Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field IF Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3563156765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Foreign Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 682353434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Counterpart Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Counterpart Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3925950323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Active Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 2549222970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Counterpart ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Counterpart ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 2710318747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Observations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Observations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 2105177955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger Entry Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Ledger Entry Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 2105177955 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer,Vendor,Bank Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Ledger Entry Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 513339096 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Exported</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1782966977 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export ended: %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Ledger Entry - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Table 3630118513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Account Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Account Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3630118513 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Account Type - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3630118513 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Account Type - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Field 3702373668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Field Category - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Field 3702373668 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,Z</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Field Category - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2166162900 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Loans,Deposits,Cash Pooling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Statistic - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2928144546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Territory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Territory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2928144546 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Territory - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2928144546 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS BP Territory - Field Description - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4075069447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AT Inventory Comm. Log</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -157,6 +372,171 @@
           <source>Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Taxonomy Codes - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Temporary Table</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3473146343 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boolean1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Boolean1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1091268898 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boolean2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Boolean2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 453572281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boolean3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Boolean3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 2366662132 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boolean4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Boolean4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1728965515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boolean5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Boolean5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 742467424 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Code1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1380164041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Code2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 2017860658 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Code3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 2655557275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Code4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3293253892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Code5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 2688099599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Date1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 306222154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Date2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3963492833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Date3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1581615388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Date4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 943918771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Date5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 2120429518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Decimal1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 207339667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Decimal2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 845036284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Decimal3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3226913729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Decimal4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3864610346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Decimal5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1413407897 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inteiro1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Integer1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 775711280 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inteiro2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Integer2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 138014663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inteiro3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Integer3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 306923686 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inteiro4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Integer4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3964194365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inteiro5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Integer5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 3721534664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Text1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 64263985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Text2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 701960602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Text3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1339657219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Text4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1977353836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Text5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2940296723 - Field 1736722270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blob1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Blob1 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 3526043857 - Method 3569763846 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
           <source>There are Inventory Periods open in this fiscal year.</source>
@@ -242,6 +622,81 @@
           <source>Specificies the Cash-Flow Indentation</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control Indentation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Ledger Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - Action F&amp;unctions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - Action 3988152008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - Action Generate Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - Action 1031842751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export XML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - Action &lt;Action32&gt; - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - Action 3763784502 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel Export</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - Action Cancel Export - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - Action 3763784502 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Modifies status for the ledger entry, in order to be able to be exported again.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - Action Cancel Export - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3157751611 - NamedType 3393938495" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you wish to cancel the ledger entry export?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Ledger Entries - NamedType ConfirmCancelStatusExp</note>
+        </trans-unit>
+        <trans-unit id="Page 2966134888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Account Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Account Types - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2028236053 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2357532092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Territories</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP Territories - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 916068797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP XML Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP XML Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 916068797 - Control 685394280 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Month</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP XML Date - Control ExportMonth - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 916068797 - Control 3099877309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP XML Date - Control ExportYear - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 916068797 - Action 2846763215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export XML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP XML Date - Action Export XML - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 916068797 - NamedType 4205330642" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unable to generate the XML. The XML has been generated already or there are no records for the month/year selected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS BP XML Date - NamedType Text31022980</note>
         </trans-unit>
         <trans-unit id="Page 382614579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export AT Inventory</source>
@@ -412,6 +867,21 @@
           <source>Balance at the period ending:</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Cash-Flow Report - NamedType EndingText</note>
+        </trans-unit>
+        <trans-unit id="Report 4054358639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS BP Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4054358639 - Control 837247550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS BP Process - Control FromDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4054358639 - Control 4137594593 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS BP Process - Control ToDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 1393326393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Check</source>
@@ -1143,6 +1613,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022952</note>
         </trans-unit>
+        <trans-unit id="XmlPort 91263824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP XML Message</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS BP XML Message - Property Caption</note>
+        </trans-unit>
         <trans-unit id="XmlPort 1700350649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AT Inventory Communication</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1418,6 +1893,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS CCC No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 3012663268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank of Portugal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PortugalBank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 1163111599 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS BP Statistic Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3068495665 - Control 2472292606 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Account Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Bank Account Card - Control PTSS BP Account Type Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2093116780 - Control 2665286207 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if checks chart of accounts.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1438,6 +1928,56 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Currency Text - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 3012663268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank of Portugal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PortugalBank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 2809804931 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Rec Nature Creat. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Rec Nature Creat. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 1179156732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Rec. Nature Mod. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Rec. Nature Mod. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 3323808909 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Nature Delete Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Nature Delete Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 3888021055 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Amount Type Inc. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Amount Type Inc. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 1786116161 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Amount Type Out. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Amount Type Out. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 2847546095 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Amount Type Pos. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Amount Type Pos. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 1145536805 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Account Type Def. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Account Type Def. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 509029940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Folder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP Folder - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 1656299400 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP IF Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS BP IF Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2093116780 - Field 2665286207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Check Chart of Accounts</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1457,6 +1997,51 @@
           <source>Currency Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS Currency Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 2809804931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Record Nature Creation Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Rec Nature Creat. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 1179156732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Record Nature Mod. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Rec. Nature Mod. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 3323808909 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Nature Delete Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Nature Delete Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 3888021055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Amount Type Income Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Amount Type Inc. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 1786116161 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Amount Type Outcome Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Amount Type Out. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 2847546095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Amount Type Position Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Amount Type Pos. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 1145536805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Account Type Default Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Account Type Def. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 509029940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Folder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP Folder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 1656299400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP IF Code MyField</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP IF Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 24401309 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the balance account cash-flow code.</source>
@@ -1498,6 +2083,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 2472292606 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Account Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Account Type Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 1163111599 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Statistic Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 2193655396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Countrpt. Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Countrpt. Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 2910951833 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Active Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Active Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 2390382743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP NPC 2nd Intervener - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 1105624120 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Bal. Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Bal. Statistic Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 1812204443 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Bal. Count. Ctry. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Bal. Countrpt. Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 601867066 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Bal. Active Ctry. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Bal. Active Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1750506964 - Control 3564153120 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Bal. NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Cash Receipt Journal - Control PTSS BP Bal. NPC 2nd Intervener - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1282161273 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the balance account cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1508,6 +2138,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS Acc: cash-flow code - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1282161273 - Control 1163111599 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS BP Statistic Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282161273 - Control 2193655396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Countrpt. Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS BP Countrpt. Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282161273 - Control 2910951833 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Active Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS BP Active Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282161273 - Control 2390382743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal - Control PTSS BP NPC 2nd Intervener - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1071452935 - Control 964165017 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1517,6 +2167,51 @@
           <source>Specifies the Cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purchase Invoice - Control PTSS Cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1663021952 - Control 3012663268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank of Portugal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Card - Control PortugalBank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1663021952 - Control 1163111599 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Statistic Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Card - Control PTSS BP Statistic Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1663021952 - Control 763242299 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Debit Position Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Card - Control PTSS Debit Pos. Stat. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1663021952 - Control 2369844086 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit Position Statistic Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Customer Card - Control PTSS Credit Pos. Stat. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2590868648 - Control 3012663268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank of Portugal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Card - Control PortugalBank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2590868648 - Control 1163111599 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the BP Statistic Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Card - Control PTSS BP Statistic Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2590868648 - Control 763242299 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Debit Position Statistic Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Card - Control PTSS Debit Pos. Stat. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2590868648 - Control 2369844086 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit Position Statistic Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor Card - Control PTSS Credit Pos. Stat. Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2499536186 - Control 1837214229 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the territory code for the Bank of Portugal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Countries/Regions - Control PTSS BP Territory Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
@@ -1648,6 +2343,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS CCC No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 2472292606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Account Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS BP Account Type Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 3872931858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Balance at Date (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS BP Balance at Date (LCY) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3947201997 - Field 2868253124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account - Field PTSS BP Statistic Filter - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3947201997 - Change 284764054 - Method 3279464882 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1667,6 +2382,56 @@
           <source>Bal: cash-flow code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS Bal: cash-flow code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 2472292606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Account Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Account Type Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 2193655396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Counterpart Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Countrpt. Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 2910951833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Counterpart Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Active Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 2390382743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP NPC 2nd Intervener - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 1105624120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Bal. Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Bal. Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 3578721143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Bal. Counter. Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Bal. Count. Ctry. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 1472612368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Bal. Active Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Bal. Active Ctry. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - Field 1002587866 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Bal. NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - Field PTSS BP Bal. NPC 2nd Interv. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 45760139 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be Type G,H,I,J or K.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - NamedType Text31022892</note>
         </trans-unit>
         <trans-unit id="TableExtension 1499711212 - Field 964165017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow code</source>
@@ -1717,6 +2482,131 @@
           <source>Location Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Location - Field PTSS Location Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2944474669 - Field 1837214229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Territory Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Country/Region - Field PTSS BP Territory Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2878565734 - Field 2156259417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash-Flow Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account Ledger Entry - Field PTSS Cash-Flow Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2878565734 - Field 2472292606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Account Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account Ledger Entry - Field PTSS BP Account Type Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2878565734 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account Ledger Entry - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2878565734 - Field 2825393152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Counterpart Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account Ledger Entry - Field PTSS BP Countrp. Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2878565734 - Field 2910951833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active Country Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account Ledger Entry - Field PTSS BP Active Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2878565734 - Field 2390382743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP NPC 2nd Intervener</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Bank Account Ledger Entry - Field PTSS BP NPC 2nd Intervener - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2840169588 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2840169588 - Field 763242299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debit Pos. Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer - Field PTSS Debit Pos. Stat. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2840169588 - Field 2369844086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Credit Pos. Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer - Field PTSS Credit Pos. Stat. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2840169588 - Field 3872931858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Balance at Date (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer - Field PTSS BP Balance at Date (LCY) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2840169588 - Field 2868253124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Customer - Field PTSS BP Statistic Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 649219868 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 649219868 - Field 763242299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debit Pos. Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor - Field PTSS Debit Pos. Stat. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 649219868 - Field 2369844086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Credit Pos. Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor - Field PTSS Credit Pos. Stat. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 649219868 - Field 3872931858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Balance at Date (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor - Field PTSS BP Balance at Date (LCY) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 649219868 - Field 2868253124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor - Field PTSS BP Statistic Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 397006559 - Field 3034903483 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excluded From Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Dtld. Cust. Ledg. Entry - Field PTSS Excluded From Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 397006559 - Field 1456743493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Initial BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Dtld. Cust. Ledg. Entry - Field PTSS Initial BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1987210119 - Field 3034903483 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excluded From Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Dtld. Vend. Ledg. Entry - Field PTSS Excluded From Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1987210119 - Field 1456743493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Initial BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Dtld. Vend. Ledg. Entry - Field PTSS Initial BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 268198846 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Cust. Ledger Entry - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2242815755 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor Ledger Entry - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2230383116 - Field 1163111599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS CV Ledger Entry Buffer - Field PTSS BP Statistic Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 478318628 - Field 1456743493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Initial BP Statistic Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Dtld. CV Ledg. Entry Buf. - Field PTSS Initial BP Statistic Code - Property Caption</note>
         </trans-unit>
       </group>
     </body>

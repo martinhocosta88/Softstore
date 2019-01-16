@@ -1,11 +1,11 @@
 pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup"
 {
     //Check Chart of Accounts
+    //COPE
     layout
     {
         addlast(General)
         {
-
             field("PTSS Check Chart of Accounts"; "PTSS Check Chart of Accounts")
             {
                 ApplicationArea = All;
@@ -25,6 +25,59 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies Currency Text.';
+            }
+        }
+        addafter("Payroll Transaction Import")
+        {
+            group(PortugalBank)
+            {
+                Caption = 'Bank of Portugal';
+                field("PTSS BP Rec Nature Creat. Code"; "PTSS BP Rec Nature Creat. Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Rec Nature Creat. Code';
+                }
+                field("PTSS BP Rec. Nature Mod. Code"; "PTSS BP Rec. Nature Mod. Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Rec. Nature Mod. Code';
+                }
+                field("PTSS BP Nature Delete Code"; "PTSS BP Nature Delete Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Nature Delete Code';
+                }
+                field("PTSS BP Amount Type Inc. Code"; "PTSS BP Amount Type Inc. Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Amount Type Inc. Code';
+                }
+                field("PTSS BP Amount Type Out. Code"; "PTSS BP Amount Type Out. Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Amount Type Out. Code';
+                }
+                field("PTSS BP Amount Type Pos. Code"; "PTSS BP Amount Type Pos. Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Amount Type Pos. Code';
+                }
+                field("PTSS BP Account Type Def. Code"; "PTSS BP Account Type Def. Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Account Type Def. Code';
+                }
+                field("PTSS BP Folder"; "PTSS BP Folder")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Folder';
+                    Lookup = true;
+                }
+                field("PTSS BP IF Code"; "PTSS BP IF Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP IF Code';
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 pageextension 31023108 "PTSS Bank Account Card" extends "Bank Account Card"
 {
     //IBAN
+    //COPE
     layout
     {
         addfirst(Transfer)
@@ -30,6 +31,24 @@ pageextension 31023108 "PTSS Bank Account Card" extends "Bank Account Card"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the complete bank number.';
             }
+        }
+        addafter(Transfer)
+        {
+            group(PortugalBank)
+            {
+                Caption = 'Bank of Portugal';
+                field("PTSS BP Statistic Code"; "PTSS BP Statistic Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Statistic Code';
+                }
+                field("PTSS BP Account Type Code"; "PTSS BP Account Type Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the BP Account Type Code';
+                }
+            }
+
         }
     }
 }

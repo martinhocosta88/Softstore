@@ -1,9 +1,9 @@
 tableextension 31023006 "PTSS Bank Account" extends "Bank Account"
 {
     //IBAN
+    //COPE
     fields
     {
-
         field(31022898; "PTSS CCC Bank Account No."; Text[11])
         {
             Caption = 'CCC Bank Account No.';
@@ -70,6 +70,34 @@ tableextension 31023006 "PTSS Bank Account" extends "Bank Account"
                 ValidateNIB();
             end;
         }
+        field(31022950; "PTSS BP Statistic Code"; Code[5])
+        {
+            Caption = 'BP Statistic Code';
+            TableRelation = "PTSS BP Statistic";
+            DataClassification = CustomerContent;
+        }
+        field(31022951; "PTSS BP Account Type Code"; Code[1])
+        {
+            Caption = 'BP Account Type Code';
+            TableRelation = "PTSS BP Account Type";
+            DataClassification = ToBeClassified;
+        }
+        field(31022952; "PTSS BP Balance at Date (LCY)"; Decimal)
+        {
+            Caption = 'BP Balance at Date (LCY)';
+            FieldClass = FlowField;
+            CalcFormula = Sum ("Bank Account Ledger Entry"."Amount (LCY)" WHERE ("Bank Account No." = FIELD ("No."), "PTSS BP Statistic Code" = FIELD ("PTSS BP Statistic Filter"), "Posting Date" = FIELD ("Date Filter")));
+            Editable = false;
+        }
+        field(31022893; "PTSS BP Statistic Filter"; Code[5])
+        {
+            Caption = 'BP Statistic Filter';
+            FieldClass = FlowFilter;
+            TableRelation = "PTSS BP Statistic";
+        }
+
+
+
         modify("Bank Account No.")
         {
             trigger OnAfterValidate();

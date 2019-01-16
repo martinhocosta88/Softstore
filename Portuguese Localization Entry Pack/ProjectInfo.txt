@@ -1,0 +1,16 @@
+________
+PACKAGE
+________
+Cash-Flow
+Cheques em Português
+COPE Banco de Portugal - Falta codeunit 12 / codigo comentado exportacao "xml cope" e "tabela BP Ledger Entry" / rep595 Adj. Rates- Alterações
+Verificação Plano de Contas
+Números Bancários
+Taxonomias
+Códigos CAE
+Comunicação Inventário AT - Adaptacao codigo exportacao xml "page AT inventory Comm"
+________
+ISOLADO
+________
+Retenções da Fonte - Falta atualizar(nova versao do dev) / resolver chamada cod.90/Cod.12?
+

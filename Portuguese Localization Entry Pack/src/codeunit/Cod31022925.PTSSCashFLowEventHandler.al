@@ -51,16 +51,113 @@ codeunit 31022925 "PTSS Cash-FLow Event Handler"
         END;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, 90, 'OnAfterSetApplyToDocNo', '', true, true)]
-    local procedure SetApplytoDocNoPurch(VAR GenJournalLine: Record "Gen. Journal Line"; PurchaseHeader: Record "Purchase Header")
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterCopyGenJnlLineFromPurchHeader', '', true, true)]
+    local procedure CopyFromPurchHeader(PurchaseHeader: Record "Purchase Header"; VAR GenJournalLine: Record "Gen. Journal Line")
     begin
         GenJournalLine."PTSS Bal: cash-flow code" := PurchaseHeader."PTSS Cash-flow code";
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterSetApplyToDocNo', '', true, true)]
-    local procedure SetApplytoDocNoSales(VAR GenJournalLine: Record "Gen. Journal Line"; SalesHeader: Record "Sales Header")
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterCopyGenJnlLineFromSalesHeader', '', true, true)]
+    local procedure CopyFromSalesHeader(SalesHeader: Record "Sales Header"; VAR GenJournalLine: Record "Gen. Journal Line")
     begin
         GenJournalLine."PTSS Bal: cash-flow code" := SalesHeader."PTSS Cash-flow code";
     end;
 
+    [EventSubscriber(ObjectType::Table, 271, 'OnAfterCopyFromGenJnlLine', '', true, true)]
+    local procedure CopyFromGenJnlLine(var BankAccountLedgerEntry: Record "Bank Account Ledger Entry"; GenJournalLine: Record "Gen. Journal Line")
+    var
+    begin
+        BankAccountLedgerEntry."PTSS Cash-Flow Code" := GenJournalLine."PTSS Acc: cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetGLAccount', '', true, true)]
+    local procedure GetGLAccount(var GenJournalLine: Record "Gen. Journal Line"; var GLAccount: Record "G/L Account")
+    begin
+        GenJournalLine."PTSS Acc: cash-flow code" := '';
+        IF GLAccount."PTSS Cash-flow code assoc." THEN
+            GenJournalLine."PTSS Acc: cash-flow code" := GLAccount."PTSS Cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetGLBalAccount', '', true, true)]
+    local procedure GetGLBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var GLAccount: Record "G/L Account")
+    begin
+        GenJournalLine."PTSS Bal: cash-flow code" := '';
+        IF GLAccount."PTSS Cash-flow code assoc." THEN
+            GenJournalLine."PTSS Bal: cash-flow code" := GLAccount."PTSS Cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetCustomerAccount', '', true, true)]
+    local procedure GetCustomerAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; FieldNo: Integer)
+    begin
+        GenJournalLine."PTSS Acc: cash-flow code" := '';
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetCustomerBalAccount', '', true, true)]
+    local procedure GetCustomerBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; FieldNo: Integer)
+    begin
+        GenJournalLine."PTSS Bal: cash-flow code" := '';
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetVendorAccount', '', true, true)]
+    local procedure GetVendorAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; FieldNo: Integer)
+    begin
+        GenJournalLine."PTSS Acc: cash-flow code" := '';
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetVendorBalAccount', '', true, true)]
+    local procedure GetVendorBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; FieldNo: Integer)
+    begin
+        GenJournalLine."PTSS Bal: cash-flow code" := '';
+    end;
+
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankAccount', '', true, true)]
+    local procedure GetBankAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
+    var
+        GLAcc: Record "G/L Account";
+        BankPostingGroup: Record "Bank Account Posting Group";
+    begin
+        GenJournalLine."PTSS Acc: cash-flow code" := '';
+        IF GenJournalLine."Account Type" <> GenJournalLine."Account Type"::"Fixed Asset" THEN
+            IF BankAccount.GET(GenJournalLine."Account No.") AND BankPostingGroup.GET(BankAccount."Bank Acc. Posting Group") AND GLAcc.GET(BankPostingGroup."G/L Bank Account No.") AND GLAcc."PTSS Cash-flow Code Assoc." THEN
+                GenJournalLine."PTSS Acc: cash-flow code" := GLAcc."PTSS Cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankBalAccount', '', true, true)]
+    local procedure GetBankBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
+    var
+        GLAcc: Record "G/L Account";
+        BankPostingGroup: Record "Bank Account Posting Group";
+    begin
+        GenJournalLine."PTSS Bal: cash-flow code" := '';
+        IF GenJournalLine."Bal. Account Type" <> GenJournalLine."Bal. Account Type"::"Fixed Asset" THEN
+            IF BankAccount.GET(GenJournalLine."Bal. Account No.") AND BankPostingGroup.GET(BankAccount."Bank Acc. Posting Group") AND GLAcc.GET(BankPostingGroup."G/L Bank Account No.") AND GLAcc."PTSS Cash-flow code assoc." THEN
+                GenJournalLine."PTSS Bal: cash-flow code" := GLAcc."PTSS Cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetFAAccount', '', true, true)]
+    local procedure GetFAAccount(var GenJournalLine: Record "Gen. Journal Line"; var FixedAsset: Record "Fixed Asset")
+    var
+        BankAccount: Record "Bank Account";
+        GLAcc: Record "G/L Account";
+        BankPostingGroup: Record "Bank Account Posting Group";
+    begin
+        GenJournalLine."PTSS Acc: cash-flow code" := '';
+        IF GenJournalLine."Account Type" <> GenJournalLine."Account Type"::"Fixed Asset" THEN
+            IF BankAccount.GET(GenJournalLine."Account No.") AND BankPostingGroup.GET(BankAccount."Bank Acc. Posting Group") AND GLAcc.GET(BankPostingGroup."G/L Bank Account No.") AND GLAcc."PTSS Cash-flow Code Assoc." THEN
+                GenJournalLine."PTSS Acc: cash-flow code" := GLAcc."PTSS Cash-flow code";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetFABalAccount', '', true, true)]
+    local procedure GetFABalAccount(var GenJournalLine: Record "Gen. Journal Line"; var FixedAsset: Record "Fixed Asset")
+    var
+        BankAccount: Record "Bank Account";
+        GLAcc: Record "G/L Account";
+        BankPostingGroup: Record "Bank Account Posting Group";
+    begin
+        GenJournalLine."PTSS Bal: cash-flow code" := '';
+        IF GenJournalLine."Bal. Account Type" <> GenJournalLine."Bal. Account Type"::"Fixed Asset" THEN
+            IF BankAccount.GET(GenJournalLine."Bal. Account No.") AND BankPostingGroup.GET(BankAccount."Bank Acc. Posting Group") AND GLAcc.GET(BankPostingGroup."G/L Bank Account No.") AND GLAcc."PTSS Cash-flow code assoc." THEN
+                GenJournalLine."PTSS Bal: cash-flow code" := GLAcc."PTSS Cash-flow code";
+    end;
 }
