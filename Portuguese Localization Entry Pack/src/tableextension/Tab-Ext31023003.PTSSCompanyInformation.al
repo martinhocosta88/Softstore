@@ -90,6 +90,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
             Caption = 'CAE Description';
             DataClassification = CustomerContent;
         }
+
         modify(IBAN)
         {
             trigger OnBeforeValidate();

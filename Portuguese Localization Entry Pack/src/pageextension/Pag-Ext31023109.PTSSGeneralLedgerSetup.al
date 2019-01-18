@@ -71,7 +71,6 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the BP Folder';
-                    Lookup = true;
                 }
                 field("PTSS BP IF Code"; "PTSS BP IF Code")
                 {

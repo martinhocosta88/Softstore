@@ -110,7 +110,6 @@ codeunit 31022925 "PTSS Cash-FLow Event Handler"
         GenJournalLine."PTSS Bal: cash-flow code" := '';
     end;
 
-
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankAccount', '', true, true)]
     local procedure GetBankAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
     var
