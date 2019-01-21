@@ -159,4 +159,5 @@ codeunit 31022925 "PTSS Cash-FLow Event Handler"
             IF BankAccount.GET(GenJournalLine."Bal. Account No.") AND BankPostingGroup.GET(BankAccount."Bank Acc. Posting Group") AND GLAcc.GET(BankPostingGroup."G/L Bank Account No.") AND GLAcc."PTSS Cash-flow code assoc." THEN
                 GenJournalLine."PTSS Bal: cash-flow code" := GLAcc."PTSS Cash-flow code";
     end;
+
 }

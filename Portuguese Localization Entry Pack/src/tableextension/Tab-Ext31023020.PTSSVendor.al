@@ -1,6 +1,7 @@
 tableextension 31023020 "PTSS Vendor" extends Vendor //MyTargetTableId
 {
     //COPE
+    //Vendor Statement
     fields
     {
         field(31022950; "PTSS BP Statistic Code"; Code[5])
@@ -34,6 +35,13 @@ tableextension 31023020 "PTSS Vendor" extends Vendor //MyTargetTableId
             TableRelation = "PTSS BP Statistic";
             FieldClass = FlowFilter;
         }
+        field(31022955; "PTSS Vendor Post. Group Filter"; Code[10])
+        {
+            Caption = 'MyField';
+            FieldClass = FlowFilter;
+            TableRelation = "Vendor Posting Group".Code;
+        }
+
 
     }
 

@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Statement">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Statement</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Statement</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PhoneNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PhoneNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PhoneNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VATRegNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VATRegNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VATRegNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankName</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankAccNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankAccNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankAccNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No1Vendor">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No1Vendor</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No1Vendor</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StartDateInit">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>StartDateInit</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>StartDateInit</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EndDateInit">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EndDateInit</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EndDateInit</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostingDateDtldVendLedgEntries">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostingDateDtldVendLedgEntries</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostingDateDtldVendLedgEntries</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DueDateVendorLedgEntry2">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DueDateVendorLedgEntry2</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DueDateVendorLedgEntry2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorBalance">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorBalance</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorBalance</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="before">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>before</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>before</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CompanyHomepage">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CompanyHomepage</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CompanyHomepage</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CompanyEmail">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CompanyEmail</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CompanyEmail</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Total">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Total</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Total</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CurrReportPageNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CurrReportPageNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CurrReportPageNo</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="NoVend">
+          <DataField>NoVend</DataField>
+        </Field>
+        <Field Name="CompanyInfo1Picture">
+          <DataField>CompanyInfo1Picture</DataField>
+        </Field>
+        <Field Name="VendAddr1">
+          <DataField>VendAddr1</DataField>
+        </Field>
+        <Field Name="CompanyAddr1">
+          <DataField>CompanyAddr1</DataField>
+        </Field>
+        <Field Name="VendAddr2">
+          <DataField>VendAddr2</DataField>
+        </Field>
+        <Field Name="CompanyAddr2">
+          <DataField>CompanyAddr2</DataField>
+        </Field>
+        <Field Name="VendAddr3">
+          <DataField>VendAddr3</DataField>
+        </Field>
+        <Field Name="CompanyAddr3">
+          <DataField>CompanyAddr3</DataField>
+        </Field>
+        <Field Name="VendAddr4">
+          <DataField>VendAddr4</DataField>
+        </Field>
+        <Field Name="CompanyAddr4">
+          <DataField>CompanyAddr4</DataField>
+        </Field>
+        <Field Name="VendAddr5">
+          <DataField>VendAddr5</DataField>
+        </Field>
+        <Field Name="PhoneNoCompanyInfo">
+          <DataField>PhoneNoCompanyInfo</DataField>
+        </Field>
+        <Field Name="VendAddr6">
+          <DataField>VendAddr6</DataField>
+        </Field>
+        <Field Name="CompanyInfoEmail">
+          <DataField>CompanyInfoEmail</DataField>
+        </Field>
+        <Field Name="CompanyInfoHomePage">
+          <DataField>CompanyInfoHomePage</DataField>
+        </Field>
+        <Field Name="VATRegNoCompanyInfo">
+          <DataField>VATRegNoCompanyInfo</DataField>
+        </Field>
+        <Field Name="BankNameCompanyInfo">
+          <DataField>BankNameCompanyInfo</DataField>
+        </Field>
+        <Field Name="BankAccNoCompanyInfo">
+          <DataField>BankAccNoCompanyInfo</DataField>
+        </Field>
+        <Field Name="No1Vend">
+          <DataField>No1Vend</DataField>
+        </Field>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="StartDate">
+          <DataField>StartDate</DataField>
+        </Field>
+        <Field Name="EndDate">
+          <DataField>EndDate</DataField>
+        </Field>
+        <Field Name="VendAddr7">
+          <DataField>VendAddr7</DataField>
+        </Field>
+        <Field Name="VendAddr8">
+          <DataField>VendAddr8</DataField>
+        </Field>
+        <Field Name="CompanyAddr7">
+          <DataField>CompanyAddr7</DataField>
+        </Field>
+        <Field Name="CompanyAddr8">
+          <DataField>CompanyAddr8</DataField>
+        </Field>
+        <Field Name="DocNoDtldVendLedgEntriesCaption">
+          <DataField>DocNoDtldVendLedgEntriesCaption</DataField>
+        </Field>
+        <Field Name="DescVendLedgEntry2Caption">
+          <DataField>DescVendLedgEntry2Caption</DataField>
+        </Field>
+        <Field Name="RemainAmtVendLedgEntry2Caption">
+          <DataField>RemainAmtVendLedgEntry2Caption</DataField>
+        </Field>
+        <Field Name="OriginalAmtVendLedgEntry2Caption">
+          <DataField>OriginalAmtVendLedgEntry2Caption</DataField>
+        </Field>
+        <Field Name="Currency2CodeVendLedgEntryHdr">
+          <DataField>Currency2CodeVendLedgEntryHdr</DataField>
+        </Field>
+        <Field Name="StartBalance">
+          <DataField>StartBalance</DataField>
+        </Field>
+        <Field Name="StartBalanceFormat">
+          <DataField>StartBalanceFormat</DataField>
+        </Field>
+        <Field Name="CurrencyCode3">
+          <DataField>CurrencyCode3</DataField>
+        </Field>
+        <Field Name="VendBalanceVendLedgEntryHdr">
+          <DataField>VendBalanceVendLedgEntryHdr</DataField>
+        </Field>
+        <Field Name="VendBalanceVendLedgEntryHdrFormat">
+          <DataField>VendBalanceVendLedgEntryHdrFormat</DataField>
+        </Field>
+        <Field Name="PrintLine">
+          <DataField>PrintLine</DataField>
+        </Field>
+        <Field Name="DtldVendLedgEntryType">
+          <DataField>DtldVendLedgEntryType</DataField>
+        </Field>
+        <Field Name="EntriesExists">
+          <DataField>EntriesExists</DataField>
+        </Field>
+        <Field Name="IsNewVendCurrencyGroup">
+          <DataField>IsNewVendCurrencyGroup</DataField>
+        </Field>
+        <Field Name="PostDateDtldVendLedgEntries">
+          <DataField>PostDateDtldVendLedgEntries</DataField>
+        </Field>
+        <Field Name="DocNoDtldVendLedgEntries">
+          <DataField>DocNoDtldVendLedgEntries</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="DueDateDtldVendLedgEntries">
+          <DataField>DueDateDtldVendLedgEntries</DataField>
+        </Field>
+        <Field Name="CurrCodeDtldVendLedgEntries">
+          <DataField>CurrCodeDtldVendLedgEntries</DataField>
+        </Field>
+        <Field Name="AmtDtldVendLedgEntries">
+          <DataField>AmtDtldVendLedgEntries</DataField>
+        </Field>
+        <Field Name="AmtDtldVendLedgEntriesFormat">
+          <DataField>AmtDtldVendLedgEntriesFormat</DataField>
+        </Field>
+        <Field Name="RemainAmtDtldVendLedgEntries">
+          <DataField>RemainAmtDtldVendLedgEntries</DataField>
+        </Field>
+        <Field Name="RemainAmtDtldVendLedgEntriesFormat">
+          <DataField>RemainAmtDtldVendLedgEntriesFormat</DataField>
+        </Field>
+        <Field Name="VendBalance">
+          <DataField>VendBalance</DataField>
+        </Field>
+        <Field Name="VendBalanceFormat">
+          <DataField>VendBalanceFormat</DataField>
+        </Field>
+        <Field Name="Currency2Code">
+          <DataField>Currency2Code</DataField>
+        </Field>
+        <Field Name="CurrencyCode3VendLedgEntryFooter">
+          <DataField>CurrencyCode3VendLedgEntryFooter</DataField>
+        </Field>
+        <Field Name="VendBalanceVendLedgEntryHdrFooter">
+          <DataField>VendBalanceVendLedgEntryHdrFooter</DataField>
+        </Field>
+        <Field Name="VendBalanceVendLedgEntryHdrFooterFormat">
+          <DataField>VendBalanceVendLedgEntryHdrFooterFormat</DataField>
+        </Field>
+        <Field Name="EntriesExistslVendLedgEntryFooterCaption">
+          <DataField>EntriesExistslVendLedgEntryFooterCaption</DataField>
+        </Field>
+        <Field Name="OverDueEntries">
+          <DataField>OverDueEntries</DataField>
+        </Field>
+        <Field Name="RemainAmtVendLedgEntry2">
+          <DataField>RemainAmtVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="RemainAmtVendLedgEntry2Format">
+          <DataField>RemainAmtVendLedgEntry2Format</DataField>
+        </Field>
+        <Field Name="PostDateVendLedgEntry2">
+          <DataField>PostDateVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="DocNoVendLedgEntry2">
+          <DataField>DocNoVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="DescVendLedgEntry2">
+          <DataField>DescVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="DueDateVendLedgEntry2">
+          <DataField>DueDateVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="OriginalAmtVendLedgEntry2">
+          <DataField>OriginalAmtVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="OriginalAmtVendLedgEntry2Format">
+          <DataField>OriginalAmtVendLedgEntry2Format</DataField>
+        </Field>
+        <Field Name="CurrCodeVendLedgEntry2">
+          <DataField>CurrCodeVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="PrintEntriesDue">
+          <DataField>PrintEntriesDue</DataField>
+        </Field>
+        <Field Name="Currency2CodeVendLedgEntry2">
+          <DataField>Currency2CodeVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="CurrencyCode3VendLedgEntry2">
+          <DataField>CurrencyCode3VendLedgEntry2</DataField>
+        </Field>
+        <Field Name="VendNoVendLedgEntry2">
+          <DataField>VendNoVendLedgEntry2</DataField>
+        </Field>
+        <Field Name="AgingDate1">
+          <DataField>AgingDate1</DataField>
+        </Field>
+        <Field Name="AgingDate2">
+          <DataField>AgingDate2</DataField>
+        </Field>
+        <Field Name="AgingDate21">
+          <DataField>AgingDate21</DataField>
+        </Field>
+        <Field Name="AgingDate3">
+          <DataField>AgingDate3</DataField>
+        </Field>
+        <Field Name="AgingDate31">
+          <DataField>AgingDate31</DataField>
+        </Field>
+        <Field Name="AgingDate4">
+          <DataField>AgingDate4</DataField>
+        </Field>
+        <Field Name="AgingBandEndingDate">
+          <DataField>AgingBandEndingDate</DataField>
+        </Field>
+        <Field Name="AgingDate41">
+          <DataField>AgingDate41</DataField>
+        </Field>
+        <Field Name="AgingDate5">
+          <DataField>AgingDate5</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol1Amt">
+          <DataField>AgingBandBufCol1Amt</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol1AmtFormat">
+          <DataField>AgingBandBufCol1AmtFormat</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol2Amt">
+          <DataField>AgingBandBufCol2Amt</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol2AmtFormat">
+          <DataField>AgingBandBufCol2AmtFormat</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol3Amt">
+          <DataField>AgingBandBufCol3Amt</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol3AmtFormat">
+          <DataField>AgingBandBufCol3AmtFormat</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol4Amt">
+          <DataField>AgingBandBufCol4Amt</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol4AmtFormat">
+          <DataField>AgingBandBufCol4AmtFormat</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol5Amt">
+          <DataField>AgingBandBufCol5Amt</DataField>
+        </Field>
+        <Field Name="AgingBandBufCol5AmtFormat">
+          <DataField>AgingBandBufCol5AmtFormat</DataField>
+        </Field>
+        <Field Name="AgingBandCurrencyCode">
+          <DataField>AgingBandCurrencyCode</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

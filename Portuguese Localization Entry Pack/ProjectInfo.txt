@@ -14,7 +14,18 @@ Comunicação Inventário AT
                  - Adaptacao codigo exportacao xml "page AT inventory Comm"
 Ajuste Taxas de Câmbio (tabela + report)
                  - Código comentado de devs ainda não feitos
-Balancetes- Falta o Legal Books
+Balancetes
+                 - Falta o Legal Books
+Extrato Fornecedor
+Livro Faturas Recebidas
+                 - ND%
+                 - Keys novas na VAT Entry
+Livro Faturas Emitidas
+                 - ND%
+                 - Keys novas na VAT Entry
+Campo Conta Liquidação Nota de Crédito
+                 - Function Exposure tabela General Posting Setup
+                 - Pedido Parametro Evento OnAfterSetAccNo
 
 ________
 ISOLADO
