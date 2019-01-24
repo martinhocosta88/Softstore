@@ -3603,6 +3603,111 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Accountant Role Center - Action PTSS Adjust E&amp;xchange Rates PT - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2848208183 - Action 2120411465 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Posting Setup - Action PTSS &amp;Copy - Property caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2848208183 - Action 2120411465 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy a record with selected fields or all fields from the general posting setup to a new record. Before you start to copy you have to create the new record.;PTG=Copy a record with selected fields or all fields from the general posting setup to a new record. Before you start to copy you have to create the new record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Posting Setup - Action PTSS &amp;Copy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2848208183 - Field 1776372164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cr. Memo Direct Cost Applied Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Posting Setup - Field PTSS Cr.M Dir. Cost Appl. Acc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1641663223 - Action 281683059 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Gen. Posting Setup Card - Action PTSS Copy - Property caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1641663223 - Action 281683059 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy a record with selected fields or all fields from the general posting setup to a new record. Before you start to copy you have to create the new record.;PTG=Copy a record with selected fields or all fields from the general posting setup to a new record. Before you start to copy you have to create the new record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Gen. Posting Setup Card - Action PTSS Copy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2682726020 - Control 3646724798 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Amount Type 2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Column Layout - Control PTSS Amount Type 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2682726020 - Control 3009028181 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Amount Type 3.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Column Layout - Control PTSS Amount Type 3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2682726020 - Control 3834162397 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you pretend the Balance for the Value 1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Column Layout - Control PTSS Balance 1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2682726020 - Control 3196465780 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you pretend the Balance for the Value 2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Column Layout - Control PTSS Balance 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2682726020 - Control 2558769163 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you pretend the Balance for the Value3. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Column Layout - Control PTSS Balance 3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 3646724798 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Type 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Amount Type 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 3646724798 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount,Debit Amount,Credit Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Amount Type 2 - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 3009028181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Type 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Amount Type 3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 3009028181 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount,Debit Amount,Credit Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Amount Type 3 - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 2417550217 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Reference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 2417550217 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1,2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Reference - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 3834162397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Balance 1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 3196465780 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Balance 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2682726020 - Field 2558769163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Balance 3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 987743924 - Control 790817971 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of column value that is calculated for this line in the Account Schedule.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Account Schedule - Control PTSS Column Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 987743924 - Control 2314457958 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the Value is Balanced.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Account Schedule - Control PTSS Balance - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4018,10 +4123,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Adjust Exch. Rate Buffer - Field PTSS Account No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2848208183 - Field 1776372164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Cr. Memo Direct Cost Applied Account</source>
+        <trans-unit id="TableExtension 893966420 - Field 790817971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Posting Setup - Field PTSS Cr.M Dir. Cost Appl. Acc. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Acc. Schedule Line - Field PTSS Column Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 893966420 - Field 790817971 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1st Value,2nd Value,3rd Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Acc. Schedule Line - Field PTSS Column Value - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 893966420 - Field 2314457958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Acc. Schedule Line - Field PTSS Balance - Property Caption</note>
         </trans-unit>
       </group>
     </body>

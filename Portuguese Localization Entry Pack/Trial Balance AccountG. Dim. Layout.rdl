@@ -5256,9 +5256,6 @@ End Function
         <Field Name="HeaderText0">
           <DataField>HeaderText0</DataField>
         </Field>
-        <Field Name="CurrReportPAGENO">
-          <DataField>CurrReportPAGENO</DataField>
-        </Field>
         <Field Name="COMPANYNAME">
           <DataField>COMPANYNAME</DataField>
         </Field>

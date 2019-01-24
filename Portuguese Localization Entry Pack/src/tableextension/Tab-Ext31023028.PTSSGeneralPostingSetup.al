@@ -10,13 +10,7 @@ tableextension 31023028 "PTSS General Posting Setup" extends "General Posting Se
             DataClassification = CustomerContent;
             trigger OnValidate()
             begin
-                //XXX
-                //CheckGLAcc("Cr.Memo Direct Cost Appl. Acc.");
-                //O código comentado substitui o código abaixo. foi pedido para colocar a função external no GIT.
-                IF "PTSS Cr.M Dir. Cost Appl. Acc." <> '' THEN BEGIN
-                    GLAcc.GET("PTSS Cr.M Dir. Cost Appl. Acc.");
-                    GLAcc.CheckGLAcc;
-                END;
+                CheckGLAcc("PTSS Cr.M Dir. Cost Appl. Acc.");
             end;
         }
     }
@@ -29,6 +23,14 @@ tableextension 31023028 "PTSS General Posting Setup" extends "General Posting Se
 
         TESTFIELD("PTSS Cr.M Dir. Cost Appl. Acc.");
         EXIT("PTSS Cr.M Dir. Cost Appl. Acc.");
+    end;
+
+    local procedure CheckGLAcc(AccNo: Code[20])
+    begin
+        IF "PTSS Cr.M Dir. Cost Appl. Acc." <> '' THEN BEGIN
+            GLAcc.GET("PTSS Cr.M Dir. Cost Appl. Acc.");
+            GLAcc.CheckGLAcc;
+        END;
     end;
 
     var

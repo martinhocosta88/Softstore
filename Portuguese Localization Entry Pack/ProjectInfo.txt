@@ -24,8 +24,8 @@ Livro Faturas Emitidas
                  - ND%
                  - Keys novas na VAT Entry
 Campo Conta Liquidação Nota de Crédito
-                 - Function Exposure tabela General Posting Setup
-                 - Pedido Parametro Evento OnAfterSetAccNo
+                 - Pedido Parametro Evento OnAfterSetAccNo - Cod31022929.PTSSGenPostSetEventHandler
+Esquema de Contas Valor Coluna
 
 ________
 ISOLADO

@@ -18,9 +18,9 @@ report 31022899 "PTSS Trial Bal. Acc./G. Dim."
             column(HeaderText0; HeaderText0)
             {
             }
-            column(CurrReportPAGENO; CurrReport.PAGENO)
-            {
-            }
+            // column(CurrReportPAGENO; CurrReport.PAGENO)
+            // {
+            // }
             column(COMPANYNAME; COMPANYNAME)
             {
             }

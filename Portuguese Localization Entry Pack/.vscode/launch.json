@@ -5,7 +5,7 @@
             "type": "al",
             "request": "launch",
             "name": "Yourownserver",
-            "server": "http://SoftstoreBCdata",
+            "server": "http://LastBC",
             "serverInstance": "nav",
             "authentication": "UserPassword",
             "schemaUpdateMode":"Recreate",

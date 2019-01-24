@@ -17,9 +17,9 @@ report 31022897 "PTSS Trial Balance - 7/4 Col."
             column(USERID; USERID)
             {
             }
-            column(CurrReport_PAGENO; CurrReport.PAGENO)
-            {
-            }
+            // column(CurrReport_PAGENO; CurrReport.PAGENO)
+            // {
+            // }
             column(FORMATTODAY04; FORMAT(TODAY, 0, 4))
             {
             }
