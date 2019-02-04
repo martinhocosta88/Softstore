@@ -63,17 +63,12 @@ page 31023051 "PTSS AT Inventory Comm."
                         Text000: Label 'Export to XML File';
                         Text001: Label 'XML Files (*.xml)|*.xml|All Files (*.*)|*.*';
                     begin
-                        //Clear(tmpBlob);
-
                         IF FileType = FileType::CSV THEN
                             FileName := Text31022892
                         ELSE
                             FileName := Text31022897;
 
-                        IF FileName = '' THEN
-                            ERROR(Text31022891);
-
-
+                        clear(OutputStream);
                         tmpBlob.Blob.CreateOutStream(OutputStream);
 
                         IF FileType = FileType::CSV THEN BEGIN
@@ -85,10 +80,10 @@ page 31023051 "PTSS AT Inventory Comm."
                             exportXML.SETDESTINATION(OutputStream);
                             exportXML.Export;
                         END;
-                        //tmpBlob.Insert();
-                        //tmpBlob.CalcFields(Blob);
+
                         tmpBlob.Blob.CreateInStream(Inputstream);
                         DownloadFromStream(Inputstream, '', '', '', FileName);
+
                     END;
                 }
             }

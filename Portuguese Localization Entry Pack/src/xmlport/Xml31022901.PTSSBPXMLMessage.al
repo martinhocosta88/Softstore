@@ -180,7 +180,7 @@ xmlport 31022901 "PTSS BP XML Message"
         Pos2: Integer;
     begin
         ChTab := 9;
-        //XXX
+        // XXX
         // XMLFile.TEXTMODE(TRUE);
         // XMLFile.WRITEMODE(FALSE);
         // XMLFile.OPEN(FileName);

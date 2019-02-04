@@ -205,8 +205,11 @@ table 31022960 "PTSS BP Ledger Entry"
         XMLIntegrationBankPortugal: XMLport "PTSS BP XML Message";
         XMLFile: File;
         XMLStream: OutStream;
-        FileManagement: Codeunit "File Management";
+        //FileManagement: Codeunit "File Management";
         ServerFileName: Text;
+        tmpBlob: Record TempBlob;
+        OutputStream: OutStream;
+        InputStream: InStream;
     begin
         CLEAR(XMLIntegrationBankPortugal);
         CLEAR(XMLStream);
@@ -215,19 +218,19 @@ table 31022960 "PTSS BP Ledger Entry"
         GeneralLedgerSetup.GET;
 
         //XXX
-        // ServerFileName := FileManagement.ServerTempFileName('xml');
+        //Código de exportação refeito
 
-        // FileName := GeneralLedgerSetup."BP Folder" + 'BOP_COPE.' + CompanyInfo."VAT Registration No." + '.' + Period + '.' +
-        //   FORMAT(CURRENTDATETIME, 0, '<Year4><Month,2><Day,2><Hour,2><Minute,2><Second,2>') + '.xml';
+        FileName := GeneralLedgerSetup."PTSS BP Folder" + 'BOP_COPE.' + CompanyInfo."VAT Registration No." + '.' + Period + '.' +
+          FORMAT(CURRENTDATETIME, 0, '<Year4><Month,2><Day,2><Hour,2><Minute,2><Second,2>') + '.xml';
 
-        // XMLFile.CREATE(ServerFileName);
-        // XMLFile.CREATEOUTSTREAM(XMLStream);
-        // XMLIntegrationBankPortugal.SETDESTINATION(XMLStream);
-        // XMLIntegrationBankPortugal.InitExport(ExportMonth, ExportYear);
-        // XMLFile.CLOSE;
-        // XMLIntegrationBankPortugal.ClearNodes(ServerFileName);
-        // FileManagement.DownloadToFile(ServerFileName, FileName);
-        // MESSAGE(Text31022890, FileName);
+        tmpBlob.Blob.CreateOutStream(OutputStream);
+        XMLIntegrationBankPortugal.SETDESTINATION(XMLStream);
+        XMLIntegrationBankPortugal.InitExport(ExportMonth, ExportYear);
+        tmpBlob.Blob.CreateInStream(InputStream);
+        DownloadFromStream(InputStream, '', '', '', FileName);
+        MESSAGE(Text31022890, FileName);
+        //XXX
+
     end;
 }
 

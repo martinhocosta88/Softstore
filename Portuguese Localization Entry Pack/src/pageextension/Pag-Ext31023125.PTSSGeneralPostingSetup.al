@@ -3,7 +3,14 @@ pageextension 31023125 "PTSS General Posting Setup" extends "General Posting Set
     //Campo Conta Liquidação Notas de Crédito
     layout
     {
-
+        addafter("Direct Cost Applied Account")
+        {
+            field("PTSS Cr.M Dir. Cost Appl. Acc."; "PTSS Cr.M Dir. Cost Appl. Acc.")
+            {
+                ToolTip = 'Specifies the Credit Memo Direct Cost to Apply Account.';
+                ApplicationArea = All;
+            }
+        }
     }
 
     actions

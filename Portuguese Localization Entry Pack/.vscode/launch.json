@@ -10,6 +10,9 @@
             "authentication": "UserPassword",
             "schemaUpdateMode":"Recreate",
             
+            "breakOnError": true
+            // "startupObjectType": "Table",
+            // "startupObjectId": 271
         }
     ]
 }

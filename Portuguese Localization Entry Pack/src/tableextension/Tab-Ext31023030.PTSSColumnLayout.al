@@ -17,14 +17,14 @@ tableextension 31023030 "PTSS Column Layout" extends "Column Layout" //MyTargetT
             OptionCaption = 'Net Amount,Debit Amount,Credit Amount';
             DataClassification = CustomerContent;
         }
-        field(31022892; "PTSS Reference"; Option)
-        {
-            Caption = 'Reference';
-            InitValue = 1;
-            OptionMembers = "1","2";
-            OptionCaption = '1,2';
-            DataClassification = CustomerContent;
-        }
+        // field(31022892; "PTSS Reference"; Option)
+        // {
+        //     Caption = 'Reference';
+        //     InitValue = 1;
+        //     OptionMembers = "1","2";
+        //     OptionCaption = '1,2';
+        //     DataClassification = CustomerContent;
+        // }
         field(31022893; "PTSS Balance 1"; Boolean)
         {
             Caption = 'Balance 1';

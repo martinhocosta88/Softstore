@@ -55,7 +55,7 @@ pageextension 31023127 "PTSS Column Layout" extends "Column Layout" //MyTargetPa
             trigger OnAfterValidate()
             begin
                 IF "Amount Type" = "Amount Type"::"Net Amount" THEN begin
-                    CLEAR("PTSS Balance 3");
+                    CLEAR("PTSS Balance 1");
                     IsEditable1 := False;
                 END else
                     IsEditable1 := True;
@@ -65,6 +65,7 @@ pageextension 31023127 "PTSS Column Layout" extends "Column Layout" //MyTargetPa
     actions
     {
     }
+
     var
         IsEditable1: boolean;
         IsEditable2: boolean;

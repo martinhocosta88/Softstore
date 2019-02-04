@@ -12,8 +12,9 @@ codeunit 31022929 "PTSS Inv. Post. to GL EventHan"
                     //xxx
                     //resolver passagem do SourceIsPurchCrmemo da COD 5802
                     //IF SourceIsPurchCrMemo THEN BEGIN
-                    GenPostingSetup.TESTFIELD("PTSS Cr.M Dir. Cost Appl. Acc.");
-                    InvtPostingBuffer."Account No." := GenPostingSetup.GetDirectCostAppliedCMAccount;
+                    //DESCOMENTAR DEPOIS DE TESTE
+                    // GenPostingSetup.TESTFIELD("PTSS Cr.M Dir. Cost Appl. Acc.");
+                    // InvtPostingBuffer."Account No." := GenPostingSetup.GetDirectCostAppliedCMAccount;
                     //END;
                 END;
         end;

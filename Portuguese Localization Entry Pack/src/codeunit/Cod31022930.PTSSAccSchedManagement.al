@@ -6,7 +6,7 @@ codeunit 31022930 "PTSS AccSchedManagement"
         CalcGLAccPT(GLAccount, AccScheduleName, AccScheduleLine, ColumnLayout, AmountType, ColValue, CalcAddCurr, TestBalance, GLEntry, GLBudgetEntry);
     end;
 
-    local procedure CalcGLAccPT(var GLAccount: Record "G/L Account"; var AccScheduleName: Record "Acc. Schedule Name"; var AccScheduleLine: Record "Acc. Schedule Line"; var ColumnLayout: Record "Column Layout"; AmountType: Integer; ColValue: Decimal; CalcAddCurr: Boolean; var TestBalance: Boolean; var GLEntry: Record "G/L Entry"; var GLBudgetEntry: Record "G/L Budget Entry") //ColValue: Decimal
+    local procedure CalcGLAccPT(var GLAcc: Record "G/L Account"; var AccScheduleName: Record "Acc. Schedule Name"; var AccScheduleLine: Record "Acc. Schedule Line"; var ColumnLayout: Record "Column Layout"; AmountType: Integer; ColValue: Decimal; CalcAddCurr: Boolean; var TestBalance: Boolean; var GLEntry: Record "G/L Entry"; var GLBudgetEntry: Record "G/L Budget Entry") //ColValue: Decimal
     var
         IsHandled: Boolean;
         UseDimfilter: Boolean;
@@ -18,7 +18,7 @@ codeunit 31022930 "PTSS AccSchedManagement"
         Balance3: Boolean;
         Balance: Decimal;
         UseBusUnitFilter: Boolean;
-        GlAcc1: Record "G/L Account";
+
         AnalysisViewEntry: Record "Analysis View Entry";
         AnalysisViewBudgetEntry: Record "Analysis View Budget Entry";
         AnalysisViewEntry1: Record "Analysis View Entry";
@@ -55,8 +55,8 @@ codeunit 31022930 "PTSS AccSchedManagement"
                 ColumnLayout."Ledger Entry Type"::Entries:
                     IF AccScheduleName."Analysis View Name" = '' THEN
                         WITH GLEntry DO BEGIN
-                            SetGLAccGLEntryFilters(GLAccount, GLEntry, AccScheduleLine, ColumnLayout, UseBusUnitFilter, UseDimFilter);
-                            SetGLAcc1GLEntryFilters(GLAccount, GlAcc1, GLEntry, AccScheduleLine, ColumnLayout);
+                            SetGLAccGLEntryFilters(GLAcc, GLEntry, AccScheduleLine, ColumnLayout, UseBusUnitFilter, UseDimFilter);
+                            SetGLAcc1GLEntryFilters(GLAcc, GLAcc1, GLEntry, AccScheduleLine, ColumnLayout);
                             //soft,n
                             //soft,so
                             //CASE AmountType OF
@@ -126,23 +126,23 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                 ((AmountType3 = AmountType3::"Debit Amount") AND (AccScheduleLine."PTSS Column Value" = 2)) AND (AccScheduleLine."PTSS Balance"):
                                     IF AccScheduleLine."Totaling Type" = AccScheduleLine."Totaling Type"::"Total Accounts" THEN BEGIN
                                         IF CalcAddCurr THEN BEGIN
-                                            GlAcc1.CALCFIELDS("Additional-Currency Net Change");
-                                            IF GlAcc1."Additional-Currency Net Change" > 0 THEN
-                                                ColValue := GlAcc1."Additional-Currency Net Change";
+                                            GLAcc1.CALCFIELDS("Additional-Currency Net Change");
+                                            IF GLAcc1."Additional-Currency Net Change" > 0 THEN
+                                                ColValue := GLAcc1."Additional-Currency Net Change";
                                         END ELSE BEGIN
-                                            GlAcc1.CALCFIELDS("Net Change");
-                                            IF GlAcc1."Net Change" > 0 THEN
-                                                ColValue := GlAcc1."Net Change";
+                                            GLAcc1.CALCFIELDS("Net Change");
+                                            IF GLAcc1."Net Change" > 0 THEN
+                                                ColValue := GLAcc1."Net Change";
                                         END;
                                     END ELSE BEGIN
                                         IF CalcAddCurr THEN BEGIN
-                                            GlAcc1.CALCSUMS("Additional-Currency Net Change");
-                                            IF GlAcc1."Additional-Currency Net Change" > 0 THEN
-                                                ColValue := GlAcc1."Additional-Currency Net Change";
+                                            GLAcc1.CALCSUMS("Additional-Currency Net Change");
+                                            IF GLAcc1."Additional-Currency Net Change" > 0 THEN
+                                                ColValue := GLAcc1."Additional-Currency Net Change";
                                         END ELSE BEGIN
-                                            GlAcc1.CALCSUMS("Net Change");
-                                            IF GlAcc1."Net Change" > 0 THEN
-                                                ColValue := GlAcc1."Net Change";
+                                            GLAcc1.CALCSUMS("Net Change");
+                                            IF GLAcc1."Net Change" > 0 THEN
+                                                ColValue := GLAcc1."Net Change";
                                         END;
                                     END;
                                 ((AmountType = AmountType1::"Credit Amount") AND (AccScheduleLine."PTSS Column Value" = 0)) AND (AccScheduleLine."PTSS Balance") OR
@@ -150,23 +150,23 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                 ((AmountType3 = AmountType3::"Credit Amount") AND (AccScheduleLine."PTSS Column Value" = 2)) AND (AccScheduleLine."PTSS Balance"):
                                     IF AccScheduleLine."Totaling Type" = AccScheduleLine."Totaling Type"::"Total Accounts" THEN BEGIN
                                         IF CalcAddCurr THEN BEGIN
-                                            GlAcc1.CALCFIELDS("Additional-Currency Net Change");
-                                            IF GlAcc1."Additional-Currency Net Change" < 0 THEN
-                                                ColValue := GlAcc1."Additional-Currency Net Change";
+                                            GLAcc1.CALCFIELDS("Additional-Currency Net Change");
+                                            IF GLAcc1."Additional-Currency Net Change" < 0 THEN
+                                                ColValue := GLAcc1."Additional-Currency Net Change";
                                         END ELSE BEGIN
-                                            GlAcc1.CALCFIELDS("Net Change");
-                                            IF GlAcc1."Net Change" < 0 THEN
-                                                ColValue := GlAcc1."Net Change";
+                                            GLAcc1.CALCFIELDS("Net Change");
+                                            IF GLAcc1."Net Change" < 0 THEN
+                                                ColValue := GLAcc1."Net Change";
                                         END;
                                     END ELSE BEGIN
                                         IF CalcAddCurr THEN BEGIN
-                                            GlAcc1.CALCSUMS("Additional-Currency Net Change");
-                                            IF GlAcc1."Additional-Currency Net Change" < 0 THEN
-                                                ColValue := GlAcc1."Additional-Currency Net Change";
+                                            GLAcc1.CALCSUMS("Additional-Currency Net Change");
+                                            IF GLAcc1."Additional-Currency Net Change" < 0 THEN
+                                                ColValue := GLAcc1."Additional-Currency Net Change";
                                         END ELSE BEGIN
-                                            GlAcc1.CALCSUMS("Net Change");
-                                            IF GlAcc1."Net Change" < 0 THEN
-                                                ColValue := GlAcc1."Net Change";
+                                            GLAcc1.CALCSUMS("Net Change");
+                                            IF GLAcc1."Net Change" < 0 THEN
+                                                ColValue := GLAcc1."Net Change";
                                         END;
                                     END;
                                     //soft,en
@@ -174,8 +174,8 @@ codeunit 31022930 "PTSS AccSchedManagement"
                         END
                     ELSE
                         WITH AnalysisViewEntry DO BEGIN
-                            SetGLAccAnalysisViewEntryFilters(GLAccount, AnalysisViewEntry, AccScheduleLine, ColumnLayout);
-                            SetGLAcc1AnalysisViewEntryFilters(GLAccount, GlAcc1, AnalysisViewEntry, AnalysisViewEntry1, AccScheduleLine);
+                            SetGLAccAnalysisViewEntryFilters(GLAcc, AnalysisViewEntry, AccScheduleLine, ColumnLayout);
+                            SetGLAcc1AnalysisViewEntryFilters(GLAcc, GLAcc1, AnalysisViewEntry, AnalysisViewEntry1, AccScheduleLine);
                             //soft,n
                             //soft,so
                             //CASE AmountType OF
@@ -254,9 +254,9 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                     ColValue := AnalysisViewEntry1.Amount;
                                             END;
                                         END ELSE
-                                            IF GlAcc1.FINDSET THEN
+                                            IF GLAcc1.FINDSET THEN
                                                 REPEAT
-                                                    AnalysisViewEntry1.SETFILTER("Account No.", GlAcc1."No.");
+                                                    AnalysisViewEntry1.SETFILTER("Account No.", GLAcc1."No.");
                                                     IF CalcAddCurr THEN BEGIN
                                                         AnalysisViewEntry1.CALCSUMS("Add.-Curr. Amount");
                                                         IF AnalysisViewEntry1."Add.-Curr. Amount" > 0 THEN
@@ -266,7 +266,7 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                         IF AnalysisViewEntry1.Amount > 0 THEN
                                                             ColValue += AnalysisViewEntry1.Amount;
                                                     END;
-                                                UNTIL GlAcc1.NEXT = 0;
+                                                UNTIL GLAcc1.NEXT = 0;
                                     END;
                                 ((AmountType = AmountType1::"Credit Amount") AND (AccScheduleLine."PTSS Column Value" = 0)) AND (AccScheduleLine."PTSS Balance") OR
                                 ((AmountType2 = AmountType2::"Credit Amount") AND (AccScheduleLine."PTSS Column Value" = 1)) AND (AccScheduleLine."PTSS Balance") OR
@@ -283,9 +283,9 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                     ColValue := AnalysisViewEntry1.Amount;
                                             END;
                                         END ELSE BEGIN
-                                            IF GlAcc1.FINDSET THEN
+                                            IF GLAcc1.FINDSET THEN
                                                 REPEAT
-                                                    AnalysisViewEntry1.SETFILTER("Account No.", GlAcc1."No.");
+                                                    AnalysisViewEntry1.SETFILTER("Account No.", GLAcc1."No.");
                                                     IF CalcAddCurr THEN BEGIN
                                                         AnalysisViewEntry1.CALCSUMS("Add.-Curr. Amount");
                                                         IF AnalysisViewEntry1."Add.-Curr. Amount" < 0 THEN
@@ -295,7 +295,7 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                         IF AnalysisViewEntry1.Amount < 0 THEN
                                                             ColValue += AnalysisViewEntry1.Amount;
                                                     END;
-                                                UNTIL GlAcc1.NEXT = 0;
+                                                UNTIL GLAcc1.NEXT = 0;
                                         END;
                                     END;
                                     //soft,en
@@ -305,7 +305,7 @@ codeunit 31022930 "PTSS AccSchedManagement"
                     BEGIN
                         IF AccScheduleName."Analysis View Name" = '' THEN
                             WITH GLBudgetEntry DO BEGIN
-                                SetGLAccGLBudgetEntryFilters(GLAccount, GLBudgetEntry, AccScheduleLine, ColumnLayout, UseBusUnitFilter, UseDimFilter);
+                                SetGLAccGLBudgetEntryFilters(GLAcc, GLBudgetEntry, AccScheduleLine, ColumnLayout, UseBusUnitFilter, UseDimFilter);
                                 CASE AmountType1 OF
                                     AmountType1::"Net Amount":
                                         BEGIN
@@ -322,8 +322,8 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                     ColValue := 0;
                                                 //soft,sn
                                             END ELSE begin
-                                                GLAccount.CALCFIELDS("Net Change");
-                                                ColValue := GLAccount."Net Change";
+                                                GLAcc.CALCFIELDS("Net Change");
+                                                ColValue := GLAcc."Net Change";
                                                 IF ColValue < 0 THEN
                                                     ColValue := 0;
                                             END;
@@ -338,8 +338,8 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                     ColValue := 0;
                                                 //soft,sn
                                             END ELSE begin
-                                                GLAccount.CALCFIELDS("Net Change");
-                                                ColValue := GLAccount."Net Change";
+                                                GLAcc.CALCFIELDS("Net Change");
+                                                ColValue := GLAcc."Net Change";
                                                 IF ColValue > 0 THEN
                                                     ColValue := 0;
                                             END;
@@ -350,8 +350,8 @@ codeunit 31022930 "PTSS AccSchedManagement"
                             END
                         ELSE
                             WITH AnalysisViewBudgetEntry DO BEGIN
-                                SetGLAccAnalysisViewBudgetEntries(GLAccount, AnalysisViewBudgetEntry, AccScheduleLine, ColumnLayout);
-                                SetGLAcc1AnalysisViewBudgetEntries(GLAccount, GlAcc1, AnalysisViewBudgetEntry, AnalysisViewBudgetEntry1, AccScheduleLine);
+                                SetGLAccAnalysisViewBudgetEntries(GLAcc, AnalysisViewBudgetEntry, AccScheduleLine, ColumnLayout);
+                                SetGLAcc1AnalysisViewBudgetEntries(GLAcc, GLAcc1, AnalysisViewBudgetEntry, AnalysisViewBudgetEntry1, AccScheduleLine);
                                 CASE AmountType1 OF
                                     AmountType1::"Net Amount":
                                         BEGIN
@@ -368,13 +368,13 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                 //soft,sn
                                             END ELSE begin
                                                 IF AccScheduleLine."Totaling Type" = AccScheduleLine."Totaling Type"::"Total Accounts" THEN BEGIN
-                                                    GlAcc1.CALCFIELDS("Budgeted Amount");
-                                                    IF GlAcc1."Budgeted Amount" > 0 THEN
-                                                        ColValue := GlAcc1."Budgeted Amount";
+                                                    GLAcc1.CALCFIELDS("Budgeted Amount");
+                                                    IF GLAcc1."Budgeted Amount" > 0 THEN
+                                                        ColValue := GLAcc1."Budgeted Amount";
                                                 END ELSE BEGIN
-                                                    GlAcc1.CALCSUMS("Budgeted Amount");
-                                                    IF GlAcc1."Budgeted Amount" > 0 THEN
-                                                        ColValue := GlAcc1."Budgeted Amount";
+                                                    GLAcc1.CALCSUMS("Budgeted Amount");
+                                                    IF GLAcc1."Budgeted Amount" > 0 THEN
+                                                        ColValue := GLAcc1."Budgeted Amount";
                                                 END;
                                                 //soft,en
                                             END;
@@ -389,13 +389,13 @@ codeunit 31022930 "PTSS AccSchedManagement"
                                                 //soft,sn
                                             END ELSE BEGIN
                                                 IF AccScheduleLine."Totaling Type" = AccScheduleLine."Totaling Type"::"Total Accounts" THEN BEGIN
-                                                    GlAcc1.CALCFIELDS("Budgeted Amount");
-                                                    IF GlAcc1."Budgeted Amount" < 0 THEN
-                                                        ColValue := GlAcc1."Budgeted Amount";
+                                                    GLAcc1.CALCFIELDS("Budgeted Amount");
+                                                    IF GLAcc1."Budgeted Amount" < 0 THEN
+                                                        ColValue := GLAcc1."Budgeted Amount";
                                                 END ELSE BEGIN
-                                                    GlAcc1.CALCSUMS("Budgeted Amount");
-                                                    IF GlAcc1."Budgeted Amount" < 0 THEN
-                                                        ColValue := GlAcc1."Budgeted Amount";
+                                                    GLAcc1.CALCSUMS("Budgeted Amount");
+                                                    IF GLAcc1."Budgeted Amount" < 0 THEN
+                                                        ColValue := GLAcc1."Budgeted Amount";
                                                 END;
                                             END;
                                             //soft,en
@@ -637,4 +637,5 @@ codeunit 31022930 "PTSS AccSchedManagement"
         CurrExchRate: Record "Currency Exchange Rate";
         AccSchedMgmt: Codeunit AccSchedManagement;
         AccSchedName: Record "Acc. Schedule Name";
+        GLAcc1: Record "G/L Account";
 }

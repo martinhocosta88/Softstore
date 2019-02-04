@@ -33,6 +33,14 @@ pageextension 31023128 "PTSS Account Schedule" extends "Account Schedule" //MyTa
     actions
     {
     }
+    trigger OnAfterGetRecord()
+    begin
+        IF "Amount Type" = "Amount Type"::"Net Amount" THEN
+            IsEditable := False
+        else
+            IsEditable := True;
+    end;
+
     var
         IsEditable: Boolean;
 }

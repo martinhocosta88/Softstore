@@ -74,7 +74,7 @@ xmlport 31022902 "PTSS AT Inventory Comm. CSV"
                 SourceTableView = SORTING ("No.")
                                   ORDER(Ascending)
                                   WHERE ("Type" = CONST (Inventory),
-                                        "Inventory Value Zero" = CONST (False));
+                                  "Inventory Value Zero" = CONST (False));
                 textelement(ProductCategoryVal)
                 {
 

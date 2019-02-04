@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -11,150 +11,6 @@
       <rd:DataSourceID>d0e276e6-e294-4b7f-873a-70188ec42aa0</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="COMPANYNAME">
-          <DataField>COMPANYNAME</DataField>
-        </Field>
-        <Field Name="USERID">
-          <DataField>USERID</DataField>
-        </Field>
-        <Field Name="CurrReport_PAGENO">
-          <DataField>CurrReport_PAGENO</DataField>
-        </Field>
-        <Field Name="FORMATTODAY04">
-          <DataField>FORMATTODAY04</DataField>
-        </Field>
-        <Field Name="TextHeader1">
-          <DataField>TextHeader1</DataField>
-        </Field>
-        <Field Name="TextHeader2">
-          <DataField>TextHeader2</DataField>
-        </Field>
-        <Field Name="TextHeader3">
-          <DataField>TextHeader3</DataField>
-        </Field>
-        <Field Name="CreditPeriod">
-          <DataField>CreditPeriod</DataField>
-        </Field>
-        <Field Name="CreditPeriodFormat">
-          <DataField>CreditPeriodFormat</DataField>
-        </Field>
-        <Field Name="DebitPeriod">
-          <DataField>DebitPeriod</DataField>
-        </Field>
-        <Field Name="DebitPeriodFormat">
-          <DataField>DebitPeriodFormat</DataField>
-        </Field>
-        <Field Name="BeforeDebitAmtOpenDebitAmtDebitPeriod">
-          <DataField>BeforeDebitAmtOpenDebitAmtDebitPeriod</DataField>
-        </Field>
-        <Field Name="BeforeDebitAmtOpenDebitAmtDebitPeriodFormat">
-          <DataField>BeforeDebitAmtOpenDebitAmtDebitPeriodFormat</DataField>
-        </Field>
-        <Field Name="BeforeCreditAmtOpenCreditAmtCreditPeriod">
-          <DataField>BeforeCreditAmtOpenCreditAmtCreditPeriod</DataField>
-        </Field>
-        <Field Name="BeforeCreditAmtOpenCreditAmtCreditPeriodFormat">
-          <DataField>BeforeCreditAmtOpenCreditAmtCreditPeriodFormat</DataField>
-        </Field>
-        <Field Name="DebitBalance">
-          <DataField>DebitBalance</DataField>
-        </Field>
-        <Field Name="DebitBalanceFormat">
-          <DataField>DebitBalanceFormat</DataField>
-        </Field>
-        <Field Name="CreditBalance">
-          <DataField>CreditBalance</DataField>
-        </Field>
-        <Field Name="CreditBalanceFormat">
-          <DataField>CreditBalanceFormat</DataField>
-        </Field>
-        <Field Name="BeforeDebitAmtOpenDebitAmt">
-          <DataField>BeforeDebitAmtOpenDebitAmt</DataField>
-        </Field>
-        <Field Name="BeforeDebitAmtOpenDebitAmtFormat">
-          <DataField>BeforeDebitAmtOpenDebitAmtFormat</DataField>
-        </Field>
-        <Field Name="BeforeCreditAmtOpenCreditAmt">
-          <DataField>BeforeCreditAmtOpenCreditAmt</DataField>
-        </Field>
-        <Field Name="BeforeCreditAmtOpenCreditAmtFormat">
-          <DataField>BeforeCreditAmtOpenCreditAmtFormat</DataField>
-        </Field>
-        <Field Name="GLAccountNo">
-          <DataField>GLAccountNo</DataField>
-        </Field>
-        <Field Name="DebitPeriodControl3">
-          <DataField>DebitPeriodControl3</DataField>
-        </Field>
-        <Field Name="DebitPeriodControl3Format">
-          <DataField>DebitPeriodControl3Format</DataField>
-        </Field>
-        <Field Name="CreditPeriodControl4">
-          <DataField>CreditPeriodControl4</DataField>
-        </Field>
-        <Field Name="CreditPeriodControl4Format">
-          <DataField>CreditPeriodControl4Format</DataField>
-        </Field>
-        <Field Name="BeforeDebitAmtOpenDebitAmtControl5">
-          <DataField>BeforeDebitAmtOpenDebitAmtControl5</DataField>
-        </Field>
-        <Field Name="BeforeDebitAmtOpenDebitAmtControl5Format">
-          <DataField>BeforeDebitAmtOpenDebitAmtControl5Format</DataField>
-        </Field>
-        <Field Name="BeforeCreditAmtOpenCreditAmtControl6">
-          <DataField>BeforeCreditAmtOpenCreditAmtControl6</DataField>
-        </Field>
-        <Field Name="BeforeCreditAmtOpenCreditAmtControl6Format">
-          <DataField>BeforeCreditAmtOpenCreditAmtControl6Format</DataField>
-        </Field>
-        <Field Name="CreditPeriod_BeforeCreditAmtOpenCreditAmt">
-          <DataField>CreditPeriod_BeforeCreditAmtOpenCreditAmt</DataField>
-        </Field>
-        <Field Name="CreditPeriod_BeforeCreditAmtOpenCreditAmtFormat">
-          <DataField>CreditPeriod_BeforeCreditAmtOpenCreditAmtFormat</DataField>
-        </Field>
-        <Field Name="DebitPeriod_BeforeDebitAmtOpenDebitAmt">
-          <DataField>DebitPeriod_BeforeDebitAmtOpenDebitAmt</DataField>
-        </Field>
-        <Field Name="DebitPeriod_BeforeDebitAmtOpenDebitAmtFormat">
-          <DataField>DebitPeriod_BeforeDebitAmtOpenDebitAmtFormat</DataField>
-        </Field>
-        <Field Name="DebitBalanceControl1">
-          <DataField>DebitBalanceControl1</DataField>
-        </Field>
-        <Field Name="DebitBalanceControl1Format">
-          <DataField>DebitBalanceControl1Format</DataField>
-        </Field>
-        <Field Name="CreditBalanceControl2">
-          <DataField>CreditBalanceControl2</DataField>
-        </Field>
-        <Field Name="CreditBalanceControl2Format">
-          <DataField>CreditBalanceControl2Format</DataField>
-        </Field>
-        <Field Name="PADSTRGLAccountIndentation2GLAccountName">
-          <DataField>PADSTRGLAccountIndentation2GLAccountName</DataField>
-        </Field>
-        <Field Name="GLAccountNumber">
-          <DataField>GLAccountNumber</DataField>
-        </Field>
-        <Field Name="IntegerNumber">
-          <DataField>IntegerNumber</DataField>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
-        <rd:TableName>Result</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2664,4 +2520,140 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>80fa8a91-bc5d-4d6a-9a44-04a4c00b4507</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="FORMATTODAY04">
+          <DataField>FORMATTODAY04</DataField>
+        </Field>
+        <Field Name="TextHeader1">
+          <DataField>TextHeader1</DataField>
+        </Field>
+        <Field Name="TextHeader2">
+          <DataField>TextHeader2</DataField>
+        </Field>
+        <Field Name="TextHeader3">
+          <DataField>TextHeader3</DataField>
+        </Field>
+        <Field Name="CreditPeriod">
+          <DataField>CreditPeriod</DataField>
+        </Field>
+        <Field Name="CreditPeriodFormat">
+          <DataField>CreditPeriodFormat</DataField>
+        </Field>
+        <Field Name="DebitPeriod">
+          <DataField>DebitPeriod</DataField>
+        </Field>
+        <Field Name="DebitPeriodFormat">
+          <DataField>DebitPeriodFormat</DataField>
+        </Field>
+        <Field Name="BeforeDebitAmtOpenDebitAmtDebitPeriod">
+          <DataField>BeforeDebitAmtOpenDebitAmtDebitPeriod</DataField>
+        </Field>
+        <Field Name="BeforeDebitAmtOpenDebitAmtDebitPeriodFormat">
+          <DataField>BeforeDebitAmtOpenDebitAmtDebitPeriodFormat</DataField>
+        </Field>
+        <Field Name="BeforeCreditAmtOpenCreditAmtCreditPeriod">
+          <DataField>BeforeCreditAmtOpenCreditAmtCreditPeriod</DataField>
+        </Field>
+        <Field Name="BeforeCreditAmtOpenCreditAmtCreditPeriodFormat">
+          <DataField>BeforeCreditAmtOpenCreditAmtCreditPeriodFormat</DataField>
+        </Field>
+        <Field Name="DebitBalance">
+          <DataField>DebitBalance</DataField>
+        </Field>
+        <Field Name="DebitBalanceFormat">
+          <DataField>DebitBalanceFormat</DataField>
+        </Field>
+        <Field Name="CreditBalance">
+          <DataField>CreditBalance</DataField>
+        </Field>
+        <Field Name="CreditBalanceFormat">
+          <DataField>CreditBalanceFormat</DataField>
+        </Field>
+        <Field Name="BeforeDebitAmtOpenDebitAmt">
+          <DataField>BeforeDebitAmtOpenDebitAmt</DataField>
+        </Field>
+        <Field Name="BeforeDebitAmtOpenDebitAmtFormat">
+          <DataField>BeforeDebitAmtOpenDebitAmtFormat</DataField>
+        </Field>
+        <Field Name="BeforeCreditAmtOpenCreditAmt">
+          <DataField>BeforeCreditAmtOpenCreditAmt</DataField>
+        </Field>
+        <Field Name="BeforeCreditAmtOpenCreditAmtFormat">
+          <DataField>BeforeCreditAmtOpenCreditAmtFormat</DataField>
+        </Field>
+        <Field Name="GLAccountNo">
+          <DataField>GLAccountNo</DataField>
+        </Field>
+        <Field Name="DebitPeriodControl3">
+          <DataField>DebitPeriodControl3</DataField>
+        </Field>
+        <Field Name="DebitPeriodControl3Format">
+          <DataField>DebitPeriodControl3Format</DataField>
+        </Field>
+        <Field Name="CreditPeriodControl4">
+          <DataField>CreditPeriodControl4</DataField>
+        </Field>
+        <Field Name="CreditPeriodControl4Format">
+          <DataField>CreditPeriodControl4Format</DataField>
+        </Field>
+        <Field Name="BeforeDebitAmtOpenDebitAmtControl5">
+          <DataField>BeforeDebitAmtOpenDebitAmtControl5</DataField>
+        </Field>
+        <Field Name="BeforeDebitAmtOpenDebitAmtControl5Format">
+          <DataField>BeforeDebitAmtOpenDebitAmtControl5Format</DataField>
+        </Field>
+        <Field Name="BeforeCreditAmtOpenCreditAmtControl6">
+          <DataField>BeforeCreditAmtOpenCreditAmtControl6</DataField>
+        </Field>
+        <Field Name="BeforeCreditAmtOpenCreditAmtControl6Format">
+          <DataField>BeforeCreditAmtOpenCreditAmtControl6Format</DataField>
+        </Field>
+        <Field Name="CreditPeriod_BeforeCreditAmtOpenCreditAmt">
+          <DataField>CreditPeriod_BeforeCreditAmtOpenCreditAmt</DataField>
+        </Field>
+        <Field Name="CreditPeriod_BeforeCreditAmtOpenCreditAmtFormat">
+          <DataField>CreditPeriod_BeforeCreditAmtOpenCreditAmtFormat</DataField>
+        </Field>
+        <Field Name="DebitPeriod_BeforeDebitAmtOpenDebitAmt">
+          <DataField>DebitPeriod_BeforeDebitAmtOpenDebitAmt</DataField>
+        </Field>
+        <Field Name="DebitPeriod_BeforeDebitAmtOpenDebitAmtFormat">
+          <DataField>DebitPeriod_BeforeDebitAmtOpenDebitAmtFormat</DataField>
+        </Field>
+        <Field Name="DebitBalanceControl1">
+          <DataField>DebitBalanceControl1</DataField>
+        </Field>
+        <Field Name="DebitBalanceControl1Format">
+          <DataField>DebitBalanceControl1Format</DataField>
+        </Field>
+        <Field Name="CreditBalanceControl2">
+          <DataField>CreditBalanceControl2</DataField>
+        </Field>
+        <Field Name="CreditBalanceControl2Format">
+          <DataField>CreditBalanceControl2Format</DataField>
+        </Field>
+        <Field Name="PADSTRGLAccountIndentation2GLAccountName">
+          <DataField>PADSTRGLAccountIndentation2GLAccountName</DataField>
+        </Field>
+        <Field Name="GLAccountNumber">
+          <DataField>GLAccountNumber</DataField>
+        </Field>
+        <Field Name="IntegerNumber">
+          <DataField>IntegerNumber</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

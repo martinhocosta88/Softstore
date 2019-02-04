@@ -3,7 +3,7 @@ report 31022897 "PTSS Trial Balance - 7/4 Col."
     //Balancetes
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Trial Balance - 74 Columns.rdlc';
+    RDLCLayout = './Trial Balance - 74 Columns Layout.rdl';
     Caption = 'Trial Balance - 7/4 Columns';
     UsageCategory = ReportsAndAnalysis;
     dataset

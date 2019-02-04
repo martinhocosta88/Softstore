@@ -1,34 +1,36 @@
-________
+________________________
 PACKAGE
-________
+________________________
 Cash-Flow
 Cheques em Português
-COPE Banco de Portugal
-                 - Codeunit 12 - PostCust e PostVend;
-                 - Exportar XML - Codigo comentado exportacao no xmlport e tabela BP Ledger Entry";
 Verificação Plano de Contas
 Números Bancários
 Taxonomias
 Códigos CAE
-Comunicação Inventário AT
-                 - Adaptacao codigo exportacao xml "page AT inventory Comm"
-Ajuste Taxas de Câmbio (tabela + report)
-                 - Código comentado de devs ainda não feitos
 Balancetes
-                 - Falta o Legal Books
 Extrato Fornecedor
-Livro Faturas Recebidas
-                 - ND%
-                 - Keys novas na VAT Entry
-Livro Faturas Emitidas
-                 - ND%
-                 - Keys novas na VAT Entry
+COPE Banco de Portugal
+                 - Codeunit 12 - PostCust e PostVend;
+                 - Exportar XML - Codigo comentado exportacao no xmlport e tabela BP Ledger Entry";
+Comunicação Inventário AT
+                 - Adaptacao codigo exportacao xml "page AT inventory Comm";
+Ajuste Taxas de Câmbio (tabela + report)
+                 - Código comentado de devs ainda não feitos;
+Livro Faturas Recebidas/Emitidas
+                 - ND%;
+                 - Keys novas na VAT Entry;
 Campo Conta Liquidação Nota de Crédito
-                 - Pedido Parametro Evento OnAfterSetAccNo - Cod31022929.PTSSGenPostSetEventHandler
+                 - Pedido Parametro Evento OnAfterSetAccNo - Cod31022929.PTSSGenPostSetEventHandler;
 Esquema de Contas Valor Coluna
-
-________
+                 - Erro ao clicar overview quando temos Balance a true (Invalid Column Name - Net Change);
+Intrastat
+                 - Codigo para gravar em ficheiro;
+                 - Função na Page Intrastat Journal que não pode ser chamado em extensões (printToPdf);
+Notas de Crédito de Acordo com Fatura
+                 - Só falta a inclusão dos eventos da Cod 6620. Pedidos no GIT
+                 
+________________________
 ISOLADO
-________
+________________________
 Retenções da Fonte - Falta atualizar(nova versao do dev) / resolver chamada cod.90/Cod.12?
 

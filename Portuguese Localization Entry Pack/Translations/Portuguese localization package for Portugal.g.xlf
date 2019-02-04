@@ -618,6 +618,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS IBAN Management - Method CheckCCC - NamedType Text31022890</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1274925038 - Method 1245803014 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document amount cannot be negative.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS PTSSCheckMasterData - Method CheckMasterDataSales - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1274925038 - Method 1245803014 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Appl.-to Item Entry must have a value in Item Tracking Lines. It cannot be zero or empty.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS PTSSCheckMasterData - Method CheckMasterDataSales - NamedType Text31022901</note>
+        </trans-unit>
         <trans-unit id="Page 393401157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-Flow Code Card</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -817,6 +827,181 @@
           <source>Specify the Description of the Taxonomy Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Taxonomy Codes List - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trial Balance - Legal Books</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 2409486310 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opening Values,Closing Values,Accounting Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control Opcao - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 4241848255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only accounts with values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control PrintWithBalance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 1491981986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show values in add. currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control PrintValuesAddCurr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 1795622530 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control PrintHeader - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 1847978035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control AccFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 1796784891 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opening Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control OpeningPeriod - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 1057742090 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Closing Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control ClosingPeriod - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - Control 3992858403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - Control PeriodDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 1214150958" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel CurrReportPAGENO</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 2905271543" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trial Balance - Legal Books</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel TrialBalanceLegalBooks</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 912261439" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Period</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 3637268832" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accumulated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Accumulated</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 2996218075" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Acc</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 2961552353" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Name</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 84647506" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Debit</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 2141525479" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Credit</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 3435878183" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accum. Before Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel AccumBeforePeriod</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 1250205237" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accum. at End of Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel AccumatEnd</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 1986217788" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accum. PeriodDate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel AccumPeriodDate</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 2355046064" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trial Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel TrialBalance</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 25700210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Balance</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - ReportLabel 245426702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total. . . . . . . . </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - ReportLabel Total</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>..C</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>..</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fiscal period do not Exist!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Filter:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only Accounts with values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Also accounts with no values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 746880067" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;= %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022897</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 915789090" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opening - </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022898</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 278092473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Date - </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022899</note>
+        </trans-unit>
+        <trans-unit id="Report 3293741141 - NamedType 3149589562" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Closing - </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Trial Bal. - Legal Books - NamedType Text31022900</note>
         </trans-unit>
         <trans-unit id="Report 811129785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Trial Balance - 7/4 Columns</source>
@@ -1853,376 +2038,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS BP Process - Control ToDate - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 4244125325 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjust Exchange Rates</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Options</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control Options - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 1361548158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjustment Period</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control Adjustment Period - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 543275552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Starting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control StartingDate - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 543275552 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the beginning of the period for which entries are adjusted. This field is usually left blank, but you can enter a date.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control StartingDate - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3592094765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ending Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control EndingDate - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3592094765 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the last date for which entries are adjusted. This date is usually the same as the posting date in the Posting Date field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control EndingDate - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 1539609042 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Description</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDescription - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 1539609042 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies text for the general ledger entries that are created by the batch job. The default text is Exchange Rate Adjmt. of %1 %2, in which %1 is replaced by the currency code and %2 is replaced by the currency amount that is adjusted. For example, Exchange Rate Adjmt. of DEM 38,000.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDescription - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3037438984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDate - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3037438984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the date on which the general ledger entries are posted. This date is usually the same as the ending date in the Ending Date field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDate - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3117834186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control DocumentNo - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3117834186 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the document number that will appear on the general ledger entries that are created by the batch job.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control DocumentNo - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3280251715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bank Accounts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 3280251715 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if you want to adjust customer, vendor, and bank accounts for currency fluctuations.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 537531644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjust Customer</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank1 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 1175228261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjust Vendor</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank2 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 741122023 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjust G/L Accounts for Add.-Reporting Currency</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjGLAcc - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - Control 741122023 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if you want to post in an additional reporting currency and adjust general ledger accounts for currency fluctuations between LCY and the additional reporting currency.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjGLAcc - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 650077689" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Page</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel PageCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 2566983481" size-unit="char" translate="yes" xml:space="preserve">
-          <source> to </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel ToCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 3383796882" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Currency Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel CurrencyCodeCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 3457749226" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Currency Factor</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel CurrencyFactorCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 443421780" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel PostingDateCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 54637232" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Account No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountNoCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 2763383773" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Name</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel NameCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 2833281111" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel DocNoCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 3375278247" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjusted Base</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AdjustedBaseCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 2021878949" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjusted Base (LCY)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AdjustedBaseLCYCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 3289632397" size-unit="char" translate="yes" xml:space="preserve">
-          <source>New Base (LCY)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel NewBaseLCYCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 2440246322" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjusted Amt. (LCY)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AdjustedAmtLCYCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 268968959" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Account Type: Bank Account</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountTypeCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 88610792" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Account Type: Customer</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountType1CaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - ReportLabel 187311009" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Account Type: Vendor</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountType2CaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>%1 must be entered.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text000</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Do you want to adjust general ledger entries for currency fluctuations without adjusting customer, vendor and bank ledger entries? This may result in incorrect currency adjustments to payables, receivables and bank accounts.\\ </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text001</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Do you wish to continue?</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text004</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The adjustment of exchange rates has been canceled.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text005</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjusting exchange rates...\\</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text006</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bank Account    @1@@@@@@@@@@@@@\\</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text007</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer        @2@@@@@@@@@@@@@\</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text008</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 3921243024" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Vendor          @3@@@@@@@@@@@@@\</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text009</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 1664139952" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjustment      #4#############</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text010</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No currencies have been found.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text011</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 2939533186" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjusting VAT Entries...\\</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text012</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
-          <source>VAT Entry    @1@@@@@@@@@@@@@</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text013</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 4214926420" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjusting general ledger...\\</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text014</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 3577229803" size-unit="char" translate="yes" xml:space="preserve">
-          <source>G/L Account    @1@@@@@@@@@@@@@</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text015</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 1195352358" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjmt. of %1 %2, Ex.Rate Adjust.</source>
-          <note from="Developer" annotates="general" priority="2">%1 = Currency Code, %2= Adjust Amount</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text016</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 557655741" size-unit="char" translate="yes" xml:space="preserve">
-          <source>%1 on %2 %3 must be %4. When this %2 is used in %5, the exchange rate adjustment is defined in the %6 field in the %7. %2 %3 is used in the %8 field in the %5. </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text017</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 857534312" size-unit="char" translate="yes" xml:space="preserve">
-          <source>This posting date cannot be entered because it does not occur within the adjustment period. Reenter the posting date.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text018</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 1278011672" size-unit="char" translate="yes" xml:space="preserve">
-          <source>One or more currency exchange rates have been adjusted</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType RatesAdjustedMsg</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 2963778462" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There is nothing to adjust</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType NothingToAdjustMsg</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 3674764559" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Exchange Rate Adjustment</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType ReportNameCaptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Adjustment Period: </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text31022890</note>
-        </trans-unit>
-        <trans-unit id="Report 4244125325 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ALL</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text31022891</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Copy - General Posting Setup</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Options</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Options - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 1750109361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Gen. Bus. Posting Group</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenBusPostingGroup - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 1750109361 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the general business posting group to copy from.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenBusPostingGroup - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 18806974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Gen. Prod. Posting Group</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenProdPostingGroup - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 18806974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies general product posting group to copy from.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenProdPostingGroup - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 4254856415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Copy</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Copy - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 4254856415 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>All fields,Selected fields</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Copy - Property OptionCaption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 4254856415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if all fields or only selected fields are copied.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Copy - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 2656673326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sales Accounts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control SalesAccounts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 2656673326 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if you want to copy sales accounts.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control SalesAccounts - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 3589539523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purchase Accounts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control PurchaseAccounts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 3589539523 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if you want to copy purchase accounts.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control PurchaseAccounts - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 4132705604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Inventory Accounts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control InventoryAccounts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 4132705604 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if you want to copy inventory accounts.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control InventoryAccounts - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 3128678206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Manufacturing Accounts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control ManufacturingAccounts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - Control 3128678206 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if you want to copy manufacturing accounts.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control ManufacturingAccounts - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 3163777707 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Copy General Posting Setup?</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - NamedType Text000</note>
-        </trans-unit>
         <trans-unit id="Report 1393326393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Check</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2953,6 +2768,501 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Check(PT) - NamedType Text31022952</note>
         </trans-unit>
+        <trans-unit id="Report 4244125325 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust Exchange Rates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 1361548158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjustment Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control Adjustment Period - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 543275552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control StartingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 543275552 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the beginning of the period for which entries are adjusted. This field is usually left blank, but you can enter a date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control StartingDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3592094765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control EndingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3592094765 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the last date for which entries are adjusted. This date is usually the same as the posting date in the Posting Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control EndingDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 1539609042 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 1539609042 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies text for the general ledger entries that are created by the batch job. The default text is Exchange Rate Adjmt. of %1 %2, in which %1 is replaced by the currency code and %2 is replaced by the currency amount that is adjusted. For example, Exchange Rate Adjmt. of DEM 38,000.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDescription - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3037438984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3037438984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date on which the general ledger entries are posted. This date is usually the same as the ending date in the Ending Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control PostingDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3117834186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control DocumentNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3117834186 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number that will appear on the general ledger entries that are created by the batch job.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control DocumentNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3280251715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 3280251715 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to adjust customer, vendor, and bank accounts for currency fluctuations.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 537531644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 1175228261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjCustVendBank2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 741122023 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust G/L Accounts for Add.-Reporting Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjGLAcc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - Control 741122023 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to post in an additional reporting currency and adjust general ledger accounts for currency fluctuations between LCY and the additional reporting currency.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - Control AdjGLAcc - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 650077689" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel PageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 2566983481" size-unit="char" translate="yes" xml:space="preserve">
+          <source> to </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel ToCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 3383796882" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel CurrencyCodeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 3457749226" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Factor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel CurrencyFactorCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 443421780" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel PostingDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 54637232" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 2763383773" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel NameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 2833281111" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel DocNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 3375278247" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusted Base</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AdjustedBaseCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 2021878949" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusted Base (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AdjustedBaseLCYCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 3289632397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Base (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel NewBaseLCYCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 2440246322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusted Amt. (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AdjustedAmtLCYCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 268968959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Type: Bank Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountTypeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 88610792" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Type: Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountType1CaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - ReportLabel 187311009" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Type: Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - ReportLabel AccountType2CaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be entered.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to adjust general ledger entries for currency fluctuations without adjusting customer, vendor and bank ledger entries? This may result in incorrect currency adjustments to payables, receivables and bank accounts.\\ </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you wish to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The adjustment of exchange rates has been canceled.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusting exchange rates...\\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Account    @1@@@@@@@@@@@@@\\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer        @2@@@@@@@@@@@@@\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text008</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 3921243024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor          @3@@@@@@@@@@@@@\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text009</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 1664139952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjustment      #4#############</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text010</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No currencies have been found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text011</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 2939533186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusting VAT Entries...\\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text012</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Entry    @1@@@@@@@@@@@@@</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text013</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 4214926420" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusting general ledger...\\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text014</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 3577229803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account    @1@@@@@@@@@@@@@</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text015</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 1195352358" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjmt. of %1 %2, Ex.Rate Adjust.</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Currency Code, %2= Adjust Amount</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text016</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 557655741" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 on %2 %3 must be %4. When this %2 is used in %5, the exchange rate adjustment is defined in the %6 field in the %7. %2 %3 is used in the %8 field in the %5. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text017</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 857534312" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This posting date cannot be entered because it does not occur within the adjustment period. Reenter the posting date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text018</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 1278011672" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One or more currency exchange rates have been adjusted</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType RatesAdjustedMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 2963778462" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There is nothing to adjust</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType NothingToAdjustMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 3674764559" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange Rate Adjustment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType ReportNameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjustment Period: </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Report 4244125325 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ALL</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Adjust Exchange Rates - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy - General Posting Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 1750109361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Bus. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenBusPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 1750109361 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the general business posting group to copy from.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenBusPostingGroup - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 18806974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Prod. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenProdPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 18806974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies general product posting group to copy from.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control GenProdPostingGroup - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 4254856415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Copy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 4254856415 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All fields,Selected fields</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Copy - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 4254856415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if all fields or only selected fields are copied.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control Copy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 2656673326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control SalesAccounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 2656673326 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to copy sales accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control SalesAccounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 3589539523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control PurchaseAccounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 3589539523 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to copy purchase accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control PurchaseAccounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 4132705604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control InventoryAccounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 4132705604 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to copy inventory accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control InventoryAccounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 3128678206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manufacturing Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control ManufacturingAccounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - Control 3128678206 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to copy manufacturing accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - Control ManufacturingAccounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3163777707 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy General Posting Setup?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Copy - Gen. Posting Setup - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intrastat - Make Disk Tax Auth</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the file name.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WwWw</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>INTRASTAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible to display %1 in a field with a length of %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 1991297358" size-unit="char" translate="no" xml:space="preserve">
+          <source>Default.txt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType DefaultFilenameTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2762791959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FLUXO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextFLUXO</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2175505961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PERIODO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextPERIODO</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2267186112" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NIF</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextNIF</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2949536080" size-unit="char" translate="yes" xml:space="preserve">
+          <source>REF</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextREF</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2319581780" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextNC</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 551674218" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PAIS</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextPAIS</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 3334884970" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PORIGEM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextPORIGEM</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 940410526" size-unit="char" translate="yes" xml:space="preserve">
+          <source>REGIAO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextREGIAO</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 1194712806" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CODENT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextCODENT</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 202649835" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NATTRA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextNATTRA</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 532024704" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MODTRA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextMODTRA</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 1755902498" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AERPOR</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextAERPOR</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2530834084" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MASSA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextMASSA</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 4180092892" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UNSUP</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextUNSUP</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 2008772350" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VALFAC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextVALFAC</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 3087618488" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VALEST</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextVALEST</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 1191844932" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADQNIF</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextADQNIF</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 1500095057" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text Files (*.txt)|*.txt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType FilterStringTxt2</note>
+        </trans-unit>
+        <trans-unit id="Report 1495030750 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intrastat.txt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text31022890</note>
+        </trans-unit>
         <trans-unit id="XmlPort 91263824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP XML Message</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3603,6 +3913,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Accountant Role Center - Action PTSS Adjust E&amp;xchange Rates PT - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2848208183 - Control 1776372164 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit Memo Direct Cost to Apply Account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Posting Setup - Control PTSS Cr.M Dir. Cost Appl. Acc. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2848208183 - Action 2120411465 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Copy</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3617,6 +3932,11 @@
           <source>Cr. Memo Direct Cost Applied Account</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Posting Setup - Field PTSS Cr.M Dir. Cost Appl. Acc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1641663223 - Control 1776372164 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit Memo Direct Cost to Apply Account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Gen. Posting Setup Card - Control PTSS Cr.M Dir. Cost Appl. Acc. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1641663223 - Action 281683059 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Copy</source>
@@ -3673,16 +3993,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Amount Type 3 - Property OptionCaption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2682726020 - Field 2417550217 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reference</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Reference - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 2682726020 - Field 2417550217 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>1,2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Column Layout - Field PTSS Reference - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 2682726020 - Field 3834162397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Balance 1</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3707,6 +4017,51 @@
           <source>Specifies if the Value is Balanced.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Account Schedule - Control PTSS Balance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1506106145 - Action 866734722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create File</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Intrastat Journal - Action PTSS CreateFile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3173818159 - Control 2672377648 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the AT Item Category.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Item Category Card - Control PTSS AT Item Category - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1797722148 - Control 3023515732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series - Control PTSS Credit Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1797722148 - Field 3023515732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series - Field PTSS Credit Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1797722148 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot modify %1 on %2 because there are records in this series.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1313098645 - Control 3427704346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Cr. Memo Subform - Control PTSS Credit-to Doc. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1313098645 - Control 1375242388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2610281838 - Control 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2610281838 - Control 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
@@ -4137,6 +4492,66 @@
           <source>Balance</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Acc. Schedule Line - Field PTSS Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1912374242 - Field 3212701971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Intrastat Jnl. Line - Field PTSS Source Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1912374242 - Field 3212701971 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>,Item entry,Job entry,FA Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Intrastat Jnl. Line - Field PTSS Source Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3643370966 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Line - Field PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3643370966 - Field 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3643370966 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot credit more then %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Line - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3643370966 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 cannot be more then %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Line - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3643370966 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice %1, Line %2  has already been fully credited.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Line - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3643370966 - NamedType 915789090" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot credit more then Qty: %1 for a line total of %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Line - NamedType Text31022898</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2168507457 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Line - Field PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2168507457 - Field 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 739190592 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Receipt Line - Field PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 739190592 - Field 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Receipt Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
         </trans-unit>
       </group>
     </body>
