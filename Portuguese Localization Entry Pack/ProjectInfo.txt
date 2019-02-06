@@ -28,6 +28,11 @@ Intrastat
                  - Função na Page Intrastat Journal que não pode ser chamado em extensões (printToPdf);
 Notas de Crédito de Acordo com Fatura
                  - Só falta a inclusão dos eventos da Cod 6620. Pedidos no GIT
+                 - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao.
+IRC Modelo 22   
+                 - Falta Resolver escrita de ficheiro (tabela Vat report file buffer e report irc modelo 22)
+Certificação de Documentos
+                 - Está feita a validação de eliminação de Documentos Certificados. Faltam os mapas com Hash.
                  
 ________________________
 ISOLADO

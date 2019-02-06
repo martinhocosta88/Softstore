@@ -128,6 +128,316 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Plan - Action PTSS Cash-Flow Report - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Table 3617109145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Report File Buffer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - Field 3670773175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - Field Line Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3098773014" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType Blank</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 156799506" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DANUAL</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType DANUALText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 567887726" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EUR</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType CurrencyCode</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 2962928581" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ASCII</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType EncodingType</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 903338320" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Year4&gt;&lt;Month,2&gt;&lt;Day,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType YearFormat</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3357058382" size-unit="char" translate="yes" xml:space="preserve">
+          <source>0</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType HeadingZero</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 672464506" size-unit="char" translate="yes" xml:space="preserve">
+          <source>01</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType ZeroOne</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 2311674106" size-unit="char" translate="yes" xml:space="preserve">
+          <source>02</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType ZeroTwo</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 6346216" size-unit="char" translate="yes" xml:space="preserve">
+          <source>03</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType ZeroThree</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 1786893873" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DPIVA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType DPIVAText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 309691928" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DRECA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType DRECAText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 1530303397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mod.22</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType MODText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 1498796231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexA</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 1667705254" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexF</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 1030008637" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexG</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3880673676" size-unit="char" translate="yes" xml:space="preserve">
+          <source>L</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexL</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3242977059" size-unit="char" translate="yes" xml:space="preserve">
+          <source>M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexM</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 223402997" size-unit="char" translate="yes" xml:space="preserve">
+          <source>O</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexO</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3749704128" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexP</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3112007511" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Q</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType AnnexQ</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 925160109" size-unit="char" translate="yes" xml:space="preserve">
+          <source>03T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType FirstQuarterText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 3044634539" size-unit="char" translate="yes" xml:space="preserve">
+          <source>06T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType SecondQuarterText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 948514582" size-unit="char" translate="yes" xml:space="preserve">
+          <source>09T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType ThirdQuarterText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 2067719525" size-unit="char" translate="yes" xml:space="preserve">
+          <source>12T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType FourthQuarterText</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text File *.txt| *.txt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - Method 474922768 - NamedType 2682166609" size-unit="char" translate="yes" xml:space="preserve">
+          <source>-</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - Method InsertSign - NamedType NegSign</note>
+        </trans-unit>
+        <trans-unit id="Table 3617109145 - Method 474922768 - NamedType 1833765457" size-unit="char" translate="yes" xml:space="preserve">
+          <source>+</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - Method InsertSign - NamedType PosSign</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Municipalities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Field 316116824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Municipality</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Municipality - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Field 4291590860 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salary Mass</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Salary Mass - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Field 1479048355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Municipality Tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Municipality Tax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Field 1137027125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Product</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Product - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3101167010 - Field 1090351696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Active - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Annex Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 1747673544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Annex</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Annex - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 1747673544 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>40,41</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Annex - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 2618029887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Record Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 277343391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Frame</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Frame - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 277343391 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1,1-A,1-B,1-C,1-D,1-E,1-F,1-G,2,3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Frame - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 2126896848 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Article</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Article - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 2126896848 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>78.º,78.º-A,78.º-B,78.º-C,78.º-D</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Article - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 1209328327 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SubSection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field SubSection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 1908046867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Reason Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 4285130883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Tax Authority Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 3504792679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group By Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Group By Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2583750880 - Field 488941079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group by Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Annex Setup - Field Group by Reason Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Annex Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 1747673544 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Annex;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Annex - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 2618029887 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Specifies the Record Type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Record Type - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 277343391 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Frame.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Frame - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 2126896848 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Article.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Article - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 4200184881 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control No. - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 1209328327 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the SubSection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control SubSection - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 1908046867 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Reason Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Reason Code - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 4285130883 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Tax Authority Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Tax Authority Code - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 3504792679 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Group By. Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Group By Doc. No. - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="Page 2583750880 - Control 488941079 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Group by Reason Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS VAT Annex Setup - Control Group by Reason Code - Property Tooltip</note>
+        </trans-unit>
         <trans-unit id="Table 1782966977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP Ledger Entry</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -657,6 +967,41 @@
           <source>Specificies the Cash-Flow Indentation</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Cash-Flow Code Card - Control Indentation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Municipalities List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Control 316116824 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Municipality.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Control Municipality - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Description.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Control 4291590860 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Salary Mass.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Control Salary Mass - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Control 1479048355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Municipality Tax.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Control Municipality Tax - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Control 1137027125 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Product.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Control Product - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 731928000 - Control 1090351696 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if Active.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTSS Municipalities List - Control Active - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3157751611 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP Ledger Entry</source>
@@ -3438,6 +3783,56 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS CAE Description - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 2884316743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority Document Comunication Web Service</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control WebService - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 48692140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the User ID to connect to the tax authority transport document comunication web service.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Tax Authority WS User ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 3539357389 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the password to connect to the tax authority transport document comunication web service.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Tax Authority WS Password - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 2284935471 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the path where to save communicated transport document files to the tax authority and tax authority response files.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS AT Com. File Path - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 61201385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model 22</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control Model22 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 2830625007 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the local tax authority.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Tax Authority Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 444988854 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the table of business activities, according to Portaria n.º 1011/2001, 21/8.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Activity Table Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 1624511160 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the VAT registration number for the company's legal reprensentative, for SAFT-PT export purposes.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Legal Rep. VAT Reg. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 1723444434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the VAT registration number for the company's accountant, for SAFT-PT export purposes.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS TOC VAT Reg. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 3539499628 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code of the company's municipality.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Municipality - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3510217241 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>CCC Bank Account No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3472,6 +3867,46 @@
           <source>CAE Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS CAE Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 1624511160 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Legal Rep. VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Legal Rep. VAT Reg. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 3539499628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Municipality</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Municipality - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 2830625007 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Tax Authority Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 444988854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activity Table Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Activity Table Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 1723444434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TOC VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS TOC VAT Reg. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 2284935471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Communication File Path</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS AT Com. File Path - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 48692140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority WS User ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Tax Authority WS User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 3539357389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority WS Password</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Tax Authority WS Password - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3510217241 - Method 1985654370 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
@@ -4552,6 +4987,56 @@
           <source>Credit-to Doc. Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Receipt Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4193015396 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued reminder Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible delete the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
       </group>
     </body>

@@ -2,10 +2,12 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
 {
     //IBAN
     //CAE code
+    //IRC Modelo 22
     fields
     {
         field(31022898; "PTSS CCC Bank Account No."; Text[11])
         {
+            //IBAN
             Caption = 'CCC Bank Account No.';
             Numeric = true;
             DataClassification = CustomerContent;
@@ -22,6 +24,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         }
         field(31022899; "PTSS CCC Bank Branch No."; Text[4])
         {
+            //IBAN
             Caption = 'CCC Bank Branch No.';
             Numeric = true;
             DataClassification = CustomerContent;
@@ -38,6 +41,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         }
         field(31022900; "PTSS CCC Bank No."; Text[4])
         {
+            //IBAN
             Caption = 'CCC Bank No.';
             Numeric = true;
             DataClassification = CustomerContent;
@@ -54,6 +58,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         }
         field(31022901; "PTSS CCC Control Digits"; Text[2])
         {
+            //IBAN
             Caption = 'CCC Control Digits';
             Numeric = true;
             DataClassification = CustomerContent;
@@ -70,6 +75,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         }
         field(31022902; "PTSS CCC No."; Text[21])
         {
+            //IBAN
             Caption = 'CCC No.';
             Numeric = true;
             DataClassification = CustomerContent;
@@ -82,13 +88,73 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         }
         field(31022896; "PTSS CAE Code"; Code[10])
         {
+            //CAE Code
             Caption = 'CAE Code';
             DataClassification = CustomerContent;
         }
         field(31022897; "PTSS CAE Description"; Text[80])
         {
+            //CAE Code
             Caption = 'CAE Description';
             DataClassification = CustomerContent;
+        }
+
+        field(31022904; "PTSS Legal Rep. VAT Reg. No."; Text[20])
+        {
+            //IRC Modelo 22
+            Caption = 'Legal Rep. VAT Reg. No.';
+            DataClassification = CustomerContent;
+            trigger OnValidate()
+            var
+                VATRegNoFormat: Record "VAT Registration No. Format";
+            begin
+                VATRegNoFormat.Test("PTSS Legal Rep. VAT Reg. No.", "Country/Region Code", '', DATABASE::"Company Information");
+            end;
+        }
+        field(31022905; "PTSS Municipality"; Code[10])
+        {
+            //IRC Modelo 22
+            Caption = 'Municipality';
+            TableRelation = "PTSS Municipalities";
+            DataClassification = CustomerContent;
+        }
+        field(31022910; "PTSS Tax Authority Code"; Code[4])
+        {
+            //IRC Modelo 22
+            Caption = 'Tax Authority Code';
+            DataClassification = CustomerContent;
+        }
+        field(31022894; "PTSS Activity Table Code"; Code[4])
+        {
+            //IRC Modelo 22
+            Caption = 'Activity Table Code';
+            Numeric = true;
+            DataClassification = CustomerContent;
+        }
+        field(31022893; "PTSS TOC VAT Reg. No."; Text[20])
+        {
+            //IRC Modelo 22
+            Caption = 'TOC VAT Reg. No.';
+            DataClassification = CustomerContent;
+        }
+        field(31022890; "PTSS AT Com. File Path"; Text[250])
+        {
+            //Config. AT
+            Caption = 'AT Communication File Path';
+            DataClassification = CustomerContent;
+        }
+        field(31022911; "PTSS Tax Authority WS User ID"; Code[20])
+        {
+            //Config. AT
+            Caption = 'Tax Authority WS User ID';
+            DataClassification = CustomerContent;
+        }
+        field(31022912; "PTSS Tax Authority WS Password"; Text[50])
+        {
+            //Config. AT
+            Caption = 'Tax Authority WS Password';
+            DataClassification = CustomerContent;
+            ExtendedDatatype = Masked;
         }
 
         modify(IBAN)

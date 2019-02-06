@@ -64,6 +64,7 @@ tableextension 31023001 "PTSS G/L Account" extends "G/L Account"
         }
 
     }
+
     //Balancetes
     procedure GetBalance(IsDebit: Boolean; Account: Text[250]; StartDate: Date; EndDate: Date; AddCurrency: Boolean) Amount: Decimal
     var
