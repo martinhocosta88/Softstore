@@ -928,15 +928,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS IBAN Management - Method CheckCCC - NamedType Text31022890</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1274925038 - Method 1245803014 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 421984178 - Method 1245803014 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document amount cannot be negative.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS PTSSCheckMasterData - Method CheckMasterDataSales - NamedType Text31022895</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS CheckMasterData - Method CheckMasterDataSales - NamedType Text31022895</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1274925038 - Method 1245803014 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 421984178 - Method 1245803014 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
           <source>Appl.-to Item Entry must have a value in Item Tracking Lines. It cannot be zero or empty.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS PTSSCheckMasterData - Method CheckMasterDataSales - NamedType Text31022901</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS CheckMasterData - Method CheckMasterDataSales - NamedType Text31022901</note>
         </trans-unit>
         <trans-unit id="Page 393401157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-Flow Code Card</source>
@@ -4498,6 +4498,56 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1251418259 - Control 543389229 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Gains in Inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inventory Posting Setup - Control PTSS Gains in Inventory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1251418259 - Control 3680127544 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Losses in Inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inventory Posting Setup - Control PTSS Losses in Inventory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1251418259 - Action 2890876730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inventory Posting Setup - Action PTSS SuggestAccountsPT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1251418259 - Action 2890876730 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set Default Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inventory Posting Setup - Action PTSS SuggestAccountsPT - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1251418259 - Field 543389229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gains in Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Inventory Posting Setup - Field PTSS Gains in Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1251418259 - Field 3680127544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gains in Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Inventory Posting Setup - Field PTSS Losses in Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1518052852 - Control 543389229 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Gains in Inventory account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inv. Posting Setup Card - Control PTSS Gains in Inventory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1518052852 - Control 3680127544 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Losses in Inventory account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inv. Posting Setup Card - Control PTSS Losses in Inventory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1518052852 - Action 2890876730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inv. Posting Setup Card - Action PTSS SuggestAccountsPT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1518052852 - Action 2890876730 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest G/L Accounts for selected setup.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inv. Posting Setup Card - Action PTSS SuggestAccountsPT - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4989,52 +5039,52 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Receipt Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1562622861 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 2034153534 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 2353642714 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 4180334110 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 4193015396 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued reminder Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 1854407874 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 4025028169 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 215284717 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 1883410020 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 1443465587 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>It is not possible delete the document.</source>
+          <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>

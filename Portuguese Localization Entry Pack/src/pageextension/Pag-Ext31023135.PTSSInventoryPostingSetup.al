@@ -31,6 +31,7 @@ pageextension 31023135 "PTSS Inventory Posting Setup" extends "Inventory Posting
                 Caption = 'Suggest Accounts';
                 ToolTip = 'Set Default Accounts';
                 ApplicationArea = All;
+                PromotedCategory = Process;
                 Image = Default;
                 Promoted = true;
                 PromotedIsBig = true;

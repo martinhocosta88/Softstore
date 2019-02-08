@@ -114,6 +114,7 @@ codeunit 31022933 "PTSS PhysInvManagement"
 
     local procedure GetPhysicalInventory(PhysicalInventory: Boolean; TempLocation: Code[10]; TempPosting: Code[10]; PrevAdjAcc: Text[20])
     begin
+        //Funcao que estava na Codeunit 5802 - Inventory Posting To G/L 
         PhysInventory := PhysicalInventory;
         TempLocationCode := TempLocation;
         TempPostingGroup := TempPosting;
@@ -122,6 +123,7 @@ codeunit 31022933 "PTSS PhysInvManagement"
 
     procedure GetPhysicalInv(ValueEntry: Record "Value Entry")
     var
+        //Funcao que estava na Codeunit 22 - Item Jnl.-Post Line
         PhysInvLedgEntry: Record "Phys. Inventory Ledger Entry";
         GLEntry: Record "G/L Entry";
         IsPhysInventory: Boolean;
@@ -138,7 +140,7 @@ codeunit 31022933 "PTSS PhysInvManagement"
                 GLEntry.SETRANGE(GLEntry."Document No.", "Document No.");
                 IF NOT GLEntry.ISEMPTY THEN BEGIN
                     GLEntry.FINDLAST;
-                    //resolver passagem do CalledFromAdjustment
+                    //Pedido parametro CalledFromAdjustment na chamada dos dois eventos da cod 22
                     // IF CalledFromAdjustment THEN
                     //     PrevAdjAcc := GLEntry."G/L Account No.";
                 END;

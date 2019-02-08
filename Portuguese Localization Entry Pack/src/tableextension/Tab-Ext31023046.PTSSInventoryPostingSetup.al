@@ -44,6 +44,7 @@ tableextension 31023046 "PTSS Inventory Posting Setup" extends "Inventory Postin
     var
         RecRef: RecordRef;
     begin
+        //Funcoes replicadas das standard. Foi solicitado External+Eventos
         RecRef.GETTABLE(Rec);
         IF "Inventory Account" = '' THEN
             SuggestAccountPT(RecRef, FIELDNO("Inventory Account"));
@@ -66,6 +67,8 @@ tableextension 31023046 "PTSS Inventory Posting Setup" extends "Inventory Postin
             SuggestAccountPT(RecRef, FIELDNO("PTSS Gains in Inventory"));
         IF "PTSS Losses in Inventory" = '' THEN
             SuggestAccountPT(RecRef, FIELDNO("PTSS Losses in Inventory"));
+
+        RecRef.Modify;
     end;
 
 
@@ -83,7 +86,6 @@ tableextension 31023046 "PTSS Inventory Posting Setup" extends "Inventory Postin
         InvtPostingSetupFieldRef := InvtPostingSetupRecRef.FIELD(FIELDNO("Location Code"));
         InvtPostingSetupFieldRef.SETRANGE("Location Code");
         TempAccountUseBuffer.UpdateBuffer(InvtPostingSetupRecRef, AccountFieldNo);
-
         InvtPostingSetupRecRef.CLOSE;
 
         TempAccountUseBuffer.RESET;
