@@ -33,6 +33,9 @@ IRC Modelo 22
                  - Falta Resolver escrita de ficheiro (tabela Vat report file buffer e report irc modelo 22)
 Certificação de Documentos
                  - Está feita a validação de eliminação de Documentos Certificados. Faltam os mapas com Hash.
+Registo Inventário Físico
+                 - Cod31022933 PhysInvManagement - Passagem de um argumento
+
                  
 ________________________
 ISOLADO
