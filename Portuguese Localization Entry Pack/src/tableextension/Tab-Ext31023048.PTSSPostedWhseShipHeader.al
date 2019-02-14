@@ -1,6 +1,6 @@
-tableextension 31023038 "PTSS Sales Cr.Memo Header" extends "Sales Cr.Memo Header" //MyTargetTableId
+tableextension 31023048 "PTSS Posted Whse. Ship. Header" extends "Posted Whse. Shipment Header" //MyTargetTableId
 {
-    // Certificação Documentos
+    //Certificacao Documentos
     fields
     {
         field(31022892; "PTSS Creation Date"; Date)

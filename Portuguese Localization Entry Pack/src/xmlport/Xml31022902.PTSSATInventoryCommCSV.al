@@ -77,7 +77,6 @@ xmlport 31022902 "PTSS AT Inventory Comm. CSV"
                                   "Inventory Value Zero" = CONST (False));
                 textelement(ProductCategoryVal)
                 {
-
                     trigger OnBeforePassVariable()
                     begin
                         ProductCategoryVal := ATInvComMgmt.GetATProductCategory(Item."Item Category Code");

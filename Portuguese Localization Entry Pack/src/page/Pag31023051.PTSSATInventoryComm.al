@@ -103,5 +103,6 @@ page 31023051 "PTSS AT Inventory Comm."
         Inputstream: InStream;
         OutputStream: OutStream;
         FileName: Text[1024];
+
 }
 

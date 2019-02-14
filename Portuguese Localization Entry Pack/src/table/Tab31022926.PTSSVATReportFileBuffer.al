@@ -54,7 +54,6 @@ table 31022926 "PTSS VAT Report File Buffer"
         SecondQuarterText: Label '06T';
         ThirdQuarterText: Label '09T';
         FourthQuarterText: Label '12T';
-        Text31022894: Label 'Text File *.txt| *.txt';
         Print40: Boolean;
         Print41: Boolean;
         boolFrameA: Boolean;
@@ -104,7 +103,9 @@ table 31022926 "PTSS VAT Report File Buffer"
     procedure SaveFile(Path: Text[250])
     var
         FileHandle: File;
-        InputStreamObj: InStream;
+        InputStream: InStream;
+        OutputStream: OutStream;
+        tmpBlob: Record TempBlob;
     begin
         //XXX A Resolver Escrita Ficheiro
         // FileHandle.TEXTMODE(TRUE);
@@ -118,6 +119,17 @@ table 31022926 "PTSS VAT Report File Buffer"
         // FileHandle.CREATEINSTREAM(InputStreamObj);
         // DOWNLOADFROMSTREAM(InputStreamObj,'','',Text31022894,Path);
         // FileHandle.CLOSE;
+
+        tmpBlob.Blob.CreateOutStream(OutputStream);
+        IF FINDSET then
+            REPEAT
+                OutputStream.WriteText("Line Value");
+            UNTIL (NEXT = 0);
+
+        tmpBlob.Blob.CreateInStream(InputStream);
+        DownloadFromStream(InputStream, '', '', '', Path);
+
+
     end;
 
     procedure LoadFile(Path: Text[250]): Boolean

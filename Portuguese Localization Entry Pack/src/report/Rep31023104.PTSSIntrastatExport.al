@@ -19,10 +19,9 @@ report 31023104 "PTSS Intrastat Export"
 
                 trigger OnAfterGetRecord()
                 begin
-                    //soft,sn
+
                     JournalBatch.GET("Journal Template Name", "Journal Batch Name");
                     JournalBatch.TESTFIELD(JournalBatch.Reported, FALSE);
-                    //soft,en
 
                     IF ("Tariff No." = '') AND
                        ("Country/Region Code" = '') AND
@@ -38,27 +37,7 @@ report 31023104 "PTSS Intrastat Export"
                     TESTFIELD("Total Weight");
                     IF "Supplementary Units" THEN
                         TESTFIELD(Quantity);
-                    //soft,so
-                    //CompoundField :=
-                    //  FORMAT("Country/Region Code",10) + FORMAT(DELCHR("Tariff No."),10) +
-                    //  FORMAT("Transaction Type",10) + FORMAT("Transport Method",10);
 
-                    //IF (TempType <> Type) OR (STRLEN(TempCompoundField) = 0) THEN BEGIN
-                    //  TempType := Type;
-                    //  TempCompoundField := CompoundField;
-                    //  IntraReferenceNo := COPYSTR(IntraReferenceNo,1,4) + FORMAT(Type,1,2) + '01001';
-                    //END ELSE
-                    //  IF TempCompoundField <> CompoundField THEN BEGIN
-                    //    TempCompoundField := CompoundField;
-                    //    IF COPYSTR(IntraReferenceNo,8,3) = '999' THEN
-                    //      IntraReferenceNo := INCSTR(COPYSTR(IntraReferenceNo,1,7)) + '001'
-                    //    ELSE
-                    //      IntraReferenceNo := INCSTR(IntraReferenceNo);
-                    //  END;
-                    //"Internal Ref. No." := IntraReferenceNo;
-                    //MODIFY;
-                    //soft,eo
-                    //soft,sn
                     CompanyInfo.GET;
                     CLEAR(Fluxo);
                     CLEAR(POrigem);
@@ -101,7 +80,7 @@ report 31023104 "PTSS Intrastat Export"
                         TxtQuantity := ''
                     ELSE
                         TxtQuantity := DecimalNumeralZeroFormat(Quantity, 10);
-
+                    OutputStream.WriteText();
                     OutputStream.WriteText(
                                   Fluxo + ';' +
                                   "Intrastat Jnl. Batch"."Statistics Period" + ';' +
@@ -115,39 +94,27 @@ report 31023104 "PTSS Intrastat Export"
                                   COPYSTR("Transaction Type", 1, 2) + ';' +
                                   COPYSTR("Transport Method", 1, 1) + ';' +
                                   COPYSTR("Entry/Exit Point", 1, 3) + ';' +
-                                  WeightFormat("Net Weight" * Quantity, 12) + ';' +
+                                  DecimalNumeralZeroFormat("Total Weight", 12) + ';' +
                                   TxtQuantity + ';' +
                                   DecimalNumeralZeroFormat(Amount, 9) + ';' +
                                   DecimalNumeralZeroFormat("Statistical Value", 9) + ';' +
                                   AdqNIF);
-                    //soft,en
+
                 end;
 
                 trigger OnPostDataItem()
                 var
                     ToFile: Text[1024];
                 begin
-                    FileName := Text31022890;
-                    //soft,sn
-                    //IntraFile.CLOSE;
                     "Intrastat Jnl. Batch".Reported := TRUE;
                     "Intrastat Jnl. Batch".MODIFY;
-
-                    // IF ServerFileName = '' THEN
-                    //     FileMgt.DownloadHandler(FileName, '', '', FileMgt.GetToFilterText('', DefaultFilenameTxt), DefaultFilenameTxt)
-                    // ELSE
-                    //     FileMgt.CopyServerFile(FileName, ServerFileName, TRUE);
-                    //xxx
-                    tmpBlob.Blob.CreateInStream(Inputstream);
+                    tmpBlob.Blob.CreateInStream(InputStream);
                     DownloadFromStream(Inputstream, '', '', '', FileName);
-                    //xxx
-
-                    //soft,en
                 end;
 
                 trigger OnPreDataItem()
                 begin
-                    NrAd := 0;  //soft,n
+                    NrAd := 0;
                 end;
             }
             dataitem(IntrastatJnlLine2; "Intrastat Jnl. Line")
@@ -156,7 +123,7 @@ report 31023104 "PTSS Intrastat Export"
 
                 trigger OnAfterGetRecord()
                 begin
-                    CurrReport.SKIP; //soft,n
+                    CurrReport.SKIP;
 
                     IF ("Tariff No." = '') AND
                        ("Country/Region Code" = '') AND
@@ -185,7 +152,7 @@ report 31023104 "PTSS Intrastat Export"
                         GroupTotal := TRUE;
 
                     IF GroupTotal THEN BEGIN
-                        //XXX WriteGrTotalsToFile(TotalWeightAmt, QuantityAmt, StatisticalValueAmt);
+                        WriteGrTotalsToFile(TotalWeightAmt, QuantityAmt, StatisticalValueAmt);
                         StatisticalValueTotalAmt += StatisticalValueAmt;
                         TotalWeightAmt := 0;
                         QuantityAmt := 0;
@@ -195,31 +162,20 @@ report 31023104 "PTSS Intrastat Export"
 
                 trigger OnPostDataItem()
                 begin
-                    CurrReport.SKIP; //soft,n
-
+                    CurrReport.SKIP;
                     IF NOT Receipt THEN
-                        OutputStream.WriteText(
-                          FORMAT(
-                            '02000' + FORMAT(IntraReferenceNo, 4) + '100000' +
-                            FORMAT(VATRegNo, 8) + '1' + FORMAT(IntraReferenceNo, 4),
-                            80));
+                        OutputStream.WriteText(FORMAT('02000' + FORMAT(IntraReferenceNo, 4) + '100000' + FORMAT(VATRegNo, 8) + '1' + FORMAT(IntraReferenceNo, 4), 80));
 
                     IF NOT Shipment THEN
-                        OutputStream.WriteText(
-                          FORMAT(
-                            '02000' + FORMAT(IntraReferenceNo, 4) + '200000' +
-                            FORMAT(VATRegNo, 8) + '2' + FORMAT(IntraReferenceNo, 4),
-                            80));
+                        OutputStream.WriteText(FORMAT('02000' + FORMAT(IntraReferenceNo, 4) + '200000' + FORMAT(VATRegNo, 8) + '2' + FORMAT(IntraReferenceNo, 4), 80));
                     OutputStream.WriteText(FORMAT('10' + DecimalNumeralZeroFormat(StatisticalValueTotalAmt, 16), 80));
-                    //IntraFile.CLOSE;
+
+
                     "Intrastat Jnl. Batch".Reported := TRUE;
                     "Intrastat Jnl. Batch".MODIFY;
+                    tmpBlob.Blob.CreateInStream(InputStream);
+                    DownloadFromStream(Inputstream, '', '', '', FileName);
 
-                    // IF ServerFileName = '' THEN
-                    //     FileMgt.DownloadHandler(FileName, '', '', FileMgt.GetToFilterText('', DefaultFilenameTxt), DefaultFilenameTxt)
-                    // ELSE
-                    //     FileMgt.CopyServerFile(FileName, ServerFileName, TRUE);
-                    //xxx
                 end;
 
                 trigger OnPreDataItem()
@@ -231,7 +187,6 @@ report 31023104 "PTSS Intrastat Export"
                     OutputStream.WriteText(FORMAT('0100004', 80));
                     SETRANGE("Internal Ref. No.", COPYSTR(IntraReferenceNo, 1, 4), COPYSTR(IntraReferenceNo, 1, 4) + '9');
                     CurrReport.CREATETOTALS(Quantity, "Statistical Value", "Total Weight");
-
                     IntrastatJnlLine3.SETCURRENTKEY("Internal Ref. No.");
                 end;
             }
@@ -239,8 +194,8 @@ report 31023104 "PTSS Intrastat Export"
             trigger OnAfterGetRecord()
             begin
                 TESTFIELD(Reported, FALSE);
-                //soft,o IntraReferenceNo := "Statistics Period" + '000000';
-                IntraReferenceNo := "Statistics Period" + '0000'; //soft,n
+
+                IntraReferenceNo := "Statistics Period" + '0000';
             end;
 
             trigger OnPreDataItem()
@@ -293,17 +248,15 @@ report 31023104 "PTSS Intrastat Export"
 
     trigger OnPreReport()
     begin
+        FileName := DefaultFilenameTxt;
         IntrastatJnlLine4.COPYFILTERS("Intrastat Jnl. Line");
-        //xxx
-        tmpBlob.blob.CreateOutStream(OutputStream);
+
+        tmpBlob.Blob.CreateOutStream(OutputStream);
         OutputStream.WriteText(TextFLUXO + ';' + TextPERIODO + ';' + TextNIF + ';' + TextREF + ';' + TextNC + ';' + TextPAIS + ';' + TextPORIGEM + ';' + TextREGIAO + ';' + TextCODENT + ';' +
-                        TextNATTRA + ';' + TextMODTRA + ';' + TextAERPOR + ';' + TextMASSA + ';' + TextUNSUP + ';' + TextVALFAC + ';' + TextVALEST + ';' + TextADQNIF);
-        //xxx
+            TextNATTRA + ';' + TextMODTRA + ';' + TextAERPOR + ';' + TextMASSA + ';' + TextUNSUP + ';' + TextVALFAC + ';' + TextVALEST + ';' + TextADQNIF);
     end;
 
     var
-
-        Text000: Label 'Enter the file name.';
         Text001: Label 'WwWw';
         Text002: Label 'INTRASTAT';
         Text003: Label 'It is not possible to display %1 in a field with a length of %2.';
@@ -312,7 +265,6 @@ report 31023104 "PTSS Intrastat Export"
         IntrastatJnlLine5: Record "Intrastat Jnl. Line";
         CompanyInfo: Record "Company Information";
         Country: Record "Country/Region";
-        FileMgt: Codeunit "File Management";
         IntraFile: File;
         QuantityAmt: Decimal;
         StatisticalValueAmt: Decimal;
@@ -320,19 +272,15 @@ report 31023104 "PTSS Intrastat Export"
         TotalWeightAmt: Decimal;
         FileName: Text;
         IntraReferenceNo: Text[10];
-        CompoundField: Text[40];
-        TempCompoundField: Text[40];
         ServerFileName: Text;
-        TempType: Integer;
         NoOfEntries: Text[3];
         Receipt: Boolean;
         Shipment: Boolean;
         VATRegNo: Code[20];
         ImportExport: Code[1];
         OK: Boolean;
-        DefaultFilenameTxt: Label 'Default.txt', Locked = true;
+        DefaultFilenameTxt: Label 'Intrastat.txt';
         GroupTotal: Boolean;
-        ClientFilename: Text;
         JournalBatch: Record "Intrastat Jnl. Batch";
         Item: Record item;
         ItemLedgEntry: Record "Item Ledger Entry";
@@ -362,11 +310,10 @@ report 31023104 "PTSS Intrastat Export"
         TextVALFAC: Label 'VALFAC';
         TextVALEST: Label 'VALEST';
         TextADQNIF: Label 'ADQNIF';
-        FilterStringTxt2: Label 'Text Files (*.txt)|*.txt';
-        Text31022890: Label 'Intrastat.txt';
         OutputStream: OutStream;
         tmpBlob: Record TempBlob;
         InputStream: InStream;
+
 
     local procedure DecimalNumeralZeroFormat(DecimalNumeral: Decimal; Length: Integer): Text[250]
     begin
@@ -377,17 +324,10 @@ report 31023104 "PTSS Intrastat Export"
     begin
         IF STRLEN(Text) > Length THEN
             ERROR(Text003, Text, Length);
-        //soft,o  EXIT(PADSTR('',Length - STRLEN(Text),'0') + Text);
         EXIT(Text);
     end;
 
-    [Scope('Personalization')]
-    procedure InitializeRequest(newServerFileName: Text)
-    begin
-        ServerFileName := newServerFileName;
-    end;
-
-    [Scope('Internal')]
+    // [Scope('Internal')]
     procedure WriteGrTotalsToFile(TotalWeightAmt: Decimal; QuantityAmt: Decimal; StatisticalValueAmt: Decimal)
     begin
         WITH IntrastatJnlLine2 DO BEGIN
@@ -429,12 +369,6 @@ report 31023104 "PTSS Intrastat Export"
                 DecimalNumeralZeroFormat(StatisticalValueAmt, 15),
                 80));
         END;
-    end;
-
-    local procedure WeightFormat(DecimalNumeral: Decimal; Length: Integer): Text[250]
-    begin
-
-        EXIT(TextZeroFormat(FORMAT(ROUND(ABS(DecimalNumeral), 0.001, '<')), Length));//soft,n
     end;
 }
 

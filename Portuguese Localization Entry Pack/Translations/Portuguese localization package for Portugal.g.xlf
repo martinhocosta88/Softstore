@@ -263,11 +263,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType FourthQuarterText</note>
         </trans-unit>
-        <trans-unit id="Table 3617109145 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Text File *.txt| *.txt</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS VAT Report File Buffer - NamedType Text31022894</note>
-        </trans-unit>
         <trans-unit id="Table 3617109145 - Method 474922768 - NamedType 2682166609" size-unit="char" translate="yes" xml:space="preserve">
           <source>-</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -872,6 +867,21 @@
           <source>Blob1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Temporary Table - Field Blob1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3516427048 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processed by Certified Program No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3516427048 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error when populating Hash fields. Check No. Series setup.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3516427048 - Method 867659570 - NamedType 3471408108" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid input.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - Method GetGTATDocumentTypeBySeriesNo - NamedType ErrWrongValueInNoSeries</note>
         </trans-unit>
         <trans-unit id="Codeunit 3526043857 - Method 3569763846 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
           <source>There are Inventory Periods open in this fiscal year.</source>
@@ -2368,6 +2378,81 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor Statement - NamedType NoOutputErr</note>
         </trans-unit>
+        <trans-unit id="Report 2178967530 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IRC - Model 22</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 460889064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 989751795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control FileName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 458406397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 2527197007 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Annex A: "Local tax"</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Annex A - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 145319562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Annex B: "Simplified Scheme"</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Annex B - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - Control 3802590241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Annex C: "Autonomous Regions"</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - Control Annex C - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MOD.22</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Path Mod. 22 file</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please, all Company Information fields of Model 22 tab must be filled.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model 22 has been exported successfully under %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - NamedType 3098773014" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - NamedType Blank</note>
+        </trans-unit>
+        <trans-unit id="Report 2178967530 - NamedType 3357058382" size-unit="char" translate="yes" xml:space="preserve">
+          <source>0</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS IRC - Model 22 - NamedType HeadingZero</note>
+        </trans-unit>
         <trans-unit id="Report 4054358639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP Process</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3488,11 +3573,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 1495030750 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Enter the file name.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text000</note>
-        </trans-unit>
         <trans-unit id="Report 1495030750 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
           <source>WwWw</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3508,8 +3588,8 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text003</note>
         </trans-unit>
-        <trans-unit id="Report 1495030750 - NamedType 1991297358" size-unit="char" translate="no" xml:space="preserve">
-          <source>Default.txt</source>
+        <trans-unit id="Report 1495030750 - NamedType 1991297358" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intrastat.txt</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType DefaultFilenameTxt</note>
         </trans-unit>
@@ -3597,16 +3677,6 @@
           <source>ADQNIF</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextADQNIF</note>
-        </trans-unit>
-        <trans-unit id="Report 1495030750 - NamedType 1500095057" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Text Files (*.txt)|*.txt</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType FilterStringTxt2</note>
-        </trans-unit>
-        <trans-unit id="Report 1495030750 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Intrastat.txt</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="XmlPort 91263824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP XML Message</source>
@@ -3747,6 +3817,11 @@
           <source>Specifies the balance account cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Entries - Control PTSS Bal: cash-flow code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Control 1922310595 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Software Certificate Number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Software Certificate No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3510217241 - Control 714374514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the bank number.</source>
@@ -3908,6 +3983,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Tax Authority WS Password - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3510217241 - Field 1922310595 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Software Certificate Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Company Information - Field PTSS Software Certificate No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3510217241 - Method 1985654370 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Deleting %1 will cause %2 to be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4023,6 +4103,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Currency Text - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 3258385166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority Reporting</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control TaxAuthorityReport - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2093116780 - Control 2390262047 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Account Schedule Name for IRC - Model 22.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS General Ledger Setup - Control PTSS Model 22 Acc. Sch. Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2093116780 - Control 3012663268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bank of Portugal</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4137,6 +4227,11 @@
           <source>BP IF Code MyField</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS BP IF Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2093116780 - Field 2390262047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model 22 Acc. Sch. Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS General Ledger Setup - Field PTSS Model 22 Acc. Sch. Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 24401309 - Control 2073393174 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the balance account cash-flow code.</source>
@@ -4463,15 +4558,40 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Item Category Card - Control PTSS AT Item Category - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1797722148 - Control 3023515732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Credit Invoice</source>
+        <trans-unit id="PageExtension 1797722148 - Control 2126221140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the SAF-T Invoice Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series - Control PTSS Credit Invoice - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series - Control PTSS SAF-T Invoice Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1797722148 - Control 1144646639 - Property 2001309823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the GTAT Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series - Control PTSS GTAT Document Type - Property Tooltip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1797722148 - Control 3023515732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the Series Credits an Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series - Control PTSS Credit Invoice - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1797722148 - Field 2126221140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAF-T Invoice Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series - Field PTSS SAF-T Invoice Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1797722148 - Field 1144646639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GTAT Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series - Field PTSS GTAT Document Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1797722148 - Field 3023515732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Credit Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series - Field PTSS Credit Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1797722148 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This configuration as impact on SAFT extraction. Confirm this setup.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series - NamedType Text31022890</note>
         </trans-unit>
         <trans-unit id="TableExtension 1797722148 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
           <source>You cannot modify %1 on %2 because there are records in this series.</source>
@@ -4488,15 +4608,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2610281838 - Control 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Credit-to Doc. No.</source>
+        <trans-unit id="PageExtension 2610281838 - Control 3427704346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit-to Doc. No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2610281838 - Control 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Credit-to Doc. Line No.</source>
+        <trans-unit id="PageExtension 2610281838 - Control 1375242388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit-to Doc. Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1251418259 - Control 543389229 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Gains in Inventory.</source>
@@ -4547,6 +4667,21 @@
           <source>Suggest G/L Accounts for selected setup.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Inv. Posting Setup Card - Action PTSS SuggestAccountsPT - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 345155903 - Control 1416929346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the SAF-T No. Series Delimenter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series Lines - Control PTSS SAF-T No. Series Del. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 345155903 - Control 650108519 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the SAF-T No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series Lines - Control PTSS SAF-T No. Series - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 345155903 - Control 3512919745 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the SAF-T No. Series Delimenter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series Lines - Control PTSS SAF-T Sequential No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
@@ -5038,55 +5173,630 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Receipt Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1562622861 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2034153534 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2353642714 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2353642714 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Cr.Memo Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4180334110 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4180334110 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Iss. Fin. Charge Memo Hdr - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
-        <trans-unit id="TableExtension 4193015396 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 2469498116 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2469498116 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued reminder Header - Method OnBeforeDelete - NamedType Text31022890</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Issued Reminder Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1854407874 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4025028169 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 4025028169 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 215284717 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 215284717 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1883410020 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1443465587 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - Field 1556991116 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last No. Posted</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - Field PTSS Last No. Posted - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - Field 3139011368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Previous Last Date Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - Field PTSS Previous Last Date Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - Field 3392490453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - Field PTSS Last Hash Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - Field 1416929346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAF-T No. Series Delimiter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - Field PTSS SAF-T No. Series Del. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - Field 650108519 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAF-T No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - Field PTSS SAF-T No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - Field 393722157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAFT-T Sequential No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - Field PTSS SAFT-T Sequential No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Length of field %1 can not be higher than %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 can only have letters and digits.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 can only have digits.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must have only zeros and end with digit 1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1316730674 - NamedType 915789090" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must end with the digit 1. Are you sure you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS No. Series Line - NamedType Text31022898</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 3864714188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Creation Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 3569571512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Private Key Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 3381657372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Hash Doc. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 4059927857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Hash Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 661589574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Hash No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 3574025260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Hash Amount Including VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Field 1770441651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hash Last Hash Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 921022595 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is not possible to delete Certified Documents.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Posted Whse. Ship. Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3122788463 - Field 1694863078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sign on Issuing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Reminder Header - Field PTSS Sign on Issuing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3223512888 - Field 1694863078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sign on Issuing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Fin. Charge Memo Header - Field PTSS Sign on Issuing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3403571929 - Field 1694863078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sign on Issuing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Reminder Terms - Field PTSS Sign on Issuing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4058568549 - Field 1694863078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sign on Issuing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Finance Charge Terms - Field PTSS Sign on Issuing - Property Caption</note>
         </trans-unit>
       </group>
     </body>

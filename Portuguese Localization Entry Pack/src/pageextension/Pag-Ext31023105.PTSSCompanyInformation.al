@@ -3,8 +3,18 @@ pageextension 31023105 "PTSS Company Information" extends "Company Information"
     //IBAN
     //CAE Code
     //IRC Modelo 22
+    //Certificação Documentos
     layout
     {
+        addbefore(Picture)
+        {
+            field("PTSS Software Certificate No."; "PTSS Software Certificate No.")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Software Certificate Number.';
+            }
+
+        }
         addafter("Bank Account No.")
         {
             field("PTSS CCC Bank No."; "PTSS CCC Bank No.")

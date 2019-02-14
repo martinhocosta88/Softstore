@@ -7,12 +7,12 @@ pageextension 31023134 "PTSS Posted Cr. Memo Subform" extends "Posted Sales Cr. 
         {
             field("PTSS Credit-to Doc. No."; "PTSS Credit-to Doc. No.")
             {
-                Caption = 'Credit-to Doc. No.';
+                ToolTip = 'Specifies the Credit-to Doc. No.';
                 ApplicationArea = All;
             }
             field("PTSS Credit-to Doc. Line No."; "PTSS Credit-to Doc. Line No.")
             {
-                Caption = 'Credit-to Doc. Line No.';
+                ToolTip = 'Specifies the Credit-to Doc. Line No.';
                 ApplicationArea = All;
             }
         }

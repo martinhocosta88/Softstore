@@ -3,6 +3,7 @@ tableextension 31023007 "PTSS General Ledger Setup" extends "General Ledger Setu
     //Check Chart of Accounts
     //Check (PT)
     //COPE
+    //IRC - Modelo 22
     fields
     {
         field(31022897; "PTSS Check Chart of Accounts"; boolean)
@@ -74,6 +75,13 @@ tableextension 31023007 "PTSS General Ledger Setup" extends "General Ledger Setu
         field(31022958; "PTSS BP IF Code"; Code[4])
         {
             Caption = 'BP IF Code MyField';
+            DataClassification = CustomerContent;
+        }
+        //___________IRC Model 22_________
+        field(31022960; "PTSS Model 22 Acc. Sch. Name"; Code[10])
+        {
+            Caption = 'Model 22 Acc. Sch. Name';
+            TableRelation = "Acc. Schedule Name";
             DataClassification = CustomerContent;
         }
     }

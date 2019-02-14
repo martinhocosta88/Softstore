@@ -208,6 +208,8 @@ xmlport 31022901 "PTSS BP XML Message"
         // XMLFile.CLOSE;
         // XMLFile2.CLOSE;
         // COPY(TempFileName, FileName);
+
+
     end;
 
     procedure InitExport(ExportMonth: Integer; ExportYear: Integer)

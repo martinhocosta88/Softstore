@@ -3,6 +3,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
     //IBAN
     //CAE code
     //IRC Modelo 22
+    //Certificacao Documentos
     fields
     {
         field(31022898; "PTSS CCC Bank Account No."; Text[11])
@@ -156,6 +157,14 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
             DataClassification = CustomerContent;
             ExtendedDatatype = Masked;
         }
+        field(31022908; "PTSS Software Certificate No."; Code[20])
+        {
+            //Certificação Documentos
+            Caption = 'Software Certificate Number';
+            DataClassification = ToBeClassified;
+
+        }
+
 
         modify(IBAN)
         {

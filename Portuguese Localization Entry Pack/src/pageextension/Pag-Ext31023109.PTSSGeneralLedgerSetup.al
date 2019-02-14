@@ -2,6 +2,7 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
 {
     //Check Chart of Accounts
     //COPE
+    //IRC - Modelo 22
     layout
     {
         addlast(General)
@@ -25,6 +26,19 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies Currency Text.';
+            }
+        }
+        addafter("VAT Exchange Rate Adjustment")
+        {
+            group("TaxAuthorityReport")
+            {
+                Caption = 'Tax Authority Reporting';
+                field("PTSS Model 22 Acc. Sch. Name"; "PTSS Model 22 Acc. Sch. Name")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the Account Schedule Name for IRC - Model 22.';
+                }
+
             }
         }
         addafter("Payroll Transaction Import")

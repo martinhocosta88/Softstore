@@ -217,7 +217,20 @@ table 31022960 "PTSS BP Ledger Entry"
         CompanyInfo.GET;
         GeneralLedgerSetup.GET;
 
-        //XXX
+
+        //Código de exportação antigo
+        // ServerFileName := FileManagement.ServerTempFileName('xml');
+        // FileName := GeneralLedgerSetup."BP Folder" + 'BOP_COPE.' + CompanyInfo."VAT Registration No." + '.' + Period + '.' +
+        //   FORMAT(CURRENTDATETIME, 0, '<Year4><Month,2><Day,2><Hour,2><Minute,2><Second,2>') + '.xml';
+        // XMLFile.CREATE(ServerFileName);
+        // XMLFile.CREATEOUTSTREAM(XMLStream);
+        // XMLIntegrationBankPortugal.SETDESTINATION(XMLStream);
+        // XMLIntegrationBankPortugal.InitExport(ExportMonth, ExportYear);
+        // XMLFile.CLOSE;
+        // XMLIntegrationBankPortugal.ClearNodes(ServerFileName);
+        // FileManagement.DownloadToFile(ServerFileName, FileName);
+        // MESSAGE(Text31022890, FileName);
+
         //Código de exportação refeito
 
         FileName := GeneralLedgerSetup."PTSS BP Folder" + 'BOP_COPE.' + CompanyInfo."VAT Registration No." + '.' + Period + '.' +
@@ -226,6 +239,7 @@ table 31022960 "PTSS BP Ledger Entry"
         tmpBlob.Blob.CreateOutStream(OutputStream);
         XMLIntegrationBankPortugal.SETDESTINATION(XMLStream);
         XMLIntegrationBankPortugal.InitExport(ExportMonth, ExportYear);
+        XMLIntegrationBankPortugal.ClearNodes(FileName);
         tmpBlob.Blob.CreateInStream(InputStream);
         DownloadFromStream(InputStream, '', '', '', FileName);
         MESSAGE(Text31022890, FileName);
