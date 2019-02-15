@@ -11,6 +11,7 @@ Balancetes
 Extrato Fornecedor
 Intrastat
 Comunicação Inventário AT
+Campo Conta Liquidação Nota de Crédito
 IRC Modelo 22   
                  - Faltam Testes (Tab Vat Report File Buffer - Rep IRC- Model 22) - A Melhorar;
 COPE Banco de Portugal
@@ -22,20 +23,16 @@ Ajuste Taxas de Câmbio (tabela + report)
 Livro Faturas Recebidas/Emitidas
                  - ND%;
                  - Keys novas na VAT Entry;
-Campo Conta Liquidação Nota de Crédito
-                 - Pedido Parametro Evento OnAfterSetAccNo - Cod31022929.PTSSGenPostSetEventHandler;
 Esquema de Contas Valor Coluna
                  - Erro ao clicar overview quando temos Balance a true (Invalid Column Name - Net Change);
 Notas de Crédito de Acordo com Fatura
-                 - Só falta a inclusão dos eventos da Cod 6620. Pedidos no GIT;
+                 - Só falta a inclusão dos eventos da Cod 6620. Pedidos no GIT; (Ships in Future Update)
                  - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao. BUG MS;
 Certificação de Documentos
                  - Falta apenas um evento para o caso dos envios de armazem Cod5763.
-                 - Azure Function.
+                 - Atualizar Azure Function para encriptar.
 Registo Inventário Físico
                  - Cod31022933 PhysInvManagement - Pedido para incluir um parametro em 2 eventos;
-Mapas Documentos Certificados
-                 - WIP
 
 
                  

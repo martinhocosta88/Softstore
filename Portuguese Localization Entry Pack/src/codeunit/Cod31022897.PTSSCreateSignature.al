@@ -18,19 +18,23 @@ codeunit 31022897 "PTSS Create Signature"
         PrivateKeyVersion: Integer;
         Signature: Text[172];
         Text31022891: Label 'Error when populating Hash fields. Check No. Series setup.';
+        Client: HttpClient;
+        Response: HttpResponseMessage;
+        AzureFunctionURL: label 'https://signaturept.azurewebsites.net/api/GetHash2?code=uzIsE5AdUe8K2ZQrw3h/ROa5Ivfcf0FkWl79oKL1hADTPaTl4vbzow==';
+        JSonText: text;
 
     procedure GetHash(SAFTDocType: Code[2]; DocumentDate: Date; DocumentNo: Code[20]; NoSeries: Code[10]; CurrencyCode: Code[10]; CurrencyFactor: Decimal; AmountInclVAT: Decimal; LastHashUsed: Text[172]; SystemEntryDate: Date; SystemEntryTime: Time): Text[172]
     var
         DataForSigning: Text[330];
     begin
-        //SigningComponentPTNET := SigningComponentPTNET.PTlocalizationSignature;
-
-        DataForSigning :=
+        DataForSigning := '&name=' +
           GetDataForSigning(
             SAFTDocType, DocumentDate, DocumentNo,
             NoSeries, CurrencyCode, CurrencyFactor, ABS(AmountInclVAT), LastHashUsed, SystemEntryDate, SystemEntryTime);
 
-        //Signature := SigningComponentPTNET.GetHash(DataForSigning);
+        client.Get(AzureFunctionURL + DataForSigning, Response);
+        Response.Content().ReadAs(jSontext);
+        Signature := jSontext;
         EXIT(Signature);
     end;
 

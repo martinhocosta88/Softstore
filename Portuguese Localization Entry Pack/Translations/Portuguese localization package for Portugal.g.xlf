@@ -878,6 +878,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType Text31022891</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3516427048 - NamedType 2494833348" size-unit="char" translate="yes" xml:space="preserve">
+          <source>https://signaturept.azurewebsites.net/api/GetHash2?code=uzIsE5AdUe8K2ZQrw3h/ROa5Ivfcf0FkWl79oKL1hADTPaTl4vbzow==</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType AzureFunctionURL</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3516427048 - Method 867659570 - NamedType 3471408108" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invalid input.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3908,6 +3913,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Municipality - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3510217241 - Action 86580393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>teste</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Action PTSS Teste - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3510217241 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>CCC Bank Account No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4682,6 +4692,11 @@
           <source>Specifies the SAF-T No. Series Delimenter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS No. Series Lines - Control PTSS SAF-T Sequential No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2259117440 - Control 662695578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HASH</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Sales Invoice - Control PTSS Hash - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>

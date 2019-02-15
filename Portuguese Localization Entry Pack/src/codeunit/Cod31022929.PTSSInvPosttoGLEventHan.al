@@ -9,13 +9,12 @@ codeunit 31022929 "PTSS Inv. Post. to GL EventHan"
         CASE InvtPostingBuffer."Account Type" OF
             InvtPostingBuffer."Account Type"::"Direct Cost Applied":
                 BEGIN
-                    //xxx
-                    //resolver passagem do SourceIsPurchCrmemo da COD 5802
-                    //IF SourceIsPurchCrMemo THEN BEGIN
-                    //DESCOMENTAR DEPOIS DE TESTE
-                    // GenPostingSetup.TESTFIELD("PTSS Cr.M Dir. Cost Appl. Acc.");
-                    // InvtPostingBuffer."Account No." := GenPostingSetup.GetDirectCostAppliedCMAccount;
-                    //END;
+
+                    //IF SourceIsPurchCrMemo THEN BEGIN //Deixou de ser usar o booleano para usar o document type da Value Entry.
+                    IF ValueEntry."Document Type" = ValueEntry."Document Type"::"Purchase Credit Memo" THEN BEGIN
+                        GenPostingSetup.TESTFIELD("PTSS Cr.M Dir. Cost Appl. Acc.");
+                        InvtPostingBuffer."Account No." := GenPostingSetup.GetDirectCostAppliedCMAccount;
+                    END;
                 END;
         end;
     End;

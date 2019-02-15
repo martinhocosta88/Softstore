@@ -9,8 +9,8 @@
             "server": "http://LastBC",
             "serverInstance": "nav",
             "authentication": "UserPassword",
-            "schemaUpdateMode":"Recreate",
-            
+            "schemaUpdateMode":"Synchronize",
+
             "breakOnError": true
             // "startupObjectType": "Table",
             // "startupObjectId": 271

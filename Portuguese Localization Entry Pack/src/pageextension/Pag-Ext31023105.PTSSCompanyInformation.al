@@ -115,4 +115,8 @@ pageextension 31023105 "PTSS Company Information" extends "Company Information"
             }
         }
     }
+    actions
+    {
+
+    }
 }
