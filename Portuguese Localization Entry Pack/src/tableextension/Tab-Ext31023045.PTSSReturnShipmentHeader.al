@@ -1,6 +1,7 @@
 tableextension 31023045 "PTSS Return Shipment Header" extends "Return Shipment Header" //MyTargetTableId
 {
     // Certificação Documentos
+    // Comunicacao AT
     fields
     {
         field(31022892; "PTSS Creation Date"; Date)
@@ -57,6 +58,17 @@ tableextension 31023045 "PTSS Return Shipment Header" extends "Return Shipment H
             Caption = 'Hash Last Hash Used';
             DataClassification = CustomerContent;
         }
+        field(31022898; "PTSS Shipment Start Date"; Date)
+        {
+            Caption = 'Shipment Start Date';
+            DataClassification = CustomerContent;
+        }
+        field(31022899; "PTSS Shipment Start Time"; Time)
+        {
+            Caption = 'Shipment Start Time';
+            DataClassification = CustomerContent;
+        }
+
     }
     trigger OnBeforeDelete()
     var

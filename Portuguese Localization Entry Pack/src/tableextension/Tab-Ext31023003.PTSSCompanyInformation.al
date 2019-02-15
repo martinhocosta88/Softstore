@@ -140,19 +140,19 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         }
         field(31022890; "PTSS AT Com. File Path"; Text[250])
         {
-            //Config. AT
+            //Comunicacao AT
             Caption = 'AT Communication File Path';
             DataClassification = CustomerContent;
         }
         field(31022911; "PTSS Tax Authority WS User ID"; Code[20])
         {
-            //Config. AT
+            //Comunicacao AT
             Caption = 'Tax Authority WS User ID';
             DataClassification = CustomerContent;
         }
         field(31022912; "PTSS Tax Authority WS Password"; Text[50])
         {
-            //Config. AT
+            //Comunicacao AT
             Caption = 'Tax Authority WS Password';
             DataClassification = CustomerContent;
             ExtendedDatatype = Masked;

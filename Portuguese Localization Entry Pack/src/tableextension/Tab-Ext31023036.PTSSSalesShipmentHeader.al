@@ -1,6 +1,7 @@
 tableextension 31023036 "PTSS Sales Shipment Header" extends "Sales Shipment Header" //MyTargetTableId
 {
     // Certificação Documentos
+    // Comunicacao AT
     fields
     {
         field(31022892; "PTSS Creation Date"; Date)
@@ -55,6 +56,11 @@ tableextension 31023036 "PTSS Sales Shipment Header" extends "Sales Shipment Hea
         {
             Editable = false;
             Caption = 'Hash Last Hash Used';
+            DataClassification = CustomerContent;
+        }
+        field(31022899; "PTSS Shipment Start Time"; Time)
+        {
+            Caption = 'Shipment Start Time';
             DataClassification = CustomerContent;
         }
     }

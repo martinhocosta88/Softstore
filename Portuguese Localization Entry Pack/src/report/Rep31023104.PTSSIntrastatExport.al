@@ -78,8 +78,14 @@ report 31023104 "PTSS Intrastat Export"
 
                     IF Quantity = 0 THEN
                         TxtQuantity := ''
-                    ELSE
-                        TxtQuantity := DecimalNumeralZeroFormat(Quantity, 10);
+                    ELSE BEGIN
+                        EVALUATE(Qty, DecimalNumeralZeroFormat(Quantity, 10));
+                        UnsupQty := "Intrastat Jnl. Line"."Net Weight";
+                        TotalUnsup := Qty * UnsupQty;
+                        EVALUATE(TotalUnsup, DecimalNumeralZeroFormat(TotalUnsup, 12));
+                        TxtQuantity := FORMAT(TotalUnsup);
+                    END;
+
                     OutputStream.WriteText();
                     OutputStream.WriteText(
                                   Fluxo + ';' +
@@ -313,6 +319,9 @@ report 31023104 "PTSS Intrastat Export"
         OutputStream: OutStream;
         tmpBlob: Record TempBlob;
         InputStream: InStream;
+        TotalUnsup: Decimal;
+        UnsupQty: Decimal;
+        Qty: Decimal;
 
 
     local procedure DecimalNumeralZeroFormat(DecimalNumeral: Decimal; Length: Integer): Text[250]

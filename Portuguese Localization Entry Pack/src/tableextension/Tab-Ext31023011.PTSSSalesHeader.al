@@ -1,6 +1,7 @@
 tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
 {
     //Cash-Flow
+    // Comunicacao AT
     fields
     {
         modify("Payment Method Code")
@@ -69,5 +70,25 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
                 END;
             end;
         }
+        field(31022899; "PTSS Shipment Start Time"; Time)
+        {
+            Caption = 'Shipment Start Time';
+            DataClassification = CustomerContent;
+        }
+
     }
+    procedure InitRecordPT()
+    begin
+        // Por Desenvolver
+        //
+        // IF "Debit Memo" THEN
+        //     "Posting Description" := Text31022894 + ' ' + "No.";
+        // IF NoSeries.GET("No. Series") THEN
+        //     "Series Group" := NoSeries."Series Group";
+
+        IF "Document Type" IN ["Document Type"::Order, "Document Type"::Invoice, "Document Type"::Quote] THEN
+            "PTSS Shipment Start Time" := TIME;
+
+    end;
+
 }

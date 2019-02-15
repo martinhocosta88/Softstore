@@ -1,4 +1,4 @@
-codeunit 31022932 "PTSS CheckMasterData"
+codeunit 31022932 "PTSS CheckMasterDataSales"
 {
     //Notas de Crédito de Acordo com a Fatura
     [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterCheckSalesDoc', '', true, true)]
