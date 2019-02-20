@@ -4,7 +4,7 @@ pageextension 31023132 "PTSS Sales Cr. Memo Subform" extends "Sales Cr. Memo Sub
     layout
     {
 
-        addafter(ShortcutDimCode8)
+        addafter("Shortcut Dimension 2 Code")
         {
 
             field("PTSS Credit-to Doc. No."; "PTSS Credit-to Doc. No.")

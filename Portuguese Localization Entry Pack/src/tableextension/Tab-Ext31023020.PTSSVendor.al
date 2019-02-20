@@ -2,6 +2,7 @@ tableextension 31023020 "PTSS Vendor" extends Vendor //MyTargetTableId
 {
     //COPE
     //Vendor Statement
+    //Regras de Negocio
     fields
     {
         field(31022950; "PTSS BP Statistic Code"; Code[5])
@@ -37,12 +38,20 @@ tableextension 31023020 "PTSS Vendor" extends Vendor //MyTargetTableId
         }
         field(31022955; "PTSS Vendor Post. Group Filter"; Code[10])
         {
-            Caption = 'MyField';
+            Caption = 'Vendor Posting Group Filter';
             FieldClass = FlowFilter;
             TableRelation = "Vendor Posting Group".Code;
         }
-
-
     }
+    trigger OnBeforeDelete()
 
+    var
+        VendLedgEntry: Record "Vendor Ledger Entry";
+        Text31022890: Label 'You cannot delete %1 %2 - %3, because it has posted entries.';
+    begin
+        VendLedgEntry.RESET;
+        VendLedgEntry.SetRange("Vendor No.", "No.");
+        IF NOT VendLedgEntry.IsEmpty then
+            ERROR(Text31022890, Rec.TABLECAPTION, "No.", Name);
+    end;
 }

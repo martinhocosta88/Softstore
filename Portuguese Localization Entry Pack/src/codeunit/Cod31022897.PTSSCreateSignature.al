@@ -164,7 +164,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateInvoiceSignature(SalesHeader: Record "Sales Header"; var SalesInvHeader: Record "Sales Invoice Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH SalesInvHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine("No. Series", "Posting Date", TRUE, NoSeriesLine, 1);
@@ -197,7 +197,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateCrMemoSignature(SalesHeader: Record "Sales Header"; SalesCrMemoHeader: Record "Sales Cr.Memo Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH SalesCrMemoHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine("No. Series", "Posting Date", TRUE, NoSeriesLine, 1);
@@ -230,7 +230,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateShipmentSignature(var SalesShipmentHeader: Record "Sales Shipment Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH SalesShipmentHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine("No. Series", "Posting Date", TRUE, NoSeriesLine, 2);
@@ -263,7 +263,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateReturnShipSignature(var ReturnShptHeader: Record "Return Shipment Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH ReturnShptHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine("No. Series", "Posting Date", TRUE, NoSeriesLine, 2);
@@ -295,7 +295,7 @@ codeunit 31022897 "PTSS Create Signature"
 
     procedure UpdateTransferShipSignature(var TransShptHeader: Record "Transfer Shipment Header")
     var
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
         NoSeriesLine: Record "No. Series Line";
     begin
         WITH TransShptHeader DO BEGIN
@@ -329,7 +329,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateIssueReminderSignature(var IssuedRmdrHeader: Record "Issued Reminder Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
         CurrExchRate: Record "Currency Exchange Rate";
     begin
         WITH IssuedRmdrHeader DO BEGIN
@@ -364,7 +364,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateFinanceChrgSignature(var IssuedFinChargeMemoHeader: Record "Issued Fin. Charge Memo Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
         CurrExchRate: Record "Currency Exchange Rate";
     begin
         WITH IssuedFinChargeMemoHeader DO BEGIN
@@ -398,7 +398,7 @@ codeunit 31022897 "PTSS Create Signature"
 
     procedure UpdatePrepmtSalesInvSignature(SalesHeader: Record "Sales Header"; var SalesInvHeader: Record "Sales Invoice Header")
     var
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
         NoSeriesLine: Record "No. Series Line";
     begin
         WITH SalesInvHeader DO BEGIN
@@ -430,7 +430,7 @@ codeunit 31022897 "PTSS Create Signature"
 
     procedure UpdatePrepmtSalesCrMemoSignature(SalesHeader: Record "Sales Header"; var SalesCrMemoHeader: Record "Sales Cr.Memo Header")
     var
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
         NoSeriesLine: Record "No. Series Line";
     begin
         WITH SalesCrMemoHeader DO BEGIN
@@ -463,7 +463,7 @@ codeunit 31022897 "PTSS Create Signature"
 
     procedure UpdateWhseShptSignature(var PostedWhseShptHeader: Record "Posted Whse. Shipment Header")
     var
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
         NoSeriesLine: Record "No. Series Line";
         NoSeries: Record "No. Series";
     begin
@@ -497,7 +497,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateServiceInvSignature(ServHeader: Record "Service Header"; var ServInvHeader: Record "Service Invoice Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH ServInvHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine("No. Series", "Posting Date", TRUE, NoSeriesLine, 1);
@@ -527,7 +527,7 @@ codeunit 31022897 "PTSS Create Signature"
     local procedure UpdateServCrMemoSignature(ServHeader: Record "Service Header"; VAR ServCrMemoHeader: Record "Service Cr.Memo Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH ServCrMemoHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine("No. Series", "Posting Date", TRUE, NoSeriesLine, 1);
@@ -556,7 +556,7 @@ codeunit 31022897 "PTSS Create Signature"
     procedure UpdateServShptSignature(var ServiceShipmentHeader: Record "Service Shipment Header")
     var
         NoSeriesLine: Record "No. Series Line";
-        NoSeriesMgt: Codeunit "PTSS NoSeriesManagement";
+        NoSeriesMgt: Codeunit "PTSS NoSeriesManagementPT";
     begin
         WITH ServiceShipmentHeader DO BEGIN
             NoSeriesMgt.GetAndValidateNoSeriesLine(ServiceShipmentHeader."No. Series", ServiceShipmentHeader."Posting Date", TRUE, NoSeriesLine, 2);

@@ -12,8 +12,6 @@ Extrato Fornecedor
 Intrastat
 Comunicação Inventário AT
 Campo Conta Liquidação Nota de Crédito
-IRC Modelo 22   
-                 - Faltam Testes (Tab Vat Report File Buffer - Rep IRC- Model 22) - A Melhorar;
 COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
                  - Reformular Funcao Clear Nodes;
@@ -33,6 +31,15 @@ Certificação de Documentos
                  - Atualizar Azure Function para encriptar.
 Registo Inventário Físico
                  - Cod31022933 PhysInvManagement - Pedido para incluir um parametro em 2 eventos;
+IRC Modelo 22   
+                 - Faltam Testes (Tab Vat Report File Buffer - Rep IRC- Model 22) - Rever Legislacao;
+Comunicacao AT
+                 - WIP
+Regras de Negócio
+                 - tab Vendor - Validação OnDelete
+                 - tab Customer - Validação OnDelete
+                                - Consumidor Final campo
+                                - Vat Registration No. End Consumer Validation
 
 
                  

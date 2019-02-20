@@ -2,6 +2,7 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
 {
     //Cash-Flow
     // Comunicacao AT
+    // Intrastat
     fields
     {
         modify("Payment Method Code")
@@ -77,7 +78,7 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
         }
 
     }
-    procedure InitRecordPT()
+    procedure InitRecordPT(var SalesHdr: Record "Sales Header")
     begin
         // Por Desenvolver
         //
@@ -86,9 +87,60 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
         // IF NoSeries.GET("No. Series") THEN
         //     "Series Group" := NoSeries."Series Group";
 
-        IF "Document Type" IN ["Document Type"::Order, "Document Type"::Invoice, "Document Type"::Quote] THEN
-            "PTSS Shipment Start Time" := TIME;
+        IF SalesHdr."Document Type" IN [SalesHdr."Document Type"::Order, SalesHdr."Document Type"::Invoice, SalesHdr."Document Type"::Quote] THEN
+            SalesHdr."PTSS Shipment Start Time" := TIME;
 
     end;
 
+    local procedure UpdateIntrastat()
+    var
+        CountryRegion: Record "Country/Region";
+        CompanyInfo: Record "Company Information";
+        SalesSetup: Record "Sales & Receivables Setup";
+    begin
+        IF (xRec."Ship-to Country/Region Code" = Rec."Ship-to Country/Region Code") AND (xRec."Sell-to Country/Region Code" = Rec."Sell-to Country/Region Code") THEN
+            EXIT;
+
+        IF NOT "CountryRegion".GET("Sell-to Country/Region Code") THEN
+            EXIT;
+
+        IF "CountryRegion"."Intrastat Code" = '' THEN
+            EXIT;
+
+        CompanyInfo.GET;
+        IF ("Sell-to Country/Region Code" = CompanyInfo."Country/Region Code") OR ("CountryRegion"."EU Country/Region Code" = '') THEN
+            EXIT;
+
+        CLEAR("Transaction Type");
+        CLEAR("Transport Method");
+        CLEAR("Exit Point");
+        CLEAR(Area);
+        CLEAR("Transaction Specification");
+
+        SalesSetup.GET;
+
+        IF ("Document Type" = "Document Type"::"Credit Memo") OR ("Document Type" = "Document Type"::"Return Order") THEN BEGIN
+            "Transaction Type" := SalesSetup."PTSS Return Transaction Type";
+            "Transport Method" := SalesSetup."PTSS Return Transport Method";
+            "Exit Point" := SalesSetup."PTSS Return Entry/Exit Point";
+            Area := SalesSetup."PTSS Return Area";
+            "Transaction Specification" := SalesSetup."PTSS Return Transaction Spec.";
+        END ELSE BEGIN
+            "Transaction Type" := SalesSetup."PTSS Transaction Type";
+            "Transport Method" := SalesSetup."PTSS Transport Method";
+            "Exit Point" := SalesSetup."PTSS Entry/Exit Point";
+            Area := SalesSetup."PTSS Area";
+            "Transaction Specification" := SalesSetup."PTSS Transaction Specification";
+        END;
+    end;
+
+    trigger OnAfterInsert()
+    begin
+        UpdateIntrastat();
+    end;
+
+    trigger OnAfterModify()
+    begin
+        UpdateIntrastat();
+    end;
 }

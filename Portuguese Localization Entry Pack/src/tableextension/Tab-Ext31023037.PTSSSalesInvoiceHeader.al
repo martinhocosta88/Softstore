@@ -1,8 +1,15 @@
 tableextension 31023037 "PTSS Sales Invoice Header" extends "Sales Invoice Header" //MyTargetTableId
 {
     // Certificação Documentos
+    // Comunicação AT
     fields
     {
+        field(31022899; "PTSS Shipment Start Time"; Time)
+        {
+            Caption = 'Shipment Start Time';
+            DataClassification = customerContent;
+        }
+
         field(31022892; "PTSS Creation Date"; Date)
         {
             Editable = false;

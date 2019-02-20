@@ -308,6 +308,181 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Municipalities - Field Active - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1436006813 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tax Authority WS Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 595656548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL Endpoint</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field URL Endpoint - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 3044501757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SOAP Action</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field SOAP Action - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 2557298816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XMLNS Doc</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field XMLNS Doc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 3771548840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XMLNS SoapEnv</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field XMLNS SoapEnv - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 3985845301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XMLNS Wss</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field XMLNS Wss - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 3926698677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blob</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field Blob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 1974415455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT User</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field AT NIF User - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 1912911254 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Password</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field AT Password - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 1485681316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Certificate Path</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field Certificate Path - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 1967369805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Public Key Path</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field Public Key Path - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Field 2077607896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable AT Communication</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Field Enable AT Communication - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Method 4228433552 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This function enables the communication of shipments to AT. Are you sure you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Method EnableATCommunication - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Table 1436006813 - Method 860623387 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This function disables the communication of shipments to AT. Are you sure you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS Tax Authority WS Setup - Method DisableATCommunication - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Registo Comunicação AT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 1016837963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Date Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 3776794752 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field User Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 1753214751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Source Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 1882905478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Source No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 1045917230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Source Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 1045917230 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Shipment,Posted Transfer Shipment,Posted Return Purchase Shipment,Posted Service Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Source Document - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 851513311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ATDocCodeID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field ATDocCodeID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 2283884360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System-Created Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field System-Created Entry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 3093649163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comunication Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Comunication Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 3093649163 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error,Sucess</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Comunication Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 2746742518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Return Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field AT Return Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 1140794304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT Return Message</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field AT Return Message - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 2950122081 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Movement Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Movement Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 2950122081 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N - Normal,A - Reversed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Movement Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 260478348 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Change User Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Last Change User Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - Field 191014783 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Change Date Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - Field Last Change Date Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document not communicated to AT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Table 804421159 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document communicated to AT with number </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTSS AT Communication Log - NamedType Text31022891</note>
+        </trans-unit>
         <trans-unit id="Table 2583750880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT Annex Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -888,6 +1063,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - Method GetGTATDocumentTypeBySeriesNo - NamedType ErrWrongValueInNoSeries</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1395229164 - NamedType 4157066798" size-unit="char" translate="yes" xml:space="preserve">
+          <source>_Return</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Consume Web Service - NamedType txtReturn</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1395229164 - NamedType 3219563308" size-unit="char" translate="yes" xml:space="preserve">
+          <source>_N</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Consume Web Service - NamedType txtMovStatus</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1395229164 - NamedType 2505636813" size-unit="char" translate="yes" xml:space="preserve">
+          <source>_A</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Consume Web Service - NamedType txtMovStatus_Reversed</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1395229164 - NamedType 336808233" size-unit="char" translate="yes" xml:space="preserve">
+          <source>.xml</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Consume Web Service - NamedType FileExt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1395229164 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document successfully sent to AT.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Consume Web Service - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1395229164 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document sent to AT with error.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS AT Consume Web Service - NamedType Text31022891</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3526043857 - Method 3569763846 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
           <source>There are Inventory Periods open in this fiscal year.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -943,15 +1148,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS IBAN Management - Method CheckCCC - NamedType Text31022890</note>
         </trans-unit>
-        <trans-unit id="Codeunit 421984178 - Method 1245803014 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 4067723858 - Method 1245803014 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document amount cannot be negative.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS CheckMasterData - Method CheckMasterDataSales - NamedType Text31022895</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS CheckMasterDataSales - Method CheckMasterDataSales - NamedType Text31022895</note>
         </trans-unit>
-        <trans-unit id="Codeunit 421984178 - Method 1245803014 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 4067723858 - Method 1245803014 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
           <source>Appl.-to Item Entry must have a value in Item Tracking Lines. It cannot be zero or empty.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS CheckMasterData - Method CheckMasterDataSales - NamedType Text31022901</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS CheckMasterDataSales - Method CheckMasterDataSales - NamedType Text31022901</note>
         </trans-unit>
         <trans-unit id="Page 393401157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-Flow Code Card</source>
@@ -3683,6 +3888,161 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Intrastat Export - NamedType TextADQNIF</note>
         </trans-unit>
+        <trans-unit id="XmlPort 4011415674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT WS Send Transfer Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Transfer Ship. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4011415674 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Transfer Ship. - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4011415674 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Transfer Ship. - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4011415674 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Transfer Ship. - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4011415674 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Hours24,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Transfer Ship. - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4011415674 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Filler Character,0&gt;:&lt;Minutes,2&gt;:&lt;Second,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Transfer Ship. - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3108490415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WS Documento Transporte AT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Transp. Doc. Resp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT WS Send Sales Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Hours24,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1949216955 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Filler Character,0&gt;:&lt;Minutes,2&gt;:&lt;Second,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Sales Shipment - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT WS Send Sales Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Hours24,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3846421498 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Filler Character,0&gt;:&lt;Minutes,2&gt;:&lt;Second,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Service Shi - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AT WS Send Return Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Hours24,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1805384633 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;Filler Character,0&gt;:&lt;Minutes,2&gt;:&lt;Second,2&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS AT WS Send Return Ship. - NamedType Text31022896</note>
+        </trans-unit>
         <trans-unit id="XmlPort 91263824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP XML Message</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3912,11 +4272,6 @@
           <source>Specifies the code of the company's municipality.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Control PTSS Municipality - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3510217241 - Action 86580393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>teste</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Company Information - Action PTSS Teste - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3510217241 - Field 4106199881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>CCC Bank Account No.</source>
@@ -4363,6 +4718,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Invoice - Control PTSS Cash-flow code - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1071452935 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the time when items on the document are shipped or were shipped.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Invoice - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3405942818 - Control 964165017 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Cash-flow code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4618,6 +4978,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Cr. Memo Subform - Control PTSS Credit-to Doc. Line No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3441308253 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipmnet Start Time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Credit Memo - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2610281838 - Control 3427704346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the Credit-to Doc. No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4697,6 +5062,281 @@
           <source>HASH</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Sales Invoice - Control PTSS Hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2259117440 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Sales Invoice - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 458338283 - Control 1107057883 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Location Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Transfer Order - Control PTSS Location Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 458338283 - Control 1312094447 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the External Entity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Transfer Order - Control PTSS External Entity No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 458338283 - Control 2893590631 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Ship-to Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Transfer Order - Control PTSS Ship-to Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 458338283 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Transfer Order - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3820550266 - Control 1107057883 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Location Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Transfer Shipment - Control PTSS Location Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3820550266 - Control 1312094447 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the External Entity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Transfer Shipment - Control PTSS External Entity No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3820550266 - Control 2893590631 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Ship-to Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Transfer Shipment - Control PTSS Ship-to Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3820550266 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Transfer Shipment - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 76224086 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Especifica a hora em que os produtos do documento são ou vão ser enviados.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Order - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3845309569 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>=Especifica a hora em que os produtos do documento são ou vão ser enviados.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales Return Ord - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1598045473 - Control 3727722164 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Return Shipment - Control PTSS Shipment Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1598045473 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Return Shipment - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2857564404 - Control 3727722164 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purchase Credit Memo - Control PTSS Shipment Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2857564404 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purchase Credit Memo - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3739890921 - Control 3727722164 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Service Order - Control PTSS Shipment Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3739890921 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Service Order - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3476481812 - Control 3727722164 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Service Shipment - Control PTSS Shipment Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3476481812 - Control 385476083 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Posted Service Shipment - Control PTSS Shipment Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 2506657454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intrastat</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control Intrastat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 2672704373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control Standard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 724675292 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Transaction Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 1002368660 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transport Method.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 3916273509 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Entry/Exit Point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Entry/Exit Point - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 1622755069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Area.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Area - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 2812529631 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Specification.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Transaction Specification - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 3223440110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control Return - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 2923499806 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Return Transaction Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 2804058390 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transport Method.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Return Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 3192906147 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Entry/Exit Point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Return Entry/Exit Point - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 3096335035 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Area.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Return Area - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 577241374 - Control 2894871185 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Specification.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Sales &amp; Receivables Setup - Control PTSS Return Transaction Specification - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 724675292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Transaction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 1002368660 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transport Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 3916273509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry/Exit Point</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Entry/Exit Point - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 1622755069 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Area</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Area - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 2812529631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Transaction Specification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 2923499806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Transaction Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Return Transaction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 2804058390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Transport Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Return Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 3192906147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Entry/Exit Point</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Return Entry/Exit Point - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 3096335035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Area</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Return Area - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 577241374 - Field 4013191475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Transaction Spec.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales &amp; Receivables Setup - Field PTSS Return Transaction Spec. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 2506657454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intrastat</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control Intrastat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 2672704373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control Standard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 724675292 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Transaction Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 1002368660 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transport Method.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 3916273509 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Entry/Exit Point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Entry/Exit Point - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 1622755069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Area.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Area - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 2812529631 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Specification.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Transaction Specification - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 3223440110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control Return - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 2923499806 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Return Transaction Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 2804058390 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transport Method.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Return Transport Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 3192906147 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Entry/Exit Point.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Return Entry/Exit Point - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 3096335035 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Area.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Return Area - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1364976758 - Control 2894871185 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Transaction Specification.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Return Transaction Specification - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
@@ -4918,6 +5558,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line - NamedType Text31022892</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1499711212 - Field 3727722164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchase Header - Field PTSS Shipment Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1499711212 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchase Header - Field PTSS Shipment Start Time - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1499711212 - Field 964165017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash-flow code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4937,6 +5587,11 @@
           <source>ATTENTION:\For this payment method there isn t a corresponding Cash-Flow Code.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Header - Field PTSS Cash-flow code - Method OnValidate - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 117010941 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Header - Field PTSS Shipment Start Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 822576549 - Field 3573198224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Currency Decimal Unit Text</source>
@@ -4967,6 +5622,11 @@
           <source>Location Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Location - Field PTSS Location Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 640104755 - Field 1312094447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PTSS External Entity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Location - Field PTSS External Entity No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2944474669 - Field 1837214229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BP Territory Code</source>
@@ -5233,10 +5893,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1562622861 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Field PTSS Shipment Start Time - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1562622861 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Shipment Header - Method OnBeforeDelete - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2034153534 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Sales Invoice Header - Field PTSS Shipment Start Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2034153534 - Field 847087035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Creation Date</source>
@@ -5483,6 +6153,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 3727722164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Shipment Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1854407874 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Shipment Header - Field PTSS Shipment Start Time - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1854407874 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5633,6 +6313,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Shipment Start Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 3922069533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer-to VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Transfer-to VAT Reg. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 1107057883 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal,External - Customer,External - Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Location Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 1107057883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Location Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 1312094447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Entity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS External Entity No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883410020 - Field 2893590631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Header - Field PTSS Ship-to Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1883410020 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5682,6 +6392,16 @@
           <source>Hash Last Hash Used</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Hash Last Hash Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 3727722164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Shipment Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1443465587 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Return Shipment Header - Field PTSS Shipment Start Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1443465587 - Method 371220819 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
           <source>It is not possible to delete Certified Documents.</source>
@@ -5812,6 +6532,96 @@
           <source>Sign on Issuing</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Finance Charge Terms - Field PTSS Sign on Issuing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1044922876 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Header - Field PTSS Shipment Start Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1044922876 - Field 3922069533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer-to VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Header - Field PTSS Transfer-to VAT Reg. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1044922876 - Field 1107057883 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal,External - Customer,External - Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Header - Field PTSS Location Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1044922876 - Field 1107057883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Header - Field PTSS Location Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1044922876 - Field 1312094447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Entity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Header - Field PTSS External Entity No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1044922876 - Field 2893590631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Entity No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Header - Field PTSS Ship-to Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 724675292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Transaction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 1002368660 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transport Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 3916273509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry/Exit Point</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Entry/Exit Point - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 1622755069 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Area</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Area - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 2812529631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Transaction Specification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 2923499806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Transaction Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Return Transaction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 2804058390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Transport Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Return Transport Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 3192906147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Entry/Exit Point</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Return Entry/Exit Point - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 3096335035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Area</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Return Area - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4213956532 - Field 4013191475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Transaction Spec.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Purchases &amp; Payab. Setup - Field PTSS Return Transaction Spec. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3471823690 - Field 3727722164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Header - Field PTSS Shipment Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3471823690 - Field 385476083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Header - Field PTSS Shipment Start Time - Property Caption</note>
         </trans-unit>
       </group>
     </body>
