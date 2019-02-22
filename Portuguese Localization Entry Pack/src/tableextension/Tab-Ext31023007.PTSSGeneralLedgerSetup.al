@@ -4,6 +4,7 @@ tableextension 31023007 "PTSS General Ledger Setup" extends "General Ledger Setu
     //Check (PT)
     //COPE
     //IRC - Modelo 22
+    //Lancamento Regularizacao
     fields
     {
         field(31022897; "PTSS Check Chart of Accounts"; boolean)
@@ -84,5 +85,12 @@ tableextension 31023007 "PTSS General Ledger Setup" extends "General Ledger Setu
             TableRelation = "Acc. Schedule Name";
             DataClassification = CustomerContent;
         }
+        //___________Lancamento Regularizacao_____________
+        field(31022894; "PTSS Use Dim. for Inc. Balance Acc."; Boolean)
+        {
+            Caption = 'Use Dim. for Inc. Balance Acc.';
+            DataClassification = CustomerContent;
+        }
+
     }
 }

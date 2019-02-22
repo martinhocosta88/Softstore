@@ -4,6 +4,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
     //CAE code
     //IRC Modelo 22
     //Certificacao Documentos
+    //SAFT
     fields
     {
         field(31022898; "PTSS CCC Bank Account No."; Text[11])
@@ -161,8 +162,29 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
         {
             //Certificação Documentos
             Caption = 'Software Certificate Number';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
 
+        }
+        field(31022906; "PTSS Registration Authority"; text[20])
+        {
+            //SAFT
+            Caption = 'Registration Authority';
+            DataClassification = CustomerContent;
+        }
+
+        field(31022913; "PTSS SAFT-PT Company Customer ID"; Code[20])
+        {
+            //SAFT
+            Caption = 'SAFT-PT Company Customer ID';
+            DataClassification = CustomerContent;
+            TableRelation = Customer;
+        }
+        field(31022915; "PTSS Taxonomy Reference"; Option)
+        {
+            //SAFT
+            OptionMembers = "S - SNC Base","N - Normas Internacionais de Contabilidade","M - SNC Microempresas","O - Outros referenciais contabilísticos cuja taxonomia não se encontra codificada";
+            Caption = 'Taxonomy Reference';
+            DataClassification = CustomerContent;
         }
 
 

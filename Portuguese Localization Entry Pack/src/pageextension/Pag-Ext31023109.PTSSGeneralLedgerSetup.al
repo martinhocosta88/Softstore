@@ -3,6 +3,7 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
     //Check Chart of Accounts
     //COPE
     //IRC - Modelo 22
+    //Lancamento Regularizacao
     layout
     {
         addlast(General)
@@ -11,6 +12,11 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies if checks chart of accounts.';
+            }
+            field("PTSS Use Dim. for Inc. Balance Acc."; "PTSS Use Dim. for Inc. Balance Acc.")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Use Dim. for Inc. Balance Acc.';
             }
             field("PTSS Currency Decimal Unit Text"; "PTSS Curr. Decimal Unit Text")
             {

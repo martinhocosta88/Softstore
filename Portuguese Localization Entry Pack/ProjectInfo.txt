@@ -12,6 +12,10 @@ Extrato Fornecedor
 Intrastat
 Comunicação Inventário AT
 Campo Conta Liquidação Nota de Crédito
+Lancamento Regularizacao
+                 - Ativar Codigo DRF quando densenvolvido.
+Nº Transação
+                 - A espera de Eventos para efetuar alteracoes.
 COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
                  - Reformular Funcao Clear Nodes;
@@ -19,7 +23,7 @@ COPE Banco de Portugal
 Ajuste Taxas de Câmbio (tabela + report)
                  - Código comentado de devs ainda não feitos;
 Livro Faturas Recebidas/Emitidas
-                 - ND%;
+                 - Código comentado de devs ainda não feitos; - ND%;
                  - Keys novas na VAT Entry;
 Esquema de Contas Valor Coluna
                  - Erro ao clicar overview quando temos Balance a true (Invalid Column Name - Net Change);
@@ -36,13 +40,13 @@ IRC Modelo 22
 Comunicacao AT
                  - WIP
 Regras de Negócio
-                 - tab Vendor - Validação OnDelete
-                 - tab Customer - Validação OnDelete
+                 - tab 23 Vendor - Validação OnDelete
+                 - tab 18 Customer - Validação OnDelete
                                 - Consumidor Final campo
                                 - Vat Registration No. End Consumer Validation
-
-
-                 
+                 - tab 36 e 38 - CheckMasterData
+                 - tab Item/Resource/Item Charge - CheckDuplicates() + CheckLedgerEntries() + UpdateItemCategory()
+ 
 ________________________
 ISOLADO
 ________________________

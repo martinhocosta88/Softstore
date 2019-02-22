@@ -2,6 +2,7 @@ pageextension 31023100 "PTSS Chart of Accounts" extends "Chart of Accounts"
 {
     //Check Chart of Accounts
     //Taxonomies
+    //Lancamento Regularizacao
     layout
     {
         addlast(Control1)
@@ -41,6 +42,26 @@ pageextension 31023100 "PTSS Chart of Accounts" extends "Chart of Accounts"
                     GLSetup.TESTFIELD("PTSS Check Chart of Accounts");
                     GLAccMgmt.CheckChartAcc;
                 end;
+            }
+        }
+
+        modify("Close Income Statement")
+        {
+            Visible = false;
+        }
+        addafter("Close Income Statement")
+        {
+            action("PTSS Close Income Statement PT")
+            {
+                Caption = 'Close Income Statement';
+                ToolTip = 'Start the transfer of the year''s result to an account in the balance sheet and close the income statement accounts.';
+                ApplicationArea = All;
+                RunObject = report "PTSS Close Income Statement";
+                Image = CloseYear;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                PromotedCategory = Process;
             }
         }
     }

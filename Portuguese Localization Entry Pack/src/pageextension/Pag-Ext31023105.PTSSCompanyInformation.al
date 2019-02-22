@@ -13,6 +13,22 @@ pageextension 31023105 "PTSS Company Information" extends "Company Information"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the Software Certificate Number.';
             }
+            field("PTSS Registration Authority"; "PTSS Registration Authority")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Registration Authority.';
+            }
+            field("PTSS SAFT-PT Company Customer ID"; "PTSS SAFT-PT Company Customer ID")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the SAF-T Company Customer ID.';
+            }
+            field("PTSS Taxonomy Reference"; "PTSS Taxonomy Reference")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Taxonomy Reference.';
+            }
+
 
         }
         addafter("Bank Account No.")

@@ -1,6 +1,9 @@
 tableextension 31023009 "PTSS Purchase Header" extends "Purchase Header"
 {
     //Cash-Flow
+    //Intrastat
+    //Comunicacao AT
+    //Regras Negocio
     fields
     {
         modify("Payment Method Code")
@@ -23,6 +26,17 @@ tableextension 31023009 "PTSS Purchase Header" extends "Purchase Header"
                         GLAcc.GET(BankAccPostingGroup."G/L Bank Account No.") THEN
                             "PTSS Cash-Flow Code" := GLAcc."PTSS Cash-flow code";
                 END;
+            end;
+        }
+
+        modify("Pay-to Vendor No.")
+        {
+            trigger OnAfterValidate()
+            var
+                Vend: Record Vendor;
+            begin
+                Vend.Get("Pay-to Vendor No.");
+                CheckMasterData(Vend);
             end;
         }
         field(31022898; "PTSS Shipment Start Date"; Date)
@@ -133,6 +147,17 @@ tableextension 31023009 "PTSS Purchase Header" extends "Purchase Header"
             "Entry Point" := PurchSetup."PTSS Entry/Exit Point";
             Area := PurchSetup."PTSS Area";
             "Transaction Specification" := PurchSetup."PTSS Transaction Specification";
+        END;
+    end;
+
+    local procedure CheckMasterData(Vend: Record Vendor)
+    begin
+        With Vend Do BEGIN
+            TESTFIELD(Name);
+            TESTFIELD("Post Code");
+            TESTFIELD("Country/Region Code");
+            TESTFIELD(Address);
+            TESTFIELD(City);
         END;
     end;
 

@@ -1,8 +1,9 @@
 tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
 {
     //Cash-Flow
-    // Comunicacao AT
-    // Intrastat
+    //Comunicacao AT
+    //Intrastat
+    //Regras Negocio
     fields
     {
         modify("Payment Method Code")
@@ -25,6 +26,16 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
                         GLAcc.GET(BankAccPostingGroup."G/L Bank Account No.") THEN
                             "PTSS Cash-Flow Code" := GLAcc."PTSS Cash-flow code";
                 END;
+            end;
+        }
+        modify("Bill-to Customer No.")
+        {
+            trigger OnAfterValidate()
+            var
+                Cust: Record Customer;
+            begin
+                Cust.get("Bill-to Customer No.");
+                CheckMasterData(Cust);
             end;
         }
 
@@ -131,6 +142,21 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
             "Exit Point" := SalesSetup."PTSS Entry/Exit Point";
             Area := SalesSetup."PTSS Area";
             "Transaction Specification" := SalesSetup."PTSS Transaction Specification";
+        END;
+    end;
+
+    local procedure CheckMasterData(Cust: Record Customer)
+    begin
+        With Cust do begin
+            IF NOT "PTSS End Consumer" THEN BEGIN
+                TESTFIELD(Name);
+                TESTFIELD("Post Code");
+                TESTFIELD("Country/Region Code");
+                TESTFIELD(Address);
+                TESTFIELD(City);
+                TESTFIELD("VAT Registration No.");
+                TESTFIELD("Payment Terms Code");
+            END;
         END;
     end;
 

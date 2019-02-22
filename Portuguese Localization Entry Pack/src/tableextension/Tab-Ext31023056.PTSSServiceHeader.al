@@ -1,6 +1,7 @@
 tableextension 31023056 "PTSS Service Header" extends "Service Header" //MyTargetTableId
 {
     //Comunicacao AT
+    //Regras Negocio
     fields
     {
         field(31022898; "PTSS Shipment Start Date"; Date)
@@ -12,6 +13,17 @@ tableextension 31023056 "PTSS Service Header" extends "Service Header" //MyTarge
         {
             Caption = 'Shipment Start Time';
             DataClassification = CustomerContent;
+        }
+
+        modify("Bill-to Customer No.")
+        {
+            trigger OnAfterValidate()
+            var
+                Cust: Record Customer;
+            begin
+                Cust.Get("Bill-to Customer No.");
+                CheckMasterData(Cust);
+            end;
         }
 
     }
@@ -27,4 +39,18 @@ tableextension 31023056 "PTSS Service Header" extends "Service Header" //MyTarge
         //     "Series Group" := NoSeries."Series Group";
     end;
 
+    local procedure CheckMasterData(Cust: Record Customer)
+    begin
+        With Cust DO begin
+            IF NOT "PTSS End Consumer" THEN BEGIN
+                TESTFIELD(Name);
+                TESTFIELD("Post Code");
+                TESTFIELD("Country/Region Code");
+                TESTFIELD(Address);
+                TESTFIELD(City);
+                TESTFIELD("VAT Registration No.");
+                TESTFIELD("Payment Terms Code");
+            END;
+        END;
+    end;
 }
