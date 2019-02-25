@@ -1,5 +1,6 @@
 tableextension 31023025 "PTSS CV Ledger Entry Buffer" extends "CV Ledger Entry Buffer" //MyTargetTableId
 {
+    //COPE
     fields
     {
         field(31022950; "PTSS BP Statistic Code"; Code[5])

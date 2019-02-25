@@ -15,7 +15,9 @@ Campo Conta Liquidação Nota de Crédito
 Lancamento Regularizacao
                  - Ativar Codigo DRF quando densenvolvido.
 Nº Transação
+                 - Reformulacao cod 13
                  - A espera de Eventos para efetuar alteracoes.
+
 COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
                  - Reformular Funcao Clear Nodes;
@@ -28,8 +30,10 @@ Livro Faturas Recebidas/Emitidas
 Esquema de Contas Valor Coluna
                  - Erro ao clicar overview quando temos Balance a true (Invalid Column Name - Net Change);
 Notas de Crédito de Acordo com Fatura
-                 - Só falta a inclusão dos eventos da Cod 6620. Pedidos no GIT; (Ships in Future Update)
+                 - falta a inclusão dos eventos da Cod 6620. Pedidos no GIT; (Ships in Future Update)
+                 - falta evento tabela 5902 funcao Clearfields/external
                  - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao. BUG MS;
+                 - (FEITO PARA AS SERVICE ESTAVA EM FALTA)
 Certificação de Documentos
                  - Falta apenas um evento para o caso dos envios de armazem Cod5763.
                  - Atualizar Azure Function para encriptar.
@@ -46,6 +50,12 @@ Regras de Negócio
                                 - Vat Registration No. End Consumer Validation
                  - tab 36 e 38 - CheckMasterData
                  - tab Item/Resource/Item Charge - CheckDuplicates() + CheckLedgerEntries() + UpdateItemCategory()
+Configuracao SAFT
+                 - VAT Posting Setup
+                 - Validacoes Linhas dos Documentos
+                 - Informacao Empresa
+                 - No Series
+                 - Linhas No. Series
  
 ________________________
 ISOLADO

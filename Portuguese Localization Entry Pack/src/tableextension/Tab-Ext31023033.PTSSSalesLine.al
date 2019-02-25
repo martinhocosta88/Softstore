@@ -1,6 +1,7 @@
 tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
 {
     //Notas de Crédito de Acordo com a Fatura
+    //Configuracao SAFT
     fields
     {
         field(31022898; "PTSS Credit-to Doc. No."; Code[20])
@@ -42,8 +43,15 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
                     CheckLineAmt;
             end;
         }
+        modify("No.")
+        {
+            trigger OnAfterValidate()
+            begin
+                //Configuracao SAFT
+                TestSAFTFields();
+            end;
+        }
     }
-
     procedure NoSeriesCreditInvoice(DocNo: Code[20]; LineNo: Integer; NoSeriesCode: Code[20])
     var
         NoSeries: Record "No. Series";
@@ -55,13 +63,11 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
                 "PTSS Credit-to Doc. Line No." := LineNo;
             END;
         END;
-
     end;
 
     local procedure GetRelatedDocs(): Boolean
     begin
         SalesInvLine.GET("PTSS Credit-to Doc. No.", "PTSS Credit-to Doc. Line No.");
-
         IF "Document Type" = "Document Type"::"Credit Memo" THEN BEGIN
             SalesCrMemoLine.SETRANGE("PTSS Credit-to Doc. No.", "PTSS Credit-to Doc. No.");
             SalesCrMemoLine.SETRANGE("PTSS Credit-to Doc. Line No.", "PTSS Credit-to Doc. Line No.");
@@ -93,18 +99,14 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
     procedure CheckQty()
     begin
         GetRelatedDocs;
-
         IF ("Document Type" = "Document Type"::"Credit Memo") AND (NOT SalesCrMemoLine.ISEMPTY) THEN BEGIN
             SalesCrMemoLine.FINDSET;
             SalesCrMemoLine.CALCSUMS(Quantity);
-
             CheckQtyValues(SalesInvLine.Quantity - SalesCrMemoLine.Quantity, Quantity, SalesInvLine."Document No.", SalesInvLine."Line No.");
-
         END ELSE
             IF ("Document Type" = "Document Type"::"Return Order") AND (NOT ReturnRcptLine.ISEMPTY) THEN BEGIN
                 ReturnRcptLine.FINDSET;
                 ReturnRcptLine.CALCSUMS(Quantity);
-
                 CheckQtyValues(SalesInvLine.Quantity - ReturnRcptLine."Return Qty. Rcd. Not Invd.", "Return Qty. to Receive", SalesInvLine."Document No.", SalesInvLine."Line No.");
             END ELSE
                 IF (Quantity > SalesInvLine.Quantity) THEN
@@ -115,7 +117,6 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
     begin
         IF QtyAvailable < 0 THEN
             ERROR(STRSUBSTNO(Text31022896, InvDocNo, InvDocLineNo));
-
         IF CurrQty > QtyAvailable THEN
             ERROR(STRSUBSTNO(Text31022895, FIELDCAPTION(Quantity), QtyAvailable))
     end;
@@ -124,15 +125,12 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
     begin
         GetRelatedDocs;
         TotalAmtCrd := 0;
-
         IF ("Document Type" = "Document Type"::"Credit Memo") AND (NOT SalesCrMemoLine.ISEMPTY) THEN BEGIN
             SalesCrMemoLine.FINDSET;
             REPEAT
                 TotalAmtCrd += SalesCrMemoLine.Quantity * SalesCrMemoLine."Unit Price";
             UNTIL SalesCrMemoLine.NEXT = 0;
-
             AmtRem := (SalesInvLine.Quantity * SalesInvLine."Unit Price") - TotalAmtCrd;
-
             SalesCrMemoLine.CALCSUMS(Quantity);
             CheckAmtValues(Quantity * "Unit Price", SalesInvLine."Document No.", SalesInvLine."Line No.", SalesInvLine.Quantity - SalesCrMemoLine.Quantity);
         END ELSE
@@ -141,9 +139,7 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
                 REPEAT
                     TotalAmtCrd += ReturnRcptLine."Return Qty. Rcd. Not Invd." * ReturnRcptLine."Unit Price";
                 UNTIL ReturnRcptLine.NEXT = 0;
-
                 AmtRem := (SalesInvLine.Quantity * SalesInvLine."Unit Price") - TotalAmtCrd;
-
                 ReturnRcptLine.CALCSUMS(Quantity);
                 CheckAmtValues("Return Qty. to Receive" * "Unit Price", SalesInvLine."Document No.", SalesInvLine."Line No.", SalesInvLine.Quantity - ReturnRcptLine.Quantity);
             END ELSE
@@ -155,7 +151,6 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
     begin
         IF AmtRem < 0 THEN
             ERROR(STRSUBSTNO(Text31022896, InvDocNo, InvDocLineNo));
-
         IF CurrAmt > AmtRem THEN
             ERROR(STRSUBSTNO(Text31022898, Qty, AmtRem))
     end;
@@ -163,11 +158,9 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
     procedure CheckLineAmt()
     begin
         GetRelatedDocs;
-
         IF ("Document Type" = "Document Type"::"Credit Memo") AND (NOT SalesCrMemoLine.ISEMPTY) THEN BEGIN
             SalesCrMemoLine.FINDSET;
             SalesCrMemoLine.CALCSUMS("Line Amount");
-
             CheckLineAmtValues(SalesInvLine."Line Amount" - SalesCrMemoLine."Line Amount", "Line Amount", SalesInvLine."Document No.", SalesInvLine."Line No.");
         END ELSE
             IF ("Document Type" = "Document Type"::"Credit Memo") AND ("Line Amount" > SalesInvLine."Line Amount") THEN
@@ -178,9 +171,22 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
     begin
         IF LineAmtAvailable = 0 THEN
             ERROR(STRSUBSTNO(Text31022896, InvDocNo, InvDocLineNo));
-
         IF CurrLineAmt > LineAmtAvailable THEN
             ERROR(STRSUBSTNO(Text31022894, LineAmtAvailable))
+    end;
+
+    procedure TestSAFTFields()
+    var
+        VATPostingSetup: Record "VAT Posting Setup";
+    begin
+        //Configuracao SAFT
+        IF Type IN [Type::Item, Type::"Fixed Asset", Type::"G/L Account"] THEn begin
+            VATPostingSetup.GET("VAT Bus. Posting Group", "VAT Prod. Posting Group");
+            IF VATPostingSetup."VAT %" = 0 then
+                VATPostingSetup.TestField("VAT Clause Code");
+            VATPostingSetup.TestField("PTSS SAF-T PT VAT Code");
+            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Description");
+        end;
     end;
 
     var
@@ -194,8 +200,4 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
         Text31022898: Label 'Cannot credit more then Qty: %1 for a line total of %2.';
         TotalAmtCrd: Decimal;
         AmtRem: Decimal;
-
-
-
-
 }
