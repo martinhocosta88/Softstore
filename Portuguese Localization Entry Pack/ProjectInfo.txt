@@ -17,7 +17,6 @@ Lancamento Regularizacao
 Nº Transação
                  - Reformulacao cod 13
                  - A espera de Eventos para efetuar alteracoes.
-
 COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
                  - Reformular Funcao Clear Nodes;
@@ -35,8 +34,8 @@ Notas de Crédito de Acordo com Fatura
                  - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao. BUG MS;
                  - (FEITO PARA AS SERVICE ESTAVA EM FALTA)
 Certificação de Documentos
-                 - Falta apenas um evento para o caso dos envios de armazem Cod5763.
-                 - Atualizar Azure Function para encriptar.
+                 - Falta apenas um evento para o caso dos envios de armazem Cod5763. (Já lancado evento) COD Create Signature
+                 - Falta assinar o hash.
 Registo Inventário Físico
                  - Cod31022933 PhysInvManagement - Pedido para incluir um parametro em 2 eventos;
 IRC Modelo 22   

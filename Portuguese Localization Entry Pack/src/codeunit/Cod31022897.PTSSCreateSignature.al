@@ -20,7 +20,7 @@ codeunit 31022897 "PTSS Create Signature"
         Text31022891: Label 'Error when populating Hash fields. Check No. Series setup.';
         Client: HttpClient;
         Response: HttpResponseMessage;
-        AzureFunctionURL: label 'https://signaturept.azurewebsites.net/api/GetHash2?code=uzIsE5AdUe8K2ZQrw3h/ROa5Ivfcf0FkWl79oKL1hADTPaTl4vbzow==';
+        AzFuncSignatureURL: label 'https://signaturept.azurewebsites.net/api/Signature?code=D0V53fhPsIBoCFwa3qIuMjhzI3TpHqh0PIS2tNitki34s3SNWbAb5A==';
         JSonText: text;
 
     procedure GetHash(SAFTDocType: Code[2]; DocumentDate: Date; DocumentNo: Code[20]; NoSeries: Code[10]; CurrencyCode: Code[10]; CurrencyFactor: Decimal; AmountInclVAT: Decimal; LastHashUsed: Text[172]; SystemEntryDate: Date; SystemEntryTime: Time): Text[172]
@@ -32,7 +32,7 @@ codeunit 31022897 "PTSS Create Signature"
             SAFTDocType, DocumentDate, DocumentNo,
             NoSeries, CurrencyCode, CurrencyFactor, ABS(AmountInclVAT), LastHashUsed, SystemEntryDate, SystemEntryTime);
 
-        client.Get(AzureFunctionURL + DataForSigning, Response);
+        client.Get(AzFuncSignatureURL + DataForSigning, Response);
         Response.Content().ReadAs(jSontext);
         Signature := jSontext;
         EXIT(Signature);
@@ -672,8 +672,8 @@ codeunit 31022897 "PTSS Create Signature"
     end;
 
     //Whse. Shipment - Event Requested
-    // [EventSubscriber(ObjectType::Codeunit, 5763, OnAfterPostedWhseShptHeaderInsert , '', true, true)]
-    // local procedure MyProcedure(Var PostedWhseShptHeader, WarehouseShipmentHeader)
+    // [EventSubscriber(ObjectType::Codeunit, 5763, 'OnAfterPostedShipmentShptHeaderInsert' , '', true, true)]
+    // local procedure WhseShptHeaderInsertPT(Var PostedWhseShptHeader, LastShptNo)
     // begin
     //    UpdateWhseShptSignature(PostedWhseShptHeader);
     // end;

@@ -1098,10 +1098,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType Text31022891</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3516427048 - NamedType 2494833348" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://signaturept.azurewebsites.net/api/GetHash2?code=uzIsE5AdUe8K2ZQrw3h/ROa5Ivfcf0FkWl79oKL1hADTPaTl4vbzow==</source>
+        <trans-unit id="Codeunit 3516427048 - NamedType 1846504206" size-unit="char" translate="yes" xml:space="preserve">
+          <source>https://signaturept.azurewebsites.net/api/Signature?code=D0V53fhPsIBoCFwa3qIuMjhzI3TpHqh0PIS2tNitki34s3SNWbAb5A==</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType AzureFunctionURL</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS Create Signature - NamedType AzFuncSignatureURL</note>
         </trans-unit>
         <trans-unit id="Codeunit 3516427048 - Method 867659570 - NamedType 3471408108" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invalid input.</source>
@@ -5658,6 +5658,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Purch. &amp; Payab. Setup - Control PTSS Return Transaction Specification - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 515741719 - Control 3427704346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Serv. Credit Memo Subform - Control PTSS Credit-to Doc. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 515741719 - Control 1375242388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Serv. Credit Memo Subform - Control PTSS Credit-to Doc. Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2199013595 - Control 3050744428 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the SAF-T PT VAT Type Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS MyExtension - Control PTSS SAF-T PT VAT Type Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2199013595 - Control 1888924333 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAF-T PT VAT Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS MyExtension - Control PTSS SAF-T PT VAT Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7007,6 +7027,81 @@
           <source>You cannot change %1 because this Item has entries.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Item Charge - Method CheckItemChargeLdgEntries - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 287607780 - Field 1888924333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Intermediate tax rate,Normal tax rate,Reduced tax rate,No tax rate,Others,Stamp Duty,Exempt from IVA or Stamp Duty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 287607780 - Field 3050744428 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,VAT Portugal Mainland,VAT Madeira,VAT Azores,VAT European Union,VAT Exportation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Type Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - Field PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - Field 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit - to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 cannot be more then %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice %1, Line %2  already has been fully credited.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - NamedType 2022273301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Negative Discount not allowed. \Do you wish to recalculate Unit Price?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - NamedType Text31022895</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - NamedType 1384576684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Negative Discount not allowed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - NamedType Text31022896</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - NamedType 746880067" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot credit more then Qty: %1 for a line total of %2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - NamedType Text31022897</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3032253393 - NamedType 915789090" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot credit more then %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Line - NamedType Text31022898</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 240447179 - Field 2395702724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Transfer Shipment Line - Field PTSS Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3340500418 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Line - Field PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3340500418 - Field 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Invoice Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3578655654 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Line - Field PTSS Credit-to Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3578655654 - Field 1375242388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit-to Doc. Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Service Cr.Memo Line - Field PTSS Credit-to Doc. Line No. - Property Caption</note>
         </trans-unit>
       </group>
     </body>
