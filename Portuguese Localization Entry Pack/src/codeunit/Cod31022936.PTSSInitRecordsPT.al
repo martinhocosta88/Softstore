@@ -20,4 +20,21 @@ codeunit 31022936 "PTSS InitRecordsPT"
         ServiceHeader.InitRecordPT(ServiceHeader);
     end;
 
+    [EventSubscriber(ObjectType::Table, 115, 'OnAfterInitFromSalesLine', '', true, true)]
+    local procedure InitFromSalesCRMemoLinePT(var SalesCRMemoLine: Record "Sales Cr.Memo Line"; SalesCrMemoHeader: Record "Sales Cr.Memo Header"; SalesLine: Record "Sales Line")
+    begin
+        SalesCRMemoLine."Shipment Date" := SalesCrMemoHeader."Shipment Date";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 113, 'OnAfterInitFromSalesLine', '', true, true)]
+    local procedure InitFromSalesInvLinePT(var SalesInvLine: Record "Sales Invoice Line"; SalesInvHeader: Record "Sales Invoice Header"; SalesLine: Record "Sales Line")
+    begin
+        SalesInvLine."Shipment Date" := SalesInvHeader."Shipment Date";
+    end;
+
+    [EventSubscriber(ObjectType::Table, 111, 'OnAfterInitFromSalesLine', '', true, true)]
+    local procedure InitFromSalesShipLinePT(SalesShptHeader: Record "Sales Shipment Header"; SalesLine: Record "Sales Line"; var SalesShptLine: Record "Sales Shipment Line")
+    begin
+        SalesShptLine."Shipment Date" := SalesShptHeader."Shipment Date";
+    end;
 }

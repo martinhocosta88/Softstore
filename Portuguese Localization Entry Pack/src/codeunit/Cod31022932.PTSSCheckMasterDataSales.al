@@ -39,7 +39,7 @@ codeunit 31022932 "PTSS CheckMasterDataSales"
         // SalesHeader.TESTFIELD("Manual Doc. No.");
         // END;
 
-        //Desenvolvimneto Pendente
+        //Desenvolvimneto Pendente - Descontos
         // IF ((SalesHeader.Ship OR SalesHeader.Invoice) AND NOT IsCreditDocType) AND (GLSetup."Payment Discount Type" = GLSetup."Payment Discount Type"::"Calc. Pmt. Disc. on Lines") THEN BEGIN
         //     SalesHeader.TESTFIELD("Payment Method Code");
         //     SalesHeader.TESTFIELD("Payment Terms Code");

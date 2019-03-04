@@ -1,16 +1,17 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
     
         {
             "type": "al",
             "request": "launch",
             "name": "Yourownserver",
-            "server": "http://LastBC",
+            "server": "http://SoftstoreBC",
             "serverInstance": "nav",
             "authentication": "UserPassword",
             "schemaUpdateMode":"Synchronize",
-
+            
             "breakOnError": true
             // "startupObjectType": "Table",
             // "startupObjectId": 271

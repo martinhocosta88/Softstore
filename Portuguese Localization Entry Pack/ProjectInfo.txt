@@ -32,7 +32,7 @@ Notas de Crédito de Acordo com Fatura
                  - falta a inclusão dos eventos da Cod 6620. Pedidos no GIT; (Ships in Future Update)
                  - falta evento tabela 5902 funcao Clearfields/external
                  - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao. BUG MS;
-                 - (FEITO PARA AS SERVICE ESTAVA EM FALTA)
+                 - (FEITO PARA AS SERVICE- ESTAVA EM FALTA)
 Certificação de Documentos
                  - Falta apenas um evento para o caso dos envios de armazem Cod5763. (Já lancado evento) COD Create Signature
                  - Falta assinar o hash.
@@ -49,6 +49,11 @@ Regras de Negócio
                                 - Vat Registration No. End Consumer Validation
                  - tab 36 e 38 - CheckMasterData
                  - tab Item/Resource/Item Charge - CheckDuplicates() + CheckLedgerEntries() + UpdateItemCategory()
+                 - tab 15 - Conta maior com contas relacionadas nao pode ser eliminada
+                          - Direct Posting = false quando conta = Total
+                          - FillDefaultValues
+                          - Alteracao da funcao CheckGLAcc para incluir TestField ao Name - O vento é chamdado na cod 31022924
+                 - Tab 81  - Get Vend Info e Get Cust Info são chamdadas na cod GenJnlLine Event Handler
 Configuracao SAFT
                  - VAT Posting Setup
                  - Validacoes Linhas dos Documentos

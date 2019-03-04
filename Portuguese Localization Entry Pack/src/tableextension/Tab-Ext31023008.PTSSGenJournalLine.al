@@ -2,6 +2,7 @@ tableextension 31023008 "PTSS Gen. Journal Line" extends "Gen. Journal Line"
 {
     //Cash-Flow
     //COPE
+    //Regras de Negocio
     fields
     {
         modify("Account Type")
@@ -266,6 +267,37 @@ tableextension 31023008 "PTSS Gen. Journal Line" extends "Gen. Journal Line"
             IF CountryRegion.GET(BankAcc."Country/Region Code") THEN
                 "PTSS BP Bal. Count. Ctry. Code" := CountryRegion."PTSS BP Territory Code";
         END;
+    end;
+
+    //Regras de Negocio
+    procedure GetCustInfo(Cust: Record Customer)
+    begin
+        //Recibos não desenvolvido - habilitar quando desenvolvido
+        // "Create Receipt" := FALSE;
+        // IF Cust."Create Receipt" AND ("Document Type" = "Document Type"::Payment) THEN
+        //     "Create Receipt" := TRUE;
+        "PTSS Acc: cash-flow code" := '';
+        "Payment Method Code" := '';
+        IF "Document Type" <> "Document Type"::"Credit Memo" THEN BEGIN
+            Cust.TESTFIELD("Payment Method Code");
+            "Payment Method Code" := Cust."Payment Method Code";
+        END;
+        //Carteira não desenvolvido - habilitar quando desenvolvido
+        //"Cust./Vendor Bank Acc. Code" := Cust."Preferred Bank Account Code";
+    end;
+
+    procedure GetVendInfo(Vend: Record Vendor)
+    begin
+        "PTSS Acc: cash-flow code" := '';
+
+        "Payment Method Code" := '';
+        IF "Document Type" <> "Document Type"::"Credit Memo" THEN BEGIN
+            Vend.TESTFIELD("Payment Method Code");
+            "Payment Method Code" := Vend."Payment Method Code";
+        END;
+
+        ////Carteira não desenvolvido - habilitar quando desenvolvido
+        //"Cust./Vendor Bank Acc. Code" := Vend."Default Bank Acc. Code";
     end;
 
     var

@@ -60,21 +60,24 @@ codeunit 31022898 "PTSS AT Consume Web Service"
 
         TaxAuthorityWsSetup.Blob.CREATEINSTREAM(InStr);
 
-        // XMLDoc.Load(InStr);
+        //XMLDoc.Load(InStr);
 
         CLEAR(TempFileName);
+
         //NOVO
         IF boolUndo THEN
             TempFileName := Rec."Source No." + txtMovStatus_Reversed + FileExt
         ELSE
             TempFileName := Rec."Source No." + txtMovStatus + FileExt;
-        // IF boolUndo THEN
+        //OLD IF boolUndo THEN
         //     TempFileName := TEMPORARYPATH + Rec."Source No." + txtMovStatus_Reversed + FileExt
         // ELSE
         //     TempFileName := TEMPORARYPATH + Rec."Source No." + txtMovStatus + FileExt;
 
 
-        // XMLDoc.Save(TempFileName);
+        //old XMLDoc.Save(TempFileName);
+        XMLDoc.WriteTo(TempFileName); //new
+
         ClearNodes(TempFileName);
 
         //AddHeaderNamespaces
@@ -82,20 +85,27 @@ codeunit 31022898 "PTSS AT Consume Web Service"
         AddXMLNamespaces.RUN;
 
         // XMLFile.OPEN(TempFileName);
-        // XMLFile.CREATEINSTREAM(strInStream);
+        //old XMLFile.CREATESTREAM(strInStream);
+        tmpBlob.Blob.CreateInStream(strInStream); //new
 
 
-        //XMLDoc := XMLDoc.XmlDocument;
-        // XMLDoc.Load(strInStream);
+        //XMLDoc.Load(strInStream);
 
-        // IF CompanyInfo."PTSS AT Com. File Path" <> '' THEN
-        //     IF boolUndo THEN BEGIN
-        //         XMLDoc.Save(CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus_Reversed + FileExt);
-        //         ReturnLogPath := CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + FileExt;
-        //     END ELSE BEGIN
-        //         XMLDoc.Save(CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + FileExt);
-        //         ReturnLogPath := CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + txtReturn + FileExt;
-        //     END;
+
+
+        IF CompanyInfo."PTSS AT Com. File Path" <> '' THEN
+            IF boolUndo THEN BEGIN
+                //old XMLDoc.Save(CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus_Reversed + FileExt);
+                OutStr.WriteText(CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus_Reversed + FileExt); //new
+                XMLDoc.WriteTo(OutStr); //new ??
+                ReturnLogPath := CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + FileExt;
+            END ELSE BEGIN
+                //old XMLDoc.Save(CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + FileExt);
+                OutStr.WriteText(CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + FileExt); //new
+                XMLDoc.WriteTo(OutStr); //new ??
+                ReturnLogPath := CompanyInfo."PTSS AT Com. File Path" + Rec."Source No." + txtMovStatus + txtReturn + FileExt;
+            END;
+
         // SecurityProviderPTNET := SecurityProviderPTNET.PTlocalizationSecurityProvider();
 
         // ATResponse := SecurityProviderPTNET.ATCall(TaxAuthorityWsSetup."URL Endpoint", XMLDoc.OuterXml, TaxAuthorityWsSetup."SOAP Action", TaxAuthorityWsSetup."Certificate Path", 10000, 10000, ReturnLogPath, FALSE);
@@ -104,6 +114,7 @@ codeunit 31022898 "PTSS AT Consume Web Service"
     end;
 
     var
+        tmpBlob: Record TempBlob;
         TaxAuthorityWsSetup: Record "PTSS Tax Authority WS Setup";
         CompanyInfo: Record "Company Information";
         AddXMLNamespaces: Codeunit "PTSS AT Add XML Namespaces";

@@ -62,9 +62,30 @@ tableextension 31023001 "PTSS G/L Account" extends "G/L Account"
             CalcFormula = Sum ("G/L Entry"."Debit Amount" WHERE ("G/L Account No." = FIELD ("No."), "PTSS Acc: cash-flow code" = FILTER (<> '')));
             Editable = false;
         }
+        //Regras de Negocio/Check Chart of Accounts
+        modify("No.")
+        {
+            trigger OnBeforeValidate()
+            begin
+                FillDefaultValues();
+            end;
+        }
+        //Regras de Negocio
+        modify("Direct Posting")
+        {
+            trigger OnBeforeValidate()
+            begin
+                If "Account Type" = "Account Type"::Total then
+                    "Direct Posting" := false;
+            end;
+        }
 
     }
-
+    //Regras de Negocio
+    trigger OnBeforeDelete()
+    begin
+        ValidateAccDeletion();
+    end;
     //Balancetes
     procedure GetBalance(IsDebit: Boolean; Account: Text[250]; StartDate: Date; EndDate: Date; AddCurrency: Boolean) Amount: Decimal
     var
@@ -92,4 +113,50 @@ tableextension 31023001 "PTSS G/L Account" extends "G/L Account"
                 END;
             UNTIL GLAcc.NEXT = 0;
     end;
+
+    //Regras de Negocio
+    local procedure ValidateAccDeletion()
+    var
+        GLAcc: Record "G/L Account";
+    begin
+        IF "Account Type" = "Account Type"::Total then begin
+            GLAcc := Rec;
+            IF GLAcc.NEXT <> 0 then
+                IF CopyStr(GLAcc."No.", 1, StrLen("No.")) = "No." then
+                    Error(Text31022892);
+
+        end;
+    end;
+
+    //Regras de Negocio/Check Chart of Accounts
+    local procedure FillDefaultValues()
+    var
+        AccFirstDigit: Integer;
+    begin
+        GLSetup.GET;
+        IF GLSetup."PTSS Check Chart of Accounts" THEN
+            IF xRec."No." <> '' THEN BEGIN
+                EVALUATE(AccFirstDigit, COPYSTR("No.", 1, 1));
+                CASE AccFirstDigit OF
+                    6:
+                        BEGIN
+                            "Income/Balance" := "Income/Balance"::"Income Statement";
+                            "Gen. Posting Type" := "Gen. Posting Type"::Purchase;
+                        END;
+                    7:
+                        BEGIN
+                            "Income/Balance" := "Income/Balance"::"Income Statement";
+                            "Gen. Posting Type" := "Gen. Posting Type"::Sale;
+                        END;
+                    ELSE BEGIN
+                            "Income/Balance" := "Income/Balance"::"Balance Sheet";
+                            "Gen. Posting Type" := 0;
+                        END;
+                END;
+            END;
+    end;
+
+    var
+        Text31022892: Label 'A Total Account with related accounts cannot be deleted.';
+        GLSetup: Record "General Ledger Setup";
 }

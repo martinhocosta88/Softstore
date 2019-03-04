@@ -5668,15 +5668,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Serv. Credit Memo Subform - Control PTSS Credit-to Doc. Line No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2199013595 - Control 3050744428 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 287607780 - Control 3050744428 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the SAF-T PT VAT Type Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS MyExtension - Control PTSS SAF-T PT VAT Type Description - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS VAT Posting Setup - Control PTSS SAF-T PT VAT Type Description - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2199013595 - Control 1888924333 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 287607780 - Control 1888924333 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>SAF-T PT VAT Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS MyExtension - Control PTSS SAF-T PT VAT Code - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS VAT Posting Setup - Control PTSS SAF-T PT VAT Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 287607780 - Field 1888924333 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Intermediate tax rate,Normal tax rate,Reduced tax rate,No tax rate,Others,Stamp Duty,Exempt from IVA or Stamp Duty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Code - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 287607780 - Field 1888924333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAF-T PT VAT Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 287607780 - Field 3050744428 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,VAT Portugal Mainland,VAT Madeira,VAT Azores,VAT European Union,VAT Exportation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Type Description - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 287607780 - Field 3050744428 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SAF-T PT VAT Type Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Type Description - Property caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3696289819 - Field 1762746698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Taxonomy Code</source>
@@ -5707,6 +5727,11 @@
           <source>Cash-flow - debit</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - Field PTSS Cash-flow - debit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3696289819 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A Total Account with related accounts cannot be deleted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS G/L Account - NamedType Text31022892</note>
         </trans-unit>
         <trans-unit id="TableExtension 2556192736 - Field 3898862680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Acc: cash-flow code</source>
@@ -7027,16 +7052,6 @@
           <source>You cannot change %1 because this Item has entries.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Item Charge - Method CheckItemChargeLdgEntries - NamedType Text31022891</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 287607780 - Field 1888924333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Intermediate tax rate,Normal tax rate,Reduced tax rate,No tax rate,Others,Stamp Duty,Exempt from IVA or Stamp Duty</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 287607780 - Field 3050744428 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,VAT Portugal Mainland,VAT Madeira,VAT Azores,VAT European Union,VAT Exportation</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS VAT Posting Setup - Field PTSS SAF-T PT VAT Type Description - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3032253393 - Field 3427704346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Credit-to Doc. No.</source>

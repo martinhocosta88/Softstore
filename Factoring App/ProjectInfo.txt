@@ -1,0 +1,4 @@
+Alterações:
+    COD 1221 - SEPA (replicado)
+    REP 411 - Vendor Payment Receipt (replicado)
+    

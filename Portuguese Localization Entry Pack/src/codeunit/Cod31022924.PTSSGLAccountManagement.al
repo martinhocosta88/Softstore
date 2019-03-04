@@ -112,4 +112,11 @@ codeunit 31022924 "PTSS G/L Account Management"
         END;
         Window.CLOSE;
     end;
+
+    //Regras Negócio
+    [EventSubscriber(ObjectType::Table, 15, 'OnAfterCheckGLAcc', '', true, true)]
+    local procedure CheckGLAccPT(var GLAccount: Record "G/L Account")
+    begin
+        GLAccount.Testfield(Name);
+    end;
 }
