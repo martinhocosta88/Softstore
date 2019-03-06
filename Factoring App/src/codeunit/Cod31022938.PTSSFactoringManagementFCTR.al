@@ -1,4 +1,4 @@
-codeunit 31022938 "FactoringManagement FCTR"
+codeunit 31022938 "PTSS FactoringManagement FCTR"
 {
     //Factoring
     [EventSubscriber(ObjectType::Table, 25, 'OnAfterCopyVendLedgerEntryFromGenJnlLine', '', true, true)]

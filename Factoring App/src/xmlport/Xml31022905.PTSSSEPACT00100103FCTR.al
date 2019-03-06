@@ -404,7 +404,7 @@ xmlport 31022905 "PTSS SEPA CT 001.001.03 FCTR"
 
     local procedure InitData()
     var
-        SEPACTFillExportBuffer: Codeunit "PTSS SEPA CT-Fill Export Buf."; //soft,n
+        SEPACTFillExportBuffer: Codeunit "PTSS SEPA CTFillExp. Buf. FCTR"; //soft,n
         PaymentGroupNo: Integer;
     begin
         SEPACTFillExportBuffer.FillExportBuffer("Gen. Journal Line", PaymentExportData);

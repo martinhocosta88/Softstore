@@ -1,4 +1,4 @@
-codeunit 31022939 "PTSS SEPA CT-Fill Export Buf."
+codeunit 31022939 "PTSS SEPA CTFillExp. Buf. FCTR"
 {
     //Factoring
     //version NAVW111.00
