@@ -1,15 +1,14 @@
-pageextension 31023102 "PTSS Vendor FCTR" extends "Vendor Card" //MyTargetPageId
+pageextension 31023200 "PTSS Payment Journal FCTR" extends "Payment Journal" //MyTargetPageId
 {
     //Factoring
     layout
     {
-        addlast(Payments)
+        addlast(Control1)
         {
             field("PTSS Factoring to Vendor No."; "PTSS Factoring to Vendor No.")
             {
-                Caption = 'Factoring to Vendor No.';
+                ToolTip = 'Specifies the Factoring to Vendor No.';
                 ApplicationArea = All;
-                ToolTip = 'Specifies the Factoriong to Vendor No.';
             }
         }
     }

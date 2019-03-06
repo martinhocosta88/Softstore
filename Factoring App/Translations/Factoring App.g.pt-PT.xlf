@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="pt-PT" original="Factoring App">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 951328623 - NamedType 4134082808" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file export has one or more errors.\\For each line to be exported, resolve the errors displayed to the right and then try to export again.</source>
+          <target>A exportação de ficheiro tem um ou mais erros.\\Para cada linha a ser exportada, resolva os erros indicados e de seguida exporte novamente.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS SEPA CT-Fill Export Buf. - NamedType HasErrorsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 951328623 - NamedType 1419748705" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field %1 must be specified.</source>
+          <target>O campo %1 deve ser especificado.</target>
+          <note from="Developer" annotates="general" priority="2">%1=field name, e.g. Post Code.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS SEPA CT-Fill Export Buf. - NamedType FieldIsBlankErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 951328623 - NamedType 158225963" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All lines must have the same bank account as the balancing account.</source>
+          <target>Todas as linhas devem ter a mesma conta bancária que a conta de contrapartida.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS SEPA CT-Fill Export Buf. - NamedType SameBankErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 951328623 - NamedType 2662926362" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 %2</source>
+          <target>%1 %2</target>
+          <note from="Developer" annotates="general" priority="2">%1=Document type, %2=Document no., e.g. Invoice A123</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTSS SEPA CT-Fill Export Buf. - NamedType RemitMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor - Payment Receipt</source>
+          <target>Fornecedor - Recibo Pagamento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - ReportLabel 797779960" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Data Documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - ReportLabel CurrencyCodeCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - ReportLabel 501693335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Página</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - ReportLabel PageCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - ReportLabel 989862110" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <target>Data Documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - ReportLabel DocDateCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - ReportLabel 249448198" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target>Email</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - ReportLabel EmailCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - ReportLabel 4267901198" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target>Página Início</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - ReportLabel HomePageCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - ReportLabel 2663754373" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN</source>
+          <target>IBAN</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - ReportLabel VendorFactorIBANCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Receipt</source>
+          <target>Recibo Pagamento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Voucher</source>
+          <target>Voucher Pagamento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Discount Given</source>
+          <target>Desconto Pagamento Recebido</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Discount Received</source>
+          <target>Desconto Pagamento Recebido</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 2826867220" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target>Nº Telefone</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType CompanyInfoPhoneNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 1454106313" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <target>Nº Giro</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType CompanyInfoGiroNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 1275674192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <target>Banco</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType CompanyInfoBankNameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 2438826717" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Nº Conta</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType CompanyInfoBankAccNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 1471820476" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receipt No.</source>
+          <target>Nº Recibo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType RcptNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 322581705" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GST Registration No.</source>
+          <target>Nº Contribuinte</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType CompanyInfoVATRegNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 443421780" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Data Registo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType PostingDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 694817936" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target>Valor</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType AmtCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 394306307" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Amount Specification</source>
+          <target>Especificação Valor Pagamento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType PymtAmtSpecCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 3109722472" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Total</source>
+          <target>Pagamento Total</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType PymtTolInvCurrCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 2142283772" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Amount Not Allocated</source>
+          <target>Valor Pagamento Não Alocado</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType PymtAmtNotAllocatedCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 2811016760" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Amount</source>
+          <target>Valor Pagamento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType PymtAmtCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 841471254 - NamedType 4013601236" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <target>Nº Documento Externo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Vendor - Pmt. Rcpt. FCTR - NamedType ExternalDocNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4108718408 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEPA CT pain.001.001.03 PT</source>
+          <target>SEPA CT pain.001.001.03 PT</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS SEPA CT 001.001.03 FCTR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4108718408 - NamedType 1486195221" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There is no data to export.</source>
+          <target>Não existem dados para serem exportados.</target>
+          <note from="Developer" annotates="general" priority="2">%1=Field;%2=Value;%3=Value</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTSS SEPA CT 001.001.03 FCTR - NamedType NoDataToExportErr</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2787256928 - Control 1396010747 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Factoring to Vendor No.</source>
+          <target>Especifica o Nº Fator.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Payment Journal FCTR - Control PTSS Factoring to Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3271976165 - Control 1396010747 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Factoring to Vendor No.</source>
+          <target>Especifica o Nº Fator.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vend. Ldg. Entries FCTR - Control PTSS Factoring to Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3223604749 - Control 1396010747 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Factoring to Vendor No.</source>
+          <target>Especifica o Nº Fator.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTSS Vendor FCTR - Control PTSS Factoring to Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3223604749 - Field 1396010747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Factoring to Vendor No.</source>
+          <target>No. Fator</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vendor FCTR - Field PTSS Factoring to Vendor No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3095989559 - Field 1396010747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Factoring to Vendor No.</source>
+          <target>No. Fator</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Vend. Ldg. Entry FCTR - Field PTSS Factoring to Vendor No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 226842470 - Field 1396010747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Factoring to Vendor No.</source>
+          <target>No. Fator</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTSS Gen. Journal Line FCTR - Field PTSS Factoring to Vendor No. - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

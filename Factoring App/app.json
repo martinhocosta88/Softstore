@@ -15,12 +15,9 @@
   "screenshots": [],
   "platform": "13.0.0.0",
   "application": "13.0.0.0",
-  "features": [
-    "TranslationFile"
-  ],
   "idRange": {
     "from": 31022890,
     "to": 31023999
   },
-  "runtime": "2.3"
+  "runtime": "2.2"
 }

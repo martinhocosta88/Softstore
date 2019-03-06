@@ -1,4 +1,4 @@
-pageextension 31023100 "PTSS Payment Journal FCTR" extends "Payment Journal" //MyTargetPageId
+pageextension 31023201 "PTSS Vend. Ldg. Entries FCTR" extends "Vendor Ledger Entries" //MyTargetPageId
 {
     //Factoring
     layout
@@ -12,7 +12,6 @@ pageextension 31023100 "PTSS Payment Journal FCTR" extends "Payment Journal" //M
             }
         }
     }
-
     actions
     {
     }
