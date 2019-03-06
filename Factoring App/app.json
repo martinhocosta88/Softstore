@@ -1,9 +1,9 @@
 {
   "id": "fdf96884-718a-4634-8b68-08204a13633a",
   "name": "Factoring App",
-  "publisher": "Default publisher",
-  "brief": "",
-  "description": "",
+  "publisher": "Softstore SA",
+  "brief": "Factoring App for Portugal",
+  "description": "Factoring App for Portugal",
   "version": "1.0.0.0",
   "privacyStatement": "",
   "EULA": "",
@@ -15,9 +15,12 @@
   "screenshots": [],
   "platform": "13.0.0.0",
   "application": "13.0.0.0",
+  "features": [
+    "TranslationFile"
+  ],
   "idRange": {
-    "from": 50100,
-    "to": 50149
+    "from": 31022890,
+    "to": 31023999
   },
   "runtime": "2.3"
 }

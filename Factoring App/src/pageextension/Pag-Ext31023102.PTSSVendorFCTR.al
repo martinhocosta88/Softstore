@@ -1,5 +1,6 @@
-pageextension 50100 "PTSS Vendor FCTR" extends "Vendor Card" //MyTargetPageId
+pageextension 31023102 "PTSS Vendor FCTR" extends "Vendor Card" //MyTargetPageId
 {
+    //Factoring
     layout
     {
         addlast(Payments)

@@ -1,5 +1,6 @@
-tableextension 50102 "PTSS Gen. Journal Line FCTR" extends "Gen. Journal Line" //MyTargetTableId
+tableextension 31023003 "PTSS Gen. Journal Line FCTR" extends "Gen. Journal Line" //MyTargetTableId
 {
+    //Factoring
     fields
     {
         field(50100; "PTSS Factoring to Vendor No."; Code[20])

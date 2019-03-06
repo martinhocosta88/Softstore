@@ -1,5 +1,6 @@
-pageextension 50102 "PTSS Payment Journal FCTR" extends "Payment Journal" //MyTargetPageId
+pageextension 31023100 "PTSS Payment Journal FCTR" extends "Payment Journal" //MyTargetPageId
 {
+    //Factoring
     layout
     {
         addlast(Control1)

@@ -1,11 +1,10 @@
-report 50100 "PTSS Vendor - Paymt.Rcpt. FCTR"
+report 31023106 "PTSS Vendor - Pmt. Rcpt. FCTR"
 {
-
+    //Factoring
     DefaultLayout = RDLC;
-    RDLCLayout = './Vendor - Payment Receipt.rdlc';
+    RDLCLayout = './Vendor - Payment Receipt.rdl';
     Caption = 'Vendor - Payment Receipt';
     UsageCategory = Documents;
-
     dataset
     {
         dataitem("Vendor Ledger Entry"; "Vendor Ledger Entry")
@@ -124,6 +123,9 @@ report 50100 "PTSS Vendor - Paymt.Rcpt. FCTR"
                 {
                 }
                 column(PymtTolInvCurrCaption; PymtTolInvCurrCaptionLbl)
+                {
+                }
+                column(VendorFactorIBAN; VendorFactorIBAN)
                 {
                 }
                 dataitem(DetailedVendorLedgEntry1; "Detailed Vendor Ledg. Entry")
@@ -300,10 +302,15 @@ report 50100 "PTSS Vendor - Paymt.Rcpt. FCTR"
             trigger OnAfterGetRecord()
             begin
                 //soft,sn
-                if Vend."PTSS Factoring to Vendor No." <> '' then
-                    Vend.GET("PTSS Factoring to Vendor No.")
-                else
+                if "PTSS Factoring to Vendor No." <> '' then begin
+                    Vend.GET("PTSS Factoring to Vendor No.");
+                    VendorBankAcc.Get("PTSS Factoring to Vendor No.", vend."Preferred Bank Account Code");
+                    VendorFactorIBAN := VendorBankAcc.IBAN;
+                end else BEGIN
                     Vend.GET("Vendor No.");
+                    VendorBankAcc.Get("Vendor No.", vend."Preferred Bank Account Code");
+                    VendorFactorIBAN := VendorBankAcc.IBAN;
+                End;
                 //soft,en
                 FormatAddr.Vendor(VendAddr, Vend);
                 IF NOT Currency.GET("Currency Code") THEN
@@ -349,9 +356,11 @@ report 50100 "PTSS Vendor - Paymt.Rcpt. FCTR"
         DocDateCaption = 'Document Date';
         EmailCaption = 'Email';
         HomePageCaption = 'Home Page';
+        VendorFactorIBANCaption = 'IBAN';
     }
 
     var
+        VendorBankAcc: Record "Vendor Bank Account";
         CompanyInfo: Record "Company Information";
         GLSetup: Record "General Ledger Setup";
         Vend: Record Vendor;
@@ -385,6 +394,7 @@ report 50100 "PTSS Vendor - Paymt.Rcpt. FCTR"
         PymtAmtNotAllocatedCaptionLbl: Label 'Payment Amount Not Allocated';
         PymtAmtCaptionLbl: Label 'Payment Amount';
         ExternalDocNoCaptionLbl: Label 'External Document No.';
+        VendorFactorIBAN: Code[50];
 
     local procedure CurrencyCode(SrcCurrCode: Code[10]): Code[10]
     begin

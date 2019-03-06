@@ -1,5 +1,6 @@
-pageextension 50101 "PTSS Vend. Ldg. Entries FCTR" extends "Vendor Ledger Entries" //MyTargetPageId
+pageextension 31023101 "PTSS Vend. Ldg. Entries FCTR" extends "Vendor Ledger Entries" //MyTargetPageId
 {
+    //Factoring
     layout
     {
         addlast(Control1)
@@ -9,11 +10,8 @@ pageextension 50101 "PTSS Vend. Ldg. Entries FCTR" extends "Vendor Ledger Entrie
                 ToolTip = 'Specifies the Fatoring to Vendor No.';
                 ApplicationArea = All;
             }
-
         }
-
     }
-
     actions
     {
     }
