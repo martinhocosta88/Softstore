@@ -1,0 +1,7 @@
+{
+    "CRS.ObjectNamePrefix": "PTSS ",
+    "CRS.ObjectNameSuffix": " SGRP",
+    "git.ignoreLimitWarning": true,
+    "CRS.OnSaveAlFileAction": "Reorganize",
+    
+}

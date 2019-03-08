@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Your own server",
+            // "startupObjectId": 22,
+            // "startupObjectType": "Page",
+            "serverInstance": "nav",
+            "server": "http://SoftstoreBC",
+            "schemaUpdateMode": "Recreate",
+            "authentication": "UserPassword",
+            "breakOnError": true
+        }
+    ]
+}
