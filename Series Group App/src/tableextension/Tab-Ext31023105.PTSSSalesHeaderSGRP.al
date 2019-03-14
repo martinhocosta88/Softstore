@@ -87,4 +87,74 @@ tableextension 31023105 "PTSS Sales Header SGRP" extends "Sales Header"
         END;
     end;
 
+    procedure GetNoSeriesPT(Var NoSeriesCode: Code[20])
+    var
+        UserSetup: Record "User Setup";
+        SeriesGroups: Record "PTSS Series Groups SGRP";
+        SeriesGroupIsEmpty: Boolean;
+    begin
+        SeriesGroupIsEmpty := TRUE;
+        IF ("PTSS Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET("PTSS Series Group SGRP");
+            SeriesGroupIsEmpty := FALSE;
+        END;
+        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Sales Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(UserSetup."PTSS Sales Series Group SGRP");
+            SeriesGroupIsEmpty := FALSE;
+        END;
+        IF NOT SeriesGroupIsEmpty THEN BEGIN
+            CASE "Document Type" OF
+                "Document Type"::Quote:
+                    IF SeriesGroups.Quote <> '' THEN
+                        NoSeriesCode := SeriesGroups.Quote;
+                "Document Type"::Order:
+                    IF SeriesGroups.Order <> '' THEN
+                        NoSeriesCode := SeriesGroups.Order;
+                "Document Type"::Invoice:
+                    BEGIN
+                        //Debit Memo DEV
+                        // IF "Debit Memo" THEN BEGIN
+                        //     IF SeriesGroups."Debit Memo" <> '' THEN
+                        //         NoSeriesCode := SeriesGroups."Debit Memo";
+                        // END ELSE
+                        IF SeriesGroups.Invoice <> '' THEN
+                            NoSeriesCode := SeriesGroups.Invoice;
+                    END;
+                "Document Type"::"Return Order":
+                    IF SeriesGroups.Return <> '' THEN
+                        NoSeriesCode := SeriesGroups.Return;
+                "Document Type"::"Credit Memo":
+                    IF SeriesGroups."Credit Memo" <> '' THEN
+                        NoSeriesCode := SeriesGroups."Credit Memo";
+                "Document Type"::"Blanket Order":
+                    IF SeriesGroups."Blanket Order" <> '' THEN
+                        NoSeriesCode := SeriesGroups."Blanket Order";
+            END;
+        END;
+    end;
+
+    procedure GetPostingNoSeriesCodePT(SalesHeader: Record "Sales Header"; Var PostingNos: Code[20])
+    var
+        UserSetup: Record "User Setup";
+        SeriesGroups: Record "PTSS Series Groups SGRP";
+        NoSeries: Record "No. Series";
+    begin
+        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Sales Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(UserSetup."PTSS Sales Series Group SGRP");
+            IF (SeriesGroups."Posted Credit Memo" <> '') AND ("Document Type" IN ["Document Type"::"Return Order", "Document Type"::"Credit Memo"]) THEN
+                PostingNos := SeriesGroups."Posted Credit Memo"
+            ELSE
+                IF (SeriesGroups."Posted Invoice" <> '') AND NOT ("Document Type" IN ["Document Type"::"Return Order", "Document Type"::"Credit Memo"]) THEN
+                    PostingNos := SeriesGroups."Posted Invoice";
+        END;
+        IF (NoSeries.GET("No. Series")) AND (NoSeries."PTSS Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(NoSeries."PTSS Series Group SGRP");
+            IF (SeriesGroups."Posted Credit Memo" <> '') AND ("Document Type" IN ["Document Type"::"Return Order", "Document Type"::"Credit Memo"]) THEN
+                PostingNos := SeriesGroups."Posted Credit Memo"
+            ELSE
+                IF (SeriesGroups."Posted Invoice" <> '') AND NOT ("Document Type" IN ["Document Type"::"Return Order", "Document Type"::"Credit Memo"]) THEN
+                    PostingNos := SeriesGroups."Posted Invoice";
+        END;
+    end;
+
 }

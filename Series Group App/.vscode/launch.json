@@ -8,7 +8,7 @@
             // "startupObjectId": 22,
             // "startupObjectType": "Page",
             "serverInstance": "nav",
-            "server": "http://SoftstoreBC",
+            "server": "http://Softstore",
             "schemaUpdateMode": "Recreate",
             "authentication": "UserPassword",
             "breakOnError": true
