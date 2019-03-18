@@ -152,11 +152,13 @@ codeunit 31022940 "PTSS SeriesGroupsMgmt SGRP"
     end;
 
     //Espera de Evento
-    // [EventSubscriber(ObjectType::Table, 5900,'OnAfterGetNoSeriesCode', '', true, true)]
-    // local procedure GetNoSeriesCodeServ()
-    // begin
-    //     ServHeader.GetNoSeriesPT(NoSeriesCode);
-    // end;
+    [EventSubscriber(ObjectType::Table, 5900, 'OnBeforeGetNoSeries', '', true, true)]
+    local procedure GetNoSeriesCodeServ(var ServiceHeader: Record "Service Header"; var NoSeriesCode: Code[20]; var IsHandled: Boolean)
+    begin
+        ServiceHeader.GetNoSeriesPT(NoSeriesCode);
+        IF NoSeriesCode <> '' then
+            exit;
+    end;
 
     //Espera de Evento
     // [EventSubscriber(ObjectType::Table, 5900, 'OnAfterGetPostingNoSeriesCode', '', true, true)]
@@ -210,6 +212,164 @@ codeunit 31022940 "PTSS SeriesGroupsMgmt SGRP"
     //     WhseShipmentHeader.AssitEditPT(OldWhseRcptHeader);
     // end;
 
+    [EventSubscriber(ObjectType::Report, 5753, 'OnAfterCreateShptHeader', '', true, true)]
+    local procedure CreateShptHeader(var WarehouseShipmentHeader: Record "Warehouse Shipment Header"; WarehouseRequest: Record "Warehouse Request"; SalesLine: Record "Sales Line")
+    begin
+        SetNoSeries(SeriesGroupCode, true);
+        WarehouseShipmentHeader."No. Series" := WhseShptHeaderTemp."No. Series";
+        WarehouseShipmentHeader."PTSS Series Group SGRP" := WhseShptHeaderTemp."PTSS Series Group SGRP";
+    end;
 
+    local procedure SetNoSeries(VAR Code: Code[10]; IsShipment: Boolean)
+    var
+        NoSeries: Record "No. Series";
+        SeriesGroups: Record "PTSS Series Groups SGRP";
+    begin
+        IF SeriesGroups.GET(Code) THEN BEGIN
+            IF IsShipment THEN BEGIN
+                WhseShptHeaderTemp.INIT;
+                WhseShptHeaderTemp."No. Series" := SeriesGroups.Shipment;
+                WhseShptHeaderTemp."PTSS Series Group SGRP" := SeriesGroups.Code;
+                WhseShptHeaderTemp.INSERT;
+            END ELSE BEGIN
+                WhseReceiptHeaderTemp.INIT;
+                WhseReceiptHeaderTemp."No. Series" := SeriesGroups.Receipt;
+                WhseReceiptHeaderTemp."PTSS Series Group SGRP" := SeriesGroups.Code;
+                WhseReceiptHeaderTemp.INSERT;
+            END;
+        END;
+    end;
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5751, 'OnAfterFindWarehouseRequestForPurchaseOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodePurch(var WhseRqst:Record "Warehouse Request";PurchHeader:Record "Purchase Header")
+    // begin
+    //     SeriesGroupCode := PurchHeader."PTSS Series Group SGRP";
+    // end;
+
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5751, 'OnAfterFindWarehouseRequestForSalesReturnOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodeSales(var WhseRqst:Record "Warehouse Request";SalesHeader:Record "Sales Header")
+    // begin
+    //     SeriesGroupCode := SalesHeader."PTSS Series Group SGRP";
+    // end;
+
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5751, 'OnAfterFindWarehouseRequestForInbndTransferOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodeTransfer(var WhseRqst:Record "Warehouse Request";TransHeader:Record "Transfer Header")
+    // begin
+    //     SeriesGroupCode := TransHeader."PTSS Series Group SGRP";
+    // end;
+
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5752, 'OnAfterFindWarehouseRequestForSalesOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodeSalesOut(var WhseRqst:Record "Warehouse Request";SalesHeader:Record "Sales Header")
+    // begin
+    //     SeriesGroupCode := SalesHeader."PTSS Series Group SGRP";
+    // end;
+
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5752, 'OnAfterFindWarehouseRequestForPurchReturnOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodePurchOut(var WhseRqst: Record "Warehouse Request"; PurchHeader: Record "Purchase Header")
+    // begin
+    //     SeriesGroupCode := PurchHeader."PTSS Series Group SGRP";
+    // end;
+
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5752, 'OnAfterFindWarehouseRequestForOutbndTransferOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodeTransferOut(var WhseRqst: Record "Warehouse Request"; TransHeader: Record "Transfer Header")
+    // begin
+    //     SeriesGroupCode := TransHeader."PTSS Series Group SGRP";
+    // end;
+
+    //Habilitar evento quando disponível
+    // [EventSubscriber(ObjectType::Codeunit, 5752, 'OnAfterFindWarehouseRequestForServiceOrder', '', true, true)]
+    // local procedure FillSeriesGroupCodeServiceOut(var WhseRqst: Record "Warehouse Request"; ServiceHeader: Record "Service Header")
+    // begin
+    //     SeriesGroupCode := ServiceHeader."PTSS Series Group SGRP";
+    // end;
+
+    [EventSubscriber(ObjectType::Codeunit, 5704, 'OnBeforeInsertTransShptHeader', '', true, true)]
+    local procedure InsertTransferShptHeaderPT(VAR TransShptHeader: Record "Transfer Shipment Header"; TransHeader: Record "Transfer Header"; CommitIsSuppressed: Boolean)
+    var
+        NoSeriesMgt: Codeunit NoSeriesManagement;
+        UserSetup: Record "User Setup";
+        NoSeriesRec: Record "No. Series";
+        SeriesGroups: Record "PTSS Series Groups SGRP";
+        InvtSetup: Record "Inventory Setup";
+    begin
+        TransShptHeader."PTSS Series Group SGRP" := TransHeader."PTSS Series Group SGRP";
+        IF UserSetup.GET(USERID) THEN BEGIN
+            IF UserSetup."PTSS Sales Series Group SGRP" <> '' THEN BEGIN
+                SeriesGroups.GET(UserSetup."PTSS Sales Series Group SGRP");
+                TransShptHeader."No. Series" := SeriesGroups."Ship. Transfer";
+                TransShptHeader."No." :=
+                  NoSeriesMgt.GetNextNo(
+                    SeriesGroups."Ship. Transfer", TransHeader."Posting Date", TRUE);
+            END ELSE
+                IF NoSeriesRec.GET(TransHeader."No. Series") THEN
+                    IF NoSeriesRec."PTSS Series Group SGRP" <> '' THEN BEGIN
+                        SeriesGroups.GET(NoSeriesRec."PTSS Series Group SGRP");
+                        TransShptHeader."No. Series" := SeriesGroups."Ship. Transfer";
+                        TransShptHeader."No." :=
+                          NoSeriesMgt.GetNextNo(SeriesGroups."Ship. Transfer", TransHeader."Posting Date", TRUE);
+                        //Código Séries Sequêncial
+                        // END ELSE BEGIN
+                        //     TransShptHeader."No. Series" := InvtSetup."Posted Transfer Shpt. Nos.";
+                        //     NoSeriesMgt.SetPreservePostingSequence(TRUE);
+                        //     TransShptHeader."No." :=
+                        //       NoSeriesMgt.GetNextNo(
+                        //         InvtSetup."Posted Transfer Shpt. Nos.", TransHeader."Posting Date", TRUE);
+                        //     NoSeriesMgt.SetPreservePostingSequence(FALSE);
+                        // END;
+                        // END ELSE BEGIN
+                        //NoSeriesMgt.SetPreservePostingSequence(TRUE);
+                        //soft,en
+                    End;
+        End;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, 5705, 'OnBeforeTransRcptHeaderInsert', '', true, true)]
+    local procedure InsertTransRcptHeaderPT(var TransferReceiptHeader: Record "Transfer Receipt Header"; TransferHeader: Record "Transfer Header")
+    var
+        NoSeriesMgt: Codeunit NoSeriesManagement;
+        Handled: Boolean;
+        UserSetup: Record "User Setup";
+        SeriesGroups: Record "PTSS Series Groups SGRP";
+        DeleteOne: Boolean;
+        NoSeriesRec: Record "No. Series";
+        InvtSetup: Record "Inventory Setup";
+
+    begin
+        TransferReceiptHeader."PTSS Series Group SGRP" := TransferHeader."PTSS Series Group SGRP";
+        IF UserSetup.GET(USERID) THEN BEGIN
+            IF UserSetup."PTSS Sales Series Group SGRP" <> '' THEN BEGIN
+                SeriesGroups.GET(UserSetup."PTSS Sales Series Group SGRP");
+                TransferReceiptHeader."No. Series" := SeriesGroups."Receipt Transfer";
+                TransferReceiptHeader."No." :=
+                  NoSeriesMgt.GetNextNo(
+                    SeriesGroups."Receipt Transfer", TransferHeader."Posting Date", TRUE);
+            END ELSE
+                IF NoSeriesRec.GET(TransferHeader."No. Series") THEN
+                    IF NoSeriesRec."PTSS Series Group SGRP" <> '' THEN BEGIN
+                        SeriesGroups.GET(NoSeriesRec."PTSS Series Group SGRP");
+                        TransferReceiptHeader."No. Series" := SeriesGroups."Receipt Transfer";
+                        TransferReceiptHeader."No." :=
+                          NoSeriesMgt.GetNextNo(
+                            SeriesGroups."Receipt Transfer", TransferHeader."Posting Date", TRUE);
+                    END ELSE BEGIN
+                        TransferReceiptHeader."No. Series" := InvtSetup."Posted Transfer Rcpt. Nos.";
+                        TransferReceiptHeader."No." :=
+                          NoSeriesMgt.GetNextNo(
+                            InvtSetup."Posted Transfer Rcpt. Nos.", TransferHeader."Posting Date", TRUE);
+                    END;
+        END
+    end;
+
+
+
+    var
+        WhseReceiptHeaderTemp: Record "Warehouse Receipt Header" temporary;
+        WhseShptHeaderTemp: Record "Warehouse Shipment Header" temporary;
+        SeriesGroupCode: Code[10];
 
 }

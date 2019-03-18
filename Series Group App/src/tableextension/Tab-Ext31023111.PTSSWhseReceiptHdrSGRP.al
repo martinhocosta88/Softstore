@@ -32,8 +32,8 @@ tableextension 31023111 "PTSS Whse. Receipt Hdr. SGRP" extends "Warehouse Receip
         IF ("PTSS Series Group SGRP" <> '') AND SeriesGroups.GET("PTSS Series Group SGRP") THEN
             EXIT(SeriesGroups.Receipt);
 
-        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purchase Series Group SGRP" <> '') THEN BEGIN
-            SeriesGroups.GET(UserSetup."PTSS Purchase Series Group SGRP");
+        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purch. Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(UserSetup."PTSS Purch. Series Group SGRP");
             EXIT(SeriesGroups.Receipt);
         END;
         IF NoSeries.GET("No. Series") AND (NoSeries."PTSS Series Group SGRP" <> '') THEN BEGIN
@@ -49,8 +49,8 @@ tableextension 31023111 "PTSS Whse. Receipt Hdr. SGRP" extends "Warehouse Receip
         IF ("PTSS Series Group SGRP" <> '') AND SeriesGroups.GET("PTSS Series Group SGRP") THEN
             EXIT(SeriesGroups."Posted Receipt");
 
-        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purchase Series Group SGRP" <> '') THEN BEGIN
-            SeriesGroups.GET(UserSetup."PTSS Purchase Series Group SGRP");
+        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purch. Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(UserSetup."PTSS Purch. Series Group SGRP");
             EXIT(SeriesGroups."Posted Receipt");
         END;
         IF NoSeries.GET("No. Series") AND (NoSeries."PTSS Series Group SGRP" <> '') THEN BEGIN

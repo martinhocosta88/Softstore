@@ -65,8 +65,8 @@ tableextension 31023108 "PTSS Whse. Activity Hdr. SGRP" extends "Warehouse Activ
         CASE Type OF
             Type::"Put-away":
                 BEGIN
-                    IF UserSetup."PTSS Purchase Series Group SGRP" <> '' THEN BEGIN
-                        SeriesGroups.GET(UserSetup."PTSS Purchase Series Group SGRP");
+                    IF UserSetup."PTSS Purch. Series Group SGRP" <> '' THEN BEGIN
+                        SeriesGroups.GET(UserSetup."PTSS Purch. Series Group SGRP");
                         NoSeriesCode := SeriesGroups."Put-away";
                         Exit(true);
                     END;
@@ -121,8 +121,8 @@ tableextension 31023108 "PTSS Whse. Activity Hdr. SGRP" extends "Warehouse Activ
         CASE Type OF
             Type::"Put-away":
                 BEGIN
-                    IF UserSetup."PTSS Purchase Series Group SGRP" <> '' THEN BEGIN
-                        SeriesGroups.GET(UserSetup."PTSS Purchase Series Group SGRP");
+                    IF UserSetup."PTSS Purch. Series Group SGRP" <> '' THEN BEGIN
+                        SeriesGroups.GET(UserSetup."PTSS Purch. Series Group SGRP");
                         PostNoSeriesCode := SeriesGroups."Register Put-away";
                     END;
                     IF NoSeries.GET("No. Series") AND ("PTSS Series Group SGRP" <> '') THEN BEGIN

@@ -98,8 +98,8 @@ tableextension 31023106 "PTSS Purchase Header SGRP" extends "Purchase Header"
         SeriesGroups: Record "PTSS Series Groups SGRP";
         NoSeries: Record "No. Series";
     begin
-        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purchase Series Group SGRP" <> '') THEN BEGIN
-            SeriesGroups.GET(UserSetup."PTSS Purchase Series Group SGRP");
+        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purch. Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(UserSetup."PTSS Purch. Series Group SGRP");
             IF (SeriesGroups."Posted Credit Memo" <> '') AND ("Document Type" IN ["Document Type"::"Return Order", "Document Type"::"Credit Memo"]) THEN
                 PostingNos := SeriesGroups."Posted Credit Memo"
             ELSE
@@ -123,8 +123,8 @@ tableextension 31023106 "PTSS Purchase Header SGRP" extends "Purchase Header"
         SeriesGroups: Record "PTSS Series Groups SGRP";
         NoSeries: Record "No. Series";
     begin
-        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purchase Series Group SGRP" <> '') THEN BEGIN
-            SeriesGroups.GET(UserSetup."PTSS Purchase Series Group SGRP");
+        IF UserSetup.GET(USERID) AND (UserSetup."PTSS Purch. Series Group SGRP" <> '') THEN BEGIN
+            SeriesGroups.GET(UserSetup."PTSS Purch. Series Group SGRP");
             EXIT(TestPostingDocType(PostingDoc, SeriesGroups));
         END;
         IF ("No. Series" <> '') AND (NoSeries.GET("No. Series")) AND (NoSeries."PTSS Series Group SGRP" <> '') THEN BEGIN

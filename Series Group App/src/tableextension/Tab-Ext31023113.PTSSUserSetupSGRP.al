@@ -9,7 +9,7 @@ tableextension 31023113 "PTSS User Setup SGRP" extends "User Setup"
             DataClassification = CustomerContent;
             TableRelation = "PTSS Series Groups SGRP" WHERE (Type = CONST (Sales));
         }
-        field(31022914; "PTSS Purchase Series Group SGRP"; Code[10])
+        field(31022914; "PTSS Purch. Series Group SGRP"; Code[10])
         {
             Caption = 'Purchase Series Group';
             DataClassification = CustomerContent;

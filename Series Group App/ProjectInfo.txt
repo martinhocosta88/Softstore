@@ -2,3 +2,4 @@ incluir codigo de debit memo (compras e vendas)
 habilitar eventos para servicos
 habilitar evento para transfers
 habilitar código reminders e fin charge na On-Prem
+habilitar codigo no report em On Prem
