@@ -33,10 +33,6 @@ tableextension 31023056 "PTSS Service Header" extends "Service Header" //MyTarge
             ServHeader."PTSS Shipment Start Date" := WORKDATE;
             ServHeader."PTSS Shipment Start Time" := TIME;
         END;
-
-        //Desenvolvimento ainda por Fazer
-        // IF NoSeries.GET("No. Series") THEN
-        //     "Series Group" := NoSeries."Series Group";
     end;
 
     local procedure CheckMasterData(Cust: Record Customer)

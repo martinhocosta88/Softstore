@@ -476,6 +476,7 @@ report 31022945 "PTSS Vendor Statement"
             trigger OnAfterGetRecord()
             var
                 VendLedgerEntry: Record "Vendor Ledger Entry";
+                language: Record Language;
             begin
                 SETFILTER("PTSS Vendor Post. Group Filter", VendPostingGroupFilter);
                 IF FirstVendorPrinted THEN BEGIN
@@ -483,7 +484,8 @@ report 31022945 "PTSS Vendor Statement"
                 END;
                 FirstVendorPrinted := TRUE;
                 AgingBandBuf.DELETEALL;
-                CurrReport.LANGUAGE := Language.GetLanguageID("Language Code");
+                //Foi removida a Funcao GetLanguageID de BC online
+                //CurrReport.LANGUAGE := Language.GetLanguageID("Language Code");
                 PrintLine := FALSE;
                 Vend2 := Vendor;
                 COPYFILTER("Currency Filter", Currency2.Code);

@@ -9,6 +9,7 @@ tableextension 31023105 "PTSS Sales Header SGRP" extends "Sales Header"
             DataClassification = CustomerContent;
             TableRelation = "PTSS Series Groups SGRP".Code;
         }
+
     }
 
     procedure SetSeriesGroups(PostingDoc: Integer)

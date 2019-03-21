@@ -13,8 +13,6 @@ tableextension 31023035 "PTSS Return Receipt Line" extends "Return Receipt Line"
             Caption = 'Credit-to Doc. Line No.';
             DataClassification = CustomerContent;
         }
-
-
     }
 
 }

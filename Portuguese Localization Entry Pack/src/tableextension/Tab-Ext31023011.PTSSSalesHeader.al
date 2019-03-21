@@ -91,16 +91,8 @@ tableextension 31023011 "PTSS Sales Header" extends "Sales Header"
     }
     procedure InitRecordPT(var SalesHdr: Record "Sales Header")
     begin
-        // Por Desenvolver
-        //
-        // IF "Debit Memo" THEN
-        //     "Posting Description" := Text31022894 + ' ' + "No.";
-        // IF NoSeries.GET("No. Series") THEN
-        //     "Series Group" := NoSeries."Series Group";
-
         IF SalesHdr."Document Type" IN [SalesHdr."Document Type"::Order, SalesHdr."Document Type"::Invoice, SalesHdr."Document Type"::Quote] THEN
             SalesHdr."PTSS Shipment Start Time" := TIME;
-
     end;
 
     local procedure UpdateIntrastat()

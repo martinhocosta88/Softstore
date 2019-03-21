@@ -185,7 +185,7 @@ tableextension 31023033 "PTSS Sales Line" extends "Sales Line" //MyTargetTableId
             IF VATPostingSetup."VAT %" = 0 then
                 VATPostingSetup.TestField("VAT Clause Code");
             VATPostingSetup.TestField("PTSS SAF-T PT VAT Code");
-            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Description");
+            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Desc.");
         end;
     end;
 

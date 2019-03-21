@@ -25,7 +25,7 @@ codeunit 31022930 "PTSS AccSchedManagement"
         AnalysisViewBudgetEntry1: Record "Analysis View Budget Entry";
     begin
         ColValue := 0;
-        //IsHandled := FALSE;
+        // IsHandled := FALSE;
         // IF IsHandled THEN
         // EXIT(ColValue);
 

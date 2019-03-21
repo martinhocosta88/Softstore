@@ -87,31 +87,31 @@ codeunit 31022925 "PTSS Cash-FLow Event Handler"
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetCustomerAccount', '', true, true)]
-    local procedure GetCustomerAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; FieldNo: Integer)
+    local procedure GetCustomerAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; callingFieldNo: Integer)
     begin
         GenJournalLine."PTSS Acc: cash-flow code" := '';
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetCustomerBalAccount', '', true, true)]
-    local procedure GetCustomerBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; FieldNo: Integer)
+    local procedure GetCustomerBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; callingFieldNo: Integer)
     begin
         GenJournalLine."PTSS Bal: cash-flow code" := '';
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetVendorAccount', '', true, true)]
-    local procedure GetVendorAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; FieldNo: Integer)
+    local procedure GetVendorAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; CallingFieldNo: Integer)
     begin
         GenJournalLine."PTSS Acc: cash-flow code" := '';
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetVendorBalAccount', '', true, true)]
-    local procedure GetVendorBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; FieldNo: Integer)
+    local procedure GetVendorBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; CallingFieldNo: Integer)
     begin
         GenJournalLine."PTSS Bal: cash-flow code" := '';
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankAccount', '', true, true)]
-    local procedure GetBankAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
+    local procedure GetBankAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; CallingFieldNo: Integer)
     var
         GLAcc: Record "G/L Account";
         BankPostingGroup: Record "Bank Account Posting Group";
@@ -123,7 +123,7 @@ codeunit 31022925 "PTSS Cash-FLow Event Handler"
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankBalAccount', '', true, true)]
-    local procedure GetBankBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
+    local procedure GetBankBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; CallingFieldNo: Integer)
     var
         GLAcc: Record "G/L Account";
         BankPostingGroup: Record "Bank Account Posting Group";

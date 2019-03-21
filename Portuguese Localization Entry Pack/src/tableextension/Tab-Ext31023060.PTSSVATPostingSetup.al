@@ -10,7 +10,7 @@ tableextension 31023060 "PTSS VAT Posting Setup" extends "VAT Posting Setup" //M
             Caption = 'SAF-T PT VAT Code';
             DataClassification = CustomerContent;
         }
-        field(31022894; "PTSS SAF-T PT VAT Type Description"; Option)
+        field(31022894; "PTSS SAF-T PT VAT Type Desc."; Option)
         {
             OptionMembers = " ","VAT Portugal Mainland","VAT Madeira","VAT Azores","VAT European Union","VAT Exportation";
             OptionCaption = ' ,VAT Portugal Mainland,VAT Madeira,VAT Azores,VAT European Union,VAT Exportation';

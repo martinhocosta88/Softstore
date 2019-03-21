@@ -86,7 +86,7 @@ tableextension 31023007 "PTSS General Ledger Setup" extends "General Ledger Setu
             DataClassification = CustomerContent;
         }
         //___________Lancamento Regularizacao_____________
-        field(31022894; "PTSS Use Dim. for Inc. Balance Acc."; Boolean)
+        field(31022894; "PTSS Use Dim. Inc. Bal. Acc."; Boolean)
         {
             Caption = 'Use Dim. for Inc. Balance Acc.';
             DataClassification = CustomerContent;

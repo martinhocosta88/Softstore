@@ -22,37 +22,37 @@ codeunit 31022928 "PTSS BPEventHandler"
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetCustomerAccount', '', true, true)]
-    local procedure GetCustomerAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; FieldNo: Integer)
+    local procedure GetCustomerAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; CallingFieldNo: Integer)
     begin
         GenJournalLine.GetBPInfo(Customer."Country/Region Code", Customer."PTSS BP Statistic Code");
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetVendorAccount', '', true, true)]
-    local procedure GetVendorAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; FieldNo: Integer)
+    local procedure GetVendorAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; CallingFieldNo: Integer)
     begin
         GenJournalLine.GetBPInfo(Vendor."Country/Region Code", Vendor."PTSS BP Statistic Code");
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankAccount', '', true, true)]
-    local procedure GetBankAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
+    local procedure GetBankAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; CallingFieldNo: Integer)
     begin
         GenJournalLine.GetBPInfo(BankAccount."Country/Region Code", BankAccount."PTSS BP Statistic Code");
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetCustomerBalAccount', '', true, true)]
-    local procedure GetCustomerBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; FieldNo: Integer)
+    local procedure GetCustomerBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Customer: Record Customer; CallingFieldNo: Integer)
     begin
         GenJournalLine.GetBalBPInfo(Customer."Country/Region Code", Customer."PTSS BP Statistic Code")
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetVendorBalAccount', '', true, true)]
-    local procedure GetVendorBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; FieldNo: Integer)
+    local procedure GetVendorBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var Vendor: Record Vendor; CallingFieldNo: Integer)
     begin
         GenJournalLine.GetBalBPInfo(Vendor."Country/Region Code", Vendor."PTSS BP Statistic Code")
     end;
 
     [EventSubscriber(ObjectType::Table, 81, 'OnAfterAccountNoOnValidateGetBankBalAccount', '', true, true)]
-    local procedure GetBankBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; FieldNo: Integer)
+    local procedure GetBankBalAccount(var GenJournalLine: Record "Gen. Journal Line"; var BankAccount: Record "Bank Account"; CallingFieldNo: Integer)
     begin
         GenJournalLine.GetBalBPInfo(BankAccount."Country/Region Code", BankAccount."PTSS BP Statistic Code")
     end;

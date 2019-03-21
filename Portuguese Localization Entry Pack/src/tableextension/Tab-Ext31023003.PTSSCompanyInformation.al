@@ -172,7 +172,7 @@ tableextension 31023003 "PTSS Company Information" extends "Company Information"
             DataClassification = CustomerContent;
         }
 
-        field(31022913; "PTSS SAFT-PT Company Customer ID"; Code[20])
+        field(31022913; "PTSS SAFT-PT Company Cust. ID"; Code[20])
         {
             //SAFT
             Caption = 'SAFT-PT Company Customer ID';

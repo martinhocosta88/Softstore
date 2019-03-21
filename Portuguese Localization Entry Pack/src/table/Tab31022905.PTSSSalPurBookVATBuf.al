@@ -1,6 +1,7 @@
 table 31022905 "PTSS Sal/Pur. Book VAT Buf."
 {
     //Livros Faturas emitidas/recebidas
+    //Adição dos campos ND para compilacao
 
     Caption = 'Sales/Purch. Book VAT Buffer';
     LookupPageID = 315;

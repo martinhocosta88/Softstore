@@ -672,12 +672,12 @@ codeunit 31022897 "PTSS Create Signature"
         UpdateTransferShipSignature(TransferShipmentHeader);
     end;
 
-    //Whse. Shipment - Event Requested
-    // [EventSubscriber(ObjectType::Codeunit, 5763, 'OnAfterPostedShipmentShptHeaderInsert' , '', true, true)]
-    // local procedure WhseShptHeaderInsertPT(Var PostedWhseShptHeader, LastShptNo)
-    // begin
-    //    UpdateWhseShptSignature(PostedWhseShptHeader);
-    // end;
+    //Whse. Shipment - PostedWhseShipmentHeader doest have var
+    [EventSubscriber(ObjectType::Codeunit, 5763, 'OnAfterPostedWhseShptHeaderInsert', '', true, true)]
+    local procedure WhseShptHeaderInsertPT(PostedWhseShipmentHeader: Record "Posted Whse. Shipment Header"; LastShptNo: Code[20])
+    begin
+        UpdateWhseShptSignature(PostedWhseShipmentHeader);
+    end;
 
     //Service Shipmnet
     [EventSubscriber(ObjectType::Codeunit, 5988, 'OnAfterServShptHeaderInsert', '', true, true)]

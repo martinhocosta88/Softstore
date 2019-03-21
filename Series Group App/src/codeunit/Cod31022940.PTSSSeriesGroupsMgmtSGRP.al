@@ -218,6 +218,16 @@ codeunit 31022940 "PTSS SeriesGroupsMgmt SGRP"
         SetNoSeries(SeriesGroupCode, true);
         WarehouseShipmentHeader."No. Series" := WhseShptHeaderTemp."No. Series";
         WarehouseShipmentHeader."PTSS Series Group SGRP" := WhseShptHeaderTemp."PTSS Series Group SGRP";
+        WarehouseShipmentHeader.Modify();
+    end;
+
+    [EventSubscriber(ObjectType::Report, 5753, 'OnAfterCreateRcptHeader', '', true, true)]
+    local procedure CreateReceiptHeader(var WarehouseReceiptHeader: Record "Warehouse Receipt Header"; WarehouseRequest: Record "Warehouse Request"; PurchaseLine: Record "Purchase Line")
+    begin
+        SetNoSeries(SeriesGroupCode, true);
+        WarehouseReceiptHeader."No. Series" := WhseReceiptHeaderTemp."No. Series";
+        WarehouseReceiptHeader."PTSS Series Group SGRP" := WhseReceiptHeaderTemp."PTSS Series Group SGRP";
+        
     end;
 
     local procedure SetNoSeries(VAR Code: Code[10]; IsShipment: Boolean)

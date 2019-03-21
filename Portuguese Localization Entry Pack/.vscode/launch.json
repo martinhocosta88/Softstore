@@ -7,7 +7,7 @@
             "type": "al",
             "request": "launch",
             "name": "Yourownserver",
-            "server": "http://SoftstoreBC",
+            "server": "http://DevsPreview",
             "serverInstance": "nav",
             "authentication": "UserPassword",
             "schemaUpdateMode":"Synchronize",

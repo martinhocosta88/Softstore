@@ -13,7 +13,7 @@ pageextension 31023109 "PTSS General Ledger Setup" extends "General Ledger Setup
                 ApplicationArea = All;
                 ToolTip = 'Specifies if checks chart of accounts.';
             }
-            field("PTSS Use Dim. for Inc. Balance Acc."; "PTSS Use Dim. for Inc. Balance Acc.")
+            field("PTSS Use Dim. for Inc. Balance Acc."; "PTSS Use Dim. Inc. Bal. Acc.")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the Use Dim. for Inc. Balance Acc.';

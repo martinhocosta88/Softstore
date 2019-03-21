@@ -5,7 +5,7 @@ pageextension 31023153 "PTSS VAT Posting Setup" extends "VAT Posting Setup" //My
     {
         addafter("Unrealized VAT Type")
         {
-            field("PTSS SAF-T PT VAT Type Description"; "PTSS SAF-T PT VAT Type Description")
+            field("PTSS SAF-T PT VAT Type Description"; "PTSS SAF-T PT VAT Type Desc.")
             {
                 ToolTip = 'Specifies the SAF-T PT VAT Type Description';
                 ApplicationArea = All;

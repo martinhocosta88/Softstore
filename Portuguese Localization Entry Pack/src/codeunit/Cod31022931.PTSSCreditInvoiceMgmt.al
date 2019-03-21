@@ -18,7 +18,29 @@ codeunit 31022931 "PTSS CreditInvoiceMgmt"
         ToSalesLine.NoSeriesCreditInvoice(FromSalesLine."PTSS Credit-to Doc. No.", FromSalesLine."PTSS Credit-to Doc. Line No.", ToSalesHeader."No. Series");
     end;
 
-    //Faltam eventos pedidos no GIT
+
+    [EventSubscriber(ObjectType::Codeunit, 6620, 'OnCopySalesLinesToBufferTransferFields', '', true, true)]
+    local procedure CopySalesLinesToBufferTransferFieldsPT(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; var TempSalesLineBuf: Record "Sales Line")
+    begin
+        TempSalesLineBuf.NoSeriesCreditInvoice(SalesLine."Document No.", SalesLine."Line No.", salesheader."No. Series");
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, 6620, 'OnSplitPstdSalesLinesPerILETransferFields', '', true, true)]
+    local procedure SplitPstdSalesLinesPerILETransferFieldsPT(var FromSalesHeader: Record "Sales Header"; var FromSalesLine: Record "Sales Line"; var TempSalesLineBuf: Record "Sales Line"; var ToSalesHeader: Record "Sales Header")
+    begin
+        TempSalesLineBuf.NoSeriesCreditInvoice(TempSalesLineBuf."Document No.", TempSalesLineBuf."Line No.", ToSalesHeader."No. Series");
+    end;
+
+    //OnAfterClearFields(Rec,xRec,TempServLine,CurrFieldNo);
+    [EventSubscriber(ObjectType::Table, 5902, 'OnAfterClearFields', '', true, true)]
+    local procedure ClearFieldsPT(var ServiceLine: Record "Service Line"; xServiceLine: Record "Service Line"; TempServiceLine: Record "Service Line"; CallingFieldNo: Integer)
+    begin
+        with ServiceLine Do begin
+            GetServHeader;
+            //resolver problema tempservline
+            //NoSeriesCreditInvoice(TempServLine."Credit - to Doc. No.", TempServLine."Credit - to Doc. Line No.", ServHeader."No. Series");
+        end;
+    end;
 
 
 }

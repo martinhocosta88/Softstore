@@ -20,28 +20,4 @@ pageextension 31023136 "PTSS Inv. Posting Setup Card" extends "Inventory Posting
             }
         }
     }
-
-    actions
-    {
-        modify(SuggestAccounts)
-        {
-            Visible = false;
-        }
-        addafter(SuggestAccounts)
-        {
-            action("PTSS SuggestAccountsPT")
-            {
-                Caption = 'Suggest Accounts';
-                ToolTip = 'Suggest G/L Accounts for selected setup.';
-                ApplicationArea = All;
-                Promoted = True;
-                PromotedCategory = New;
-                Image = Default;
-                trigger OnAction()
-                begin
-                    SuggestSetupAccountsPT();
-                end;
-            }
-        }
-    }
 }

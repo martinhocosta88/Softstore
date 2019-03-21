@@ -107,7 +107,6 @@ table 31022926 "PTSS VAT Report File Buffer"
         OutputStream: OutStream;
         tmpBlob: Record TempBlob;
     begin
-        //XXX A Resolver Escrita Ficheiro
         // FileHandle.TEXTMODE(TRUE);
         // FileHandle.WRITEMODE(TRUE);
         // FileHandle.CREATETEMPFILE();
@@ -119,7 +118,7 @@ table 31022926 "PTSS VAT Report File Buffer"
         // FileHandle.CREATEINSTREAM(InputStreamObj);
         // DOWNLOADFROMSTREAM(InputStreamObj,'','',Text31022894,Path);
         // FileHandle.CLOSE;
-
+        //:::::::::::
         tmpBlob.Blob.CreateOutStream(OutputStream);
         IF FINDSET then
             REPEAT
@@ -128,6 +127,7 @@ table 31022926 "PTSS VAT Report File Buffer"
 
         tmpBlob.Blob.CreateInStream(InputStream);
         DownloadFromStream(InputStream, '', '', '', Path);
+        //:::::::::::
 
 
     end;

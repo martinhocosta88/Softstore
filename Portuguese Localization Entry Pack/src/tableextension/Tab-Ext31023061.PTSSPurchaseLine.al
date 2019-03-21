@@ -20,7 +20,7 @@ tableextension 31023061 "PTSS Purchase Line" extends "Purchase Line" //MyTargetT
             IF VATPostingSetup."VAT %" = 0 then
                 VATPostingSetup.TestField("VAT Clause Code");
             VATPostingSetup.TestField("PTSS SAF-T PT VAT Code");
-            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Description");
+            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Desc.");
         END;
     end;
 

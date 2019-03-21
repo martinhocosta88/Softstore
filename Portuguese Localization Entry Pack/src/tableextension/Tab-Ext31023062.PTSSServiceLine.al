@@ -108,7 +108,7 @@ tableextension 31023062 "PTSS Service Line" extends "Service Line" //MyTargetTab
             IF VATPostingSetup."VAT %" = 0 then
                 VATPostingSetup.TestField("VAT Clause Code");
             VATPostingSetup.TestField("PTSS SAF-T PT VAT Code");
-            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Description");
+            VATPostingSetup.TestField("PTSS SAF-T PT VAT Type Desc.");
         END;
     end;
 
@@ -121,7 +121,7 @@ tableextension 31023062 "PTSS Service Line" extends "Service Line" //MyTargetTab
             EXIT(FALSE);
     end;
 
-    local procedure GetServHeader() //replicated from standard
+    procedure GetServHeader() //replicated from standard
     begin
         TESTFIELD("Document No.");
         IF ("Document Type" <> ServHeader."Document Type") OR ("Document No." <> ServHeader."No.") THEN BEGIN
@@ -230,8 +230,7 @@ tableextension 31023062 "PTSS Service Line" extends "Service Line" //MyTargetTab
     end;
 
 
-    //Funcao tem que ser chamada na funcao ClearFields. Pedido de evento/external
-    local procedure NoSeriesCreditInvoice(DocNo: Code[20]; LineNo: Integer; NoSeriesCode: Code[20])
+    procedure NoSeriesCreditInvoice(DocNo: Code[20]; LineNo: Integer; NoSeriesCode: Code[20])
     begin
         IF DocNo <> '' THEN BEGIN
             NoSeries.GET(NoSeriesCode);

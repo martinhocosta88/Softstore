@@ -33,18 +33,6 @@ codeunit 31022932 "PTSS CheckMasterDataSales"
         CompanyInformation.TESTFIELD("Post Code");
         CompanyInformation.TESTFIELD("Country/Region Code");
 
-        //Desenvolvimento Pendente - Series Manuais
-        // IF SalesHeader.Invoice AND SalesHeader."Manual Document" THEN BEGIN
-        // SalesHeader.TESTFIELD("Manual Doc. Series");
-        // SalesHeader.TESTFIELD("Manual Doc. No.");
-        // END;
-
-        //Desenvolvimneto Pendente - Descontos
-        // IF ((SalesHeader.Ship OR SalesHeader.Invoice) AND NOT IsCreditDocType) AND (GLSetup."Payment Discount Type" = GLSetup."Payment Discount Type"::"Calc. Pmt. Disc. on Lines") THEN BEGIN
-        //     SalesHeader.TESTFIELD("Payment Method Code");
-        //     SalesHeader.TESTFIELD("Payment Terms Code");
-        // END;
-
         IF SalesHeader."Document Type" IN [SalesHeader."Document Type"::"Credit Memo", SalesHeader."Document Type"::"Return Order"] THEN BEGIN
             IF SalesLine.TestNoSeries(SalesHeader."No. Series") THEN BEGIN
                 SalesLine.RESET;

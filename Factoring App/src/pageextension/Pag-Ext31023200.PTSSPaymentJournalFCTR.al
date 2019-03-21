@@ -16,4 +16,6 @@ pageextension 31023200 "PTSS Payment Journal FCTR" extends "Payment Journal" //M
     actions
     {
     }
+    var
+        VendorBankAccount: Record "Vendor Bank Account";
 }

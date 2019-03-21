@@ -12,8 +12,14 @@ Extrato Fornecedor
 Intrastat
 Comunicação Inventário AT
 Campo Conta Liquidação Nota de Crédito
+Registo Inventário Físico
 Lancamento Regularizacao
-                 - Ativar Codigo DRF quando densenvolvido.
+Ajuste Taxas de Câmbio (tabela + report)
+IRC Modelo 22   
+                 - Faltam Testes - Rever Legislacao;
+Livro Faturas Recebidas/Emitidas
+                 - Código comentado de devs ainda não feitos; - ND%;
+                 - Keys novas na VAT Entry;
 Nº Transação
                  - Reformulacao cod 13
                  - A espera de Eventos para efetuar alteracoes.
@@ -21,27 +27,19 @@ COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
                  - Reformular Funcao Clear Nodes;
                  - Testar exportação (XML BP e Tab BP Ledger Entry);
-Ajuste Taxas de Câmbio (tabela + report)
-                 - Código comentado de devs ainda não feitos;
-Livro Faturas Recebidas/Emitidas
-                 - Código comentado de devs ainda não feitos; - ND%;
-                 - Keys novas na VAT Entry;
 Esquema de Contas Valor Coluna
                  - Erro ao clicar overview quando temos Balance a true (Invalid Column Name - Net Change);
 Notas de Crédito de Acordo com Fatura
-                 - falta a inclusão dos eventos da Cod 6620. Pedidos no GIT; (Ships in Future Update)
-                 - falta evento tabela 5902 funcao Clearfields/external
+                 - Cod31022931.PTSSCreditInvoiceMgmt - Resolver problema
                  - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao. BUG MS;
-                 - (FEITO PARA AS SERVICE- ESTAVA EM FALTA)
 Certificação de Documentos
-                 - Falta apenas um evento para o caso dos envios de armazem Cod5763. (Já lancado evento) COD Create Signature
-                 - Falta assinar o hash.
-Registo Inventário Físico
-                 - Cod31022933 PhysInvManagement - Pedido para incluir um parametro em 2 eventos;
-IRC Modelo 22   
-                 - Faltam Testes (Tab Vat Report File Buffer - Rep IRC- Model 22) - Rever Legislacao;
+                - Falta assinar o hash na azure function.
 Comunicacao AT
                  - WIP
+
+________________________
+Extra Application
+________________________                 
 Regras de Negócio
                  - tab 23 Vendor - Validação OnDelete
                  - tab 18 Customer - Validação OnDelete

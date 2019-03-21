@@ -17,30 +17,4 @@ pageextension 31023135 "PTSS Inventory Posting Setup" extends "Inventory Posting
             }
         }
     }
-
-    actions
-    {
-        modify(SuggestAccounts)
-        {
-            Visible = false;
-        }
-        addafter(SuggestAccounts)
-        {
-            action("PTSS SuggestAccountsPT")
-            {
-                Caption = 'Suggest Accounts';
-                ToolTip = 'Set Default Accounts';
-                ApplicationArea = All;
-                PromotedCategory = Process;
-                Image = Default;
-                Promoted = true;
-                PromotedIsBig = true;
-                PromotedOnly = true;
-                trigger OnAction()
-                begin
-                    SuggestSetupAccountsPT();
-                end;
-            }
-        }
-    }
 }

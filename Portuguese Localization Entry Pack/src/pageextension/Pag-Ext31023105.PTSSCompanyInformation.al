@@ -18,7 +18,7 @@ pageextension 31023105 "PTSS Company Information" extends "Company Information"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the Registration Authority.';
             }
-            field("PTSS SAFT-PT Company Customer ID"; "PTSS SAFT-PT Company Customer ID")
+            field("PTSS SAFT-PT Company Customer ID"; "PTSS SAFT-PT Company Cust. ID")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the SAF-T Company Customer ID.';

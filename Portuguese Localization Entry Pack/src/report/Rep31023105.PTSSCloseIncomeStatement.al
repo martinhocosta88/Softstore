@@ -36,9 +36,6 @@ report 31023105 "PTSS Close Income Statement"
                         CalcSumsInFilter("G/L Entry", RowOffset);
                         GetGLEntryDimensions("Entry No.", TempDimBuf, "Dimension Set ID");
                     END;
-                    // Disponibilizar quando Desenvolvido
-                    // IF "DRF Code" <> '' THEN
-                    //   GenJnlLine."DRF Code" := "DRF Code";
 
                     IF (Amount <> 0) OR ("Additional-Currency Amount" <> 0) THEN BEGIN
                         IF NOT GroupSum THEN BEGIN
@@ -736,7 +733,7 @@ report 31023105 "PTSS Close Income Statement"
             REPEAT
                 GenJnlLine."Line No." := GenJnlLine."Line No." + 10000;
                 GLSetup.GET;
-                IF NOT GLSetup."PTSS Use Dim. for Inc. Balance Acc." THEN BEGIN
+                IF NOT GLSetup."PTSS Use Dim. Inc. Bal. Acc." THEN BEGIN
                     GenJnlLine."Shortcut Dimension 1 Code" := '';
                     GenJnlLine."Shortcut Dimension 2 Code" := '';
                     GenJnlLine."Business Unit Code" := '';
@@ -806,8 +803,6 @@ report 31023105 "PTSS Close Income Statement"
             TempGLAcc.FINDSET;
             REPEAT
                 "G/L Account".GET(TempGLAcc."No.");
-                //A Disponibilizar quando desenvolvido
-                //"G/L Account"."Associate DRF Code" := TempGLAcc."Associate DRF Code";
                 "G/L Account".MODIFY;
             UNTIL TempGLAcc.NEXT = 0;
         END;
@@ -819,7 +814,7 @@ report 31023105 "PTSS Close Income Statement"
         BalAcc: Code[20];
     begin
         GLSetup.GET;
-        IF NOT GLSetup."PTSS Use Dim. for Inc. Balance Acc." THEN BEGIN
+        IF NOT GLSetup."PTSS Use Dim. Inc. Bal. Acc." THEN BEGIN
             GLAcc.GET(GenJnlLine."Account No.");
             IF NOT BalLineBuffer.GET(0, GLAcc."PTSS Income Stmt. Bal. Acc.") THEN BEGIN
                 GLAcc.TESTFIELD("PTSS Income Stmt. Bal. Acc.");
@@ -887,7 +882,7 @@ report 31023105 "PTSS Close Income Statement"
         BalAcc: Code[20];
     begin
         GLSetup.GET;
-        IF NOT GLSetup."PTSS Use Dim. for Inc. Balance Acc." THEN BEGIN
+        IF NOT GLSetup."PTSS Use Dim. Inc. Bal. Acc." THEN BEGIN
             GLAcc.GET(Account);
             IF NOT BalLineBuffer.GET(0, GLAcc."PTSS Income Stmt. Bal. Acc.") THEN BEGIN
                 GLAcc.TESTFIELD("PTSS Income Stmt. Bal. Acc.");

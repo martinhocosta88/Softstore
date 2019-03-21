@@ -49,6 +49,18 @@ codeunit 31022933 "PTSS PhysInvManagement"
 
     end;
 
+    [EventSubscriber(ObjectType::Table, 5813, 'OnAfterSuggestSetupAccount', '', true, true)]
+    local procedure SuggestSetupAccountPT(var InventoryPostingSetup: Record "Inventory Posting Setup"; RecRef: RecordRef)
+    begin
+        With InventoryPostingSetup DO begin
+            IF "PTSS Gains in Inventory" = '' THEN
+                SuggestAccount(RecRef, FIELDNO("PTSS Gains in Inventory"));
+            IF "PTSS Losses in Inventory" = '' THEN
+                SuggestAccount(RecRef, FIELDNO("PTSS Losses in Inventory"));
+        END;
+
+    end;
+
     [EventSubscriber(ObjectType::Codeunit, 5802, 'OnAfterCalcCostToPostFromBuffer', '', true, true)]
     local procedure BufferInvtPostingPT(var ValueEntry: Record "Value Entry"; var CostToPost: Decimal; var CostToPostACY: Decimal; var ExpCostToPost: Decimal; var ExpCostToPostACY: Decimal)
     begin
@@ -58,21 +70,21 @@ codeunit 31022933 "PTSS PhysInvManagement"
     end;
 
     [EventSubscriber(ObjectType::Codeunit, 22, 'OnBeforeInsertValueEntry', '', true, true)]
-    local procedure InsertValueEntryPT(var ValueEntry: Record "Value Entry"; ItemJournalLine: Record "Item Journal Line"; var ItemLedgerEntry: Record "Item Ledger Entry"; var ValueEntryNo: Integer; var InventoryPostingToGL: Codeunit "Inventory Posting To G/L")
+    local procedure InsertValueEntryPT(var ValueEntry: Record "Value Entry"; ItemJournalLine: Record "Item Journal Line"; var ItemLedgerEntry: Record "Item Ledger Entry"; var ValueEntryNo: Integer; var InventoryPostingToGL: Codeunit "Inventory Posting To G/L"; CalledFromAdjustment: Boolean)
     var
         Item: Record Item;
     begin
         IF ValueEntry.Inventoriable AND NOT Item."Inventory Value Zero" THEN
-            GetPhysicalInv(ValueEntry);
+            GetPhysicalInv(ValueEntry, CalledFromAdjustment);
     end;
 
     [EventSubscriber(ObjectType::Codeunit, 22, 'OnBeforeInsertCorrValueEntry', '', true, true)]
-    local procedure InsertCorrValueEntryPT(var NewValueEntry: Record "Value Entry"; OldValueEntry: Record "Value Entry"; var ItemJournalLine: Record "Item Journal Line")
+    local procedure InsertCorrValueEntryPT(var NewValueEntry: Record "Value Entry"; OldValueEntry: Record "Value Entry"; var ItemJournalLine: Record "Item Journal Line"; CalledFromAdjustment: Boolean)
     var
         Item: Record Item;
     begin
         IF NewValueEntry.Inventoriable AND NOT Item."Inventory Value Zero" THEN
-            GetPhysicalInv(NewValueEntry);
+            GetPhysicalInv(NewValueEntry, CalledFromAdjustment);
     end;
 
     local procedure SetAmt(VAR GenJnlLine: Record "Gen. Journal Line"; Amt: Decimal; AmtACY: Decimal): Boolean
@@ -114,16 +126,14 @@ codeunit 31022933 "PTSS PhysInvManagement"
 
     local procedure GetPhysicalInventory(PhysicalInventory: Boolean; TempLocation: Code[10]; TempPosting: Code[10]; PrevAdjAcc: Text[20])
     begin
-        //Funcao que estava na Codeunit 5802 - Inventory Posting To G/L 
         PhysInventory := PhysicalInventory;
         TempLocationCode := TempLocation;
         TempPostingGroup := TempPosting;
         PrevAdjustmentAcc := PrevAdjAcc;
     end;
 
-    procedure GetPhysicalInv(ValueEntry: Record "Value Entry")
+    procedure GetPhysicalInv(ValueEntry: Record "Value Entry"; CalledFromAdjustment: Boolean)
     var
-        //Funcao que estava na Codeunit 22 - Item Jnl.-Post Line
         PhysInvLedgEntry: Record "Phys. Inventory Ledger Entry";
         GLEntry: Record "G/L Entry";
         IsPhysInventory: Boolean;
@@ -140,9 +150,9 @@ codeunit 31022933 "PTSS PhysInvManagement"
                 GLEntry.SETRANGE(GLEntry."Document No.", "Document No.");
                 IF NOT GLEntry.ISEMPTY THEN BEGIN
                     GLEntry.FINDLAST;
-                    //Pedido parametro CalledFromAdjustment na chamada dos dois eventos da cod 22
-                    // IF CalledFromAdjustment THEN
-                    //     PrevAdjAcc := GLEntry."G/L Account No.";
+
+                    IF CalledFromAdjustment THEN
+                        PrevAdjAcc := GLEntry."G/L Account No.";
                 END;
             END;
 
