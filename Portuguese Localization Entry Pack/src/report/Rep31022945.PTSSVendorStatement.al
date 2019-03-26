@@ -349,7 +349,7 @@ report 31022945 "PTSS Vendor Statement"
 
                         trigger OnPreDataItem()
                         begin
-                            CurrReport.CREATETOTALS("Remaining Amount");
+                            //CurrReport.CREATETOTALS("Remaining Amount");
                             IF NOT IncludeAgingBand THEN
                                 SETRANGE("Due Date", 0D, EndDate - 1);
                             SETRANGE("Currency Code", Currency2.Code);
@@ -513,7 +513,7 @@ report 31022945 "PTSS Vendor Statement"
                 OutputGenerated := TRUE;
 
                 FormatAddr.Vendor(VendAddr, Vendor);
-                CurrReport.PAGENO := 1;
+                //CurrReport.PAGENO := 1;
 
                 IsFirstLoop := FALSE;
             end;

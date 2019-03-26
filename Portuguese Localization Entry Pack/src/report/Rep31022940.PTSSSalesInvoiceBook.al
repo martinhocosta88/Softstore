@@ -466,7 +466,7 @@ report 31022940 "PTSS Sales Invoice Book"
                     trigger OnPreDataItem()
                     begin
                         VATBuffer.FIND('-');
-                        CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
+                        //CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
                         Fin := FALSE;
                         LineNo := 0;
                     end;
@@ -530,7 +530,7 @@ report 31022940 "PTSS Sales Invoice Book"
 
                     trigger OnAfterGetRecord()
                     begin
-                        //XXX
+                        // Habilitar quando disponível
                         // VATBuffer."VAT %" := "VAT %";
                         // VATBuffer."ND %" := "ND %";
 
@@ -669,7 +669,7 @@ report 31022940 "PTSS Sales Invoice Book"
                     trigger OnPreDataItem()
                     begin
                         IF VATBuffer.FIND('-') THEN;
-                        CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
+                        //CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
                         Fin := FALSE;
                         LineNo := 0;
                     end;

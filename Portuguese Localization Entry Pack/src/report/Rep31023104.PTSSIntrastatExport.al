@@ -192,7 +192,7 @@ report 31023104 "PTSS Intrastat Export"
                     OutputStream.WriteText(FORMAT('00' + FORMAT(VATRegNo, 8) + Text002, 80));
                     OutputStream.WriteText(FORMAT('0100004', 80));
                     SETRANGE("Internal Ref. No.", COPYSTR(IntraReferenceNo, 1, 4), COPYSTR(IntraReferenceNo, 1, 4) + '9');
-                    CurrReport.CREATETOTALS(Quantity, "Statistical Value", "Total Weight");
+                    //CurrReport.CREATETOTALS(Quantity, "Statistical Value", "Total Weight");
                     IntrastatJnlLine3.SETCURRENTKEY("Internal Ref. No.");
                 end;
             }

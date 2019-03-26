@@ -3,6 +3,7 @@ tableextension 31023008 "PTSS Gen. Journal Line" extends "Gen. Journal Line"
     //Cash-Flow
     //COPE
     //Regras de Negocio
+    //Transaction No.
     fields
     {
         modify("Account Type")
@@ -74,6 +75,14 @@ tableextension 31023008 "PTSS Gen. Journal Line" extends "Gen. Journal Line"
                 end;
             end;
         }
+        //Transaction No.
+        field(31022898; "PTSS Transaction No."; Integer)
+        {
+            Caption = 'Transaction No.';
+            DataClassification = CustomerContent;
+            BlankZero = true;
+        }
+        //Cash-Flow
         field(31022900; "PTSS Acc: cash-flow code"; Code[10])
         {
             Caption = 'Acc: cash-flow code';

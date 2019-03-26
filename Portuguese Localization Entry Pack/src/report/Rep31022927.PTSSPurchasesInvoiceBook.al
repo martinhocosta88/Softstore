@@ -133,7 +133,7 @@ report 31022927 "PTSS Purchases Invoice Book"
 
                         trigger OnAfterGetRecord()
                         begin
-                            //xxx
+                            //habilitar quando disponível
                             // VATBuffer3."VAT %" := "VAT %";
                             // VATBuffer3."ND %" := "ND %";
 
@@ -264,7 +264,7 @@ report 31022927 "PTSS Purchases Invoice Book"
                         trigger OnPreDataItem()
                         begin
                             VATBuffer3.FIND('-');
-                            CurrReport.CREATETOTALS(VATBuffer4.Base, VATBuffer4.Amount);
+                            //CurrReport.CREATETOTALS(VATBuffer4.Base, VATBuffer4.Amount);
                             Fin := FALSE;
                             LineNo := 0;
                         end;
@@ -331,12 +331,12 @@ report 31022927 "PTSS Purchases Invoice Book"
 
                     trigger OnAfterGetRecord()
                     begin
-                        //XXX
+                        //habilitar quando disponível
                         // VATBuffer."VAT %" := "VAT %";
                         // VATBuffer."ND %" := "ND %";
 
                         IF NOT PrintAmountsInAddCurrency THEN BEGIN
-                            //XXX
+                            //habilitar quando disponível
                             // IF VATEntry2."VAT Calculation Type" = VATEntry2."VAT Calculation Type"::"Full VAT" THEN
                             //   Base := FullVATBaseCalc("VAT %","ND %",Amount,FALSE);
                             IF VATBuffer.FIND THEN BEGIN
@@ -355,7 +355,8 @@ report 31022927 "PTSS Purchases Invoice Book"
                             END;
                         END ELSE BEGIN
                             IF VATEntry2."VAT Calculation Type" = VATEntry2."VAT Calculation Type"::"Full VAT" THEN
-                                //XXX "Additional-Currency Base" := FullVATBaseCalc("VAT %","ND %","Additional-Currency Amount",TRUE);
+                                //Habilitar quando disponível
+                                //"Additional-Currency Base" := FullVATBaseCalc("VAT %","ND %","Additional-Currency Amount",TRUE);
                                 IF VATBuffer.FIND THEN BEGIN
                                     VATBuffer.Base := VATBuffer.Base - "Additional-Currency Base";
                                     IF "VAT Calculation Type" <> "VAT Calculation Type"::"Reverse Charge VAT" THEN BEGIN
@@ -474,7 +475,7 @@ report 31022927 "PTSS Purchases Invoice Book"
                     trigger OnPreDataItem()
                     begin
                         VATBuffer.FIND('-');
-                        CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
+                        //CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
                         Fin := FALSE;
                         LineNo := 0;
                     end;
@@ -538,7 +539,7 @@ report 31022927 "PTSS Purchases Invoice Book"
 
                     trigger OnAfterGetRecord()
                     begin
-                        // XXX
+                        // Habilitar quando disponível
                         // VATBuffer."VAT %" := "VAT %";
                         // VATBuffer."ND %" := "ND %";
 
@@ -676,7 +677,7 @@ report 31022927 "PTSS Purchases Invoice Book"
                     trigger OnPreDataItem()
                     begin
                         IF VATBuffer.FIND('-') THEN;
-                        CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
+                        //CurrReport.CREATETOTALS(VATBuffer2.Base, VATBuffer2.Amount);
                         Fin := FALSE;
                         LineNo := 0;
                     end;
