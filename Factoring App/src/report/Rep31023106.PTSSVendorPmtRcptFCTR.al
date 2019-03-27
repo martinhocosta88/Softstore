@@ -40,9 +40,8 @@ report 31023106 "PTSS Vendor - Pmt. Rcpt. FCTR"
                 column(VendAddr2; VendAddr[2])
                 {
                 }
-                column(VendNo_VendLedgEntry; "Vendor Ledger Entry"."Vendor No.")
+                column(VendNo_VendLedgEntry; VendorFactorNo)
                 {
-                    IncludeCaption = true;
                 }
                 column(DocDate_VendLedgEntry; FORMAT("Vendor Ledger Entry"."Document Date", 0, 4))
                 {
@@ -305,12 +304,12 @@ report 31023106 "PTSS Vendor - Pmt. Rcpt. FCTR"
                 if "PTSS Factoring to Vendor No." <> '' then begin
                     Vend.GET("PTSS Factoring to Vendor No.");
                     VendorBankAcc.Get("PTSS Factoring to Vendor No.", vend."Preferred Bank Account Code");
-                    VendorFactorIBAN := VendorBankAcc.IBAN;
                 end else BEGIN
                     Vend.GET("Vendor No.");
                     VendorBankAcc.Get("Vendor No.", vend."Preferred Bank Account Code");
-                    VendorFactorIBAN := VendorBankAcc.IBAN;
                 End;
+                VendorFactorIBAN := VendorBankAcc.IBAN;
+                VendorFactorNo := Vend."No.";
                 //soft,en
                 FormatAddr.Vendor(VendAddr, Vend);
                 IF NOT Currency.GET("Currency Code") THEN
@@ -395,6 +394,7 @@ report 31023106 "PTSS Vendor - Pmt. Rcpt. FCTR"
         PymtAmtCaptionLbl: Label 'Payment Amount';
         ExternalDocNoCaptionLbl: Label 'External Document No.';
         VendorFactorIBAN: Code[50];
+        VendorFactorNo: Code[20];
 
     local procedure CurrencyCode(SrcCurrCode: Code[10]): Code[10]
     begin

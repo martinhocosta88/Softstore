@@ -26,6 +26,7 @@ tableextension 31023103 "PTSS Gen. Journal Line FCTR" extends "Gen. Journal Line
         }
         modify("Recipient Bank Account")
         {
+            
             TableRelation = IF ("Account Type" = CONST (Customer)) "Customer Bank Account".Code WHERE ("Customer No." = FIELD ("Account No.")) ELSE
             IF
             ("Account Type" = CONST (Vendor), "PTSS Factoring to Vendor No." = CONST ('')) "Vendor Bank Account".Code WHERE ("Vendor No." = FIELD ("Account No.")) ELSE
@@ -39,6 +40,7 @@ tableextension 31023103 "PTSS Gen. Journal Line FCTR" extends "Gen. Journal Line
             ("Bal. Account Type" = CONST (Vendor)) "Vendor Bank Account".Code WHERE ("Vendor No." = FIELD ("Bal. Account No.")) ELSE
             IF
             ("Bal. Account Type" = CONST (Employee)) "Employee"."No." WHERE ("Employee No. Filter" = FIELD ("Bal. Account No."));
+
         }
     }
     var

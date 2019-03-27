@@ -4559,15 +4559,6 @@ Fields!VendorFactorIBAN.Value + Chr(177) +
       </DefaultValue>
       <Prompt>VendorFactorIBANCaption</Prompt>
     </ReportParameter>
-    <ReportParameter Name="VendNo_VendLedgEntryCaption">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>VendNo_VendLedgEntryCaption</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>VendNo_VendLedgEntryCaption</Prompt>
-    </ReportParameter>
     <ReportParameter Name="DocType_VendLedgEntry1Caption">
       <DataType>String</DataType>
       <DefaultValue>

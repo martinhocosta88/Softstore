@@ -178,6 +178,9 @@ xmlport 31022901 "PTSS BP XML Message"
         TextTabs: Text[1024];
         Pos1: Integer;
         Pos2: Integer;
+        tmpBlob: Record TempBlob;
+        OutputStream2: OutStream;
+        OutputStream: OutStream;
     begin
         ChTab := 9;
         // XXX
@@ -208,6 +211,11 @@ xmlport 31022901 "PTSS BP XML Message"
         // XMLFile.CLOSE;
         // XMLFile2.CLOSE;
         // COPY(TempFileName, FileName);
+
+        // MSC
+        //TempFileName := 'tempCOPE.xml';
+        //tmpBlob.Blob.CreateOutStream(OutputStream2);
+
 
 
     end;

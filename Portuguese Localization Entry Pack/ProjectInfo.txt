@@ -14,7 +14,7 @@ Comunicação Inventário AT
 Campo Conta Liquidação Nota de Crédito
 Registo Inventário Físico
 Lancamento Regularizacao
-Ajuste Taxas de Câmbio (tabela + report)
+Ajuste Taxas de Câmbio
 IRC Modelo 22   
                  - Rever Legislacao;
 Livro Faturas Recebidas/Emitidas
@@ -25,8 +25,7 @@ Nº Transação
                  - Habilitar eventos quando lançados codeunit 31022938 PTSS TransactionNoMgmt;
 COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
-                 - Reformular Funcao Clear Nodes;
-                 - Testar exportação (XML BP e Tab BP Ledger Entry);
+                 - fazer exportacao xmlport;
 Esquema de Contas Valor Coluna
                  - Erro ao clicar overview quando temos Balance a true (Invalid Column Name - Net Change);
 Notas de Crédito de Acordo com Fatura

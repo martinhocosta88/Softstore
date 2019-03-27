@@ -204,15 +204,15 @@ table 31022960 "PTSS BP Ledger Entry"
         IntegrationBankPortugal: Record "PTSS BP Ledger Entry";
         XMLIntegrationBankPortugal: XMLport "PTSS BP XML Message";
         XMLFile: File;
-        XMLStream: OutStream;
+        //XMLStream: OutStream;
         //FileManagement: Codeunit "File Management";
-        ServerFileName: Text;
+        //ServerFileName: Text;
         tmpBlob: Record TempBlob;
         OutputStream: OutStream;
         InputStream: InStream;
     begin
         CLEAR(XMLIntegrationBankPortugal);
-        CLEAR(XMLStream);
+        CLEAR(OutputStream);
         CLEAR(XMLFile);
         CompanyInfo.GET;
         GeneralLedgerSetup.GET;
@@ -237,13 +237,13 @@ table 31022960 "PTSS BP Ledger Entry"
           FORMAT(CURRENTDATETIME, 0, '<Year4><Month,2><Day,2><Hour,2><Minute,2><Second,2>') + '.xml';
 
         tmpBlob.Blob.CreateOutStream(OutputStream);
-        XMLIntegrationBankPortugal.SETDESTINATION(XMLStream);
+        XMLIntegrationBankPortugal.SETDESTINATION(OutputStream); //XMLSTREAM ou Output stream?
         XMLIntegrationBankPortugal.InitExport(ExportMonth, ExportYear);
         XMLIntegrationBankPortugal.ClearNodes(FileName);
         tmpBlob.Blob.CreateInStream(InputStream);
         DownloadFromStream(InputStream, '', '', '', FileName);
         MESSAGE(Text31022890, FileName);
-        //XXX
+        //:::::::::
 
     end;
 }

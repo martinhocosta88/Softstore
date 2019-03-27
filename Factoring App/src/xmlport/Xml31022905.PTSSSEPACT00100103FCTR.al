@@ -1,7 +1,6 @@
 xmlport 31022905 "PTSS SEPA CT 001.001.03 FCTR"
 {
     // Factoring
-    // version NAVW110.0
     // Xmlport Duplicado
 
     Caption = 'SEPA CT pain.001.001.03 PT';
