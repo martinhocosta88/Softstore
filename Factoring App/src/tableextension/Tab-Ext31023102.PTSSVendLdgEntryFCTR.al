@@ -9,10 +9,6 @@ tableextension 31023102 "PTSS Vend. Ldg. Entry FCTR" extends "Vendor Ledger Entr
             DataClassification = CustomerContent;
             Editable = false;
             TableRelation = Vendor."No.";
-
         }
-
-
     }
-
 }
