@@ -1,5 +1,6 @@
 pageextension 31023120 "PTSS Countries/Regions" extends "Countries/Regions" //MyTargetPageId
 {
+    //COPE
     layout
     {
         addlast(Control1)

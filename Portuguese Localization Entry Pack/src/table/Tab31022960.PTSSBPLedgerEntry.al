@@ -232,12 +232,11 @@ table 31022960 "PTSS BP Ledger Entry"
         // MESSAGE(Text31022890, FileName);
 
         //Código de exportação refeito
-
         FileName := GeneralLedgerSetup."PTSS BP Folder" + 'BOP_COPE.' + CompanyInfo."VAT Registration No." + '.' + Period + '.' +
           FORMAT(CURRENTDATETIME, 0, '<Year4><Month,2><Day,2><Hour,2><Minute,2><Second,2>') + '.xml';
 
         tmpBlob.Blob.CreateOutStream(OutputStream);
-        XMLIntegrationBankPortugal.SETDESTINATION(OutputStream); //XMLSTREAM ou Output stream?
+        XMLIntegrationBankPortugal.SETDESTINATION(OutputStream);
         XMLIntegrationBankPortugal.InitExport(ExportMonth, ExportYear);
         XMLIntegrationBankPortugal.ClearNodes(FileName);
         tmpBlob.Blob.CreateInStream(InputStream);

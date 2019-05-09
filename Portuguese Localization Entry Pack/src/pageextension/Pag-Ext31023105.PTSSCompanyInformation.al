@@ -94,6 +94,7 @@ pageextension 31023105 "PTSS Company Information" extends "Company Information"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the path where to save communicated transport document files to the tax authority and tax authority response files.';
                     //Graph API.
+
                 }
 
             }

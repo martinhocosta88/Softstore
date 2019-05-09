@@ -31,17 +31,18 @@ codeunit 31022931 "PTSS CreditInvoiceMgmt"
         TempSalesLineBuf.NoSeriesCreditInvoice(TempSalesLineBuf."Document No.", TempSalesLineBuf."Line No.", ToSalesHeader."No. Series");
     end;
 
-    [EventSubscriber(ObjectType::Table, 5902, 'OnAfterClearFields', '', true, true)]
-    local procedure ClearFieldsPT(var ServiceLine: Record "Service Line"; xServiceLine: Record "Service Line"; TempServiceLine: Record "Service Line"; CallingFieldNo: Integer)
-    var
-        ServHeader: Record "Service Header";
-    begin
-        with ServiceLine Do begin
-            GetServHeader;
-            ServHeader.GET("Document Type", "Document No.");
-            NoSeriesCreditInvoice(TempServiceLine."PTSS Credit-to Doc. No.", TempServiceLine."PTSS Credit-to Doc. Line No.", ServHeader."No. Series");
-        end;
-    end;
+    //HABILITAR
+    // [EventSubscriber(ObjectType::Table, 5902, 'OnAfterClearFields', '', true, true)]
+    // local procedure ClearFieldsPT(var ServiceLine: Record "Service Line"; xServiceLine: Record "Service Line"; TempServiceLine: Record "Service Line"; CallingFieldNo: Integer)
+    // var
+    //     ServHeader: Record "Service Header";
+    // begin
+    //     with ServiceLine Do begin
+    //         GetServHeader;
+    //         ServHeader.GET("Document Type", "Document No.");
+    //         NoSeriesCreditInvoice(TempServiceLine."PTSS Credit-to Doc. No.", TempServiceLine."PTSS Credit-to Doc. Line No.", ServHeader."No. Series");
+    //     end;
+    // end;
 
 
 }

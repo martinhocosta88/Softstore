@@ -7,10 +7,10 @@
             "type": "al",
             "request": "launch",
             "name": "Yourownserver",
-            "server": "http://DevsPreview",
+            "server": "http://DevsPreview2",
             "serverInstance": "nav",
             "authentication": "UserPassword",
-            "schemaUpdateMode":"Synchronize",
+            "schemaUpdateMode":"Recreate",
             
             "breakOnError": true
             // "startupObjectType": "Table",

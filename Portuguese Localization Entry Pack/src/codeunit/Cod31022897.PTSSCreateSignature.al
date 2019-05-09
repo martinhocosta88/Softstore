@@ -7,7 +7,6 @@ codeunit 31022897 "PTSS Create Signature"
                   TableData 114 = imd,
                   TableData 120 = imd,
                   TableData 6660 = imd;
-
     trigger OnRun()
     begin
     end;
@@ -21,7 +20,6 @@ codeunit 31022897 "PTSS Create Signature"
         Client: HttpClient;
         Response: HttpResponseMessage;
         AzFuncSignatureURL: label 'https://signaturept.azurewebsites.net/api/Signature?code=D0V53fhPsIBoCFwa3qIuMjhzI3TpHqh0PIS2tNitki34s3SNWbAb5A==';
-
         JSonText: text;
 
     procedure GetHash(SAFTDocType: Code[2]; DocumentDate: Date; DocumentNo: Code[20]; NoSeries: Code[10]; CurrencyCode: Code[10]; CurrencyFactor: Decimal; AmountInclVAT: Decimal; LastHashUsed: Text[172]; SystemEntryDate: Date; SystemEntryTime: Time): Text[172]

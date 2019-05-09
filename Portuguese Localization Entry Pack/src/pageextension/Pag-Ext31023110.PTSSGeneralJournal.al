@@ -1,7 +1,6 @@
 pageextension 31023110 "PTSS General Journal" extends "General Journal"
 {
     //Cash-Flow
-    //Transaction No.
     layout
     {
         //Cash-Flow
@@ -23,14 +22,5 @@ pageextension 31023110 "PTSS General Journal" extends "General Journal"
             }
         }
 
-        //Transaction No.
-        addafter("Posting Date")
-        {
-            field("PTSS Transaction No."; "PTSS Transaction No.")
-            {
-                ApplicationArea = All;
-                ToolTip = 'Specifies the Transaction No.';
-            }
-        }
     }
 }

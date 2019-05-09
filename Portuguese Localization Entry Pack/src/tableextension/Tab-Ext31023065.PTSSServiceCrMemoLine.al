@@ -1,5 +1,7 @@
+
 tableextension 31023065 "PTSS Service Cr.Memo Line" extends "Service Cr.Memo Line" //MyTargetTableId
 {
+    //Nota de Credito de acordo com a Fatura
     fields
     {
         field(31022898; "PTSS Credit-to Doc. No."; Code[20])

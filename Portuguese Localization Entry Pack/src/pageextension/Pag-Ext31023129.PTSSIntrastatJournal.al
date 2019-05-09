@@ -1,5 +1,6 @@
 pageextension 31023129 "PTSS Intrastat Journal" extends "Intrastat Journal" //MyTargetPageId
 {
+    //Intrastat
     layout
     {
 

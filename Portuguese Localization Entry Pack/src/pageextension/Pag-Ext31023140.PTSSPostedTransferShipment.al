@@ -1,5 +1,6 @@
 pageextension 31023140 "PTSS Posted Transfer Shipment" extends "Posted Transfer Shipment" //MyTargetPageId
 {
+    //Comunicação AT
     layout
     {
         addafter("Shortcut Dimension 2 Code")

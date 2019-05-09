@@ -47,29 +47,37 @@ report 31022995 "PTSS BP Process"
                 //divisa
                 //V92.00#00012,sn
                 CLEAR(currencycode);
-                IF "Bal. Account Type" = "Bal. Account Type"::Customer THEN BEGIN
-                    CustLedgEntry.SETRANGE("Document Type", "Document Type");
-                    CustLedgEntry.SETRANGE("Document No.", "Document No.");
-                    CustLedgEntry.SETFILTER("Currency Code", '<>%1', '');
-                    IF CustLedgEntry.FINDSET THEN BEGIN
-                        CustLedgEntry.CALCFIELDS(Amount);
-                        currencycode := CustLedgEntry."Currency Code";
-                        amt := -CustLedgEntry.Amount;
-                    END;
-                END ELSE
+                //IF "Bal. Account Type" = "Bal. Account Type"::Customer THEN BEGIN
+                CustLedgEntry.SETRANGE("Document Type", "Document Type");
+                CustLedgEntry.SETRANGE("Document No.", "Document No.");
+                CustLedgEntry.SETRANGE("Currency Code", '');
+                IF NOT CustLedgEntry.ISEMPTY THEN
+                    CurrReport.SKIP;
+                CustLedgEntry.SETFILTER("Currency Code", '<>%1', '');
+                IF CustLedgEntry.FINDSET THEN BEGIN
+                    CustLedgEntry.CALCFIELDS(Amount);
+                    currencycode := CustLedgEntry."Currency Code";
+                    amt := -CustLedgEntry.Amount;
+                    Description := CustLedgEntry.Description;
+                END;
+                //END ELSE
 
-                    IF "Bal. Account Type" = BankAccLedgEntry."Bal. Account Type"::Vendor THEN BEGIN
-                        VendLedgEntry.SETRANGE("Document Type", "Document Type");
-                        VendLedgEntry.SETRANGE("Document No.", "Document No.");
-                        VendLedgEntry.SETFILTER("Currency Code", '<>%1', '');
-                        IF VendLedgEntry.FINDSET THEN BEGIN
-                            VendLedgEntry.CALCFIELDS(Amount);
-                            currencycode := VendLedgEntry."Currency Code";
-                            amt := -VendLedgEntry.Amount;
-                        END;
-                    END ELSE
-                        //V92.00#00012,en
-                        currencycode := "Currency Code";
+                //IF "Bal. Account Type" = BankAccLedgEntry."Bal. Account Type"::Vendor THEN BEGIN
+                VendLedgEntry.SETRANGE("Document Type", "Document Type");
+                VendLedgEntry.SETRANGE("Document No.", "Document No.");
+                VendLedgEntry.SETRANGE("Currency Code", '');
+                IF NOT VendLedgEntry.ISEMPTY THEN
+                    CurrReport.SKIP;
+                VendLedgEntry.SETFILTER("Currency Code", '<>%1', '');
+                IF VendLedgEntry.FINDSET THEN BEGIN
+                    VendLedgEntry.CALCFIELDS(Amount);
+                    currencycode := VendLedgEntry."Currency Code";
+                    amt := -VendLedgEntry.Amount;
+                    Description := CustLedgEntry.Description;
+                    //END;
+                END ELSE
+                    //V92.00#00012,en
+                    currencycode := "Currency Code";
 
                 //cod_estat  Ex: A | B | C - ver manual seccao 7 nova tabela
                 cod_stat := '';
@@ -367,11 +375,11 @@ report 31022995 "PTSS BP Process"
         {
             area(content)
             {
-                field(FromDate; FromDate)
+                field("FromDate"; "FromDate")
                 {
                     Caption = 'Start Date';
                 }
-                field(ToDate; ToDate)
+                field("ToDate"; "ToDate")
                 {
                     Caption = 'End Date';
                 }

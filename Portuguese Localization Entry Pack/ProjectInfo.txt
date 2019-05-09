@@ -15,14 +15,12 @@ Campo Conta Liquidação Nota de Crédito
 Registo Inventário Físico
 Lancamento Regularizacao
 Ajuste Taxas de Câmbio
+Certificação de Documentos
 IRC Modelo 22   
                  - Rever Legislacao;
 Livro Faturas Recebidas/Emitidas
                  - Código comentado de devs ainda não feitos; - ND%;
                  - Keys novas na VAT Entry;
-Nº Transação
-                 - Reformulacao cod 13;
-                 - Habilitar eventos quando lançados codeunit 31022938 PTSS TransactionNoMgmt;
 COPE Banco de Portugal
                  - Codeunit 12 - PostCust e PostVend (Dúvida onde invocar código);
                  - fazer exportacao xmlport;
@@ -31,10 +29,11 @@ Esquema de Contas Valor Coluna
 Notas de Crédito de Acordo com Fatura
                  - Cod31022931.PTSSCreditInvoiceMgmt - Resolver problema
                  - Esconder campos credit to doc no e credit to doc line no dependendo da serie se credita ou nao. BUG MS;
-Certificação de Documentos
-                - Falta assinar o hash na azure function;
+
 Comunicacao AT
                  - WIP;
+
+HABILITAR EVENTOS NA TRANSACTIONNO MGMT E NA CREDITINVOICEMGMT
 ________________________
 Extra Application
 ________________________                 
@@ -44,11 +43,11 @@ Regras de Negócio
                                    - Consumidor Final campo;
                                    - Vat Registration No. End Consumer Validation;
                  - tab 36 e 38 - CheckMasterData;
-                 - tab Item/Resource/Item Charge - CheckDuplicates() + CheckLedgerEntries() + UpdateItemCategory();
+                 - tab Item/Resource/Item Charge/Service Item - CheckDuplicates() + CheckLedgerEntries() + UpdateItemCategory();
                  - tab 15 - Conta maior com contas relacionadas nao pode ser eliminada;
                           - Direct Posting = false quando conta = Total;
                           - FillDefaultValues;
-                          - Alteracao da funcao CheckGLAcc para incluir TestField ao Name - O vento é chamdado na cod 31022924;
+                          - Alteracao da funcao CheckGLAcc para incluir TestField ao Name - O evento é chamdado na cod 31022924;
                  - Tab 81  - Get Vend Info e Get Cust Info são chamdadas na cod GenJnlLine Event Handler;
 Configuracao SAFT
                  - VAT Posting Setup

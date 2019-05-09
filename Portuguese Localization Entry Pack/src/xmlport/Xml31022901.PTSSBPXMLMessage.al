@@ -179,8 +179,8 @@ xmlport 31022901 "PTSS BP XML Message"
         Pos1: Integer;
         Pos2: Integer;
         tmpBlob: Record TempBlob;
-        OutputStream2: OutStream;
         OutputStream: OutStream;
+        InputStream: InStream;
     begin
         ChTab := 9;
         // XXX
@@ -191,7 +191,7 @@ xmlport 31022901 "PTSS BP XML Message"
         // XMLFile2.WRITEMODE(TRUE);
 
         // TempFileName := TierMgt.ServerTempFileName('.xml');
-        // XMLFile2.CREATE(TempFileName);
+        //XMLFile2.CREATE(TempFileName);
         // REPEAT
         //     XMLFile.READ(Line);
         //     LineText := DELCHR(FORMAT(Line), '<', ' ');
@@ -214,10 +214,22 @@ xmlport 31022901 "PTSS BP XML Message"
 
         // MSC
         //TempFileName := 'tempCOPE.xml';
-        //tmpBlob.Blob.CreateOutStream(OutputStream2);
-
-
-
+        tmpBlob.Blob.CreateInStream(InputStream);
+        repeat
+            InputStream.Read(Line);
+            LineText := DelChr(Format(Line), '<', ' ');
+            Case LineText of
+                '<npc2 />', '<pais_conta />', '<pais_activo />',
+                '<data_vencimento>0</data_vencimento>',
+                '<contraparte />', '<id_banco />':
+                    begin
+                    END;
+                ELSE
+                    OutputStream.Write(Line);
+            END;
+        until InputStream.EOS;
+        //CopyStream(OutputStream,FileName);
+        //FileName := Format(OutputStream);
     end;
 
     procedure InitExport(ExportMonth: Integer; ExportYear: Integer)
