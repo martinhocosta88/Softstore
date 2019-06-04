@@ -20,7 +20,7 @@ page 31022935 "PTSS Cash-Flow Plan"
                     StyleExpr = NoEmphasize;
                     ApplicationArea = Basic, Suite;
                 }
-                field(Description; Description)
+                field("Description"; Description)
                 {
                     ToolTip = 'Specifies the description.';
                     Style = Strong;
@@ -37,7 +37,7 @@ page 31022935 "PTSS Cash-Flow Plan"
                     ToolTip = 'Specifies the totaling amount.';
                     ApplicationArea = Basic, Suite;
                 }
-                field(Indentation; Indentation)
+                field("Indentation"; Indentation)
                 {
                     ToolTip = 'Specifies the indentation level.';
                     ApplicationArea = Basic, Suite;

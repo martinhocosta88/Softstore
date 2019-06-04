@@ -2728,6 +2728,376 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report PTSS BP Process - Control ToDate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3021368589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales - Credit Memo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportDataItem 552782286 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Credit Memo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportDataItem Sales Cr.Memo Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 2578066365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Copies</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control NoOfCopies - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 316520822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Internal Information</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control ShowInternalInfo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 816368762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control LogInteraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 2737174276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Correction Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control Show Correction Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 3571734211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Serial/Lot Number Appendix</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control ShowLotSN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - Control 3006005784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Document on System Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - Control PrinPrintDocumentSystemLanguage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2826867220" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel CompanyInfoPhoneNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3448977668" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel CompanyInfoVATRegNoCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2869466049" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel SalesCrMemoHeaderPostDtCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1155328579" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel DocumentDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 164013595" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel CompanyInfoHomePageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 217522315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel CompanyINfoEmailCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3652186792" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Header Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel HeaderDimCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 4190945604" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel UnitPriceCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 976774305" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel AmountCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3672710486" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Discount Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel InvDiscAmtSalesCrMemoLineCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 69252687" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subtotal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel SubtotalCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1820188381" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Discount on VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel LineAmtInvDiscAmt_SalesCrMemoLineCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3365690297" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Clause</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATClausesCap</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1559168207" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel LineDimCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2485276663" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtSpecificationCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3729099473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Discount Base Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineInvDiscBaseAmtCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 772663164" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineLineAmtCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3294671814" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Discount Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineInvoiceDiscAmtCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3805154887" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT % </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineVATCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2717656980" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Base</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineVATBaseCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1029123599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineVATAmtCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2523555250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATAmtLineVATIdentifierCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3896701571" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel TotalCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3483640192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount %</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel SalesCrMemoLineDiscCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 4272535733" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Header Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel HeaderDimCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3246368361" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel QuantityCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 601422815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel SerialNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3926274846" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel LotNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1292293871" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel NoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 749532717" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transported...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel TransHeaderCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 860110307" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transport...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel TransFooterCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 4264908145" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel CompanyInfoPhoneNoCptnLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2020178030" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel PostingDateCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2360944992" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel LabelNoSeries</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 100804178" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel DueDateCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1955847566" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel ShipmentDateCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3645653637" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel ShipmentTimeCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3685527411" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel PaymentTermsCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 4069671303" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel SalesCrMemoDueDateCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3700977036" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel PaymentTermsDescCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 764595223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT % </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel VATPercentageCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2725977566" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Clause</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel motivoisencao</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 3188940527" size-unit="char" translate="yes" xml:space="preserve">
+          <source>C.R.C.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel conservatoriatext</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 595034892" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel EMailCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 2174691427" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel QuantityLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 1877187315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pag.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel PageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - ReportLabel 4118791291" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UOM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - ReportLabel UnitMeasureCodeLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 133630883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Original</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType TxtOriginal</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 3202150672" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duplicate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Txt2Via</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 130015500" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy of the original document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022906</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 3787286179" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WithholdingTaxAmount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022907</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 109183450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>999999990</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022890</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 3766454129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Final Consumer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022891</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 3128757512" size-unit="char" translate="yes" xml:space="preserve">
+          <source>/AT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022892</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 2491060895" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022893</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 2659969918" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1 Incl. VAT </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022894</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 915789090" size-unit="char" translate="yes" xml:space="preserve">
+          <source>COPY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022898</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 278092473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Memo No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022899</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 3149589562" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1 Excl. VAT </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022900</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 2511892945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification in </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022901</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 1874196328" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022902</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 1236499711" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange rate: %1/%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022903</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 1405408734" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duplicate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022904</note>
+        </trans-unit>
+        <trans-unit id="Report 3021368589 - NamedType 767712117" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Triplicate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTSS Sales - Credit Memo (PT) - NamedType Text31022905</note>
+        </trans-unit>
         <trans-unit id="Report 1393326393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Check</source>
           <note from="Developer" annotates="general" priority="2"></note>

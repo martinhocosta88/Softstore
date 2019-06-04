@@ -7,14 +7,14 @@
             "type": "al",
             "request": "launch",
             "name": "Yourownserver",
-            "server": "http://DevsPreview2",
+            "server": "http://DevsPreview3",
             "serverInstance": "nav",
             "authentication": "UserPassword",
             "schemaUpdateMode":"Recreate",
-            
             "breakOnError": true
             // "startupObjectType": "Table",
             // "startupObjectId": 271
+            
         }
     ]
 }

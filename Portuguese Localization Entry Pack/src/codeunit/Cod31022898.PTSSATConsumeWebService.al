@@ -11,7 +11,7 @@ codeunit 31022898 "PTSS AT Consume Web Service"
         ATCode: Text[30];
         ReturnCode: Code[10];
         ReturnMessage: Text[250];
-        ATCallResponse: Text;
+        ATCallResponse: TEXT;
         ReturnLogPath: Text;
     begin
         TaxAuthorityWsSetup.GET;

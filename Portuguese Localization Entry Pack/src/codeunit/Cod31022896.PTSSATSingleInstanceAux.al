@@ -9,7 +9,7 @@ codeunit 31022896 "PTSS AT Single Instance Aux"
     end;
 
     var
-        SkipMsg: Boolean;
+        SkipMsg: BOOLEAN;
 
     procedure SkipMessages(SkipMessage: Boolean): Boolean
     begin
