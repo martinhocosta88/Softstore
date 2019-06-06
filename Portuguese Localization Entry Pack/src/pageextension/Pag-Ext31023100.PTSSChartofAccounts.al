@@ -12,6 +12,7 @@ pageextension 31023100 "PTSS Chart of Accounts" extends "Chart of Accounts"
                 ToolTip = 'Specifies the adjustment account for the comercial posting accounts.';
                 ApplicationArea = All;
                 Visible = false;
+
             }
             field("PTSS Taxonomy Code"; "PTSS Taxonomy Code")
             {

@@ -76,6 +76,7 @@ tableextension 31023004 "PTSS Customer Bank Account" extends "Customer Bank Acco
             begin
                 ValidateIBAN();
             end;
+            
         }
         modify("Country/Region Code")
         {
